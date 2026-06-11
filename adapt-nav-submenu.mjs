@@ -9,7 +9,6 @@ const SUBMENUS = {
     ['Cours collectifs', '/espaces/cours-collectifs'],
     ['Entraînement fonctionnel', '/espaces/fonctionnel'],
     ['Cross / Cardio', '/espaces/cross-cardio'],
-    ['Kid Fitness', '/espaces/kid-fitness'],
   ],
   '/services': [
     ['Beauregard Coaching', '/services/coaching'],
