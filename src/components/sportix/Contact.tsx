@@ -165,21 +165,21 @@ export default function Contact() {
                         <label className={"framer-11qs6d6"}>
                           <div className={"framer-1yzq08c"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                              First name
+                              Prénom
                             </p>
                           </div>
                           <div className={"framer-form-text-input framer-form-input-wrapper framer-pu690z framer-form-text-input-type"}>
-                            <input type={"text"} required name={"First name"} placeholder={"First name"} className={"framer-form-input framer-form-input-empty"} value={""} />
+                            <input type={"text"} required name={"Prénom"} placeholder={"Prénom"} className={"framer-form-input framer-form-input-empty"} value={""} />
                           </div>
                         </label>
                         <label className={"framer-1h8i56j"}>
                           <div className={"framer-185okoj"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                              Last name
+                              Nom
                             </p>
                           </div>
                           <div className={"framer-form-text-input framer-form-input-wrapper framer-lcuh3l"}>
-                            <input type={"email"} required name={"Email"} placeholder={"Last name"} className={"framer-form-input framer-form-input-empty"} value={""} />
+                            <input type={"email"} required name={"Email"} placeholder={"Nom"} className={"framer-form-input framer-form-input-empty"} value={""} />
                           </div>
                         </label>
                       </div>
@@ -190,17 +190,17 @@ export default function Contact() {
                           </p>
                         </div>
                         <div className={"framer-form-text-input framer-form-input-wrapper framer-c3xjmv"}>
-                          <input type={"email"} required name={"Email"} placeholder={"Your email"} className={"framer-form-input framer-form-input-empty"} value={""} />
+                          <input type={"email"} required name={"Email"} placeholder={"Votre email"} className={"framer-form-input framer-form-input-empty"} value={""} />
                         </div>
                       </label>
                       <label className={"framer-11b5d73"}>
                         <div className={"framer-1a0qos2"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                            Your message
+                            Votre message
                           </p>
                         </div>
                         <div className={"framer-form-text-input framer-form-input-wrapper framer-1hs4suo framer-form-textarea-input-type"}>
-                          <textarea required name={"Your message"} placeholder={"Your message"} className={"framer-form-input"} />
+                          <textarea required name={"Votre message"} placeholder={"Votre message"} className={"framer-form-input"} />
                         </div>
                       </label>
                     </div>
@@ -210,7 +210,7 @@ export default function Contact() {
                       <button type={"submit"} className={"framer-5KOev framer-X8adU framer-1oi5cg4 framer-v-1oi5cg4"} data-framer-name={"Default"} data-reset={"button"} style={{ backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", height: "100%", width: "100%", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px", opacity: "1" }}>
                         <div className={"framer-58lnby"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            Submit
+                            Envoyer
                           </p>
                         </div>
                       </button>
