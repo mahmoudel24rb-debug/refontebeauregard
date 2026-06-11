@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/classes/:slug", "destination": "/classes--:slug.html" },
+    { "source": "/facilities/:slug", "destination": "/facilities--:slug.html" },
+    { "source": "/events/:slug", "destination": "/events--:slug.html" },
+    { "source": "/blog/:slug", "destination": "/blog--:slug.html" }
+  ]
+}
