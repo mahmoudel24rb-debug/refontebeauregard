@@ -17,6 +17,9 @@ async function creerMediaPlaceholder(
   payload: Awaited<ReturnType<typeof getPayload>>,
   alt: string,
 ): Promise<number | null> {
+  // Les fichiers uploadés restent sur le disque local : inutile de créer des
+  // entrées media pour une base distante (Vercel/Neon) qui ne les aurait pas
+  if (process.env.SEED_SKIP_MEDIA === '1') return null
   if (!fs.existsSync(dossierTemplate)) return null
   const dejaLa = await payload.find({ collection: 'media', where: { alt: { equals: alt } }, limit: 1 })
   if (dejaLa.docs[0]) return dejaLa.docs[0].id
