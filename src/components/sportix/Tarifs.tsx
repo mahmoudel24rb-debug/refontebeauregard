@@ -490,9 +490,9 @@ export default function Tarifs() {
                       <div className={"framer-sxlwgz"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                         <h2 style={{ "--font-selector": "SW50ZXItQm9sZA==", "--framer-font-family": "&quot", "--framer-font-size": "50px", "--framer-font-weight": "700", "--framer-letter-spacing": "-1.5px", "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }} className={"framer-text"}>
                           <span style={{ "--font-selector": "SW50ZXI=", "--framer-font-family": "&quot", "--framer-font-weight": "400" }} className={"framer-text"}>
-                            We’re{" "}
+                            Nous{" "}
                           </span>
-                          redefining the way de vivre le
+                          réinventons votre façon de vivre le
                           <span style={{ "--font-selector": "SW50ZXI=", "--framer-font-family": "&quot", "--framer-font-weight": "400" }} className={"framer-text"}>
                             {" "}sport.
                           </span>
