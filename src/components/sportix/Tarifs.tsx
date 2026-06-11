@@ -135,15 +135,15 @@ export default function Tarifs() {
                     <div className={"framer-1d3f6uw"} data-framer-name={"Title Wrapper"} style={{ willChange: "transform", opacity: "1", transform: "none" }}>
                       <div className={"framer-m5cj5t"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49)))" }}>
-                          Membership
+                          Adhésion
                         </p>
                       </div>
                       <div className={"framer-1svd6ti"} data-framer-name={"Heading"} style={{ "--extracted-1of0zx5": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                         <h2 style={{ "--font-selector": "SW50ZXItQm9sZA==", "--framer-font-family": "&quot", "--framer-font-size": "50px", "--framer-font-weight": "700", "--framer-letter-spacing": "-1.5px", "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-1of0zx5, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }} className={"framer-text"}>
                           <span style={{ "--font-selector": "SW50ZXI=", "--framer-font-family": "&quot", "--framer-font-weight": "400" }} className={"framer-text"}>
-                            Your path to peak{" "}
+                            Votre accès au meilleur{" "}
                           </span>
-                          physical and mental performance.
+                          de votre forme physique et mentale.
                         </h2>
                       </div>
                     </div>
@@ -154,25 +154,25 @@ export default function Tarifs() {
                           <div className={"framer-14nh7xc"} data-framer-name={"Toggle"} data-highlight={"true"} tabIndex={"0"} style={{ opacity: "1" }}>
                             <div className={"framer-9jttek"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                               <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                                Monthly
+                                Mensuel
                               </p>
                             </div>
                           </div>
                           <div className={"framer-5dz3i1"} data-framer-name={"Toggle"} data-highlight={"true"} tabIndex={"0"} style={{ opacity: "1" }}>
                             <div className={"framer-db4itj"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                               <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49)))" }}>
-                                Yearly
+                                Annuel
                               </p>
                             </div>
                           </div>
                         </div>
-                        <div className={"framer-1pryn50"} data-framer-name={"Pricing Cards Wrapper"} style={{ opacity: "1" }}>
+                        <div className={"framer-1pryn50"} data-framer-name={"Tarifs Cards Wrapper"} style={{ opacity: "1" }}>
                           <div className={"framer-wbllb0-container"} style={{ willChange: "transform", opacity: "1", transform: "none" }}>
                             <div className={"framer-jIlUe framer-fN9WN framer-AZnGt framer-1eSXM framer-gbuwA framer-1cwxg2b framer-v-1cwxg2b"} data-border={"true"} data-framer-name={"Default"} style={{ "--border-bottom-width": "1px", "--border-color": "var(--token-8f4f0a97-886c-442e-9b68-fba0a777697e, rgb(229, 229, 229))", "--border-left-width": "1px", "--border-right-width": "1px", "--border-style": "solid", "--border-top-width": "1px", backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", width: "100%", borderRadius: "10px", opacity: "1" }}>
                               <div className={"framer-nt5fcz"} data-framer-name={"LAbel Wrapper"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderRadius: "50px", opacity: "1" }}>
                                 <div className={"framer-16vg9cs"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                   <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49)))" }}>
-                                    Basic Membership
+                                    FORME
                                   </p>
                                 </div>
                               </div>
@@ -180,20 +180,20 @@ export default function Tarifs() {
                                 <div className={"framer-o4vb6l"} data-framer-name={"Price Wrapper"} style={{ opacity: "1" }}>
                                   <div className={"framer-10rsdus"} data-framer-name={"Price"} style={{ "--extracted-tcooor": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                     <div className={"framer-text framer-styles-preset-i3xh9m"} data-styles-preset={"bpR_VXhdZ"} style={{ "--framer-text-alignment": "left", "--framer-text-color": "var(--extracted-tcooor, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      $29.99
+                                      49 €
                                     </div>
                                   </div>
                                   <div className={"framer-1puz0xw"} data-framer-name={"Padding Bottom"} style={{ opacity: "1" }}>
                                     <div className={"framer-1do8is4"} data-framer-name={"Price"} style={{ "--extracted-1w1cjl5": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                       <h6 className={"framer-text framer-styles-preset-gmdg5a"} data-styles-preset={"XCvretOoF"} style={{ "--framer-text-alignment": "left", "--framer-text-color": "var(--extracted-1w1cjl5, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                        /month
+                                        /mois
                                       </h6>
                                     </div>
                                   </div>
                                 </div>
                                 <div className={"framer-k9q449"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                   <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                    Perfect for beginners &amp; casual fitness enthusiasts
+                                    Pour démarrer en douceur — accès muscu + bilan offert.
                                   </p>
                                 </div>
                               </div>
@@ -208,7 +208,7 @@ export default function Tarifs() {
                                       </div>
                                       <div className={"framer-r6i663"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                         <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                          Full access to gym &amp; training zones
+                                          Accès libre à la salle & aux espaces
                                         </p>
                                       </div>
                                     </div>
@@ -222,7 +222,7 @@ export default function Tarifs() {
                                       </div>
                                       <div className={"framer-r6i663"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                         <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                          Standard group fitness classes
+                                          Cours collectifs inclus
                                         </p>
                                       </div>
                                     </div>
@@ -236,7 +236,7 @@ export default function Tarifs() {
                                       </div>
                                       <div className={"framer-r6i663"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                         <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                          Locker room &amp; shower facilities
+                                          Vestiaires & douches
                                         </p>
                                       </div>
                                     </div>
@@ -250,7 +250,7 @@ export default function Tarifs() {
                                       </div>
                                       <div className={"framer-r6i663"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                         <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                          Member-exclusive fitness tips &amp; guides
+                                          Bilan forme offert
                                         </p>
                                       </div>
                                     </div>
@@ -260,7 +260,7 @@ export default function Tarifs() {
                                   <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", width: "100%", borderRadius: "70px", opacity: "1" }} href={"/contact"}>
                                     <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none", opacity: "1" }}>
                                       <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
-                                        Join now
+                                        Je m'inscris
                                       </p>
                                     </div>
                                   </a>
@@ -273,7 +273,7 @@ export default function Tarifs() {
                               <div className={"framer-nt5fcz"} data-framer-name={"LAbel Wrapper"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderRadius: "50px", opacity: "1" }}>
                                 <div className={"framer-16vg9cs"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                   <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49)))" }}>
-                                    Premium Membership
+                                    GOLD
                                   </p>
                                 </div>
                               </div>
@@ -281,20 +281,20 @@ export default function Tarifs() {
                                 <div className={"framer-o4vb6l"} data-framer-name={"Price Wrapper"} style={{ opacity: "1" }}>
                                   <div className={"framer-10rsdus"} data-framer-name={"Price"} style={{ "--extracted-tcooor": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                     <div className={"framer-text framer-styles-preset-i3xh9m"} data-styles-preset={"bpR_VXhdZ"} style={{ "--framer-text-alignment": "left", "--framer-text-color": "var(--extracted-tcooor, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      $49.99
+                                      59 €
                                     </div>
                                   </div>
                                   <div className={"framer-1puz0xw"} data-framer-name={"Padding Bottom"} style={{ opacity: "1" }}>
                                     <div className={"framer-1do8is4"} data-framer-name={"Price"} style={{ "--extracted-1w1cjl5": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                       <h6 className={"framer-text framer-styles-preset-gmdg5a"} data-styles-preset={"XCvretOoF"} style={{ "--framer-text-alignment": "left", "--framer-text-color": "var(--extracted-1w1cjl5, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                        /month
+                                        /mois
                                       </h6>
                                     </div>
                                   </div>
                                 </div>
                                 <div className={"framer-k9q449"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                   <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                    For those looking to take their training to the next level
+                                    Pour progresser, avec plus d'accès et de suivi.
                                   </p>
                                 </div>
                               </div>
@@ -309,7 +309,7 @@ export default function Tarifs() {
                                       </div>
                                       <div className={"framer-r6i663"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                         <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                          Everything in Basic, plus:
+                                          Tout FORME, plus :
                                         </p>
                                       </div>
                                     </div>
@@ -323,7 +323,7 @@ export default function Tarifs() {
                                       </div>
                                       <div className={"framer-r6i663"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                         <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                          Access to specialized training areas
+                                          Accès aux espaces spécialisés
                                         </p>
                                       </div>
                                     </div>
@@ -337,7 +337,7 @@ export default function Tarifs() {
                                       </div>
                                       <div className={"framer-r6i663"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                         <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                          Advanced group fitness programs
+                                          Programmes collectifs avancés
                                         </p>
                                       </div>
                                     </div>
@@ -351,7 +351,7 @@ export default function Tarifs() {
                                       </div>
                                       <div className={"framer-r6i663"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                         <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                          Discounts on personal training
+                                          Réductions sur le coaching perso
                                         </p>
                                       </div>
                                     </div>
@@ -361,7 +361,7 @@ export default function Tarifs() {
                                   <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", width: "100%", borderRadius: "70px", opacity: "1" }} href={"/contact"}>
                                     <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none", opacity: "1" }}>
                                       <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
-                                        Join now
+                                        Je m'inscris
                                       </p>
                                     </div>
                                   </a>
@@ -374,7 +374,7 @@ export default function Tarifs() {
                               <div className={"framer-nt5fcz"} data-framer-name={"LAbel Wrapper"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderRadius: "50px", opacity: "1" }}>
                                 <div className={"framer-16vg9cs"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                   <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49)))" }}>
-                                    Elite Membership
+                                    VIP
                                   </p>
                                 </div>
                               </div>
@@ -382,20 +382,20 @@ export default function Tarifs() {
                                 <div className={"framer-o4vb6l"} data-framer-name={"Price Wrapper"} style={{ opacity: "1" }}>
                                   <div className={"framer-10rsdus"} data-framer-name={"Price"} style={{ "--extracted-tcooor": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                     <div className={"framer-text framer-styles-preset-i3xh9m"} data-styles-preset={"bpR_VXhdZ"} style={{ "--framer-text-alignment": "left", "--framer-text-color": "var(--extracted-tcooor, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      $79.99
+                                      99 €
                                     </div>
                                   </div>
                                   <div className={"framer-1puz0xw"} data-framer-name={"Padding Bottom"} style={{ opacity: "1" }}>
                                     <div className={"framer-1do8is4"} data-framer-name={"Price"} style={{ "--extracted-1w1cjl5": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                       <h6 className={"framer-text framer-styles-preset-gmdg5a"} data-styles-preset={"XCvretOoF"} style={{ "--framer-text-alignment": "left", "--framer-text-color": "var(--extracted-1w1cjl5, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                        /month
+                                        /mois
                                       </h6>
                                     </div>
                                   </div>
                                 </div>
                                 <div className={"framer-k9q449"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                   <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                    For athletes and serious fitness enthusiasts
+                                    L'expérience complète, coaching premium inclus.
                                   </p>
                                 </div>
                               </div>
@@ -410,7 +410,7 @@ export default function Tarifs() {
                                       </div>
                                       <div className={"framer-r6i663"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                         <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                          Everything in Premium, plus:
+                                          Tout GOLD, plus :
                                         </p>
                                       </div>
                                     </div>
@@ -424,7 +424,7 @@ export default function Tarifs() {
                                       </div>
                                       <div className={"framer-r6i663"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                         <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                          Unlimited personal training sessions
+                                          Coaching personnel illimité
                                         </p>
                                       </div>
                                     </div>
@@ -438,7 +438,7 @@ export default function Tarifs() {
                                       </div>
                                       <div className={"framer-r6i663"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                         <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                          Exclusive performance coaching
+                                          Coaching performance exclusif
                                         </p>
                                       </div>
                                     </div>
@@ -452,7 +452,7 @@ export default function Tarifs() {
                                       </div>
                                       <div className={"framer-r6i663"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                         <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                          Access to recovery zones
+                                          Accès aux espaces récupération
                                         </p>
                                       </div>
                                     </div>
@@ -462,7 +462,7 @@ export default function Tarifs() {
                                   <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", width: "100%", borderRadius: "70px", opacity: "1" }} href={"/contact"}>
                                     <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none", opacity: "1" }}>
                                       <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
-                                        Join now
+                                        Je m'inscris
                                       </p>
                                     </div>
                                   </a>
@@ -483,7 +483,7 @@ export default function Tarifs() {
                   <div className={"framer-ufrv7r"} data-framer-name={"Title Wrapper"}>
                     <div className={"framer-16tz2ya"} data-framer-name={"Body"} style={{ transform: "none" }}>
                       <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))" }}>
-                        What we do
+                        Nos services
                       </p>
                     </div>
                     <div className={"ssr-variant hidden-16q1mfx"}>
@@ -492,9 +492,9 @@ export default function Tarifs() {
                           <span style={{ "--font-selector": "SW50ZXI=", "--framer-font-family": "&quot", "--framer-font-weight": "400" }} className={"framer-text"}>
                             We’re{" "}
                           </span>
-                          redefining the way people experience
+                          redefining the way de vivre le
                           <span style={{ "--font-selector": "SW50ZXI=", "--framer-font-family": "&quot", "--framer-font-weight": "400" }} className={"framer-text"}>
-                            {" "}sports.
+                            {" "}sport.
                           </span>
                         </h2>
                       </div>
@@ -505,7 +505,7 @@ export default function Tarifs() {
                       <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", borderRadius: "70px", opacity: "1" }} href={"/services"}>
                         <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
-                            View all classes
+                            Tous nos services
                           </p>
                         </div>
                       </a>
@@ -689,14 +689,14 @@ export default function Tarifs() {
                           <div className={"framer-1o9wodc"} data-framer-name={"Heading"} style={{ "--extracted-1of0zx5": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                             <h2 style={{ "--framer-font-size": "50px", "--framer-letter-spacing": "-1.5px", "--framer-text-alignment": "left", "--framer-text-color": "var(--extracted-1of0zx5, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }} className={"framer-text"}>
                               <span style={{ "--font-selector": "SW50ZXItQm9sZA==", "--framer-font-family": "&quot", "--framer-font-weight": "700" }} className={"framer-text"}>
-                                Our community{" "}
+                                Notre communauté{" "}
                               </span>
-                              is at the heart of everything we do.
+                              est au cœur de tout ce que nous faisons.
                             </h2>
                           </div>
                           <div className={"framer-1ewkqpr"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                             <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-alignment": "left", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                              Hear from our members who have transformed their fitness, performance, and lifestyle with us!
+                              Découvrez les adhérents qui ont transformé leur forme, leurs performances et leur mode de vie avec nous !
                             </p>
                           </div>
                         </div>
@@ -765,18 +765,18 @@ export default function Tarifs() {
                               <div className={"framer-1jzm1sk"} data-framer-name={"Text Content Wrapper"} style={{ opacity: "1" }}>
                                 <div className={"framer-z5u0fp"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                   <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                    “A game-changer for my training!”
+                                    « Ça a tout changé dans mon entraînement ! »
                                   </h4>
                                 </div>
                                 <div className={"framer-lpsxj0"} data-framer-name={"Testimonials Wrapper"} style={{ opacity: "1" }}>
                                   <div className={"framer-1akfa26"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                     <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                      “The personal trainers here are next level! I've seen massive improvements in my endurance and strength. Highly recommend!”
+                                      « Les coachs sont au top ! J'ai énormément progressé en endurance et en force. Je recommande sans hésiter ! »
                                     </p>
                                   </div>
                                   <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Verity M.
+                                      Marie L.
                                     </p>
                                   </div>
                                 </div>
@@ -825,18 +825,18 @@ export default function Tarifs() {
                               <div className={"framer-1jzm1sk"} data-framer-name={"Text Content Wrapper"} style={{ opacity: "1" }}>
                                 <div className={"framer-z5u0fp"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                   <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                    “Best decision I've made for my health!”
+                                    « La meilleure décision pour ma santé ! »
                                   </h4>
                                 </div>
                                 <div className={"framer-lpsxj0"} data-framer-name={"Testimonials Wrapper"} style={{ opacity: "1" }}>
                                   <div className={"framer-1akfa26"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                     <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                      “Athletic has everything I need—expert coaches, top-notch equipment, and an amazing atmosphere. I feel stronger, healthier, and more motivated than ever!”
+                                      « Le Parc Beauregard a tout ce qu'il me faut : coachs experts, super matériel et ambiance géniale. Je me sens plus forte et plus motivée que jamais ! »
                                     </p>
                                   </div>
                                   <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Salem B.
+                                      Sophie B.
                                     </p>
                                   </div>
                                 </div>
@@ -885,18 +885,18 @@ export default function Tarifs() {
                               <div className={"framer-1jzm1sk"} data-framer-name={"Text Content Wrapper"} style={{ opacity: "1" }}>
                                 <div className={"framer-z5u0fp"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                   <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                    “The perfect place to train and connect!”
+                                    « L'endroit parfait pour s'entraîner et se ressourcer ! »
                                   </h4>
                                 </div>
                                 <div className={"framer-lpsxj0"} data-framer-name={"Testimonials Wrapper"} style={{ opacity: "1" }}>
                                   <div className={"framer-1akfa26"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                     <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                      “I love the community at Athletic. The group classes push me beyond my limits, and I’ve made great friends along the way!”
+                                      « J'adore la communauté du Parc Beauregard. Les cours collectifs me poussent au-delà de mes limites, et je m'y suis fait de vrais amis ! »
                                     </p>
                                   </div>
                                   <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Mildred T.
+                                      Camille T.
                                     </p>
                                   </div>
                                 </div>
@@ -947,18 +947,18 @@ export default function Tarifs() {
                               <div className={"framer-1jzm1sk"} data-framer-name={"Text Content Wrapper"} style={{ opacity: "1" }}>
                                 <div className={"framer-z5u0fp"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                   <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                    “Best decision I've made for my health!”
+                                    « La meilleure décision pour ma santé ! »
                                   </h4>
                                 </div>
                                 <div className={"framer-lpsxj0"} data-framer-name={"Testimonials Wrapper"} style={{ opacity: "1" }}>
                                   <div className={"framer-1akfa26"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                     <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                      “Athletic has everything I need—expert coaches, top-notch equipment, and an amazing atmosphere. I feel stronger, healthier, and more motivated than ever!”
+                                      « Le Parc Beauregard a tout ce qu'il me faut : coachs experts, super matériel et ambiance géniale. Je me sens plus forte et plus motivée que jamais ! »
                                     </p>
                                   </div>
                                   <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Alex R.
+                                      Thomas R.
                                     </p>
                                   </div>
                                 </div>
@@ -1007,18 +1007,18 @@ export default function Tarifs() {
                               <div className={"framer-1jzm1sk"} data-framer-name={"Text Content Wrapper"} style={{ opacity: "1" }}>
                                 <div className={"framer-z5u0fp"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                   <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                    “A game-changer for my training!”
+                                    « Ça a tout changé dans mon entraînement ! »
                                   </h4>
                                 </div>
                                 <div className={"framer-lpsxj0"} data-framer-name={"Testimonials Wrapper"} style={{ opacity: "1" }}>
                                   <div className={"framer-1akfa26"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                     <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                      “The personal trainers here are next level! I've seen massive improvements in my endurance and strength. Highly recommend!”
+                                      « Les coachs sont au top ! J'ai énormément progressé en endurance et en force. Je recommande sans hésiter ! »
                                     </p>
                                   </div>
                                   <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Jordan M.
+                                      Julien M.
                                     </p>
                                   </div>
                                 </div>
@@ -1067,18 +1067,18 @@ export default function Tarifs() {
                               <div className={"framer-1jzm1sk"} data-framer-name={"Text Content Wrapper"} style={{ opacity: "1" }}>
                                 <div className={"framer-z5u0fp"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                   <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                    “The perfect place to train and connect!”
+                                    « L'endroit parfait pour s'entraîner et se ressourcer ! »
                                   </h4>
                                 </div>
                                 <div className={"framer-lpsxj0"} data-framer-name={"Testimonials Wrapper"} style={{ opacity: "1" }}>
                                   <div className={"framer-1akfa26"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                     <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                      “I love the community at Athletic. The group classes push me beyond my limits, and I’ve made great friends along the way!”
+                                      « J'adore la communauté du Parc Beauregard. Les cours collectifs me poussent au-delà de mes limites, et je m'y suis fait de vrais amis ! »
                                     </p>
                                   </div>
                                   <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Chris T.
+                                      Chloé T.
                                     </p>
                                   </div>
                                 </div>
@@ -1111,22 +1111,22 @@ export default function Tarifs() {
                       <div className={"framer-1ahvc85"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                         <h4 style={{ "--font-selector": "SW50ZXItRXh0cmFCb2xk", "--framer-font-family": "&quot", "--framer-font-size": "26px", "--framer-font-weight": "800", "--framer-letter-spacing": "-0.78px", "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }} className={"framer-text"}>
                           <span style={{ "--font-selector": "SW50ZXI=", "--framer-font-family": "&quot", "--framer-font-weight": "400" }} className={"framer-text"}>
-                            Best in
+                            Le meilleur du
                           </span>
-                          {" "}sports &amp; recreation.
+                          {" "}sport &amp; de la nature.
                         </h4>
                       </div>
                     </div>
                     <div className={"framer-1ms8iqn"} data-framer-name={"Link Wrapper"} style={{ opacity: "1" }}>
                       <div className={"framer-5nybuo"} data-framer-name={"Heading"} style={{ "--extracted-tcooor": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                         <div className={"framer-text framer-styles-preset-1k24v1r"} data-styles-preset={"uy86YYYaZ"} style={{ "--framer-text-color": "var(--extracted-tcooor, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Questions?
+                          Une question ?
                         </div>
                       </div>
                       <div className={"framer-1r8w116"} data-framer-name={"Heading"} style={{ "--extracted-tcooor": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                         <div className={"framer-text framer-styles-preset-7s7uzb"} data-styles-preset={"RPSS_EY_X"} style={{ "--framer-text-color": "var(--extracted-tcooor, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={"mailto:information@example.com"} target={"_blank"} rel={"noopener"}>
-                            information@example.com
+                          <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={"mailto:rochecorbon@parcbeauregard.com"} target={"_blank"} rel={"noopener"}>
+                            rochecorbon@parcbeauregard.com
                           </a>
                         </div>
                       </div>
@@ -1136,14 +1136,14 @@ export default function Tarifs() {
                     <div className={"framer-1u64p0y"} data-framer-name={"Nav Links Column"} style={{ willChange: "transform", opacity: "1", transform: "none" }}>
                       <div className={"framer-sdr25v"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Home
+                          Accueil
                         </p>
                       </div>
                       <nav className={"framer-omcpzf"} data-framer-name={"Nav Links Column"} style={{ opacity: "1" }}>
                         <div className={"framer-dxazlk"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/"}>
-                              Home
+                              Accueil
                             </a>
                           </p>
                         </div>
@@ -1152,28 +1152,28 @@ export default function Tarifs() {
                     <div className={"framer-r6i6g2"} data-framer-name={"Nav Links Column"} style={{ willChange: "transform", opacity: "1", transform: "none" }}>
                       <div className={"framer-7lbril"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          About
+                          À propos
                         </p>
                       </div>
                       <nav className={"framer-1aczhrj"} data-framer-name={"Nav Links Column"} style={{ opacity: "1" }}>
                         <div className={"framer-3n768l"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              About Us
+                              À propos
                             </a>
                           </p>
                         </div>
                         <div className={"framer-jmg0g1"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              Our Mission
+                              Notre mission
                             </a>
                           </p>
                         </div>
                         <div className={"framer-bph9ui"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              Our Team
+                              Notre équipe
                             </a>
                           </p>
                         </div>
@@ -1182,49 +1182,49 @@ export default function Tarifs() {
                     <div className={"framer-uhploo"} data-framer-name={"Nav Links Column"} style={{ willChange: "transform", opacity: "1", transform: "none" }}>
                       <div className={"framer-1oq2gud"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Facilities
+                          Nos espaces
                         </p>
                       </div>
                       <nav className={"framer-1uskuzo"} data-framer-name={"Nav Links Column"} style={{ opacity: "1" }}>
                         <div className={"framer-144bbg"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              Outdoor Strength Zone
+                              Cours collectifs
                             </a>
                           </p>
                         </div>
                         <div className={"framer-uqv70a"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              Recovery &amp; Mobility Lounge
+                              Entraînement fonctionnel
                             </a>
                           </p>
                         </div>
                         <div className={"framer-1giu5hf"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              Advanced Aquatics Center
+                              Cross / Cardio
                             </a>
                           </p>
                         </div>
                         <div className={"framer-1mpi49a"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              Speed &amp; Agility Tracks
+                              Yoga
                             </a>
                           </p>
                         </div>
                         <div className={"framer-12yg4yj"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              Functional Training Areas
+                              Pilates
                             </a>
                           </p>
                         </div>
                         <div className={"framer-1u3olo0"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              Gym &amp; Training Zones
+                              École du dos
                             </a>
                           </p>
                         </div>
@@ -1233,7 +1233,7 @@ export default function Tarifs() {
                     <div className={"framer-bxt6qb"} data-framer-name={"Nav Links Column"} style={{ willChange: "transform", opacity: "1", transform: "none" }}>
                       <div className={"framer-p2b2a8"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Program &amp; classes
+                          Services
                         </p>
                       </div>
                       <nav className={"framer-lmls2j"} data-framer-name={"Nav Links Column"} style={{ opacity: "1" }}>
@@ -1263,14 +1263,14 @@ export default function Tarifs() {
                     <div className={"framer-1vydyy4"} data-framer-name={"Nav Links Column"} style={{ willChange: "transform", opacity: "1", transform: "none" }}>
                       <div className={"framer-1wyr9xn"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Membership
+                          Adhésion
                         </p>
                       </div>
                       <nav className={"framer-1ybk33w"} data-framer-name={"Nav Links Column"} style={{ opacity: "1" }}>
                         <div className={"framer-2cdfj0"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/tarifs"}>
-                              Pricing
+                              Tarifs
                             </a>
                           </p>
                         </div>
@@ -1284,7 +1284,7 @@ export default function Tarifs() {
                         <div className={"framer-19ndjsh"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/contact"}>
-                              Contact us
+                              Contact
                             </a>
                           </p>
                         </div>
@@ -1295,7 +1295,7 @@ export default function Tarifs() {
                     <div className={"framer-r05iym"} data-framer-name={"Copyright Wrapper"} style={{ opacity: "1" }}>
                       <div className={"framer-hvf79x"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", willChange: "transform", opacity: "1", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                          © Sportix. All rights reserved. Designed by
+                          © Parc Beauregard. Tous droits réservés. Designed by
                         </p>
                       </div>
                       <div className={"framer-19zhfuo"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", willChange: "transform", opacity: "1", transform: "none" }}>

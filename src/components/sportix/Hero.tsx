@@ -34,7 +34,7 @@ export default function Hero() {
                 <div className={"framer-1j19498"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                   <h1 style={{ "--font-selector": "SW50ZXItRXh0cmFCb2xk", "--framer-font-family": "&quot", "--framer-font-size": "80px", "--framer-font-weight": "800", "--framer-letter-spacing": "-1.92px", "--framer-line-height": "1em", "--framer-text-color": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))" }} className={"framer-text"}>
                     <span style={{ "--font-selector": "SW50ZXI=", "--framer-font-family": "&quot", "--framer-font-weight": "400" }} className={"framer-text"}>
-                      Best in
+                      Le meilleur du
                     </span>
                     sports & recreation.
                   </h1>
@@ -44,7 +44,7 @@ export default function Hero() {
                 <div className={"framer-1j19498"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                   <h1 style={{ "--font-selector": "SW50ZXItRXh0cmFCb2xk", "--framer-font-family": "&quot", "--framer-font-size": "48px", "--framer-font-weight": "800", "--framer-letter-spacing": "-1.92px", "--framer-line-height": "1.1em", "--framer-text-color": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))" }} className={"framer-text"}>
                     <span style={{ "--font-selector": "SW50ZXI=", "--framer-font-family": "&quot", "--framer-font-weight": "400" }} className={"framer-text"}>
-                      Best in
+                      Le meilleur du
                     </span>
                     sports & recreation.
                   </h1>
@@ -54,7 +54,7 @@ export default function Hero() {
                 <div className={"framer-1j19498"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                   <h1 style={{ "--font-selector": "SW50ZXItRXh0cmFCb2xk", "--framer-font-family": "&quot", "--framer-font-size": "62px", "--framer-font-weight": "800", "--framer-letter-spacing": "-1.92px", "--framer-line-height": "1em", "--framer-text-color": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))" }} className={"framer-text"}>
                     <span style={{ "--font-selector": "SW50ZXI=", "--framer-font-family": "&quot", "--framer-font-weight": "400" }} className={"framer-text"}>
-                      Best in
+                      Le meilleur du
                     </span>
                     sports & recreation.
                   </h1>
@@ -62,7 +62,7 @@ export default function Hero() {
               </div>
               <div className={"framer-clr3bu"} data-framer-name={"Body"} style={{ transform: "none" }}>
                 <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))" }}>
-                  Athletic is your ultimate destination for sports, wellness, and recreation.
+                  Le Parc Beauregard, votre destination fitness, bien-être et coaching en bord de Loire, à Rochecorbon.
                 </p>
               </div>
             </div>
@@ -72,7 +72,7 @@ export default function Hero() {
                   <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/services"}>
                     <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none" }}>
                       <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
-                        Our classes
+                        Nos cours
                       </p>
                     </div>
                   </a>
@@ -83,7 +83,7 @@ export default function Hero() {
                   <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-tp32ut framer-5eqsdb"} data-framer-name={"Phone"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", maxWidth: "100%", width: "100%", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/services"}>
                     <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none" }}>
                       <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
-                        Our classes
+                        Nos cours
                       </p>
                     </div>
                   </a>
@@ -94,7 +94,7 @@ export default function Hero() {
                   <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/contact"}>
                     <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-5991b8f4-4409-4988-9af9-ed84b35a240c, rgb(28, 57, 23))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                       <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
-                        Become a member
+                        Devenir membre
                       </p>
                     </div>
                   </a>
@@ -105,7 +105,7 @@ export default function Hero() {
                   <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-tp32ut framer-5eqsdb"} data-framer-name={"Phone"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", maxWidth: "100%", width: "100%", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/contact"}>
                     <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-5991b8f4-4409-4988-9af9-ed84b35a240c, rgb(28, 57, 23))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                       <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
-                        Become a member
+                        Devenir membre
                       </p>
                     </div>
                   </a>
@@ -117,11 +117,11 @@ export default function Hero() {
             <div className={"framer-1t9jkhq"} data-framer-name={"Testimonials Wrapper"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
               <div className={"framer-msmimb"} data-framer-name={"Body"} style={{ transform: "none" }}>
                 <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                  Join a growing community of over
+                  Rejoignez une communauté de plus de
                   <span style={{ "--framer-text-color": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))" }} className={"framer-text"}>
-                    50,000 athletes, fitness enthusiasts, and sports lovers
+                    1 200 adhérents, sportifs et passionnés
                   </span>
-                  who are pushing their limits, breaking barriers, and achieving their personal best every day.
+                  qui se dépassent chaque jour, en pleine nature au bord de la Loire.
                 </p>
               </div>
               <div className={"framer-eanrls"} data-framer-name={"Profile Wrapper"}>
@@ -158,12 +158,12 @@ export default function Hero() {
                 <div className={"framer-1154i6j"} data-framer-name={"Title Wrapper"}>
                   <div className={"framer-1pwuzz7"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                     <h6 className={"framer-text framer-styles-preset-gmdg5a"} data-styles-preset={"XCvretOoF"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                      20K+
+                      1200+
                     </h6>
                   </div>
                   <div className={"framer-o9qhcw"} data-framer-name={"Body"} style={{ transform: "none" }}>
                     <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))" }}>
-                      Training now
+                      adhérents actifs
                     </p>
                   </div>
                 </div>
@@ -177,48 +177,48 @@ export default function Hero() {
                       <div className={"framer-7nb9c6"} data-framer-name={"Testimonials 1"}>
                         <div className={"framer-kw9hc"} data-framer-name={"Heading"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                           <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-a0htzi, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            “The perfect place to train and connect!”
+                            « L'endroit parfait pour s'entraîner et se ressourcer ! »
                           </h3>
                         </div>
                         <div className={"framer-68cjjs"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            Oscar Lindsey
+                            Marie L.
                           </p>
                         </div>
                       </div>
                       <div className={"framer-1poeglk"} data-framer-name={"Testimonials 2"} style={{ transform: "translateY(-50%)" }}>
                         <div className={"framer-vqz9pp"} data-framer-name={"Heading"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                           <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-a0htzi, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            “A game-changer for my training!”
+                            « Ça a tout changé dans mon entraînement ! »
                           </h3>
                         </div>
                         <div className={"framer-14x0unj"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            Tiana Braddock
+                            Julie D.
                           </p>
                         </div>
                       </div>
                       <div className={"framer-uhrh4m"} data-framer-name={"Testimonials 3"} style={{ transform: "translateY(-50%)" }}>
                         <div className={"framer-ru10e4"} data-framer-name={"Heading"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                           <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-a0htzi, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            “Best decision I've made for my health!”
+                            « La meilleure décision pour ma santé ! »
                           </h3>
                         </div>
                         <div className={"framer-aetaog"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            Tasha Merchant
+                            Sophie M.
                           </p>
                         </div>
                       </div>
                       <div className={"framer-1tuuhyy"} data-framer-name={"Testimonials 4"} style={{ transform: "translateY(-50%)" }}>
                         <div className={"framer-q7p2dc"} data-framer-name={"Heading"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                           <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-a0htzi, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            Sportix keeps me motivated every day!"
+                            « Le Parc Beauregard me motive chaque jour ! »
                           </h3>
                         </div>
                         <div className={"framer-bfozsc"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            Alex Rodriguez
+                            Thomas R.
                           </p>
                         </div>
                       </div>
@@ -239,48 +239,48 @@ export default function Hero() {
                       <div className={"framer-7nb9c6"} data-framer-name={"Testimonials 1"}>
                         <div className={"framer-kw9hc"} data-framer-name={"Heading"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                           <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-a0htzi, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            “The perfect place to train and connect!”
+                            « L'endroit parfait pour s'entraîner et se ressourcer ! »
                           </h3>
                         </div>
                         <div className={"framer-68cjjs"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            Oscar Lindsey
+                            Marie L.
                           </p>
                         </div>
                       </div>
                       <div className={"framer-1poeglk"} data-framer-name={"Testimonials 2"} style={{ transform: "translateY(-50%)" }}>
                         <div className={"framer-vqz9pp"} data-framer-name={"Heading"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                           <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-a0htzi, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            “A game-changer for my training!”
+                            « Ça a tout changé dans mon entraînement ! »
                           </h3>
                         </div>
                         <div className={"framer-14x0unj"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            Tiana Braddock
+                            Julie D.
                           </p>
                         </div>
                       </div>
                       <div className={"framer-uhrh4m"} data-framer-name={"Testimonials 3"} style={{ transform: "translateY(-50%)" }}>
                         <div className={"framer-ru10e4"} data-framer-name={"Heading"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                           <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-a0htzi, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            “Best decision I've made for my health!”
+                            « La meilleure décision pour ma santé ! »
                           </h3>
                         </div>
                         <div className={"framer-aetaog"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            Tasha Merchant
+                            Sophie M.
                           </p>
                         </div>
                       </div>
                       <div className={"framer-1tuuhyy"} data-framer-name={"Testimonials 4"} style={{ transform: "translateY(-50%)" }}>
                         <div className={"framer-q7p2dc"} data-framer-name={"Heading"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                           <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-a0htzi, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            Sportix keeps me motivated every day!"
+                            « Le Parc Beauregard me motive chaque jour ! »
                           </h3>
                         </div>
                         <div className={"framer-bfozsc"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            Alex Rodriguez
+                            Thomas R.
                           </p>
                         </div>
                       </div>
@@ -324,7 +324,7 @@ export default function Hero() {
               </div>
               <div className={"framer-1q7n2ul"} data-framer-name={"Body"} style={{ transform: "none" }}>
                 <h5 className={"framer-text framer-styles-preset-1a2qg92"} data-styles-preset={"Hrg3DnSgc"} style={{ "--framer-text-color": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))" }}>
-                  Watch video introduction.
+                  Découvrez le club en vidéo.
                 </h5>
               </div>
               <div className={"ssr-variant"}>

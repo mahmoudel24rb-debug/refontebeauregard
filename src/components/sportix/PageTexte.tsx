@@ -342,22 +342,22 @@ export default function PageTexte() {
                       <div className={"framer-1ahvc85"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                         <h4 style={{ "--font-selector": "SW50ZXItRXh0cmFCb2xk", "--framer-font-family": "&quot", "--framer-font-size": "26px", "--framer-font-weight": "800", "--framer-letter-spacing": "-0.78px", "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }} className={"framer-text"}>
                           <span style={{ "--font-selector": "SW50ZXI=", "--framer-font-family": "&quot", "--framer-font-weight": "400" }} className={"framer-text"}>
-                            Best in
+                            Le meilleur du
                           </span>
-                          {" "}sports &amp; recreation.
+                          {" "}sport &amp; de la nature.
                         </h4>
                       </div>
                     </div>
                     <div className={"framer-1ms8iqn"} data-framer-name={"Link Wrapper"} style={{ opacity: "1" }}>
                       <div className={"framer-5nybuo"} data-framer-name={"Heading"} style={{ "--extracted-tcooor": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                         <div className={"framer-text framer-styles-preset-1k24v1r"} data-styles-preset={"uy86YYYaZ"} style={{ "--framer-text-color": "var(--extracted-tcooor, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Questions?
+                          Une question ?
                         </div>
                       </div>
                       <div className={"framer-1r8w116"} data-framer-name={"Heading"} style={{ "--extracted-tcooor": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                         <div className={"framer-text framer-styles-preset-7s7uzb"} data-styles-preset={"RPSS_EY_X"} style={{ "--framer-text-color": "var(--extracted-tcooor, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={"mailto:information@example.com"} target={"_blank"} rel={"noopener"}>
-                            information@example.com
+                          <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={"mailto:rochecorbon@parcbeauregard.com"} target={"_blank"} rel={"noopener"}>
+                            rochecorbon@parcbeauregard.com
                           </a>
                         </div>
                       </div>
@@ -367,14 +367,14 @@ export default function PageTexte() {
                     <div className={"framer-1u64p0y"} data-framer-name={"Nav Links Column"} style={{ willChange: "transform", opacity: "1", transform: "none" }}>
                       <div className={"framer-sdr25v"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Home
+                          Accueil
                         </p>
                       </div>
                       <nav className={"framer-omcpzf"} data-framer-name={"Nav Links Column"} style={{ opacity: "1" }}>
                         <div className={"framer-dxazlk"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/"}>
-                              Home
+                              Accueil
                             </a>
                           </p>
                         </div>
@@ -383,28 +383,28 @@ export default function PageTexte() {
                     <div className={"framer-r6i6g2"} data-framer-name={"Nav Links Column"} style={{ willChange: "transform", opacity: "1", transform: "none" }}>
                       <div className={"framer-7lbril"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          About
+                          À propos
                         </p>
                       </div>
                       <nav className={"framer-1aczhrj"} data-framer-name={"Nav Links Column"} style={{ opacity: "1" }}>
                         <div className={"framer-3n768l"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              About Us
+                              À propos
                             </a>
                           </p>
                         </div>
                         <div className={"framer-jmg0g1"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              Our Mission
+                              Notre mission
                             </a>
                           </p>
                         </div>
                         <div className={"framer-bph9ui"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              Our Team
+                              Notre équipe
                             </a>
                           </p>
                         </div>
@@ -413,49 +413,49 @@ export default function PageTexte() {
                     <div className={"framer-uhploo"} data-framer-name={"Nav Links Column"} style={{ willChange: "transform", opacity: "1", transform: "none" }}>
                       <div className={"framer-1oq2gud"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Facilities
+                          Nos espaces
                         </p>
                       </div>
                       <nav className={"framer-1uskuzo"} data-framer-name={"Nav Links Column"} style={{ opacity: "1" }}>
                         <div className={"framer-144bbg"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              Outdoor Strength Zone
+                              Cours collectifs
                             </a>
                           </p>
                         </div>
                         <div className={"framer-uqv70a"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              Recovery &amp; Mobility Lounge
+                              Entraînement fonctionnel
                             </a>
                           </p>
                         </div>
                         <div className={"framer-1giu5hf"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              Advanced Aquatics Center
+                              Cross / Cardio
                             </a>
                           </p>
                         </div>
                         <div className={"framer-1mpi49a"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              Speed &amp; Agility Tracks
+                              Yoga
                             </a>
                           </p>
                         </div>
                         <div className={"framer-12yg4yj"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              Functional Training Areas
+                              Pilates
                             </a>
                           </p>
                         </div>
                         <div className={"framer-1u3olo0"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              Gym &amp; Training Zones
+                              École du dos
                             </a>
                           </p>
                         </div>
@@ -464,7 +464,7 @@ export default function PageTexte() {
                     <div className={"framer-bxt6qb"} data-framer-name={"Nav Links Column"} style={{ willChange: "transform", opacity: "1", transform: "none" }}>
                       <div className={"framer-p2b2a8"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Program &amp; classes
+                          Services
                         </p>
                       </div>
                       <nav className={"framer-lmls2j"} data-framer-name={"Nav Links Column"} style={{ opacity: "1" }}>
@@ -494,14 +494,14 @@ export default function PageTexte() {
                     <div className={"framer-1vydyy4"} data-framer-name={"Nav Links Column"} style={{ willChange: "transform", opacity: "1", transform: "none" }}>
                       <div className={"framer-1wyr9xn"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Membership
+                          Adhésion
                         </p>
                       </div>
                       <nav className={"framer-1ybk33w"} data-framer-name={"Nav Links Column"} style={{ opacity: "1" }}>
                         <div className={"framer-2cdfj0"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/tarifs"}>
-                              Pricing
+                              Tarifs
                             </a>
                           </p>
                         </div>
@@ -515,7 +515,7 @@ export default function PageTexte() {
                         <div className={"framer-19ndjsh"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/contact"}>
-                              Contact us
+                              Contact
                             </a>
                           </p>
                         </div>
@@ -526,7 +526,7 @@ export default function PageTexte() {
                     <div className={"framer-r05iym"} data-framer-name={"Copyright Wrapper"} style={{ opacity: "1" }}>
                       <div className={"framer-hvf79x"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", willChange: "auto", opacity: "1", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                          © Sportix. All rights reserved. Designed by
+                          © Parc Beauregard. Tous droits réservés. Designed by
                         </p>
                       </div>
                       <div className={"framer-19zhfuo"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", willChange: "auto", opacity: "1", transform: "none" }}>
