@@ -57,7 +57,8 @@ footer [data-framer-name='Link Wrapper'] .framer-text {
 [data-framer-name='Navigation Link']:has([data-bg-submenu]):hover a[href='/services']::after {
   transform: rotate(225deg) translate(-1px, -1px);
 }
-/* Panneau déroulant — carte BLANCHE arrondie façon Sportix (texte foncé, ombre douce) */
+/* Panneau déroulant — valeurs EXACTES extraites de la dropdown Sportix :
+   carte blanche, radius 10px, padding 30px, pas d'ombre, liens gris #404040 16px/400. */
 [data-bg-submenu] {
   position: absolute;
   top: calc(100% + 14px);
@@ -65,15 +66,13 @@ footer [data-framer-name='Link Wrapper'] .framer-text {
   transform: translateX(-50%) translateY(6px);
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  min-width: 252px;
-  padding: 14px;
+  gap: 10px;
+  min-width: 210px;
+  padding: 30px;
   z-index: 200;
   background: #ffffff;
-  border-radius: 22px;
-  box-shadow:
-    0 24px 60px -14px rgba(0, 0, 0, 0.3),
-    0 0 0 1px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  box-shadow: none;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -95,14 +94,14 @@ footer [data-framer-name='Link Wrapper'] .framer-text {
   transform: translateX(-50%) translateY(0);
 }
 [data-bg-submenu] a {
-  color: #1c3917;
-  font-size: 15px;
-  font-weight: 600;
-  padding: 11px 16px;
-  border-radius: 12px;
+  color: #404040;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
   white-space: nowrap;
-  transition: background 0.12s ease;
+  text-decoration: none;
+  transition: color 0.12s ease;
 }
 [data-bg-submenu] a:hover {
-  background: #f1f5ef;
+  color: #1c3917;
 }
