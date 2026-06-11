@@ -1,0 +1,36 @@
+/* Overrides Beauregard — petits correctifs sur le port Framer (survivent aux re-ports).
+   Ciblage par data-framer-name (stable) + scope, jamais par classe hashée. */
+
+/* Footer : l'email FR (rochecorbon@parcbeauregard.com) est plus long que l'original,
+   le bloc CTA écrasait le logo+tagline à ~77px. On autorise le retour à la ligne et
+   on garantit une largeur mini au logo. */
+footer [data-framer-name='Top Content Wrapper'] {
+  flex-wrap: wrap;
+  row-gap: 28px;
+  align-items: flex-start;
+}
+footer [data-framer-name='Logo Wrapper'] {
+  flex: 0 0 auto;
+  min-width: 240px;
+}
+footer [data-framer-name='Link Wrapper'] {
+  flex: 1 1 auto;
+  min-width: 320px;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+/* min-width:0 indispensable pour qu'un enfant flex puisse rétrécir sous la largeur
+   de son contenu (sinon l'email long déborde au lieu de passer à la ligne). */
+footer [data-framer-name='Link Wrapper'] > div {
+  min-width: 0;
+  max-width: 100%;
+}
+footer [data-framer-name='Link Wrapper'] a {
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+/* L'email FR est plus long que l'original : on réduit le gros titre CTA pour qu'il tienne. */
+footer [data-framer-name='Link Wrapper'] .framer-text {
+  font-size: clamp(22px, 2.4vw, 32px) !important;
+  line-height: 1.25 !important;
+}

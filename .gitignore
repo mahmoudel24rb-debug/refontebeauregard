@@ -54,3 +54,11 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# Images de démo Sportix (locales, hors Git — remplacées par photos Beauregard)
+public/sportix/
+
+# public/assets : assets Sportix utilisés par le port (servis par Next) → VERSIONNÉS pour Vercel
+
+# artefacts de diff visuel
+diff-report/
