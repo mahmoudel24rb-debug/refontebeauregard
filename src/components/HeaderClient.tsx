@@ -12,7 +12,10 @@ export function HeaderClient({ navigation, cta }: { navigation: Lien[]; cta: Lie
     <header className="header">
       <div className="header__pill">
         <Link className="header__logo" href="/">
-          parc<span>beauregard</span>
+          <span aria-hidden className="header__logo-icone">
+            ⚡
+          </span>
+          parcbeauregard
         </Link>
         <nav className="header__nav">
           {navigation.map((lien) => (

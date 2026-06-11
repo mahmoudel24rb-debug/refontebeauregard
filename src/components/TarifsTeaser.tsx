@@ -12,11 +12,17 @@ export async function TarifsTeaser() {
   return (
     <section className="section">
       <div className="conteneur">
-        <div className="section-entete section-entete--centree">
-          <span className="surtitre">Tarifs</span>
-          <h2 className="titre-section">
-            Votre chemin vers une <strong>forme physique et mentale</strong> au sommet.
-          </h2>
+        <div className="section-entete section-entete--centree" style={{ marginBottom: 0 }}>
+          <div>
+            <span className="surtitre">Abonnements</span>
+            <h2 className="titre-section">
+              Votre chemin vers une <strong>forme physique et mentale</strong> au sommet.
+            </h2>
+            <div className="tarifs-toggle">
+              <span className="actif">Mensuel</span>
+              <span>Annuel</span>
+            </div>
+          </div>
         </div>
         <div className="tarifs-grille">
           {mensuelles.map((f) => (
@@ -37,7 +43,7 @@ export async function TarifsTeaser() {
             </article>
           ))}
         </div>
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: 40 }}>
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: 44 }}>
           <Link className="btn btn--noir" href="/tarifs">
             Voir tous les tarifs
           </Link>

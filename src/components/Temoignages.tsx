@@ -17,15 +17,23 @@ export async function Temoignages() {
           </h2>
         </div>
         <div className="temoignages-grille">
-          {temoignages.map((t) => (
-            <article className="temoignage" key={t.id}>
-              <p aria-label={`${t.note ?? 5} étoiles sur 5`} className="temoignage__etoiles">
-                {'★'.repeat(t.note ?? 5)}
-              </p>
-              <p className="temoignage__texte">« {t.texte} »</p>
-              <p className="temoignage__auteur">{t.auteur}</p>
-            </article>
-          ))}
+          {temoignages.map((t, i) => {
+            const citations = [
+              '« Un vrai déclic pour mon entraînement ! »',
+              '« La meilleure décision pour ma santé. »',
+              '« L’endroit parfait pour progresser. »',
+            ]
+            return (
+              <article className="temoignage" key={t.id}>
+                <p aria-label={`${t.note ?? 5} étoiles sur 5`} className="temoignage__etoiles">
+                  {'★'.repeat(t.note ?? 5)}
+                </p>
+                <p className="temoignage__citation">{citations[i % citations.length]}</p>
+                <p className="temoignage__texte">{t.texte}</p>
+                <p className="temoignage__auteur">{t.auteur}</p>
+              </article>
+            )
+          })}
         </div>
       </div>
     </section>

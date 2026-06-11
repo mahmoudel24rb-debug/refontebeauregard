@@ -4,6 +4,7 @@ import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
 import { seoPlugin } from '@payloadcms/plugin-seo'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob'
 import { fr } from '@payloadcms/translations/languages/fr'
 import path from 'path'
 import { buildConfig } from 'payload'
@@ -66,5 +67,15 @@ export default buildConfig({
     redirectsPlugin({
       collections: ['espaces', 'services'],
     }),
+    // Sur Vercel le filesystem est éphémère : les uploads partent sur Blob
+    // (actif uniquement si BLOB_READ_WRITE_TOKEN est défini, donc pas en local)
+    ...(process.env.BLOB_READ_WRITE_TOKEN
+      ? [
+          vercelBlobStorage({
+            collections: { media: true },
+            token: process.env.BLOB_READ_WRITE_TOKEN,
+          }),
+        ]
+      : []),
   ],
 })
