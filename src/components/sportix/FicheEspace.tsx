@@ -321,7 +321,7 @@ export default function FicheEspace() {
                         <div className={"framer-25lc8r"} data-framer-name={"Text Content Wrapper"} style={{ backgroundColor: "rgba(0, 0, 0, 0)", borderBottomLeftRadius: "0px", borderBottomRightRadius: "0px", opacity: "1" }}>
                           <div className={"framer-4ec7ix"} data-framer-name={"Title"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none", opacity: "1" }}>
                             <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-color": "var(--extracted-a0htzi, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                              Speed &amp; Endurance Training
+                              Beauregard Coaching
                             </h3>
                           </div>
                         </div>
@@ -331,7 +331,7 @@ export default function FicheEspace() {
                               <div className={"framer-yEmYD framer-fN9WN framer-OI0K7 framer-1en4hj5 framer-v-1en4hj5"} data-framer-name={"Default"} style={{ backdropFilter: "blur(34px)", backgroundColor: "var(--token-22c4b526-658d-4b78-8039-4a786402e87a, rgba(255, 255, 255, 0.1))", borderRadius: "50px", opacity: "1" }}>
                                 <div className={"framer-1uixvs3"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-AOW62B2JF-Qi9kGBGTT": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none", opacity: "1" }}>
                                   <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-AOW62B2JF-Qi9kGBGTT))" }}>
-                                    RunFaster
+                                    Sur-mesure
                                   </p>
                                 </div>
                               </div>
@@ -340,7 +340,7 @@ export default function FicheEspace() {
                               <div className={"framer-yEmYD framer-fN9WN framer-OI0K7 framer-1en4hj5 framer-v-1en4hj5"} data-framer-name={"Default"} style={{ backdropFilter: "blur(34px)", backgroundColor: "var(--token-22c4b526-658d-4b78-8039-4a786402e87a, rgba(255, 255, 255, 0.1))", borderRadius: "50px", opacity: "1" }}>
                                 <div className={"framer-1uixvs3"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-AOW62B2JF-Qi9kGBGTT": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none", opacity: "1" }}>
                                   <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-AOW62B2JF-Qi9kGBGTT))" }}>
-                                    BoostEndurance
+                                    Suivi perso
                                   </p>
                                 </div>
                               </div>
@@ -373,7 +373,7 @@ export default function FicheEspace() {
                         <div className={"framer-25lc8r"} data-framer-name={"Text Content Wrapper"} style={{ backgroundColor: "rgba(0, 0, 0, 0)", borderBottomLeftRadius: "0px", borderBottomRightRadius: "0px", opacity: "1" }}>
                           <div className={"framer-4ec7ix"} data-framer-name={"Title"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none", opacity: "1" }}>
                             <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-color": "var(--extracted-a0htzi, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                              Agility &amp; Quickness Drills
+                              Beauregard Cours
                             </h3>
                           </div>
                         </div>
@@ -383,7 +383,7 @@ export default function FicheEspace() {
                               <div className={"framer-yEmYD framer-fN9WN framer-OI0K7 framer-1en4hj5 framer-v-1en4hj5"} data-framer-name={"Default"} style={{ backdropFilter: "blur(34px)", backgroundColor: "var(--token-22c4b526-658d-4b78-8039-4a786402e87a, rgba(255, 255, 255, 0.1))", borderRadius: "50px", opacity: "1" }}>
                                 <div className={"framer-1uixvs3"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-AOW62B2JF-Qi9kGBGTT": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none", opacity: "1" }}>
                                   <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-AOW62B2JF-Qi9kGBGTT))" }}>
-                                    MoveFast
+                                    ≈ 40 cours
                                   </p>
                                 </div>
                               </div>
@@ -392,7 +392,7 @@ export default function FicheEspace() {
                               <div className={"framer-yEmYD framer-fN9WN framer-OI0K7 framer-1en4hj5 framer-v-1en4hj5"} data-framer-name={"Default"} style={{ backdropFilter: "blur(34px)", backgroundColor: "var(--token-22c4b526-658d-4b78-8039-4a786402e87a, rgba(255, 255, 255, 0.1))", borderRadius: "50px", opacity: "1" }}>
                                 <div className={"framer-1uixvs3"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-AOW62B2JF-Qi9kGBGTT": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none", opacity: "1" }}>
                                   <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-AOW62B2JF-Qi9kGBGTT))" }}>
-                                    AgilityTraining
+                                    Tous niveaux
                                   </p>
                                 </div>
                               </div>
@@ -954,21 +954,21 @@ export default function FicheEspace() {
                         <div className={"framer-t860hw"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services"}>
-                              Speed &amp; Endurance Training
+                              Beauregard Coaching
                             </a>
                           </p>
                         </div>
                         <div className={"framer-8t66ro"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services"}>
-                              Agility &amp; Quickness Drills
+                              Beauregard Cours
                             </a>
                           </p>
                         </div>
                         <div className={"framer-6yqmv5"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services"}>
-                              Jump &amp; Plyometric Training
+                              Location de terrain
                             </a>
                           </p>
                         </div>
