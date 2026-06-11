@@ -16,21 +16,22 @@ footer [data-framer-name='Logo Wrapper'] {
 footer [data-framer-name='Link Wrapper'] {
   flex: 1 1 auto;
   min-width: 320px;
+  max-width: 100%;
   flex-wrap: wrap;
-  max-width: 100%;
+  align-items: baseline;
+  column-gap: 12px;
+  row-gap: 4px;
 }
-/* min-width:0 indispensable pour qu'un enfant flex puisse rétrécir sous la largeur
-   de son contenu (sinon l'email long déborde au lieu de passer à la ligne). */
-footer [data-framer-name='Link Wrapper'] > div {
-  min-width: 0;
-  max-width: 100%;
-}
-footer [data-framer-name='Link Wrapper'] a {
-  overflow-wrap: anywhere;
-  white-space: normal;
-}
-/* L'email FR est plus long que l'original : on réduit le gros titre CTA pour qu'il tienne. */
+/* Police réduite : "Une question ? rochecorbon@parcbeauregard.com" tient sur une ligne
+   en desktop. Pas de coupure en plein mot (l'email reste entier ; il passe à la ligne
+   en bloc si besoin). */
 footer [data-framer-name='Link Wrapper'] .framer-text {
-  font-size: clamp(22px, 2.4vw, 32px) !important;
-  line-height: 1.25 !important;
+  font-size: clamp(20px, 1.7vw, 26px) !important;
+  line-height: 1.3 !important;
+}
+/* Sécurité mobile : sur petit écran, l'email peut se couper pour éviter tout débordement. */
+@media (max-width: 640px) {
+  footer [data-framer-name='Link Wrapper'] a {
+    overflow-wrap: anywhere;
+  }
 }
