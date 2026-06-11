@@ -101,7 +101,7 @@ export default function FicheEspace() {
                     </div>
                     <div className={"framer-1t03lvj"} data-framer-name={"Body"} style={{ transform: "none" }}>
                       <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))" }}>
-                        Our École du dos offer a cutting-edge fitness experience with top-tier equipment, versatile workout areas, and expert-led programs.
+                        Nos espaces offrent une expérience de pointe : équipement haut de gamme, zones polyvalentes et programmes encadrés par des experts.
                       </p>
                     </div>
                   </div>
@@ -120,7 +120,7 @@ export default function FicheEspace() {
                         </strong>
                       </h2>
                       <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                        Our École du dos offer a cutting-edge fitness experience with top-tier equipment, versatile workout areas, and expert-led programs. Whether you're focused on strength, endurance, or functional training, this space is designed to help you reach peak performance.
+                        Nos espaces offrent une expérience de pointe : équipement haut de gamme, zones polyvalentes et programmes encadrés par des experts. Whether you're focused on strength, endurance, or functional training, this space is designed to help you reach peak performance.
                       </p>
                     </div>
                   </div>

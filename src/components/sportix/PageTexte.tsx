@@ -100,12 +100,12 @@ export default function PageTexte() {
                     </div>
                     <div className={"framer-p3bpkk"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                       <h1 className={"framer-text framer-styles-preset-1l4gnld"} data-styles-preset={"BCL_rI5ab"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                        The Power of Running
+                        Mentions légales
                       </h1>
                     </div>
                     <div className={"framer-8zdh4h"} data-framer-name={"Body"} style={{ transform: "none" }}>
                       <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))" }}>
-                        Running is one of the most effective and accessible forms of exercise, whether you're training for a race, or simply enjoying the outdoors.
+                        Informations légales du Parc Beauregard Fitness & Coaching.
                       </p>
                     </div>
                   </div>

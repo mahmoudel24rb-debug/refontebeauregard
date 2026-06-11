@@ -96,16 +96,16 @@ export default function Services() {
                     <div className={"framer-10ux3ty"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                       <h1 style={{ "--font-selector": "SW50ZXItQm9sZA==", "--framer-font-family": "&quot", "--framer-font-size": "80px", "--framer-font-weight": "700", "--framer-letter-spacing": "-1.92px", "--framer-line-height": "1em", "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }} className={"framer-text"}>
                         <span style={{ "--font-selector": "SW50ZXI=", "--framer-font-family": "&quot", "--framer-font-weight": "400" }} className={"framer-text"}>
-                          We offer{" "}
+                          Bien plus{" "}
                         </span>
-                        more than just classes.
+                        que de simples cours.
                       </h1>
                     </div>
                   </div>
                   <div className={"framer-qewvmz"} data-framer-name={"Text Wrapp"}>
                     <div className={"framer-67mhiy"} data-framer-name={"Body"} style={{ transform: "none" }}>
                       <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))" }}>
-                        Our expert-designed classes cater to athletes and individuals looking to improve their health, accommodating every goal and ability level.
+                        Nos cours, conçus par des experts, s'adressent aux sportifs comme à tous ceux qui veulent améliorer leur santé, quels que soient leurs objectifs et leur niveau.
                       </p>
                     </div>
                   </div>

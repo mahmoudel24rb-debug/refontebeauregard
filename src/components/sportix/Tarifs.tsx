@@ -95,9 +95,9 @@ export default function Tarifs() {
                   <div className={"ssr-variant hidden-1rkk712 hidden-16q1mfx"}>
                     <div className={"framer-186eloe"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                       <h1 style={{ "--framer-font-size": "80px", "--framer-letter-spacing": "-1.92px", "--framer-line-height": "1em", "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }} className={"framer-text"}>
-                        Unlock your potential with{" "}
+                        Révélez votre potentiel avec{" "}
                         <span style={{ "--font-selector": "SW50ZXItQm9sZA==", "--framer-font-family": "&quot", "--framer-font-weight": "700" }} className={"framer-text"}>
-                          our membership.
+                          nos formules.
                         </span>
                       </h1>
                     </div>
@@ -105,7 +105,7 @@ export default function Tarifs() {
                   <div className={"framer-oyrlh2"} data-framer-name={"Text Wrapp"}>
                     <div className={"framer-1cb8i2h"} data-framer-name={"Body"} style={{ transform: "none" }}>
                       <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))" }}>
-                        If you want high-performance training, expert coaching, or recovery, we have the right membership for you.
+                        Que vous cherchiez un entraînement performant, du coaching expert ou de la récupération, nous avons la formule qu'il vous faut.
                       </p>
                     </div>
                   </div>

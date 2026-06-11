@@ -90,15 +90,15 @@ export default function Contact() {
                       <div className={"framer-p2adw4"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                         <h1 style={{ "--font-selector": "SW50ZXItQm9sZA==", "--framer-font-family": "&quot", "--framer-font-size": "80px", "--framer-font-weight": "700", "--framer-letter-spacing": "-1.92px", "--framer-line-height": "1em", "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }} className={"framer-text"}>
                           <span style={{ "--font-selector": "SW50ZXI=", "--framer-font-family": "&quot", "--framer-font-weight": "400" }} className={"framer-text"}>
-                            We’d love{" "}
+                            Nous serions ravis{" "}
                           </span>
-                          to hear from you.
+                          d'échanger avec vous.
                         </h1>
                       </div>
                     </div>
                     <div className={"framer-11tvdar"} data-framer-name={"Body"} style={{ transform: "none" }}>
                       <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))" }}>
-                        Whether you have questions about memberships, classes, facilities, or events, our team is here to help.
+                        Que vous ayez des questions sur les formules, les cours, les espaces ou les événements, notre équipe est là pour vous aider.
                       </p>
                     </div>
                   </div>

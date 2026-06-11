@@ -96,16 +96,16 @@ export default function Espaces() {
                     <div className={"framer-l2siom"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                       <h1 style={{ "--font-selector": "SW50ZXItQm9sZA==", "--framer-font-family": "&quot", "--framer-font-size": "80px", "--framer-font-weight": "700", "--framer-letter-spacing": "-1.92px", "--framer-line-height": "1em", "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }} className={"framer-text"}>
                         <span style={{ "--font-selector": "SW50ZXI=", "--framer-font-family": "&quot", "--framer-font-weight": "400" }} className={"framer-text"}>
-                          Our facilities{" "}
+                          Nos espaces{" "}
                         </span>
-                        support your fitness goals.
+                        au service de votre forme.
                       </h1>
                     </div>
                   </div>
                   <div className={"framer-pmzhio"} data-framer-name={"Text Wrapp"}>
                     <div className={"framer-19plg8t"} data-framer-name={"Body"} style={{ transform: "none" }}>
                       <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))" }}>
-                        Our facilities offer the ideal environment to push your limits and improve your fitness, whether you're training for a competition or just getting started.
+                        Nos espaces offrent l'environnement idéal pour repousser vos limites et progresser, que vous prépariez une compétition ou que vous débutiez.
                       </p>
                     </div>
                   </div>
@@ -133,7 +133,7 @@ export default function Espaces() {
                 <div className={"framer-hk1ytc"} data-framer-name={"Title Wrapper"} style={{ willChange: "transform", opacity: "1", transform: "none" }}>
                   <div className={"framer-1tupd4r"} data-framer-name={"Body"} style={{ transform: "none" }}>
                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))" }}>
-                      Our facilities
+                      Nos espaces
                     </p>
                   </div>
                   <div className={"ssr-variant hidden-lz025w"}>

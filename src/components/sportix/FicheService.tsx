@@ -111,7 +111,7 @@ export default function FicheService() {
                     </div>
                     <div className={"framer-m85dtb"} data-framer-name={"Body"} style={{ transform: "none" }}>
                       <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))" }}>
-                        Unleash your full potential with advanced strength and explosive power programming.
+                        Révélez tout votre potentiel avec un accompagnement sur-mesure et des programmes adaptés à vos objectifs.
                       </p>
                     </div>
                   </div>
