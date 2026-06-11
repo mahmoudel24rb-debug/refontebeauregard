@@ -1,0 +1,19 @@
+# Postgres local (conforme au brief) — optionnel : sans Docker, le projet
+# tourne sur SQLite (DATABASE_URL=file:./parcbeauregard.db dans .env).
+# Pour utiliser Postgres : docker compose up -d
+# puis DATABASE_URL=postgres://payload:payload@localhost:5432/parcbeauregard
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: payload
+      POSTGRES_PASSWORD: payload
+      POSTGRES_DB: parcbeauregard
+    ports:
+      - '5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
