@@ -114,9 +114,9 @@ export default function FicheEspace() {
                   <div className={"ssr-variant"}>
                     <div className={"framer-1gsyxov"} data-framer-name={"Content"} style={{ transform: "none" }}>
                       <h2 className={"framer-text framer-styles-preset-1cni3gv"}>
-                        The perfect environment to{" "}
+                        L'environnement idéal pour{" "}
                         <strong className={"framer-text"}>
-                          push your limits and grow.
+                          repousser vos limites et progresser.
                         </strong>
                       </h2>
                       <p className={"framer-text framer-styles-preset-kk5vcb"}>
@@ -181,7 +181,7 @@ export default function FicheEspace() {
                   <div className={"ssr-variant"}>
                     <div className={"framer-jvs2ai"} data-framer-name={"Content"} style={{ transform: "none" }}>
                       <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                        From free weights and resistance machines to innovative cardio and recovery tools, every corner of the gym is crafted to support your unique fitness journey. Certified trainers provide personalized coaching and group classes tailored to all skill levels, ensuring motivation and progress every step of the way. With a vibrant community atmosphere and flexible scheduling options, the École du dos make it easy to stay committed and push beyond your limits.
+                        Des poids libres aux machines, en passant par le cardio et les outils de récupération, chaque recoin de l'espace est pensé pour accompagner votre progression. Nos coachs diplômés proposent un suivi personnalisé et des cours collectifs adaptés à tous les niveaux, pour rester motivé et progresser à chaque séance. Dans une ambiance conviviale et avec des horaires flexibles, le Parc Beauregard vous aide à tenir vos objectifs.
                       </p>
                     </div>
                   </div>
@@ -219,27 +219,27 @@ export default function FicheEspace() {
                     <div className={"ssr-variant"}>
                       <div className={"framer-fehi0f"} data-framer-name={"Content"} style={{ transform: "none" }}>
                         <h4 className={"framer-text framer-styles-preset-1f6c2a0"}>
-                          Advantages:
+                          Avantages :
                         </h4>
                         <ul className={"framer-text"}>
                           <li data-preset-tag={"p"} className={"framer-text framer-styles-preset-kk5vcb"}>
                             <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                              State-of-the-Art Equipment – Access the latest strength and cardio machines, free weights, and resistance training tools.
+                              Équipement de pointe – Les dernières machines de force et de cardio, poids libres et outils de résistance.
                             </p>
                           </li>
                           <li data-preset-tag={"p"} className={"framer-text framer-styles-preset-kk5vcb"}>
                             <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                              Versatile Training Areas – Dedicated zones for powerlifting, functional fitness, HIIT, and more.
+                              Espaces polyvalents – Zones dédiées à la force, au fonctionnel, au HIIT et plus encore.
                             </p>
                           </li>
                           <li data-preset-tag={"p"} className={"framer-text framer-styles-preset-kk5vcb"}>
                             <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                              Expert Coaching &amp; Programs – Personalized training sessions, group workouts, and specialized fitness plans.
+                              Coaching expert & programmes – Séances personnalisées, cours collectifs et plans adaptés.
                             </p>
                           </li>
                           <li data-preset-tag={"p"} className={"framer-text framer-styles-preset-kk5vcb"}>
                             <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                              Optimal Training Environment – Spacious, well-ventilated, and designed for maximum performance and comfort.
+                              Environnement optimal – Spacieux, bien aéré, conçu pour la performance et le confort.
                             </p>
                           </li>
                         </ul>
@@ -251,7 +251,7 @@ export default function FicheEspace() {
                       <div className={"framer-yEmYD framer-fN9WN framer-OI0K7 framer-1en4hj5 framer-v-dr1tqt"} data-framer-name={"Text Mini"} style={{ backdropFilter: "blur(34px)", backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderRadius: "50px", opacity: "1" }}>
                         <div className={"framer-1uixvs3"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-AOW62B2JF-Qi9kGBGTT": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--extracted-1w1cjl5": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", transform: "none", opacity: "1" }}>
                           <h6 className={"framer-text framer-styles-preset-1qsbvd0"} data-styles-preset={"s7PQr9bro"} style={{ "--framer-text-color": "var(--extracted-1w1cjl5, var(--variable-reference-AOW62B2JF-Qi9kGBGTT))" }}>
-                            State-of-the-Art Equipment
+                            Équipement de pointe
                           </h6>
                         </div>
                       </div>
@@ -260,7 +260,7 @@ export default function FicheEspace() {
                       <div className={"framer-yEmYD framer-fN9WN framer-OI0K7 framer-1en4hj5 framer-v-dr1tqt"} data-framer-name={"Text Mini"} style={{ backdropFilter: "blur(34px)", backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderRadius: "50px", opacity: "1" }}>
                         <div className={"framer-1uixvs3"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-AOW62B2JF-Qi9kGBGTT": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--extracted-1w1cjl5": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", transform: "none", opacity: "1" }}>
                           <h6 className={"framer-text framer-styles-preset-1qsbvd0"} data-styles-preset={"s7PQr9bro"} style={{ "--framer-text-color": "var(--extracted-1w1cjl5, var(--variable-reference-AOW62B2JF-Qi9kGBGTT))" }}>
-                            Versatile Training Areas
+                            Espaces polyvalents
                           </h6>
                         </div>
                       </div>
@@ -269,7 +269,7 @@ export default function FicheEspace() {
                       <div className={"framer-yEmYD framer-fN9WN framer-OI0K7 framer-1en4hj5 framer-v-dr1tqt"} data-framer-name={"Text Mini"} style={{ backdropFilter: "blur(34px)", backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderRadius: "50px", opacity: "1" }}>
                         <div className={"framer-1uixvs3"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-AOW62B2JF-Qi9kGBGTT": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--extracted-1w1cjl5": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", transform: "none", opacity: "1" }}>
                           <h6 className={"framer-text framer-styles-preset-1qsbvd0"} data-styles-preset={"s7PQr9bro"} style={{ "--framer-text-color": "var(--extracted-1w1cjl5, var(--variable-reference-AOW62B2JF-Qi9kGBGTT))" }}>
-                            Expert Coaching
+                            Coaching expert
                           </h6>
                         </div>
                       </div>
@@ -278,7 +278,7 @@ export default function FicheEspace() {
                       <div className={"framer-yEmYD framer-fN9WN framer-OI0K7 framer-1en4hj5 framer-v-dr1tqt"} data-framer-name={"Text Mini"} style={{ backdropFilter: "blur(34px)", backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderRadius: "50px", opacity: "1" }}>
                         <div className={"framer-1uixvs3"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-AOW62B2JF-Qi9kGBGTT": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--extracted-1w1cjl5": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", transform: "none", opacity: "1" }}>
                           <h6 className={"framer-text framer-styles-preset-1qsbvd0"} data-styles-preset={"s7PQr9bro"} style={{ "--framer-text-color": "var(--extracted-1w1cjl5, var(--variable-reference-AOW62B2JF-Qi9kGBGTT))" }}>
-                            {" "}Optimal Training Environment
+                            {" "}Environnement optimal
                           </h6>
                         </div>
                       </div>
@@ -298,9 +298,9 @@ export default function FicheEspace() {
                   <div className={"ssr-variant hidden-1i1kz8p"}>
                     <div className={"framer-1ypzb2j"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                       <h2 style={{ "--framer-font-size": "50px", "--framer-letter-spacing": "-1.5px", "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }} className={"framer-text"}>
-                        We help you take the next step toward{" "}
+                        Nous vous aidons à passer à l'étape suivante de{" "}
                         <span style={{ "--font-selector": "SW50ZXItQm9sZA==", "--framer-font-family": "&quot", "--framer-font-weight": "700" }} className={"framer-text"}>
-                          your fitness and athletic journey.
+                          votre parcours sportif.
                         </span>
                       </h2>
                     </div>

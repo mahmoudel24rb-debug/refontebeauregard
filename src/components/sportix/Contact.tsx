@@ -247,7 +247,7 @@ export default function Contact() {
                           </span>
                           réinventons votre façon de vivre le
                           <span style={{ "--font-selector": "SW50ZXI=", "--framer-font-family": "&quot", "--framer-font-weight": "400" }} className={"framer-text"}>
-                            {" "}sports and recreation.
+                            {" "}sport & bien-être.
                           </span>
                         </h2>
                       </div>

@@ -97,7 +97,7 @@ export default function FicheService() {
                       <div className={"framer-yEmYD framer-fN9WN framer-OI0K7 framer-1en4hj5 framer-v-dr1tqt"} data-framer-name={"Text Mini"} style={{ backdropFilter: "blur(34px)", backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderRadius: "50px", opacity: "1" }}>
                         <div className={"framer-1uixvs3"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-AOW62B2JF-Qi9kGBGTT": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--extracted-1w1cjl5": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", transform: "none", opacity: "1" }}>
                           <h6 className={"framer-text framer-styles-preset-1qsbvd0"} data-styles-preset={"s7PQr9bro"} style={{ "--framer-text-color": "var(--extracted-1w1cjl5, var(--variable-reference-AOW62B2JF-Qi9kGBGTT))" }}>
-                            Mondays, Wednesdays &amp; Fridays at 6:00 PM
+                            Lundi, mercredi & vendredi à 18h00
                           </h6>
                         </div>
                       </div>
@@ -106,7 +106,7 @@ export default function FicheService() {
                   <div className={"framer-11jdxdr"} data-framer-name={"Text Content Wrapper"}>
                     <div className={"framer-xvkzzb"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                       <h1 className={"framer-text framer-styles-preset-1l4gnld"} data-styles-preset={"BCL_rI5ab"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                        Strength &amp; Power Training
+                        Coaching personnalisé
                       </h1>
                     </div>
                     <div className={"framer-m85dtb"} data-framer-name={"Body"} style={{ transform: "none" }}>
@@ -135,7 +135,7 @@ export default function FicheService() {
                           </div>
                           <div className={"framer-fhxo2a"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                             <h4 className={"framer-text framer-styles-preset-rdywn"} data-styles-preset={"GhRkEd1kj"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                              Joint Stability
+                              Stabilité articulaire
                             </h4>
                           </div>
                         </div>
@@ -151,7 +151,7 @@ export default function FicheService() {
                           </div>
                           <div className={"framer-fhxo2a"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                             <h4 className={"framer-text framer-styles-preset-rdywn"} data-styles-preset={"GhRkEd1kj"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                              Injury Prevention
+                              Prévention des blessures
                             </h4>
                           </div>
                         </div>
@@ -167,7 +167,7 @@ export default function FicheService() {
                           </div>
                           <div className={"framer-fhxo2a"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                             <h4 className={"framer-text framer-styles-preset-rdywn"} data-styles-preset={"GhRkEd1kj"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                              Muscle Strength
+                              Force musculaire
                             </h4>
                           </div>
                         </div>
@@ -183,7 +183,7 @@ export default function FicheService() {
                           </div>
                           <div className={"framer-fhxo2a"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none", opacity: "1" }}>
                             <h4 className={"framer-text framer-styles-preset-rdywn"} data-styles-preset={"GhRkEd1kj"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                              Explosive Power
+                              Puissance explosive
                             </h4>
                           </div>
                         </div>
@@ -198,13 +198,13 @@ export default function FicheService() {
                 <div className={"ssr-variant"}>
                   <div className={"framer-wblq2s"} data-framer-name={"Content"} style={{ willChange: "transform", opacity: "1", transform: "none" }}>
                     <h2 className={"framer-text framer-styles-preset-1cni3gv"}>
-                      Class Overview
+                      Présentation
                     </h2>
                     <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                      Strength &amp; Power Training is engineered for individuals who want to build raw strength, increase muscle mass, and develop explosive power for sport or life. Using proven strength systems such as powerlifting, Olympic lifts, and speed-strength complexes, this program will help you maximize your force production and athletic performance.
+                      Ce cours est conçu pour celles et ceux qui veulent gagner en force, prendre de la masse musculaire et développer leur puissance. Grâce à des méthodes éprouvées, il vous aide à maximiser votre force et vos performances.
                     </p>
                     <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                      With a focus on proper technique and progressive overload, this class is perfect for athletes, lifters, and fitness enthusiasts ready to push their limits under the guidance of expert strength coaches.
+                      Axé sur la technique et la progressivité, ce cours est idéal pour les sportifs et passionnés prêts à se dépasser, encadrés par des coachs experts.
                     </p>
                   </div>
                 </div>
@@ -214,37 +214,37 @@ export default function FicheService() {
                       <div className={"ssr-variant"}>
                         <div className={"framer-f6tems"} data-framer-name={"Content"} style={{ transform: "none" }}>
                           <h3 className={"framer-text framer-styles-preset-14sw4ra"}>
-                            Key Benefits
+                            Bénéfices clés
                           </h3>
                           <ul className={"framer-text"}>
                             <li data-preset-tag={"p"} className={"framer-text framer-styles-preset-kk5vcb"}>
                               <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                                Build absolute and functional strength across major lifts
+                                Développer une force globale et fonctionnelle
                               </p>
                             </li>
                             <li data-preset-tag={"p"} className={"framer-text framer-styles-preset-kk5vcb"}>
                               <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                                Increase power output with explosive movements (cleans, snatches, med ball throws)
+                                Gagner en puissance avec des mouvements explosifs
                               </p>
                             </li>
                             <li data-preset-tag={"p"} className={"framer-text framer-styles-preset-kk5vcb"}>
                               <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                                Improve lifting technique and injury resilience
+                                Améliorer la technique et prévenir les blessures
                               </p>
                             </li>
                             <li data-preset-tag={"p"} className={"framer-text framer-styles-preset-kk5vcb"}>
                               <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                                Develop fast-twitch muscle fibers for improved speed and agility
+                                Développer la vitesse et l'agilité
                               </p>
                             </li>
                             <li data-preset-tag={"p"} className={"framer-text framer-styles-preset-kk5vcb"}>
                               <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                                Gain lean muscle mass and improve body composition
+                                Prendre du muscle et affiner sa silhouette
                               </p>
                             </li>
                             <li data-preset-tag={"p"} className={"framer-text framer-styles-preset-kk5vcb"}>
                               <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                                Boost confidence and athletic dominance
+                                Gagner en confiance
                               </p>
                             </li>
                           </ul>
@@ -255,32 +255,32 @@ export default function FicheService() {
                       <div className={"ssr-variant"}>
                         <div className={"framer-k5suer"} data-framer-name={"Content"} style={{ transform: "none" }}>
                           <h3 className={"framer-text framer-styles-preset-14sw4ra"}>
-                            Who This Program Is Perfect For
+                            Pour qui ?
                           </h3>
                           <ul className={"framer-text"}>
                             <li data-preset-tag={"p"} className={"framer-text framer-styles-preset-kk5vcb"}>
                               <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                                Strength athletes (powerlifters, weightlifters, CrossFitters)
+                                Sportifs de force
                               </p>
                             </li>
                             <li data-preset-tag={"p"} className={"framer-text framer-styles-preset-kk5vcb"}>
                               <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                                Competitive athletes looking to improve power and strength
+                                Athlètes en quête de puissance
                               </p>
                             </li>
                             <li data-preset-tag={"p"} className={"framer-text framer-styles-preset-kk5vcb"}>
                               <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                                Individuals training for military, police, or fire academy tests
+                                Préparation aux tests physiques
                               </p>
                             </li>
                             <li data-preset-tag={"p"} className={"framer-text framer-styles-preset-kk5vcb"}>
                               <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                                Fitness enthusiasts wanting advanced lifting and explosive training
+                                Passionnés de musculation avancée
                               </p>
                             </li>
                             <li data-preset-tag={"p"} className={"framer-text framer-styles-preset-kk5vcb"}>
                               <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                                Anyone looking to break personal records and get stronger
+                                Toute personne voulant progresser
                               </p>
                             </li>
                           </ul>

@@ -95,7 +95,7 @@ export default function PageTexte() {
                   <div className={"framer-1epj49l"} data-framer-name={"Text Content Wrapper"}>
                     <div className={"framer-1ctpipf"} data-framer-name={"Body"} style={{ transform: "none" }}>
                       <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))" }}>
-                        Sportix blog
+                        Parc Beauregard
                       </p>
                     </div>
                     <div className={"framer-p3bpkk"} data-framer-name={"Heading"} style={{ transform: "none" }}>
@@ -118,7 +118,7 @@ export default function PageTexte() {
                     <div className={"framer-6u0g1"} data-framer-name={"Title Wrapper"}>
                       <div className={"framer-1n448g6"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                         <h6 className={"framer-text framer-styles-preset-gmdg5a"} data-styles-preset={"XCvretOoF"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                          Shanon Brierley
+                          Parc Beauregard
                         </h6>
                       </div>
                       <div className={"framer-r7hhki"} data-framer-name={"Body"} style={{ transform: "none" }}>
@@ -145,51 +145,51 @@ export default function PageTexte() {
                 <div className={"ssr-variant"}>
                   <div className={"framer-1csbbb"} data-framer-name={"Content"} style={{ willChange: "transform", opacity: "1", transform: "none" }}>
                     <h2 className={"framer-text framer-styles-preset-1cni3gv"}>
-                      More Than Just a Workout
+                      Mentions légales
                     </h2>
                     <p className={"framer-text framer-styles-preset-kk5vcb"}>
                       Running is one of the most natural and effective forms of exercise. Whether you’re sprinting on a track, jogging through a park, or training for a marathon, running offers a powerful combination of physical, mental, and emotional benefits.
                     </p>
                     <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                      Running is one of the most effective forms of exercise, offering physical, mental, and emotional benefits. Whether sprinting, jogging, or training for a marathon, it improves endurance, strengthens the heart, and boosts overall well-being.
+                      Cette page regroupera les mentions légales du Parc Beauregard Fitness & Coaching : éditeur, hébergeur, propriété intellectuelle et données personnelles. Contenu juridique à compléter.
                     </p>
                     <h3 className={"framer-text framer-styles-preset-14sw4ra"}>
-                      Why Running Works
+                      Éditeur du site
                     </h3>
                     <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                      Running engages multiple muscle groups, strengthens the heart and lungs, and burns calories efficiently. It boosts metabolism, lowers blood pressure, and increases lung capacity, reducing the risk of heart disease.
+                      Le Parc Beauregard Fitness & Coaching est édité par la société exploitant le club, située 1 quai de la Loire, 37210 Rochecorbon.
                     </p>
                     <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                      Beyond physical benefits, running reduces stress and anxiety by triggering endorphin release. It also enhances mental focus, builds resilience, and improves sleep quality.
+                      Pour toute question relative au site ou à vos données personnelles, contactez-nous à rochecorbon@parcbeauregard.com.
                     </p>
                     <h3 className={"framer-text framer-styles-preset-14sw4ra"}>
-                      Types of Running
+                      Hébergement
                     </h3>
                     <ul className={"framer-text"}>
                       <li data-preset-tag={"p"} className={"framer-text framer-styles-preset-kk5vcb"}>
                         <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                          Sprinting – Builds speed and power.
+                          Éditeur – Parc Beauregard Fitness & Coaching.
                         </p>
                       </li>
                       <li data-preset-tag={"p"} className={"framer-text framer-styles-preset-kk5vcb"}>
                         <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                          Distance Running – Improves stamina and endurance.
+                          Hébergeur – à préciser.
                         </p>
                       </li>
                       <li data-preset-tag={"p"} className={"framer-text framer-styles-preset-kk5vcb"}>
                         <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                          Trail Running – Enhances balance and core strength.
+                          Données personnelles – traitées conformément au RGPD.
                         </p>
                       </li>
                     </ul>
                     <h3 className={"framer-text framer-styles-preset-14sw4ra"}>
-                      Getting Started
+                      Données personnelles
                     </h3>
                     <p className={"framer-text framer-styles-preset-kk5vcb"}>
-                      Start with the right gear—proper running shoes are essential. Gradually increase your pace and mileage to prevent injuries. Listen to your body, take rest days when needed, and incorporate stretching and mobility exercises.
+                      Le contenu juridique détaillé (mentions légales, CGV, politique de confidentialité) sera complété prochainement.
                     </p>
                     <h2 className={"framer-text framer-styles-preset-1cni3gv"}>
-                      Final Thoughts
+                      Contact
                     </h2>
                     <p className={"framer-text framer-styles-preset-kk5vcb"}>
                       Running is more than just a workout—it’s a tool for physical health, mental well-being, and personal growth. Whether you’re chasing a personal record or enjoying a morning jog, the benefits go far beyond fitness. Lace up your shoes and experience the power of running!
@@ -203,15 +203,15 @@ export default function PageTexte() {
                 <div className={"framer-ylam0"} data-framer-name={"Title Wrapper"} style={{ willChange: "transform", opacity: "1", transform: "none" }}>
                   <div className={"framer-138c7cy"} data-framer-name={"Body"} style={{ transform: "none" }}>
                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))" }}>
-                      Related Posts
+                      À découvrir aussi
                     </p>
                   </div>
                   <div className={"framer-aphw23"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                     <h2 style={{ "--framer-font-size": "50px", "--framer-letter-spacing": "-1.5px", "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }} className={"framer-text"}>
                       <span style={{ "--font-selector": "SW50ZXItQm9sZA==", "--framer-font-family": "&quot", "--framer-font-weight": "700" }} className={"framer-text"}>
-                        Explore tips &amp; workouts
+                        Découvrez nos espaces
                       </span>
-                      {" "}to boost your fitness journey.
+                      {" "}et nos cours.
                     </h2>
                   </div>
                 </div>
@@ -232,12 +232,12 @@ export default function PageTexte() {
                             </div>
                             <div className={"framer-131jy44"} data-framer-name={"Heading"} style={{ "--extracted-1lwpl3i": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                               <h5 className={"framer-text framer-styles-preset-1a2qg92"} data-styles-preset={"Hrg3DnSgc"} style={{ "--framer-text-color": "var(--extracted-1lwpl3i, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                High-Intensity Workouts vs. Steady-State Cardio
+                                Nos espaces
                               </h5>
                             </div>
                             <div className={"framer-1qu60hr"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                               <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                Both HIIT and steady-state cardio have their benefits, but which one aligns best with your fitness goals?
+                                Des espaces pensés pour chaque pratique, en bord de Loire.
                               </p>
                             </div>
                           </div>
@@ -266,12 +266,12 @@ export default function PageTexte() {
                             </div>
                             <div className={"framer-131jy44"} data-framer-name={"Heading"} style={{ "--extracted-1lwpl3i": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                               <h5 className={"framer-text framer-styles-preset-1a2qg92"} data-styles-preset={"Hrg3DnSgc"} style={{ "--framer-text-color": "var(--extracted-1lwpl3i, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                What to Eat Before and After a Workout
+                                Nos cours
                               </h5>
                             </div>
                             <div className={"framer-1qu60hr"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                               <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                Fueling your body with the right nutrients before and after a workout can significantly impact your performance and recovery.
+                                Yoga, Pilates, renforcement : un cours pour chaque objectif.
                               </p>
                             </div>
                           </div>
@@ -300,12 +300,12 @@ export default function PageTexte() {
                             </div>
                             <div className={"framer-131jy44"} data-framer-name={"Heading"} style={{ "--extracted-1lwpl3i": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                               <h5 className={"framer-text framer-styles-preset-1a2qg92"} data-styles-preset={"Hrg3DnSgc"} style={{ "--framer-text-color": "var(--extracted-1lwpl3i, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                Tips for Long-Lasting Performance
+                                Nous rejoindre
                               </h5>
                             </div>
                             <div className={"framer-1qu60hr"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                               <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                Whether you're training for a marathon, triathlon, or looking to increase stamina, endurance training plays a crucial role.
+                                Rejoignez la communauté du Parc Beauregard.
                               </p>
                             </div>
                           </div>

@@ -481,7 +481,7 @@ export default function Espaces() {
                             </div>
                             <div className={"framer-qvkuxm"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                               <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                Our Yoga are designed to enhance your quickness, acceleration, and overall athletic performance.
+                                Nos cours de Yoga favorisent la souplesse, l'équilibre et le bien-être.
                               </p>
                             </div>
                           </div>
@@ -574,7 +574,7 @@ export default function Espaces() {
                             </div>
                             <div className={"framer-qvkuxm"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                               <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                Our Pilates are designed for dynamic, full-body workouts that enhance strength, mobility, endurance, and agility.
+                                Nos cours de Pilates renforcent le corps en profondeur : gainage, mobilité et posture.
                               </p>
                             </div>
                           </div>
@@ -631,7 +631,7 @@ export default function Espaces() {
                                   <div className={"framer-yEmYD framer-fN9WN framer-OI0K7 framer-1en4hj5 framer-v-dr1tqt"} data-framer-name={"Text Mini"} style={{ backdropFilter: "blur(34px)", backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderRadius: "50px", opacity: "1" }}>
                                     <div className={"framer-1uixvs3"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-AOW62B2JF-Qi9kGBGTT": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--extracted-1w1cjl5": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", transform: "none", opacity: "1" }}>
                                       <h6 className={"framer-text framer-styles-preset-1qsbvd0"} data-styles-preset={"s7PQr9bro"} style={{ "--framer-text-color": "var(--extracted-1w1cjl5, var(--variable-reference-AOW62B2JF-Qi9kGBGTT))" }}>
-                                        State-of-the-Art Equipment
+                                        Équipement de pointe
                                       </h6>
                                     </div>
                                   </div>
@@ -640,7 +640,7 @@ export default function Espaces() {
                                   <div className={"framer-yEmYD framer-fN9WN framer-OI0K7 framer-1en4hj5 framer-v-dr1tqt"} data-framer-name={"Text Mini"} style={{ backdropFilter: "blur(34px)", backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderRadius: "50px", opacity: "1" }}>
                                     <div className={"framer-1uixvs3"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-AOW62B2JF-Qi9kGBGTT": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--extracted-1w1cjl5": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", transform: "none", opacity: "1" }}>
                                       <h6 className={"framer-text framer-styles-preset-1qsbvd0"} data-styles-preset={"s7PQr9bro"} style={{ "--framer-text-color": "var(--extracted-1w1cjl5, var(--variable-reference-AOW62B2JF-Qi9kGBGTT))" }}>
-                                        Versatile Training Areas
+                                        Espaces polyvalents
                                       </h6>
                                     </div>
                                   </div>
@@ -658,7 +658,7 @@ export default function Espaces() {
                                   <div className={"framer-yEmYD framer-fN9WN framer-OI0K7 framer-1en4hj5 framer-v-dr1tqt"} data-framer-name={"Text Mini"} style={{ backdropFilter: "blur(34px)", backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderRadius: "50px", opacity: "1" }}>
                                     <div className={"framer-1uixvs3"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-AOW62B2JF-Qi9kGBGTT": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--extracted-1w1cjl5": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", transform: "none", opacity: "1" }}>
                                       <h6 className={"framer-text framer-styles-preset-1qsbvd0"} data-styles-preset={"s7PQr9bro"} style={{ "--framer-text-color": "var(--extracted-1w1cjl5, var(--variable-reference-AOW62B2JF-Qi9kGBGTT))" }}>
-                                        {" "}Optimal Training Environment
+                                        {" "}Environnement optimal
                                       </h6>
                                     </div>
                                   </div>
@@ -667,7 +667,7 @@ export default function Espaces() {
                             </div>
                             <div className={"framer-qvkuxm"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                               <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                Our École du dos offer a cutting-edge fitness experience with top-tier equipment, versatile workout areas, and expert-led programs.
+                                Notre École du dos propose des séances encadrées pour soulager et renforcer le dos en douceur.
                               </p>
                             </div>
                           </div>
