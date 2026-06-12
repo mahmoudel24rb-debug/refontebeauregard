@@ -4,14 +4,14 @@ const FILE = 'src/components/sportix/Services.tsx'
 const PAIRS = [
   [`push their limits and train with purpose.`, `se dépasse et s'entraîne avec sens.`],
   [`Where athletes`, `Des cours où chacun`],
-  [`Speed &amp; Endurance Training`, `Cardio & Endurance`],
-  [`Agility &amp; Quickness Drills`, `Renforcement musculaire`],
-  [`Jump &amp; Plyometric Training`, `Cross-Training`],
-  [`Strength &amp; Power Training`, `Musculation & Force`],
-  [`Aquatics &amp; Swimming`, `Pilates`],
+  [`Speed & Endurance Training`, `Cardio & Endurance`],
+  [`Agility & Quickness Drills`, `Renforcement musculaire`],
+  [`Jump & Plyometric Training`, `Cross-Training`],
+  [`Strength & Power Training`, `Musculation & Force`],
+  [`Aquatics & Swimming`, `Pilates`],
   [`Specialized Athlete Program`, `Coaching personnalisé`],
-  [`Mobility &amp; Recoverability`, `Stretching & Mobilité`],
-  [`Outdoor &amp; Functional Fitness`, `Fonctionnel & Outdoor`],
+  [`Mobility & Recoverability`, `Stretching & Mobilité`],
+  [`Outdoor & Functional Fitness`, `Fonctionnel & Outdoor`],
 ]
 PAIRS.sort((a, b) => b[0].length - a[0].length)
 let s = fs.readFileSync(FILE, 'utf8')

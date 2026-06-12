@@ -1,16 +1,18 @@
 import { parse } from 'node-html-parser'
 import fs from 'node:fs'
 
-// Union dédupliquée des blocs <style> de toutes les pages hydratées.
+// Union dédupliquée des blocs <style> de toutes les pages — SOURCE = SSR sportix-local
+// (contient le CSS des breakpoints/variantes responsive, perdu dans le DOM hydraté).
+const SSR = '../sportix-local'
 const FILES = [
-  'c:/tmp/hydrated-clean.html', // home
-  'c:/tmp/hyd/Espaces.html',
-  'c:/tmp/hyd/FicheEspace.html',
-  'c:/tmp/hyd/Services.html',
-  'c:/tmp/hyd/FicheService.html',
-  'c:/tmp/hyd/Tarifs.html',
-  'c:/tmp/hyd/Contact.html',
-  'c:/tmp/hyd/PageTexte.html',
+  `${SSR}/index.html`,
+  `${SSR}/facilities.html`,
+  `${SSR}/facilities--gym-training-zones.html`,
+  `${SSR}/classes.html`,
+  `${SSR}/classes--strength-power-training.html`,
+  `${SSR}/pricing.html`,
+  `${SSR}/contact-us.html`,
+  `${SSR}/blog--the-power-of-running.html`,
 ]
 
 const rewriteAsset = (v) =>
@@ -32,8 +34,8 @@ for (const f of FILES) {
     blocks.push(css)
     added++
   }
-  console.log(`${f.split('/').pop().padEnd(22)} +${added} blocs uniques`)
+  console.log(`${f.split('/').pop().padEnd(40)} +${added} blocs`)
 }
 const out = blocks.join('\n\n')
 fs.writeFileSync('src/components/sportix/framer.css', out)
-console.log(`\nframer.css combiné : ${(out.length / 1024).toFixed(0)} Ko · ${blocks.length} blocs uniques / ${total} totaux`)
+console.log(`\nframer.css : ${(out.length / 1024).toFixed(0)} Ko · ${blocks.length}/${total} blocs · hidden-* présents: ${/hidden-[a-z0-9]/.test(out)}`)

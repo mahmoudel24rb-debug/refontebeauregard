@@ -5,7 +5,7 @@ const PAIRS = [
   [`The perfect environment to`, `L'environnement idéal pour`],
   [`push your limits and grow.`, `repousser vos limites et progresser.`],
   // descriptions (génériques Beauregard)
-  [`The Outdoor Strength &amp; Conditioning Zone offers a dynamic and open-air training environment designed for athletes, bodybuilders, and fitness enthusiasts who want to push their limits outside of traditional gym walls.`,
+  [`The Outdoor Strength & Conditioning Zone offers a dynamic and open-air training environment designed for athletes, bodybuilders, and fitness enthusiasts who want to push their limits outside of traditional gym walls.`,
    `L'espace fonctionnel offre un environnement d'entraînement dynamique, conçu pour tous ceux qui veulent se dépasser, en pleine nature au bord de la Loire.`],
   [`Our Cross / Cardio is designed for swimmers, triathletes, and fitness enthusiasts looking to enhance their water-based training.`,
    `Notre espace cardio & cross-training est pensé pour tous les sportifs qui veulent améliorer leur endurance et leur condition physique.`],
@@ -15,7 +15,7 @@ const PAIRS = [
   [`Strength Testing`, `Tests de force`],
   [`Progress Tracking`, `Suivi des progrès`],
   [`Post-Workout`, `Après l'effort`],
-  [`Flexibility &amp; Mobility`, `Souplesse & mobilité`],
+  [`Flexibility & Mobility`, `Souplesse & mobilité`],
   [`Healing`, `Récupération`],
   [`Relaxation`, `Détente`],
   [`Olympic-Sized Pool`, `Grand espace`],

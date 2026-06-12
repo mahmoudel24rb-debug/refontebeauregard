@@ -1,10 +1,13 @@
 import fs from 'node:fs'
 const FILE = 'src/components/sportix/Contact.tsx'
 const lines = fs.readFileSync(FILE, 'utf8').split('\n')
-if ((lines[231] || '').trim() !== '</section>') {
-  console.error('STRUCTURE INATTENDUE ligne 232 — abort:', JSON.stringify(lines[231]))
-  process.exit(1)
-}
+// insère la section Carte+Horaires AVANT la section teaser "Classes Section"
+const idx = lines.findIndex((l) => l.includes('data-framer-name={"Classes Section"}'))
+if (idx < 0) { console.error('marqueur Classes Section introuvable — abort'); process.exit(1) }
+// remonter à la ligne <section qui ouvre (souvent la même ligne ou juste avant)
+let secLine = idx
+while (secLine > 0 && !lines[secLine].includes('<section')) secLine--
+
 const sec = `      <section style={{ padding: "90px 0", background: "#f5f5f5" }}>
         <div style={{ maxWidth: "1180px", margin: "0 auto", padding: "0 30px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "40px" }}>
           <div>
@@ -33,6 +36,6 @@ const sec = `      <section style={{ padding: "90px 0", background: "#f5f5f5" }}
           </div>
         </div>
       </section>`
-const out = [...lines.slice(0, 232), sec, ...lines.slice(232)].join('\n')
+const out = [...lines.slice(0, secLine), sec, ...lines.slice(secLine)].join('\n')
 fs.writeFileSync(FILE, out)
-console.log('Contact.tsx : section Carte + Horaires insérée')
+console.log(`Contact.tsx : section Carte+Horaires insérée avant Classes Section (ligne ${secLine + 1})`)

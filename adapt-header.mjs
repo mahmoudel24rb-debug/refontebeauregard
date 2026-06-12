@@ -9,7 +9,7 @@ const files = fs.readdirSync(DIR).filter((f) => f.endsWith('.tsx'))
 const BY_LABEL = {
   'Home': ['/', 'Accueil'],
   'About Us': ['/espaces', 'Nos espaces'],
-  'Programs &amp; Classes': ['/services', 'Services'],
+  'Programs & Classes': ['/services', 'Services'],
   'Events': ['/tarifs', 'Tarifs'],
 }
 const navRe =

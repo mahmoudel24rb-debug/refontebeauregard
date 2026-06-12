@@ -36,7 +36,7 @@ export default function Hero() {
                     <span style={{ "--font-selector": "SW50ZXI=", "--framer-font-family": "&quot", "--framer-font-weight": "400" }} className={"framer-text"}>
                       Le meilleur du
                     </span>
-                    sports & recreation.
+                    sport & de la nature.
                   </h1>
                 </div>
               </div>
@@ -46,7 +46,7 @@ export default function Hero() {
                     <span style={{ "--font-selector": "SW50ZXI=", "--framer-font-family": "&quot", "--framer-font-weight": "400" }} className={"framer-text"}>
                       Le meilleur du
                     </span>
-                    sports & recreation.
+                    sport & de la nature.
                   </h1>
                 </div>
               </div>
@@ -56,7 +56,7 @@ export default function Hero() {
                     <span style={{ "--font-selector": "SW50ZXI=", "--framer-font-family": "&quot", "--framer-font-weight": "400" }} className={"framer-text"}>
                       Le meilleur du
                     </span>
-                    sports & recreation.
+                    sport & de la nature.
                   </h1>
                 </div>
               </div>

@@ -25,7 +25,7 @@ const BYFILE = {
     [`Trail Running – Enhances balance and core strength.`, `Données personnelles – traitées conformément au RGPD.`],
     [`Start with the right gear—proper running shoes are essential. Gradually increase your pace and mileage to prevent injuries. Listen to your body, take rest days when needed, and incorporate stretching and mobility exercises.`,
      `Le contenu juridique détaillé (mentions légales, CGV, politique de confidentialité) sera complété prochainement.`],
-    [`Explore tips &amp; workouts`, `Découvrez nos espaces`],
+    [`Explore tips & workouts`, `Découvrez nos espaces`],
     [`to boost your fitness journey.`, `et nos cours.`],
     [`High-Intensity Workouts vs. Steady-State Cardio`, `Nos espaces`],
     [`Both HIIT and steady-state cardio have their benefits, but which one aligns best with your fitness goals?`,

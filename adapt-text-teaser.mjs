@@ -3,9 +3,9 @@ const DIR = 'src/components/sportix'
 // Cartes teaser "services" (= les 3 services Beauregard) + tags. Appliqué partout
 // SAUF Services.tsx, où "Speed & Endurance Training" etc. sont de vrais cours.
 const PAIRS = [
-  ['Speed &amp; Endurance Training', 'Beauregard Coaching'],
-  ['Agility &amp; Quickness Drills', 'Beauregard Cours'],
-  ['Jump &amp; Plyometric Training', 'Location de terrain'],
+  ['Speed & Endurance Training', 'Beauregard Coaching'],
+  ['Agility & Quickness Drills', 'Beauregard Cours'],
+  ['Jump & Plyometric Training', 'Location de terrain'],
   ['RunFaster', 'Sur-mesure'],
   ['BoostEndurance', 'Suivi perso'],
   ['MoveFast', '≈ 40 cours'],

@@ -131,6 +131,8 @@ function attrsToJsx(node) {
     if (lk === 'style') { const o = styleToObject(vRaw); if (o) parts.push(`style=${o}`); continue; }
     if (!KEEP_FRAMER && lk.startsWith('data-framer') && lk !== 'data-framer-name') continue;
     if (BOOLEAN.has(lk) && (vRaw === '' || vRaw === lk)) { parts.push(jsxAttrName(k)); continue; }
+    // input/textarea vide : ne pas émettre value={null} (warning React "value should not be null") -> input non-contrôlé
+    if (lk === 'value' && (vRaw == null || vRaw === '')) continue;
     let v = vRaw;
     if (['src', 'href', 'srcset', 'poster'].includes(lk)) v = rewriteAsset(v);
     parts.push(`${jsxAttrName(k)}={${JSON.stringify(v)}}`);
