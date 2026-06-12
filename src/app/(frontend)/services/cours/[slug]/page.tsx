@@ -7,6 +7,12 @@ export function generateStaticParams() {
   return COURS.map((c) => ({ slug: c.slug }))
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const cours = coursBySlug(slug)
+  return cours ? { title: `${cours.name} — Cours`, description: cours.short } : { title: 'Cours' }
+}
+
 export default async function CoursSlugPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const cours = coursBySlug(slug)

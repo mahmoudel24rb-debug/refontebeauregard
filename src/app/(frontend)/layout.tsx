@@ -9,7 +9,10 @@ import MobileNav from '@/components/sportix/MobileNav'
 import PricingToggle from '@/components/sportix/PricingToggle'
 
 export const metadata = {
-  title: 'Parc Beauregard Fitness & Coaching — Rochecorbon',
+  title: {
+    default: 'Parc Beauregard Fitness & Coaching — Rochecorbon',
+    template: '%s — Parc Beauregard',
+  },
   description:
     'Salle de sport et coaching au cœur de la nature à Rochecorbon (37) : cours collectifs, entraînement fonctionnel, cross-cardio et coaching personnalisé.',
 }
