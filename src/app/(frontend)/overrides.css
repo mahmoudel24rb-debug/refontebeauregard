@@ -131,6 +131,11 @@ body[data-pricing='courtes'] [data-ptab='mensuel'] { display: none; }
 body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
 /* pilule coulissante d'origine masquée : l'état actif est posé en JS sur les libellés */
 [data-framer-name='Toggle BG'] { display: none !important; }
+
+/* Cours : grille présentation + infos pratiques -> 1 colonne sur mobile */
+@media (max-width: 760px) {
+  .bg-cours-grid { grid-template-columns: 1fr !important; }
+}
 @media (max-width: 991px) {
   [data-ptab] > .framer-wbllb0-container { flex-basis: calc((100% - 30px) / 2) !important; }
 }

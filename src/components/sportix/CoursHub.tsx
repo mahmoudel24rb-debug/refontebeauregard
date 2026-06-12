@@ -30,11 +30,14 @@ export default function CoursHub() {
                     key={c.slug}
                     href={`/services/cours/${c.slug}`}
                     className="bg-cours-card"
-                    style={{ display: 'flex', flexDirection: 'column', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, padding: 28, textDecoration: 'none', color: 'inherit' }}
+                    style={{ display: 'flex', flexDirection: 'column', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden', textDecoration: 'none', color: 'inherit' }}
                   >
-                    <h3 style={{ fontSize: 22, fontWeight: 700, letterSpacing: '-0.01em', margin: '0 0 10px' }}>{c.name}</h3>
-                    <p style={{ color: '#525252', lineHeight: 1.55, margin: '0 0 20px', flex: 1 }}>{c.short}</p>
-                    <span style={{ color: '#376131', fontWeight: 700 }}>Découvrir →</span>
+                    <img src={c.img} alt={c.name} loading="lazy" style={{ width: '100%', height: 170, objectFit: 'cover', display: 'block' }} />
+                    <div style={{ display: 'flex', flexDirection: 'column', flex: 1, padding: 26 }}>
+                      <h3 style={{ fontSize: 22, fontWeight: 700, letterSpacing: '-0.01em', margin: '0 0 10px' }}>{c.name}</h3>
+                      <p style={{ color: '#525252', lineHeight: 1.55, margin: '0 0 20px', flex: 1 }}>{c.short}</p>
+                      <span style={{ color: '#376131', fontWeight: 700 }}>Découvrir →</span>
+                    </div>
                   </a>
                 ))}
               </div>
