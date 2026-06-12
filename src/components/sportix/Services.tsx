@@ -140,9 +140,9 @@ export default function Services() {
                     <div className={"framer-1t2pwxq"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                       <h2 style={{ "--font-selector": "SW50ZXItQm9sZA==", "--framer-font-family": "&quot", "--framer-font-size": "50px", "--framer-font-weight": "700", "--framer-letter-spacing": "-1.5px", "--framer-text-alignment": "center", "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }} className={"framer-text"}>
                         <span style={{ "--font-selector": "SW50ZXI=", "--framer-font-family": "&quot", "--framer-font-weight": "400" }} className={"framer-text"}>
-                          Where athletes{" "}
+                          Des cours où chacun{" "}
                         </span>
-                        push their limits and train with purpose.
+                        se dépasse et s'entraîne avec sens.
                       </h2>
                     </div>
                   </div>
@@ -162,7 +162,7 @@ export default function Services() {
                         <div className={"framer-25lc8r"} data-framer-name={"Text Content Wrapper"} style={{ backgroundColor: "var(--token-c7f7b4a7-d22a-4efb-a894-f6581be9e186, rgb(245, 245, 245))", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", opacity: "1" }}>
                           <div className={"framer-4ec7ix"} data-framer-name={"Title"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                             <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                              Speed &amp; Endurance Training
+                              Cardio & Endurance
                             </h4>
                           </div>
                         </div>
@@ -194,7 +194,7 @@ export default function Services() {
                         <div className={"framer-25lc8r"} data-framer-name={"Text Content Wrapper"} style={{ backgroundColor: "var(--token-c7f7b4a7-d22a-4efb-a894-f6581be9e186, rgb(245, 245, 245))", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", opacity: "1" }}>
                           <div className={"framer-4ec7ix"} data-framer-name={"Title"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                             <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                              Agility &amp; Quickness Drills
+                              Renforcement musculaire
                             </h4>
                           </div>
                         </div>
@@ -226,7 +226,7 @@ export default function Services() {
                         <div className={"framer-25lc8r"} data-framer-name={"Text Content Wrapper"} style={{ backgroundColor: "var(--token-c7f7b4a7-d22a-4efb-a894-f6581be9e186, rgb(245, 245, 245))", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", opacity: "1" }}>
                           <div className={"framer-4ec7ix"} data-framer-name={"Title"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                             <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                              Jump &amp; Plyometric Training
+                              Cross-Training
                             </h4>
                           </div>
                         </div>
@@ -258,7 +258,7 @@ export default function Services() {
                         <div className={"framer-25lc8r"} data-framer-name={"Text Content Wrapper"} style={{ backgroundColor: "var(--token-c7f7b4a7-d22a-4efb-a894-f6581be9e186, rgb(245, 245, 245))", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", opacity: "1" }}>
                           <div className={"framer-4ec7ix"} data-framer-name={"Title"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                             <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                              Strength &amp; Power Training
+                              Musculation & Force
                             </h4>
                           </div>
                         </div>
@@ -290,7 +290,7 @@ export default function Services() {
                         <div className={"framer-25lc8r"} data-framer-name={"Text Content Wrapper"} style={{ backgroundColor: "var(--token-c7f7b4a7-d22a-4efb-a894-f6581be9e186, rgb(245, 245, 245))", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", opacity: "1" }}>
                           <div className={"framer-4ec7ix"} data-framer-name={"Title"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                             <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                              Aquatics &amp; Swimming
+                              Pilates
                             </h4>
                           </div>
                         </div>
@@ -322,7 +322,7 @@ export default function Services() {
                         <div className={"framer-25lc8r"} data-framer-name={"Text Content Wrapper"} style={{ backgroundColor: "var(--token-c7f7b4a7-d22a-4efb-a894-f6581be9e186, rgb(245, 245, 245))", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", opacity: "1" }}>
                           <div className={"framer-4ec7ix"} data-framer-name={"Title"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                             <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                              Specialized Athlete Program
+                              Coaching personnalisé
                             </h4>
                           </div>
                         </div>
@@ -354,7 +354,7 @@ export default function Services() {
                         <div className={"framer-25lc8r"} data-framer-name={"Text Content Wrapper"} style={{ backgroundColor: "var(--token-c7f7b4a7-d22a-4efb-a894-f6581be9e186, rgb(245, 245, 245))", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", opacity: "1" }}>
                           <div className={"framer-4ec7ix"} data-framer-name={"Title"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                             <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                              Mobility &amp; Recoverability
+                              Stretching & Mobilité
                             </h4>
                           </div>
                         </div>
@@ -386,7 +386,7 @@ export default function Services() {
                         <div className={"framer-25lc8r"} data-framer-name={"Text Content Wrapper"} style={{ backgroundColor: "var(--token-c7f7b4a7-d22a-4efb-a894-f6581be9e186, rgb(245, 245, 245))", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", opacity: "1" }}>
                           <div className={"framer-4ec7ix"} data-framer-name={"Title"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none", opacity: "1" }}>
                             <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                              Outdoor &amp; Functional Fitness
+                              Fonctionnel & Outdoor
                             </h4>
                           </div>
                         </div>
@@ -950,21 +950,21 @@ export default function Services() {
                         <div className={"framer-t860hw"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services"}>
-                              Speed &amp; Endurance Training
+                              Cardio & Endurance
                             </a>
                           </p>
                         </div>
                         <div className={"framer-8t66ro"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services"}>
-                              Agility &amp; Quickness Drills
+                              Renforcement musculaire
                             </a>
                           </p>
                         </div>
                         <div className={"framer-6yqmv5"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services"}>
-                              Jump &amp; Plyometric Training
+                              Cross-Training
                             </a>
                           </p>
                         </div>
