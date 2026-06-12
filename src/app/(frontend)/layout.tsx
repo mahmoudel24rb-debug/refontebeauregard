@@ -6,6 +6,7 @@ import React from 'react'
 import '@/components/sportix/framer.css'
 import './overrides.css'
 import MobileNav from '@/components/sportix/MobileNav'
+import PricingToggle from '@/components/sportix/PricingToggle'
 
 export const metadata = {
   title: 'Parc Beauregard Fitness & Coaching — Rochecorbon',
@@ -19,6 +20,7 @@ export default function FrontendLayout({ children }: { children: React.ReactNode
       <body>
         {children}
         <MobileNav />
+        <PricingToggle />
       </body>
     </html>
   )

@@ -14,10 +14,15 @@ function findClose(open) {
   }
   return -1
 }
+// Deux onglets rendus côté serveur (mensuel / courtes durées) ; bascule via
+// body[data-pricing] géré par PricingToggle.tsx + CSS (overrides.css).
 const map = [
-  '                        {MENSUEL.map((f) => (',
-  '                          <PriceCard key={f.name} {...f} />',
-  '                        ))}',
+  '                        <div data-ptab="mensuel">',
+  '                          {MENSUEL.map((f) => (<PriceCard key={f.name} {...f} />))}',
+  '                        </div>',
+  '                        <div data-ptab="courtes">',
+  '                          {COURTES.map((f) => (<PriceCard key={f.name} {...f} />))}',
+  '                        </div>',
 ]
 let count = 0
 while (count < 12) {
@@ -25,7 +30,7 @@ while (count < 12) {
   for (let i = 0; i < lines.length; i++) {
     if (lines[i].includes('Tarifs Cards Wrapper')) {
       const c = findClose(i)
-      if (c > 0 && !lines.slice(i + 1, c).join('\n').includes('MENSUEL.map')) { open = i; break }
+      if (c > 0 && !lines.slice(i + 1, c).join('\n').includes('data-ptab')) { open = i; break }
     }
   }
   if (open < 0) break
@@ -35,7 +40,9 @@ while (count < 12) {
 }
 let out = lines.join('\n')
 if (!out.includes('import { PriceCard }')) {
-  out = out.replace(`import './framer.css';`, `import './framer.css';\nimport { PriceCard } from './PriceCard'\nimport { MENSUEL } from './formules'`)
+  out = out.replace(`import './framer.css';`, `import './framer.css';\nimport { PriceCard } from './PriceCard'\nimport { MENSUEL, COURTES } from './formules'`)
 }
+// garantit COURTES dans l'import (pages déjà traitées avec MENSUEL seul)
+out = out.replace(`import { MENSUEL } from './formules'`, `import { MENSUEL, COURTES } from './formules'`)
 fs.writeFileSync(FILE, out)
 console.log(`${FILE.split('/').pop()} : ${count} grille(s) pricing -> 5 formules`)

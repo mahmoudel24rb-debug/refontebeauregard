@@ -2,7 +2,7 @@
 // Styles exacts : importer "framer.css" une seule fois (layout global).
 import './framer.css';
 import { PriceCard } from './PriceCard'
-import { MENSUEL } from './formules'
+import { MENSUEL, COURTES } from './formules'
 
 export default function Contact() {
   return (
@@ -759,9 +759,12 @@ export default function Contact() {
                         </div>
                       </div>
                       <div className={"framer-1pryn50"} data-framer-name={"Tarifs Cards Wrapper"}>
-                        {MENSUEL.map((f) => (
-                          <PriceCard key={f.name} {...f} />
-                        ))}
+                        <div data-ptab="mensuel">
+                          {MENSUEL.map((f) => (<PriceCard key={f.name} {...f} />))}
+                        </div>
+                        <div data-ptab="courtes">
+                          {COURTES.map((f) => (<PriceCard key={f.name} {...f} />))}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -806,9 +809,12 @@ export default function Contact() {
                         </div>
                       </div>
                       <div className={"framer-1pryn50"} data-framer-name={"Tarifs Cards Wrapper"}>
-                        {MENSUEL.map((f) => (
-                          <PriceCard key={f.name} {...f} />
-                        ))}
+                        <div data-ptab="mensuel">
+                          {MENSUEL.map((f) => (<PriceCard key={f.name} {...f} />))}
+                        </div>
+                        <div data-ptab="courtes">
+                          {COURTES.map((f) => (<PriceCard key={f.name} {...f} />))}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -853,9 +859,12 @@ export default function Contact() {
                         </div>
                       </div>
                       <div className={"framer-1pryn50"} data-framer-name={"Tarifs Cards Wrapper"}>
-                        {MENSUEL.map((f) => (
-                          <PriceCard key={f.name} {...f} />
-                        ))}
+                        <div data-ptab="mensuel">
+                          {MENSUEL.map((f) => (<PriceCard key={f.name} {...f} />))}
+                        </div>
+                        <div data-ptab="courtes">
+                          {COURTES.map((f) => (<PriceCard key={f.name} {...f} />))}
+                        </div>
                       </div>
                     </div>
                   </div>
