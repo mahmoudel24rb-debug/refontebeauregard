@@ -24,7 +24,7 @@ function Feature({ text }: { text: string }) {
   )
 }
 
-export function PriceCard({ name, price, period, desc, features, href = '/contact', cta = "Je m'inscris" }: { name: string; price: string; period: string; desc: string; features: string[]; href?: string; cta?: string }) {
+export function PriceCard({ name, price, period, desc, features, href = '/contact', cta = "S'inscrire" }: { name: string; price: string; period: string; desc: string; features: string[]; href?: string; cta?: string }) {
   return (
     <div className={'framer-wbllb0-container'} style={{ willChange: 'transform', opacity: '1', transform: 'none' }}>
       <div className={'framer-jIlUe framer-fN9WN framer-AZnGt framer-1eSXM framer-gbuwA framer-1cwxg2b framer-v-1cwxg2b'} data-border={'true'} data-framer-name={'Default'} style={{ '--border-bottom-width': '1px', '--border-color': 'var(--token-8f4f0a97-886c-442e-9b68-fba0a777697e, rgb(229, 229, 229))', '--border-left-width': '1px', '--border-right-width': '1px', '--border-style': 'solid', '--border-top-width': '1px', backgroundColor: 'var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))', width: '100%', borderRadius: '10px', opacity: '1' } as React.CSSProperties}>

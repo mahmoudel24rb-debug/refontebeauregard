@@ -35,7 +35,7 @@ export default function Espaces() {
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
                               Nos espaces
                             </a>
-                          </p><div data-bg-submenu="true"><a href="/espaces/cours-collectifs">Cours collectifs</a><a href="/espaces/fonctionnel">Entraînement fonctionnel</a><a href="/espaces/cross-cardio">Cross / Cardio</a></div>
+                          </p><div data-bg-submenu="true"><a href="/services/cours">Cours collectifs</a><a href="/espaces/fonctionnel">Entraînement fonctionnel</a><a href="/espaces/cross-cardio">Cross / Cardio</a></div>
                         </div>
                         <div className={"framer-9ynktl"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
@@ -113,7 +113,7 @@ export default function Espaces() {
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
                               Nos espaces
                             </a>
-                          </p><div data-bg-submenu="true"><a href="/espaces/cours-collectifs">Cours collectifs</a><a href="/espaces/fonctionnel">Entraînement fonctionnel</a><a href="/espaces/cross-cardio">Cross / Cardio</a></div>
+                          </p><div data-bg-submenu="true"><a href="/services/cours">Cours collectifs</a><a href="/espaces/fonctionnel">Entraînement fonctionnel</a><a href="/espaces/cross-cardio">Cross / Cardio</a></div>
                         </div>
                         <div className={"framer-9ynktl"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
@@ -271,7 +271,7 @@ export default function Espaces() {
                             <div className={"framer-15o99lw"} data-framer-name={"Title Wrapper"}>
                               <div className={"framer-19yjhu0"} data-framer-name={"Heading"} style={{ "--extracted-a0htzi": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none" }}>
                                 <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-color": "var(--extracted-a0htzi, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                  <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={"/espaces"}>
+                                  <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={"/services/cours"}>
                                     Cours collectifs
                                   </a>
                                 </h3>
@@ -364,7 +364,7 @@ export default function Espaces() {
                             <div className={"framer-15o99lw"} data-framer-name={"Title Wrapper"}>
                               <div className={"framer-19yjhu0"} data-framer-name={"Heading"} style={{ "--extracted-a0htzi": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none" }}>
                                 <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-color": "var(--extracted-a0htzi, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                  <a className={"framer-text framer-styles-preset-1783udm"} data-styles-preset={"JOlgSsugd"} href={"/espaces"}>
+                                  <a className={"framer-text framer-styles-preset-1783udm"} data-styles-preset={"JOlgSsugd"} href={"/services/cours"}>
                                     Cours collectifs
                                   </a>
                                 </h3>
@@ -2649,7 +2649,7 @@ export default function Espaces() {
                       <nav className={"framer-1uskuzo"} data-framer-name={"Nav Links Column"}>
                         <div className={"framer-144bbg"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services/cours"}>
                               Cours collectifs
                             </a>
                           </p>
@@ -2707,7 +2707,7 @@ export default function Espaces() {
                         </div>
                         <div className={"framer-8t66ro"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services/cours"}>
                               Beauregard Cours
                             </a>
                           </p>
@@ -2881,7 +2881,7 @@ export default function Espaces() {
                       <nav className={"framer-1uskuzo"} data-framer-name={"Nav Links Column"}>
                         <div className={"framer-144bbg"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services/cours"}>
                               Cours collectifs
                             </a>
                           </p>
@@ -2939,7 +2939,7 @@ export default function Espaces() {
                         </div>
                         <div className={"framer-8t66ro"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services/cours"}>
                               Beauregard Cours
                             </a>
                           </p>
@@ -3113,7 +3113,7 @@ export default function Espaces() {
                       <nav className={"framer-1uskuzo"} data-framer-name={"Nav Links Column"}>
                         <div className={"framer-144bbg"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/espaces"}>
+                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/services/cours"}>
                               Cours collectifs
                             </a>
                           </p>
@@ -3171,7 +3171,7 @@ export default function Espaces() {
                         </div>
                         <div className={"framer-8t66ro"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/services"}>
+                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/services/cours"}>
                               Beauregard Cours
                             </a>
                           </p>

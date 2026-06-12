@@ -13,7 +13,7 @@ const LINKS: { label: string; href: string; sub?: { label: string; href: string 
     label: 'Nos espaces',
     href: '/espaces',
     sub: [
-      { label: 'Cours collectifs', href: '/espaces/cours-collectifs' },
+      { label: 'Cours collectifs', href: '/services/cours' },
       { label: 'Entraînement fonctionnel', href: '/espaces/fonctionnel' },
       { label: 'Cross / Cardio', href: '/espaces/cross-cardio' },
     ],
