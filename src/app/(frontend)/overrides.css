@@ -107,3 +107,9 @@ footer [data-framer-name='Link Wrapper'] .framer-text {
 [data-bg-submenu] a:hover {
   opacity: 0.55;
 }
+
+/* Tarifs : Beauregard n'a pas d'abonnement annuel (mensuel + courtes durées + tickets)
+   → le toggle Mensuel/Annuel n'a pas lieu d'être. */
+[data-framer-name='Toggle Wrapper'] {
+  display: none !important;
+}
