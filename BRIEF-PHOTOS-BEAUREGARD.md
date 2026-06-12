@@ -10,6 +10,7 @@ But : obtenir des photos **actuelles** (t-shirts Beauregard du moment, personnes
 - **Quantité** : pour chaque scène, faire **plusieurs prises** (large + serré, avec et sans personnes) → on aura le choix.
 - **Format paysage** = horizontal (16:9 ou 3:2). **Format portrait** = vertical. **Carré** = cadrage 1:1 possible au recadrage.
 - Nommer/ranger par dossier de lieu si possible.
+- **Coachs & personnes** : l'équipe a évolué depuis les anciennes photos. **Valider avec Bastien** qui photographier (coachs et adhérents **réellement présents aujourd'hui**), et prévoir une mise à jour des portraits quand l'équipe change.
 
 ---
 
@@ -58,15 +59,15 @@ Machines + vue nature par les baies vitrées.
 | Salle de cross / rameurs en action | Paysage | Cours Cross / ambiance |
 
 ## 5. Coachs & coaching
+> ⚠️ **À caler avec Bastien** : la liste des coachs a changé. Photographier **les coachs réellement en poste aujourd'hui** (pas l'ancienne équipe). Demander à Bastien la liste à jour (noms + qui photographier), et prévoir de refaire les portraits quand l'équipe évolue.
+
 | À shooter | Format | Usage |
 |---|---|---|
-| **Portrait Juan Silva** (fond neutre ou salle) | **PORTRAIT (vertical)** | Page Coaching |
-| **Portrait Alexandre Bourdet** | **PORTRAIT (vertical)** | Page Coaching |
-| **Portrait Thomas Dubois** | **PORTRAIT (vertical)** | Page Coaching |
-| Les **coachs en groupe** | Paysage | Page Coaching « Nos coachs » |
+| **Un portrait par coach actuellement en poste** (liste à confirmer avec Bastien) | **PORTRAIT (vertical)** | Page Coaching |
+| Les **coachs en groupe** (équipe actuelle) | Paysage | Page Coaching « Nos coachs » |
 | **Coaching en séance** (coach + adhérent, suivi perso) | Paysage | Teaser « Coaching » + bannière page Coaching |
 
-> Pour les 3 portraits coachs : même cadrage/lumière pour l'uniformité (buste, vertical).
+> Pour les portraits coachs : **même cadrage, même lumière, même fond** pour l'uniformité (buste, vertical) → facile à compléter quand un nouveau coach arrive.
 
 ## 6. Portraits adhérents (témoignages)
 | À shooter | Format | Usage |
