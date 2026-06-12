@@ -702,7 +702,7 @@ export default function PageTexte() {
                       <nav className={"framer-lmls2j"} data-framer-name={"Nav Links Column"}>
                         <div className={"framer-t860hw"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services/coaching"}>
                               Beauregard Coaching
                             </a>
                           </p>
@@ -716,7 +716,7 @@ export default function PageTexte() {
                         </div>
                         <div className={"framer-6yqmv5"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/location-de-terrain"}>
                               Location de terrain
                             </a>
                           </p>
@@ -913,7 +913,7 @@ export default function PageTexte() {
                       <nav className={"framer-lmls2j"} data-framer-name={"Nav Links Column"}>
                         <div className={"framer-t860hw"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services/coaching"}>
                               Beauregard Coaching
                             </a>
                           </p>
@@ -927,7 +927,7 @@ export default function PageTexte() {
                         </div>
                         <div className={"framer-6yqmv5"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/location-de-terrain"}>
                               Location de terrain
                             </a>
                           </p>
@@ -1124,7 +1124,7 @@ export default function PageTexte() {
                       <nav className={"framer-lmls2j"} data-framer-name={"Nav Links Column"}>
                         <div className={"framer-t860hw"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/services"}>
+                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/services/coaching"}>
                               Beauregard Coaching
                             </a>
                           </p>
@@ -1138,7 +1138,7 @@ export default function PageTexte() {
                         </div>
                         <div className={"framer-6yqmv5"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/services"}>
+                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/location-de-terrain"}>
                               Location de terrain
                             </a>
                           </p>

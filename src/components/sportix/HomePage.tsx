@@ -541,7 +541,7 @@ export default function AccueilPage() {
                   <div className={"ssr-variant hidden-ugdvmg"}>
                     <div className={"ssr-variant"}>
                       <div className={"framer-1di4wcj-container"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
-                        <a className={"framer-nURDP framer-ovLcB framer-zUcIZ framer-16nx98q framer-v-16nx98q framer-maxoa4"} data-framer-name={"Default"} style={{ width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }} href={"/services"}>
+                        <a className={"framer-nURDP framer-ovLcB framer-zUcIZ framer-16nx98q framer-v-16nx98q framer-maxoa4"} data-framer-name={"Default"} style={{ width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }} href={"/services/coaching"}>
                           <div className={"framer-1m8bp3k"} data-framer-name={"Thumbnail"} style={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", transform: "translateX(-50%)" }}>
                             <div className={"framer-1o8anf"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-617eea88-08bd-4f71-aa3d-29b363f5895a, rgba(0, 0, 0, 0.3))" }} />
                             <div className={"framer-r69y6i"} data-framer-name={"Image"} style={{ transform: "none" }}>
@@ -645,7 +645,7 @@ export default function AccueilPage() {
                     </div>
                     <div className={"ssr-variant"}>
                       <div className={"framer-1di4wcj-container"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
-                        <a className={"framer-nURDP framer-ovLcB framer-zUcIZ framer-16nx98q framer-v-16nx98q framer-maxoa4"} data-framer-name={"Default"} style={{ width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }} href={"/services"}>
+                        <a className={"framer-nURDP framer-ovLcB framer-zUcIZ framer-16nx98q framer-v-16nx98q framer-maxoa4"} data-framer-name={"Default"} style={{ width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }} href={"/location-de-terrain"}>
                           <div className={"framer-1m8bp3k"} data-framer-name={"Thumbnail"} style={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", transform: "translateX(-50%)" }}>
                             <div className={"framer-1o8anf"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-617eea88-08bd-4f71-aa3d-29b363f5895a, rgba(0, 0, 0, 0.3))" }} />
                             <div className={"framer-r69y6i"} data-framer-name={"Image"} style={{ transform: "none" }}>
@@ -698,7 +698,7 @@ export default function AccueilPage() {
                   </div>
                   <div className={"ssr-variant hidden-72rtr7 hidden-9md6lv"}>
                     <div className={"framer-1di4wcj-container"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
-                      <a className={"framer-nURDP framer-ovLcB framer-zUcIZ framer-16nx98q framer-v-14kd23d framer-maxoa4"} data-framer-name={"Phone"} style={{ width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }} href={"/services"}>
+                      <a className={"framer-nURDP framer-ovLcB framer-zUcIZ framer-16nx98q framer-v-14kd23d framer-maxoa4"} data-framer-name={"Phone"} style={{ width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }} href={"/services/coaching"}>
                         <div className={"framer-1m8bp3k"} data-framer-name={"Thumbnail"} style={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", transform: "translateX(-50%)" }}>
                           <div className={"framer-1o8anf"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-617eea88-08bd-4f71-aa3d-29b363f5895a, rgba(0, 0, 0, 0.3))" }} />
                           <div className={"framer-r69y6i"} data-framer-name={"Image"} style={{ transform: "none" }}>
@@ -3019,7 +3019,7 @@ export default function AccueilPage() {
                       <nav className={"framer-lmls2j"} data-framer-name={"Nav Links Column"}>
                         <div className={"framer-t860hw"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services/coaching"}>
                               Beauregard Coaching
                             </a>
                           </p>
@@ -3033,7 +3033,7 @@ export default function AccueilPage() {
                         </div>
                         <div className={"framer-6yqmv5"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/location-de-terrain"}>
                               Location de terrain
                             </a>
                           </p>
@@ -3230,7 +3230,7 @@ export default function AccueilPage() {
                       <nav className={"framer-lmls2j"} data-framer-name={"Nav Links Column"}>
                         <div className={"framer-t860hw"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services/coaching"}>
                               Beauregard Coaching
                             </a>
                           </p>
@@ -3244,7 +3244,7 @@ export default function AccueilPage() {
                         </div>
                         <div className={"framer-6yqmv5"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/location-de-terrain"}>
                               Location de terrain
                             </a>
                           </p>
@@ -3441,7 +3441,7 @@ export default function AccueilPage() {
                       <nav className={"framer-lmls2j"} data-framer-name={"Nav Links Column"}>
                         <div className={"framer-t860hw"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/services"}>
+                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/services/coaching"}>
                               Beauregard Coaching
                             </a>
                           </p>
@@ -3455,7 +3455,7 @@ export default function AccueilPage() {
                         </div>
                         <div className={"framer-6yqmv5"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/services"}>
+                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/location-de-terrain"}>
                               Location de terrain
                             </a>
                           </p>
