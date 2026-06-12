@@ -15,5 +15,9 @@ for (const f of fs.readdirSync(DIR).filter((x) => x.endsWith('.tsx'))) {
   s = s.split('tel:+1 212 425 8617').join('tel:+33247444143')
   s = s.split('+1 212 425 8617').join('02.47.44.41.43')
   s = s.split('Send us a message').join('Envoyez-nous un message')
+  // Réseaux sociaux Beauregard (l'icône YouTube est réutilisée pour Facebook,
+  // fichier SVG sHD949...svg remplacé par un logo Facebook vert)
+  s = s.split('href={"https://www.instagram.com/"}').join('href={"https://www.instagram.com/parcbeauregard/"}')
+  s = s.split('href={"https://www.youtube.com/"}').join('href={"https://www.facebook.com/parcbeauregard"}')
   if (s !== o) { fs.writeFileSync(p, s); console.log(`${f.padEnd(16)} maj`) }
 }
