@@ -13,7 +13,7 @@ for (const f of fs.readdirSync(DIR).filter((x) => x.endsWith('.tsx'))) {
   s = s.replace(/href=\{"https:\/\/www\.google\.com\/maps\/place\/14\+Tottenham[^"]*"\}/g, MAPS)
   s = s.split('14 Tottenham Road, London, England').join('1 quai de la Loire, 37210 Rochecorbon')
   s = s.split('tel:+1 212 425 8617').join('tel:+33247444143')
-  s = s.split('+1 212 425 8617').join('02 47 44 41 43')
+  s = s.split('+1 212 425 8617').join('02.47.44.41.43')
   s = s.split('Send us a message').join('Envoyez-nous un message')
   if (s !== o) { fs.writeFileSync(p, s); console.log(`${f.padEnd(16)} maj`) }
 }
