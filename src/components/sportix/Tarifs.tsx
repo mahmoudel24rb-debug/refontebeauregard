@@ -228,7 +228,7 @@ export default function Tarifs() {
                   <div className={"ssr-variant"}>
                     <div className={"framer-1qbfvgw"} data-border={"true"}>
                       <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                        <img decoding={"async"} width={"2000"} height={"1334"} sizes={"(min-width: 1280px) max(min(100vw, 1320px) - 60px, 1px), (min-width: 992px) and (max-width: 1279px) max(min(100vw, 1320px) - 40px, 1px), (max-width: 991px) max(min(100vw, 1320px) - 40px, 1px)"} srcSet={"/assets/framerusercontent.com/images/vEaXU388Y31oyruvuQ3plm3etM_qbdfb3cb8.jpg 512w,/assets/framerusercontent.com/images/vEaXU388Y31oyruvuQ3plm3etM_q1cb5febc.jpg 1024w,/assets/framerusercontent.com/images/vEaXU388Y31oyruvuQ3plm3etM.jpg 2000w"} src={"/assets/framerusercontent.com/images/vEaXU388Y31oyruvuQ3plm3etM.jpg"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "67.6% 48.4%", objectFit: "cover" }} />
+                        <img decoding={"async"} width={"2000"} height={"1334"} sizes={"(min-width: 1280px) max(min(100vw, 1320px) - 60px, 1px), (min-width: 992px) and (max-width: 1279px) max(min(100vw, 1320px) - 40px, 1px), (max-width: 991px) max(min(100vw, 1320px) - 40px, 1px)"} srcSet={"/assets/beauregard/nature.webp"} src={"/assets/beauregard/nature.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "67.6% 48.4%", objectFit: "cover" }} />
                       </div>
                     </div>
                   </div>

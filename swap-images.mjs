@@ -21,6 +21,14 @@ const MAP = {
   iCHl1N0KZwoUWPJ43Xxpw83Ctsg: 'avatar-2.webp',
   UIAlXXsdhRK4mxf3k1hS6LOGmI: 'avatar-3.webp',
   fmCUEtIRuzpdy4syVv5eURZul4g: 'avatar-4.webp',
+  // Tarifs
+  vEaXU388Y31oyruvuQ3plm3etM: 'nature.webp',
+  // Mentions légales (template blog réutilisé)
+  '9zAMe7elCsyzFYNlo2bjRg8Gqu0': 'cardio.webp',
+  AivNybUmLdbEaE4eC2hVHYVWkk: 'nature.webp',
+  CSAoHoLmF9Dt3Qy9cdT5MyPttc: 'fonctionnel.webp',
+  jayutf6QGOdy1YT6p1Fv882Dtaw: 'location.webp',
+  n1kVnB6bjxKiORFERqtZhiggos: 'community.webp',
 }
 
 let total = 0
