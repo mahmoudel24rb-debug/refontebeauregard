@@ -5,10 +5,10 @@ for (const f of fs.readdirSync(DIR).filter((x) => x.endsWith('.tsx'))) {
   const p = `${DIR}/${f}`
   let s = fs.readFileSync(p, 'utf8')
   const o = s
-  // Footer : retrait du crédit template "Designed by fourtwelve"
-  s = s.split(' Designed by').join('')
-  s = s.replace(/href=\{"https:\/\/fourtwelve\.co\/"\}/g, 'href={"/"}')
-  s = s.split('fourtwelve.').join('').split('fourtwelve').join('')
+  // Footer : crédit template "Designed by fourtwelve" -> "Réalisé par DGL Agency"
+  s = s.split(' Designed by').join(' Réalisé par')
+  s = s.replace(/href=\{"https:\/\/fourtwelve\.co\/"\}/g, 'href={"https://dgl-agency.fr/"}')
+  s = s.split('fourtwelve.').join('DGL Agency').split('fourtwelve').join('DGL Agency')
   // Contact : adresse / téléphone / lien maps Londres -> Rochecorbon + heading FR
   s = s.replace(/href=\{"https:\/\/www\.google\.com\/maps\/place\/14\+Tottenham[^"]*"\}/g, MAPS)
   s = s.split('14 Tottenham Road, London, England').join('1 quai de la Loire, 37210 Rochecorbon')
