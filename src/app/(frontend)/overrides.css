@@ -107,3 +107,19 @@ footer [data-framer-name='Link Wrapper'] .framer-text {
 [data-bg-submenu] a:hover {
   opacity: 0.55;
 }
+
+/* Tarifs : 5 formules en 3+2 (3 sur la 1re ligne, 2 centrées sur la 2e). Cartes inchangées. */
+[data-framer-name='Tarifs Cards Wrapper'] {
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+}
+[data-framer-name='Tarifs Cards Wrapper'] > .framer-wbllb0-container {
+  flex: 0 0 calc((100% - 60px) / 3) !important;
+  max-width: 400px !important;
+}
+@media (max-width: 991px) {
+  [data-framer-name='Tarifs Cards Wrapper'] > .framer-wbllb0-container { flex-basis: calc((100% - 30px) / 2) !important; }
+}
+@media (max-width: 640px) {
+  [data-framer-name='Tarifs Cards Wrapper'] > .framer-wbllb0-container { flex-basis: 100% !important; }
+}
