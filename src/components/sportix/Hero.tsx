@@ -9,21 +9,21 @@ export default function Hero() {
         <div className={"ssr-variant hidden-ugdvmg hidden-9md6lv"}>
           <div className={"framer-r65kbw"} data-framer-name={"Hero Banner"}>
             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-              <img decoding={"async"} width={"1920"} height={"940"} sizes={"(min-width: 1280px) 100vw, (max-width: 991px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw"} srcSet={"/assets/framerusercontent.com/images/AxxZOHJZQfJYLqNoCfdTmXe4IdQ_qbdfb3cb8.jpg 512w,/assets/framerusercontent.com/images/AxxZOHJZQfJYLqNoCfdTmXe4IdQ_q1cb5febc.jpg 1024w,/assets/framerusercontent.com/images/AxxZOHJZQfJYLqNoCfdTmXe4IdQ.jpg 1920w"} src={"/assets/framerusercontent.com/images/AxxZOHJZQfJYLqNoCfdTmXe4IdQ.jpg"} alt={"Hero Banner"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "right center", objectFit: "cover" }} />
+              <img decoding={"async"} width={"1920"} height={"940"} sizes={"(min-width: 1280px) 100vw, (max-width: 991px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw"} srcSet={"/assets/beauregard/hero.webp"} src={"/assets/beauregard/hero.webp"} alt={"Hero Banner"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "right center", objectFit: "cover" }} />
             </div>
           </div>
         </div>
         <div className={"ssr-variant hidden-72rtr7 hidden-9md6lv"}>
           <div className={"framer-r65kbw"} data-framer-name={"Hero Banner"}>
             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-              <img decoding={"async"} width={"1920"} height={"940"} sizes={"(min-width: 1280px) 100vw, (max-width: 991px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw"} srcSet={"/assets/framerusercontent.com/images/AxxZOHJZQfJYLqNoCfdTmXe4IdQ_qbdfb3cb8.jpg 512w,/assets/framerusercontent.com/images/AxxZOHJZQfJYLqNoCfdTmXe4IdQ_q1cb5febc.jpg 1024w,/assets/framerusercontent.com/images/AxxZOHJZQfJYLqNoCfdTmXe4IdQ.jpg 1920w"} src={"/assets/framerusercontent.com/images/AxxZOHJZQfJYLqNoCfdTmXe4IdQ.jpg"} alt={"Hero Banner"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "81.8% 37.9%", objectFit: "cover" }} />
+              <img decoding={"async"} width={"1920"} height={"940"} sizes={"(min-width: 1280px) 100vw, (max-width: 991px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw"} srcSet={"/assets/beauregard/hero.webp"} src={"/assets/beauregard/hero.webp"} alt={"Hero Banner"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "81.8% 37.9%", objectFit: "cover" }} />
             </div>
           </div>
         </div>
         <div className={"ssr-variant hidden-ugdvmg hidden-72rtr7"}>
           <div className={"framer-r65kbw"} data-framer-name={"Hero Banner"}>
             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-              <img decoding={"async"} width={"1920"} height={"940"} sizes={"(min-width: 1280px) 100vw, (max-width: 991px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw"} srcSet={"/assets/framerusercontent.com/images/AxxZOHJZQfJYLqNoCfdTmXe4IdQ_qbdfb3cb8.jpg 512w,/assets/framerusercontent.com/images/AxxZOHJZQfJYLqNoCfdTmXe4IdQ_q1cb5febc.jpg 1024w,/assets/framerusercontent.com/images/AxxZOHJZQfJYLqNoCfdTmXe4IdQ.jpg 1920w"} src={"/assets/framerusercontent.com/images/AxxZOHJZQfJYLqNoCfdTmXe4IdQ.jpg"} alt={"Hero Banner"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "97.2% 35.3%", objectFit: "cover" }} />
+              <img decoding={"async"} width={"1920"} height={"940"} sizes={"(min-width: 1280px) 100vw, (max-width: 991px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw"} srcSet={"/assets/beauregard/hero.webp"} src={"/assets/beauregard/hero.webp"} alt={"Hero Banner"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "97.2% 35.3%", objectFit: "cover" }} />
             </div>
           </div>
         </div>
@@ -129,28 +129,28 @@ export default function Hero() {
                   <div className={"framer-mpjaqz"} data-border={"true"} data-framer-name={"Image Wrapper"}>
                     <div className={"framer-1nl5rij"}>
                       <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                        <img decoding={"async"} width={"640"} height={"640"} sizes={"(min-width: 1280px) 42px, (min-width: 992px) and (max-width: 1279px) 42px, (max-width: 991px) 42px"} srcSet={"/assets/framerusercontent.com/images/M75AObMqvO6gtALTSpnf6s0J1I_qbdfb3cb8.webp 512w,/assets/framerusercontent.com/images/M75AObMqvO6gtALTSpnf6s0J1I.webp 640w"} src={"/assets/framerusercontent.com/images/M75AObMqvO6gtALTSpnf6s0J1I.webp"} alt={"Avatar"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                        <img decoding={"async"} width={"640"} height={"640"} sizes={"(min-width: 1280px) 42px, (min-width: 992px) and (max-width: 1279px) 42px, (max-width: 991px) 42px"} srcSet={"/assets/beauregard/avatar-1.webp"} src={"/assets/beauregard/avatar-1.webp"} alt={"Avatar"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                       </div>
                     </div>
                   </div>
                   <div className={"framer-1e0v27t"} data-border={"true"} data-framer-name={"Image Wrapper"}>
                     <div className={"framer-gazwll"}>
                       <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                        <img decoding={"async"} width={"640"} height={"640"} sizes={"(min-width: 1280px) 42px, (min-width: 992px) and (max-width: 1279px) 42px, (max-width: 991px) 42px"} srcSet={"/assets/framerusercontent.com/images/iCHl1N0KZwoUWPJ43Xxpw83Ctsg_qbdfb3cb8.webp 512w,/assets/framerusercontent.com/images/iCHl1N0KZwoUWPJ43Xxpw83Ctsg.webp 640w"} src={"/assets/framerusercontent.com/images/iCHl1N0KZwoUWPJ43Xxpw83Ctsg.webp"} alt={"Avatar"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                        <img decoding={"async"} width={"640"} height={"640"} sizes={"(min-width: 1280px) 42px, (min-width: 992px) and (max-width: 1279px) 42px, (max-width: 991px) 42px"} srcSet={"/assets/beauregard/avatar-2.webp"} src={"/assets/beauregard/avatar-2.webp"} alt={"Avatar"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                       </div>
                     </div>
                   </div>
                   <div className={"framer-18igyt6"} data-border={"true"} data-framer-name={"Image Wrapper"}>
                     <div className={"framer-faz4m3"}>
                       <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                        <img decoding={"async"} width={"640"} height={"640"} sizes={"(min-width: 1280px) 42px, (min-width: 992px) and (max-width: 1279px) 42px, (max-width: 991px) 42px"} srcSet={"/assets/framerusercontent.com/images/UIAlXXsdhRK4mxf3k1hS6LOGmI_qbdfb3cb8.webp 512w,/assets/framerusercontent.com/images/UIAlXXsdhRK4mxf3k1hS6LOGmI.webp 640w"} src={"/assets/framerusercontent.com/images/UIAlXXsdhRK4mxf3k1hS6LOGmI.webp"} alt={"Avatar"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                        <img decoding={"async"} width={"640"} height={"640"} sizes={"(min-width: 1280px) 42px, (min-width: 992px) and (max-width: 1279px) 42px, (max-width: 991px) 42px"} srcSet={"/assets/beauregard/avatar-3.webp"} src={"/assets/beauregard/avatar-3.webp"} alt={"Avatar"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                       </div>
                     </div>
                   </div>
                   <div className={"framer-148a4o5"} data-border={"true"} data-framer-name={"Image Wrapper"}>
                     <div className={"framer-jw7xoz"}>
                       <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                        <img decoding={"async"} width={"640"} height={"640"} sizes={"(min-width: 1280px) 42px, (min-width: 992px) and (max-width: 1279px) 42px, (max-width: 991px) 42px"} srcSet={"/assets/framerusercontent.com/images/fmCUEtIRuzpdy4syVv5eURZul4g_qbdfb3cb8.webp 512w,/assets/framerusercontent.com/images/fmCUEtIRuzpdy4syVv5eURZul4g.webp 640w"} src={"/assets/framerusercontent.com/images/fmCUEtIRuzpdy4syVv5eURZul4g.webp"} alt={"Avatar"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                        <img decoding={"async"} width={"640"} height={"640"} sizes={"(min-width: 1280px) 42px, (min-width: 992px) and (max-width: 1279px) 42px, (max-width: 991px) 42px"} srcSet={"/assets/beauregard/avatar-4.webp"} src={"/assets/beauregard/avatar-4.webp"} alt={"Avatar"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                       </div>
                     </div>
                   </div>
@@ -330,7 +330,7 @@ export default function Hero() {
               <div className={"ssr-variant"}>
                 <div className={"framer-8sf830"}>
                   <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                    <img decoding={"async"} width={"1920"} height={"2880"} sizes={"(min-width: 1280px) max((min(100vw, 1320px) - 146px) / 2, 1px), (max-width: 991px) max(max(min(100vw, 1320px) - 40px, 280px) - 40px, 220px), (min-width: 992px) and (max-width: 1279px) calc(min(100vw, 1320px) - 80px)"} srcSet={"/assets/framerusercontent.com/images/EnRbsBgnRO5ycOlZVjs4EHrH50_q1cb5febc.jpg 682w,/assets/framerusercontent.com/images/EnRbsBgnRO5ycOlZVjs4EHrH50_q5fcbabc4.jpg 1365w,/assets/framerusercontent.com/images/EnRbsBgnRO5ycOlZVjs4EHrH50.jpg 1920w"} src={"/assets/framerusercontent.com/images/EnRbsBgnRO5ycOlZVjs4EHrH50.jpg"} alt={"Rugby Player"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "30.7% 9.8%", objectFit: "cover" }} />
+                    <img decoding={"async"} width={"1920"} height={"2880"} sizes={"(min-width: 1280px) max((min(100vw, 1320px) - 146px) / 2, 1px), (max-width: 991px) max(max(min(100vw, 1320px) - 40px, 280px) - 40px, 220px), (min-width: 992px) and (max-width: 1279px) calc(min(100vw, 1320px) - 80px)"} srcSet={"/assets/beauregard/events.webp"} src={"/assets/beauregard/events.webp"} alt={"Rugby Player"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "30.7% 9.8%", objectFit: "cover" }} />
                   </div>
                 </div>
               </div>

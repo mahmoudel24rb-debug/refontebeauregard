@@ -20,7 +20,10 @@ export default function EspaceDetail({ espace }: { espace: Espace }) {
               <h1 style={{ fontSize: 'clamp(34px,5vw,58px)', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: 1.05, margin: '0 0 28px' }}>{espace.name}</h1>
               <p style={{ color: '#404040', fontSize: 19, lineHeight: 1.7, margin: 0 }}>{espace.desc}</p>
             </section>
-            <section style={{ maxWidth: 820, margin: '0 auto', padding: '10px 30px 110px' }}>
+            <section style={{ maxWidth: 980, margin: '0 auto', padding: '20px 30px 0' }}>
+              <img src={espace.img} alt={espace.name} loading="lazy" style={{ width: '100%', height: 'clamp(240px,42vw,480px)', objectFit: 'cover', borderRadius: 16, display: 'block' }} />
+            </section>
+            <section style={{ maxWidth: 820, margin: '0 auto', padding: '40px 30px 110px' }}>
               <a href="/contact" style={{ display: 'inline-block', background: '#376131', color: '#fff', fontWeight: 700, fontSize: 17, textDecoration: 'none', padding: '16px 34px', borderRadius: 70 }}>
                 Nous rejoindre
               </a>

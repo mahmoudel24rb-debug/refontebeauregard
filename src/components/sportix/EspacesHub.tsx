@@ -28,11 +28,14 @@ export default function EspacesHub() {
                   <a
                     key={e.slug}
                     href={e.href}
-                    style={{ display: 'flex', flexDirection: 'column', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 16, padding: 34, textDecoration: 'none', color: 'inherit' }}
+                    style={{ display: 'flex', flexDirection: 'column', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 16, overflow: 'hidden', textDecoration: 'none', color: 'inherit' }}
                   >
-                    <h2 style={{ fontSize: 26, fontWeight: 700, letterSpacing: '-0.01em', margin: '0 0 14px' }}>{e.name}</h2>
-                    <p style={{ color: '#525252', lineHeight: 1.65, margin: '0 0 24px', flex: 1 }}>{e.desc}</p>
-                    <span style={{ color: '#376131', fontWeight: 700 }}>Découvrir →</span>
+                    <img src={e.img} alt={e.name} loading="lazy" style={{ width: '100%', height: 210, objectFit: 'cover', display: 'block' }} />
+                    <div style={{ display: 'flex', flexDirection: 'column', flex: 1, padding: 30 }}>
+                      <h2 style={{ fontSize: 26, fontWeight: 700, letterSpacing: '-0.01em', margin: '0 0 14px' }}>{e.name}</h2>
+                      <p style={{ color: '#525252', lineHeight: 1.65, margin: '0 0 24px', flex: 1 }}>{e.desc}</p>
+                      <span style={{ color: '#376131', fontWeight: 700 }}>Découvrir →</span>
+                    </div>
                   </a>
                 ))}
               </div>
