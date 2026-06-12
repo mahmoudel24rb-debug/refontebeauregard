@@ -51,22 +51,6 @@ export default function Contact() {
                             </a>
                           </p>
                         </div>
-                        <div className={"framer-syx9gz-container"} id={"undefined-syx9gz"} style={{ opacity: "1" }}>
-                          <div className={"framer-YEzW6 framer-X8adU framer-1mk5516 framer-v-1mk5516"} data-framer-name={"Default"} data-highlight={"true"} style={{ opacity: "1" }}>
-                            <div className={"framer-2cc3a7"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ht2NPA9Z3-XC_5sBkkp)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-ht2NPA9Z3-XC_5sBkkp": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--variable-reference-yWUYpr9Dg-XC_5sBkkp": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", transform: "none", opacity: "1" }}>
-                              <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ht2NPA9Z3-XC_5sBkkp))" }}>
-                                Contact
-                              </p>
-                            </div>
-                            <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", color: "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none", opacity: "1" }} className={"framer-155m2hi"} aria-hidden={"true"}>
-                              <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"} preserveAspectRatio={"none"} width={"100%"} height={"100%"}>
-                                  <use href={"#svg1231980477_257"} />
-                                </svg>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
                       </nav>
                       <div className={"framer-155lzj3-container"} style={{ opacity: "1", transform: "none" }}>
                         <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", borderRadius: "70px", opacity: "1" }} href={"/contact"}>
@@ -113,7 +97,7 @@ export default function Contact() {
                         <div className={"framer-17991tt"} data-framer-name={"Body"} style={{ transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
                             <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={"https://www.google.com/maps/place/14+Tottenham+Rd,+London+N1+4EP,+%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F/@51.545533,-0.0786771,682m/data=!3m2!1e3!4b1!4m6!3m5!1s0x48761c921c1fe0f3:0xa177cd610facc449!8m2!3d51.545533!4d-0.0761022!16s%2Fg%2F11fs__ncrt?entry=ttu&amp;g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D"} target={"_blank"} rel={"noopener"}>
-                              14 Tottenham Road, London, England
+                              1 quai de la Loire, 37210 Rochecorbon
                             </a>
                           </p>
                         </div>
@@ -128,8 +112,8 @@ export default function Contact() {
                       <div className={"ssr-variant hidden-t8jtsi"}>
                         <div className={"framer-13cv0co"} data-framer-name={"Body"} style={{ transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                            <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={"tel:+1 212 425 8617"} target={"_blank"} rel={"noopener"}>
-                              +1 212 425 8617
+                            <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={"tel:02 47 44 41 43"} target={"_blank"} rel={"noopener"}>
+                              02 47 44 41 43
                             </a>
                           </p>
                         </div>
@@ -158,7 +142,7 @@ export default function Contact() {
                     <div className={"framer-1yaukv6"} data-framer-name={"Labels Wrapper"}>
                       <div className={"framer-77zbny"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                         <h3 className={"framer-text framer-styles-preset-14sw4ra"} data-styles-preset={"c6uXMw2Ik"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                          Send us a message
+                          Envoyez-nous un message
                         </h3>
                       </div>
                       <div className={"framer-si3mya"} data-framer-name={"Top Label Wrapper"}>
@@ -230,6 +214,34 @@ export default function Contact() {
                 </form>
               </div>
             </section>
+      <section style={{ padding: "90px 0", background: "#f5f5f5" }}>
+        <div style={{ maxWidth: "1180px", margin: "0 auto", padding: "0 30px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "40px" }}>
+          <div>
+            <h2 style={{ fontSize: "clamp(26px,3vw,40px)", fontWeight: 700, letterSpacing: "-0.02em", margin: "0 0 24px" }}>Nous trouver</h2>
+            <p style={{ color: "#404040", lineHeight: 1.7, margin: "0 0 8px" }}><strong>Parc Beauregard Fitness &amp; Coaching</strong></p>
+            <p style={{ color: "#404040", lineHeight: 1.7, margin: "0 0 4px" }}>1 quai de la Loire, 37210 Rochecorbon</p>
+            <p style={{ color: "#404040", lineHeight: 1.7, margin: "0 0 4px" }}>02 47 44 41 43</p>
+            <p style={{ color: "#404040", lineHeight: 1.7, margin: "0 0 28px" }}>rochecorbon@parcbeauregard.com</p>
+            <h3 style={{ fontSize: "20px", fontWeight: 700, margin: "0 0 14px" }}>Horaires d'ouverture</h3>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, maxWidth: "360px" }}>
+              {[["Lundi – Vendredi", "6h00 – 22h00"], ["Samedi", "8h00 – 20h00"], ["Dimanche", "8h00 – 13h00"]].map(([d, h]) => (
+                <li key={d} style={{ display: "flex", justifyContent: "space-between", padding: "11px 0", borderBottom: "1px solid rgba(0,0,0,0.08)" }}>
+                  <span style={{ color: "#404040" }}>{d}</span>
+                  <strong>{h}</strong>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div style={{ minHeight: "400px", borderRadius: "16px", overflow: "hidden" }}>
+            <iframe
+              title="Plan d'accès Parc Beauregard"
+              src="https://www.google.com/maps?q=1%20quai%20de%20la%20Loire%2C%2037210%20Rochecorbon&output=embed"
+              style={{ width: "100%", height: "100%", minHeight: "400px", border: 0 }}
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
             <section className={"framer-eqah0p"} data-framer-name={"Classes Section"}>
               <div className={"framer-hcox9t"} data-framer-name={"Base Container"}>
                 <div className={"framer-18hfuhg"} data-framer-name={"Top Content Wrapper"} style={{ willChange: "transform", opacity: "1", transform: "none" }}>

@@ -51,22 +51,6 @@ export default function AccueilPage() {
                             </a>
                           </p>
                         </div>
-                        <div className={"framer-syx9gz-container"} id={"undefined-syx9gz"} style={{ opacity: "1" }}>
-                          <div className={"framer-YEzW6 framer-X8adU framer-1mk5516 framer-v-1mk5516"} data-framer-name={"Default"} data-highlight={"true"} style={{ opacity: "1" }}>
-                            <div className={"framer-2cc3a7"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ht2NPA9Z3-XC_5sBkkp)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-ht2NPA9Z3-XC_5sBkkp": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--variable-reference-yWUYpr9Dg-XC_5sBkkp": "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", transform: "none", opacity: "1" }}>
-                              <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ht2NPA9Z3-XC_5sBkkp))" }}>
-                                Contact
-                              </p>
-                            </div>
-                            <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", color: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none", opacity: "1" }} className={"framer-155m2hi"} aria-hidden={"true"}>
-                              <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"} preserveAspectRatio={"none"} width={"100%"} height={"100%"}>
-                                  <use href={"#svg1231980477_257"} />
-                                </svg>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
                       </nav>
                       <div className={"framer-155lzj3-container"} style={{ opacity: "1", transform: "none" }}>
                         <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", borderRadius: "70px", opacity: "1" }} href={"/contact"}>

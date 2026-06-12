@@ -113,3 +113,34 @@ footer [data-framer-name='Link Wrapper'] .framer-text {
 [data-framer-name='Toggle Wrapper'] {
   display: none !important;
 }
+
+/* ---------- Cartes de prix : badge non rogné + hauteur égale ---------- */
+/* Le badge (label) flottait en absolute -13px au-dessus → rogné. On le remet
+   dans le flux, en haut de la carte, avec un peu d'espace. */
+[data-framer-name='LAbel Wrapper'] {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  align-self: flex-start !important;
+}
+.framer-jIlUe {
+  padding-top: 24px !important;
+  height: 100% !important;
+}
+/* Grille tarifs : étirer toutes les cartes à la même hauteur. */
+[data-framer-name='Tarifs Cards Wrapper'] {
+  align-items: stretch !important;
+}
+[data-framer-name='Tarifs Cards Wrapper'] > * {
+  display: flex !important;
+}
+
+/* Boutons des cartes de prix alignés en bas (la liste grandit pour combler). */
+.framer-jIlUe [data-framer-name='Bottom Text Wrapper'] {
+  flex: 1 1 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.framer-jIlUe [data-framer-name='List Wrapper'] {
+  flex: 1 1 auto !important;
+}
