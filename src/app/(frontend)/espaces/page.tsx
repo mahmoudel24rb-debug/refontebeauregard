@@ -1,8 +1,7 @@
 import React from 'react'
+import EspacesHub from '@/components/sportix/EspacesHub'
 
-import Espaces from '@/components/sportix/Espaces'
-
-// /espaces — port fidèle de facilities.html (à adapter : 6→4 cartes + Payload `espaces`).
+// /espaces — 3 espaces réels (Cours collectifs, Fonctionnel, Cross/Cardio).
 export default function EspacesPage() {
-  return <Espaces />
+  return <EspacesHub />
 }

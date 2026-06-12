@@ -1,12 +1,16 @@
 import React from 'react'
-import { redirect } from 'next/navigation'
+import { redirect, notFound } from 'next/navigation'
+import EspaceDetail from '@/components/sportix/EspaceDetail'
+import { ESPACES, espaceBySlug } from '@/components/sportix/espaces'
 
-import FicheEspace from '@/components/sportix/FicheEspace'
+export function generateStaticParams() {
+  return ESPACES.filter((e) => e.detail).map((e) => ({ slug: e.slug }))
+}
 
-// /espaces/[slug] — gabarit fiche espace.
-// « cours-collectifs » est fusionné avec la page Cours -> redirection.
-export default async function FicheEspacePage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function EspaceSlugPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   if (slug === 'cours-collectifs') redirect('/services/cours')
-  return <FicheEspace />
+  const espace = espaceBySlug(slug)
+  if (!espace || !espace.detail) notFound()
+  return <EspaceDetail espace={espace} />
 }
