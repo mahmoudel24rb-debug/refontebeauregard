@@ -1,8 +1,7 @@
-import React from 'react'
+import { redirect } from 'next/navigation'
 
-import FicheService from '@/components/sportix/FicheService'
-
-// /services/[slug] — gabarit fiche service (port de classes--strength-power-training.html).
-export default function FicheServicePage() {
-  return <FicheService />
+// /services/[slug] : seul /services/cours existe (segment statique). Tout autre
+// slug renvoyait l'ancien gabarit Sportix -> on redirige vers la page Cours.
+export default function ServicesSlugPage() {
+  redirect('/services/cours')
 }

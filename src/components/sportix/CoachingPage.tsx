@@ -21,21 +21,6 @@ const BLOCS = [
   },
 ]
 
-const COACHS = [
-  {
-    nom: 'Juan Silva',
-    bio: "Votre corps est aussi vivant que vous, et son but ultime est simple : le maintien de l'équilibre. Un déséquilibre des contractions musculaires est souvent responsable de douleurs chroniques. Mon objectif est de vous accompagner vers l'harmonie et l'équilibre, pour reprendre peu à peu le contrôle de votre vie, sans gêne ni douleur.",
-  },
-  {
-    nom: 'Alexandre Bourdet',
-    bio: "J'adore entraîner les gens dans la bienveillance, voir les évolutions sur le corps comme sur le mental et redonner confiance. J'aime coacher en small group (5-8 personnes) : boxe, cross training, pilates avec ou sans matériel, en adaptant toujours le niveau de chacun.",
-  },
-  {
-    nom: 'Thomas Dubois',
-    bio: "Coach sportif, ancien militaire et pompier : la rigueur et le dépassement de soi, c'est mon quotidien. J'accompagne celles et ceux qui veulent se remettre en forme, se dépasser ou simplement bouger avec efficacité. À l'écoute et humain, mais exigeant — travail, motivation et résultats, dans la bonne humeur.",
-  },
-]
-
 export default function CoachingPage() {
   return (
     <div id="main">
@@ -77,16 +62,11 @@ export default function CoachingPage() {
 
             {/* Nos coachs */}
             <section style={{ maxWidth: 1100, margin: '0 auto', padding: '50px 30px 30px' }}>
-              <h2 style={{ fontSize: 'clamp(26px,3vw,38px)', fontWeight: 700, letterSpacing: '-0.02em', margin: '0 0 10px' }}>Nos coachs</h2>
-              <img src="/assets/beauregard/coachs-group.webp" alt="L'équipe de coachs du Parc Beauregard" loading="lazy" style={{ width: '100%', height: 'clamp(220px,36vw,400px)', objectFit: 'cover', borderRadius: 16, display: 'block', margin: '20px 0 36px' }} />
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px,1fr))', gap: 24 }}>
-                {COACHS.map((c) => (
-                  <div key={c.nom} style={{ background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, padding: 30 }}>
-                    <h3 style={{ fontSize: 20, fontWeight: 700, margin: '0 0 12px', color: '#376131' }}>{c.nom}</h3>
-                    <p style={{ color: '#525252', lineHeight: 1.6, margin: 0 }}>{c.bio}</p>
-                  </div>
-                ))}
-              </div>
+              <h2 style={{ fontSize: 'clamp(26px,3vw,38px)', fontWeight: 700, letterSpacing: '-0.02em', margin: '0 0 14px' }}>Nos coachs</h2>
+              <p style={{ color: '#404040', fontSize: 19, lineHeight: 1.7, margin: '0 0 4px', maxWidth: 820 }}>
+                Une équipe de coachs diplômés et passionnés, à votre écoute pour vous accompagner à chaque séance. Chacun a sa spécialité — boxe, cross training, pilates, préparation physique — pour s'adapter à vos objectifs et à votre niveau.
+              </p>
+              <img src="/assets/beauregard/coachs-group.webp" alt="L'équipe de coachs du Parc Beauregard" loading="lazy" style={{ width: '100%', height: 'clamp(220px,36vw,400px)', objectFit: 'cover', borderRadius: 16, display: 'block', margin: '24px 0 0' }} />
             </section>
 
             <section style={{ maxWidth: 1100, margin: '0 auto', padding: '30px 30px 110px' }}>
