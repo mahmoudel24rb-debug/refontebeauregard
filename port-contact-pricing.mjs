@@ -1,5 +1,5 @@
 import fs from 'node:fs'
-const FILE = 'src/components/sportix/Contact.tsx'
+const FILE = process.argv[2] || 'src/components/sportix/Contact.tsx'
 const lines = fs.readFileSync(FILE, 'utf8').split('\n')
 
 const open = lines.findIndex((l) => l.includes('Tarifs Cards Wrapper'))
