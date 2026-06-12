@@ -5,17 +5,21 @@ import React from 'react'
 // car framer.css reset `body` + styles globaux (sinon l'admin Payload casse).
 import '@/components/sportix/framer.css'
 import './overrides.css'
+import MobileNav from '@/components/sportix/MobileNav'
 
 export const metadata = {
   title: 'Parc Beauregard Fitness & Coaching — Rochecorbon',
   description:
-    'Salle de sport et coaching au cœur de la nature à Rochecorbon (37) : cours collectifs, espace fonctionnel, cross-cardio et kid fitness.',
+    'Salle de sport et coaching au cœur de la nature à Rochecorbon (37) : cours collectifs, entraînement fonctionnel, cross-cardio et coaching personnalisé.',
 }
 
 export default function FrontendLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
-      <body>{children}</body>
+      <body>
+        {children}
+        <MobileNav />
+      </body>
     </html>
   )
 }
