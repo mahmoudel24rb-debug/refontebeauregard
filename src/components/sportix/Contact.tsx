@@ -212,8 +212,8 @@ export default function Contact() {
                       <div className={"ssr-variant hidden-t8jtsi"}>
                         <div className={"framer-17991tt"} data-framer-name={"Body"} style={{ transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                            <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={"https://www.google.com/maps/place/14+Tottenham+Rd,+London+N1+4EP,+%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F/@51.545533,-0.0786771,682m/data=!3m2!1e3!4b1!4m6!3m5!1s0x48761c921c1fe0f3:0xa177cd610facc449!8m2!3d51.545533!4d-0.0761022!16s%2Fg%2F11fs__ncrt?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D"} target={"_blank"} rel={"noopener"}>
-                              14 Tottenham Road, London, England
+                            <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={"https://www.google.com/maps?q=1+quai+de+la+Loire,+37210+Rochecorbon"} target={"_blank"} rel={"noopener"}>
+                              1 quai de la Loire, 37210 Rochecorbon
                             </a>
                           </p>
                         </div>
@@ -221,8 +221,8 @@ export default function Contact() {
                       <div className={"ssr-variant hidden-1vvw60x hidden-5dz366"}>
                         <div className={"framer-17991tt"} data-framer-name={"Body"} style={{ transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                            <a className={"framer-text framer-styles-preset-1783udm"} data-styles-preset={"JOlgSsugd"} href={"https://www.google.com/maps/place/14+Tottenham+Rd,+London+N1+4EP,+%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F/@51.545533,-0.0786771,682m/data=!3m2!1e3!4b1!4m6!3m5!1s0x48761c921c1fe0f3:0xa177cd610facc449!8m2!3d51.545533!4d-0.0761022!16s%2Fg%2F11fs__ncrt?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D"} target={"_blank"} rel={"noopener"}>
-                              14 Tottenham Road, London, England
+                            <a className={"framer-text framer-styles-preset-1783udm"} data-styles-preset={"JOlgSsugd"} href={"https://www.google.com/maps?q=1+quai+de+la+Loire,+37210+Rochecorbon"} target={"_blank"} rel={"noopener"}>
+                              1 quai de la Loire, 37210 Rochecorbon
                             </a>
                           </p>
                         </div>
@@ -237,8 +237,8 @@ export default function Contact() {
                       <div className={"ssr-variant hidden-t8jtsi"}>
                         <div className={"framer-13cv0co"} data-framer-name={"Body"} style={{ transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                            <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={"tel:+1 212 425 8617"} target={"_blank"} rel={"noopener"}>
-                              +1 212 425 8617
+                            <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={"tel:+33247444143"} target={"_blank"} rel={"noopener"}>
+                              02 47 44 41 43
                             </a>
                           </p>
                         </div>
@@ -246,8 +246,8 @@ export default function Contact() {
                       <div className={"ssr-variant hidden-1vvw60x hidden-5dz366"}>
                         <div className={"framer-13cv0co"} data-framer-name={"Body"} style={{ transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                            <a className={"framer-text framer-styles-preset-1783udm"} data-styles-preset={"JOlgSsugd"} href={"tel:+1 212 425 8617"} target={"_blank"} rel={"noopener"}>
-                              +1 212 425 8617
+                            <a className={"framer-text framer-styles-preset-1783udm"} data-styles-preset={"JOlgSsugd"} href={"tel:+33247444143"} target={"_blank"} rel={"noopener"}>
+                              02 47 44 41 43
                             </a>
                           </p>
                         </div>
@@ -285,7 +285,7 @@ export default function Contact() {
                     <div className={"framer-1yaukv6"} data-framer-name={"Labels Wrapper"}>
                       <div className={"framer-77zbny"} data-framer-name={"Heading"} style={{ transform: "none" }}>
                         <h3 className={"framer-text framer-styles-preset-14sw4ra"} data-styles-preset={"c6uXMw2Ik"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                          Send us a message
+                          Envoyez-nous un message
                         </h3>
                       </div>
                       <div className={"framer-si3mya"} data-framer-name={"Top Label Wrapper"}>
@@ -1197,13 +1197,13 @@ export default function Contact() {
                     <div className={"framer-r05iym"} data-framer-name={"Copyright Wrapper"}>
                       <div className={"framer-hvf79x"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", willChange: "auto", opacity: "1", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                          © Parc Beauregard. Tous droits réservés. Designed by
+                          © Parc Beauregard. Tous droits réservés.
                         </p>
                       </div>
                       <div className={"framer-19zhfuo"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", willChange: "auto", opacity: "1", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49)))" }}>
-                          <a className={"framer-text framer-styles-preset-bfv2hb"} data-styles-preset={"Upx7ZfNvr"} href={"https://fourtwelve.co/"} target={"_blank"} rel={"noopener"}>
-                            fourtwelve.
+                          <a className={"framer-text framer-styles-preset-bfv2hb"} data-styles-preset={"Upx7ZfNvr"} href={"/"} target={"_blank"} rel={"noopener"}>
+                            
                           </a>
                         </p>
                       </div>
@@ -1431,13 +1431,13 @@ export default function Contact() {
                     <div className={"framer-r05iym"} data-framer-name={"Copyright Wrapper"}>
                       <div className={"framer-hvf79x"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", willChange: "auto", opacity: "1", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                          © Parc Beauregard. Tous droits réservés. Designed by
+                          © Parc Beauregard. Tous droits réservés.
                         </p>
                       </div>
                       <div className={"framer-19zhfuo"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", willChange: "auto", opacity: "1", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49)))" }}>
-                          <a className={"framer-text framer-styles-preset-bfv2hb"} data-styles-preset={"Upx7ZfNvr"} href={"https://fourtwelve.co/"} target={"_blank"} rel={"noopener"}>
-                            fourtwelve.
+                          <a className={"framer-text framer-styles-preset-bfv2hb"} data-styles-preset={"Upx7ZfNvr"} href={"/"} target={"_blank"} rel={"noopener"}>
+                            
                           </a>
                         </p>
                       </div>
@@ -1665,10 +1665,10 @@ export default function Contact() {
                     <div className={"framer-r05iym"} data-framer-name={"Copyright Wrapper"}>
                       <div className={"framer-hvf79x"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", willChange: "auto", "--extracted-hl0iuy": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", opacity: "1", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-alignment": "left", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                          © Parc Beauregard. Tous droits réservés. Designed by{" "}
-                          <a className={"framer-text framer-styles-preset-1862sd8"} data-styles-preset={"cWZXsG4am"} href={"https://fourtwelve.co/"} target={"_blank"} rel={"noopener"}>
+                          © Parc Beauregard. Tous droits réservés.{" "}
+                          <a className={"framer-text framer-styles-preset-1862sd8"} data-styles-preset={"cWZXsG4am"} href={"/"} target={"_blank"} rel={"noopener"}>
                             <span style={{ "--framer-text-color": "var(--extracted-hl0iuy, var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49)))" }} className={"framer-text"}>
-                              fourtwelve
+                              
                             </span>
                           </a>
                           .

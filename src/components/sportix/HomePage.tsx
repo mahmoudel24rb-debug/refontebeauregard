@@ -3096,13 +3096,13 @@ export default function AccueilPage() {
                     <div className={"framer-r05iym"} data-framer-name={"Copyright Wrapper"}>
                       <div className={"framer-hvf79x"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", willChange: "auto", opacity: "1", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                          © Parc Beauregard. Tous droits réservés. Designed by
+                          © Parc Beauregard. Tous droits réservés.
                         </p>
                       </div>
                       <div className={"framer-19zhfuo"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", willChange: "auto", opacity: "1", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49)))" }}>
-                          <a className={"framer-text framer-styles-preset-bfv2hb"} data-styles-preset={"Upx7ZfNvr"} href={"https://fourtwelve.co/"} target={"_blank"} rel={"noopener"}>
-                            fourtwelve.
+                          <a className={"framer-text framer-styles-preset-bfv2hb"} data-styles-preset={"Upx7ZfNvr"} href={"/"} target={"_blank"} rel={"noopener"}>
+                            
                           </a>
                         </p>
                       </div>
@@ -3330,13 +3330,13 @@ export default function AccueilPage() {
                     <div className={"framer-r05iym"} data-framer-name={"Copyright Wrapper"}>
                       <div className={"framer-hvf79x"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", willChange: "auto", opacity: "1", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                          © Parc Beauregard. Tous droits réservés. Designed by
+                          © Parc Beauregard. Tous droits réservés.
                         </p>
                       </div>
                       <div className={"framer-19zhfuo"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", willChange: "auto", opacity: "1", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49)))" }}>
-                          <a className={"framer-text framer-styles-preset-bfv2hb"} data-styles-preset={"Upx7ZfNvr"} href={"https://fourtwelve.co/"} target={"_blank"} rel={"noopener"}>
-                            fourtwelve.
+                          <a className={"framer-text framer-styles-preset-bfv2hb"} data-styles-preset={"Upx7ZfNvr"} href={"/"} target={"_blank"} rel={"noopener"}>
+                            
                           </a>
                         </p>
                       </div>
@@ -3564,10 +3564,10 @@ export default function AccueilPage() {
                     <div className={"framer-r05iym"} data-framer-name={"Copyright Wrapper"}>
                       <div className={"framer-hvf79x"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", willChange: "auto", "--extracted-hl0iuy": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", opacity: "1", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-alignment": "left", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                          © Parc Beauregard. Tous droits réservés. Designed by{" "}
-                          <a className={"framer-text framer-styles-preset-1862sd8"} data-styles-preset={"cWZXsG4am"} href={"https://fourtwelve.co/"} target={"_blank"} rel={"noopener"}>
+                          © Parc Beauregard. Tous droits réservés.{" "}
+                          <a className={"framer-text framer-styles-preset-1862sd8"} data-styles-preset={"cWZXsG4am"} href={"/"} target={"_blank"} rel={"noopener"}>
                             <span style={{ "--framer-text-color": "var(--extracted-hl0iuy, var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49)))" }} className={"framer-text"}>
-                              fourtwelve
+                              
                             </span>
                           </a>
                           .
