@@ -1,6 +1,7 @@
 // Généré par framer-port.mjs — port FIDÈLE du SSR Framer (ne pas reconstruire, brancher Payload sur les noeuds de contenu).
 // Styles exacts : importer "framer.css" une seule fois (layout global).
 import './framer.css';
+import ContactForm from './ContactForm'
 import { PriceCard } from './PriceCard'
 import { MENSUEL, COURTES } from './formules'
 
@@ -280,92 +281,7 @@ export default function Contact() {
                     </div>
                   </div>
                 </div>
-                <form className={"framer-acfs9k"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
-                  <div className={"framer-uyz6fd"} data-framer-name={"Form Wrapper"}>
-                    <div className={"framer-1yaukv6"} data-framer-name={"Labels Wrapper"}>
-                      <div className={"framer-77zbny"} data-framer-name={"Heading"} style={{ transform: "none" }}>
-                        <h3 className={"framer-text framer-styles-preset-14sw4ra"} data-styles-preset={"c6uXMw2Ik"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                          Envoyez-nous un message
-                        </h3>
-                      </div>
-                      <div className={"framer-si3mya"} data-framer-name={"Top Label Wrapper"}>
-                        <label className={"framer-11qs6d6"}>
-                          <div className={"framer-1yzq08c"} data-framer-name={"Heading"} style={{ transform: "none" }}>
-                            <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                              Prénom
-                            </p>
-                          </div>
-                          <div className={"framer-form-text-input framer-form-input-wrapper framer-pu690z framer-form-text-input-type"}>
-                            <input type={"text"} required={null} name={"Prénom"} placeholder={"Prénom"} className={"framer-form-input framer-form-input-empty"} />
-                          </div>
-                        </label>
-                        <label className={"framer-1h8i56j"}>
-                          <div className={"framer-185okoj"} data-framer-name={"Heading"} style={{ transform: "none" }}>
-                            <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                              Nom
-                            </p>
-                          </div>
-                          <div className={"framer-form-text-input framer-form-input-wrapper framer-lcuh3l"}>
-                            <input type={"email"} required={null} name={"Email"} placeholder={"Nom"} className={"framer-form-input framer-form-input-empty"} />
-                          </div>
-                        </label>
-                      </div>
-                      <label className={"framer-1je3lnb"}>
-                        <div className={"framer-103nsbg"} data-framer-name={"Heading"} style={{ transform: "none" }}>
-                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                            Email
-                          </p>
-                        </div>
-                        <div className={"framer-form-text-input framer-form-input-wrapper framer-c3xjmv"}>
-                          <input type={"email"} required={null} name={"Email"} placeholder={"Votre email"} className={"framer-form-input framer-form-input-empty"} />
-                        </div>
-                      </label>
-                      <label className={"framer-11b5d73"}>
-                        <div className={"framer-1a0qos2"} data-framer-name={"Heading"} style={{ transform: "none" }}>
-                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                            Votre message
-                          </p>
-                        </div>
-                        <div className={"framer-form-text-input framer-form-input-wrapper framer-1hs4suo framer-form-textarea-input-type"}>
-                          <textarea required={null} name={"Votre message"} placeholder={"Votre message"} className={"framer-form-input"} />
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-                  <div className={"ssr-variant hidden-t8jtsi"}>
-                    <div className={"framer-l35gn-container"}>
-                      <button type={"submit"} className={"framer-5KOev framer-X8adU framer-1oi5cg4 framer-v-1oi5cg4"} data-framer-name={"Default"} data-reset={"button"} style={{ backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", height: "100%", width: "100%", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px", opacity: "1" }}>
-                        <div className={"framer-58lnby"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                          <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            Envoyer
-                          </p>
-                        </div>
-                      </button>
-                    </div>
-                  </div>
-                  <div className={"ssr-variant hidden-1vvw60x hidden-5dz366"}>
-                    <div className={"framer-l35gn-container"}>
-                      <button type={"submit"} className={"framer-5KOev framer-X8adU framer-1oi5cg4 framer-v-19w480b"} data-framer-name={"Phone"} data-reset={"button"} style={{ backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", height: "100%", width: "100%", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px", opacity: "1" }}>
-                        <div className={"framer-58lnby"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                          <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            Envoyer
-                          </p>
-                        </div>
-                      </button>
-                    </div>
-                  </div>
-                  <input type={"text"} name={"website"} tabIndex={"-1"} autoComplete={"one-time-code"} aria-hidden={"true"} style={{ position: "absolute", transform: "scale(0)" }} data-1p-ignore={"true"} data-lpignore={"true"} data-form-type={"other"} data-bwignore={"true"} />
-                  <input type={"text"} name={"company"} tabIndex={"-1"} autoComplete={"one-time-code"} aria-hidden={"true"} style={{ position: "absolute", transform: "scale(0)" }} data-1p-ignore={"true"} data-lpignore={"true"} data-form-type={"other"} data-bwignore={"true"} />
-                  <input type={"text"} name={"message"} tabIndex={"-1"} autoComplete={"one-time-code"} aria-hidden={"true"} style={{ position: "absolute", transform: "scale(0)" }} data-1p-ignore={"true"} data-lpignore={"true"} data-form-type={"other"} data-bwignore={"true"} />
-                  <input type={"text"} name={"subject"} tabIndex={"-1"} autoComplete={"one-time-code"} aria-hidden={"true"} style={{ position: "absolute", transform: "scale(0)" }} data-1p-ignore={"true"} data-lpignore={"true"} data-form-type={"other"} data-bwignore={"true"} />
-                  <input type={"text"} name={"title"} tabIndex={"-1"} autoComplete={"one-time-code"} aria-hidden={"true"} style={{ position: "absolute", transform: "scale(0)" }} data-1p-ignore={"true"} data-lpignore={"true"} data-form-type={"other"} data-bwignore={"true"} />
-                  <input type={"text"} name={"description"} tabIndex={"-1"} autoComplete={"one-time-code"} aria-hidden={"true"} style={{ position: "absolute", transform: "scale(0)" }} data-1p-ignore={"true"} data-lpignore={"true"} data-form-type={"other"} data-bwignore={"true"} />
-                  <input type={"text"} name={"feedback"} tabIndex={"-1"} autoComplete={"one-time-code"} aria-hidden={"true"} style={{ position: "absolute", transform: "scale(0)" }} data-1p-ignore={"true"} data-lpignore={"true"} data-form-type={"other"} data-bwignore={"true"} />
-                  <input type={"text"} name={"notes"} tabIndex={"-1"} autoComplete={"one-time-code"} aria-hidden={"true"} style={{ position: "absolute", transform: "scale(0)" }} data-1p-ignore={"true"} data-lpignore={"true"} data-form-type={"other"} data-bwignore={"true"} />
-                  <input type={"text"} name={"details"} tabIndex={"-1"} autoComplete={"one-time-code"} aria-hidden={"true"} style={{ position: "absolute", transform: "scale(0)" }} data-1p-ignore={"true"} data-lpignore={"true"} data-form-type={"other"} data-bwignore={"true"} />
-                  <input type={"text"} name={"remarks"} tabIndex={"-1"} autoComplete={"one-time-code"} aria-hidden={"true"} style={{ position: "absolute", transform: "scale(0)" }} data-1p-ignore={"true"} data-lpignore={"true"} data-form-type={"other"} data-bwignore={"true"} />
-                  <input type={"text"} name={"comments"} tabIndex={"-1"} autoComplete={"one-time-code"} aria-hidden={"true"} style={{ position: "absolute", transform: "scale(0)" }} data-1p-ignore={"true"} data-lpignore={"true"} data-form-type={"other"} data-bwignore={"true"} />
-                </form>
+                <ContactForm />
               </div>
             </section>
       <section style={{ padding: "90px 0", background: "#f5f5f5" }}>

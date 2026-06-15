@@ -142,3 +142,6 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
 @media (max-width: 640px) {
   [data-ptab] > .framer-wbllb0-container { flex-basis: 100% !important; }
 }
+
+/* Formulaire de contact : grille 2 colonnes -> 1 sur mobile */
+@media (max-width: 600px) { .bg-cf-grid { grid-template-columns: 1fr !important; } }
