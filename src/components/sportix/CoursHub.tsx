@@ -1,14 +1,16 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import { COURS } from './cours'
+import { getPayloadClient } from '@/lib/payload'
 
-// Page « Nos cours » (/services/cours) — fusion de l'ancien espace « Cours collectifs »
-// et de la page cours. Liste les 11 cours réels ; chaque carte mène à /services/cours/[slug].
+// Page « Nos cours » (/services/cours) — liste les cours depuis Payload.
 
 const SHELL = 'framer-xf0KU framer-gbuwA framer-80BYq framer-1eSXM framer-Suf9V framer-fN9WN framer-72rtr7'
 
-export default function CoursHub() {
+export default async function CoursHub() {
+  const payload = await getPayloadClient()
+  const { docs: cours } = await payload.find({ collection: 'cours', sort: 'ordre', limit: 100 })
+
   return (
     <div id="main">
       <div className="framer-9MYi8 framer-13v9dm1" style={{ minHeight: '100vh', width: 'auto' }}>
@@ -25,17 +27,16 @@ export default function CoursHub() {
 
             <section style={{ maxWidth: 1180, margin: '0 auto', padding: '0 30px 110px' }}>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(290px, 1fr))', gap: 24 }}>
-                {COURS.map((c) => (
+                {cours.map((c) => (
                   <a
-                    key={c.slug}
+                    key={c.id}
                     href={`/services/cours/${c.slug}`}
-                    className="bg-cours-card"
                     style={{ display: 'flex', flexDirection: 'column', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden', textDecoration: 'none', color: 'inherit' }}
                   >
-                    <img src={c.img} alt={c.name} loading="lazy" style={{ width: '100%', height: 170, objectFit: 'cover', display: 'block' }} />
+                    {c.image ? <img src={c.image} alt={c.nom} loading="lazy" style={{ width: '100%', height: 170, objectFit: 'cover', display: 'block' }} /> : null}
                     <div style={{ display: 'flex', flexDirection: 'column', flex: 1, padding: 26 }}>
-                      <h3 style={{ fontSize: 22, fontWeight: 700, letterSpacing: '-0.01em', margin: '0 0 10px' }}>{c.name}</h3>
-                      <p style={{ color: '#525252', lineHeight: 1.55, margin: '0 0 20px', flex: 1 }}>{c.short}</p>
+                      <h3 style={{ fontSize: 22, fontWeight: 700, letterSpacing: '-0.01em', margin: '0 0 10px' }}>{c.nom}</h3>
+                      <p style={{ color: '#525252', lineHeight: 1.55, margin: '0 0 20px', flex: 1 }}>{c.accroche}</p>
                       <span style={{ color: '#376131', fontWeight: 700 }}>Découvrir →</span>
                     </div>
                   </a>

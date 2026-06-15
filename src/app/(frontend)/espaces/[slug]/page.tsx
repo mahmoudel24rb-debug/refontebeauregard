@@ -1,22 +1,30 @@
 import React from 'react'
 import { redirect, notFound } from 'next/navigation'
 import EspaceDetail from '@/components/sportix/EspaceDetail'
-import { ESPACES, espaceBySlug } from '@/components/sportix/espaces'
+import { getPayloadClient } from '@/lib/payload'
 
-export function generateStaticParams() {
-  return ESPACES.filter((e) => e.detail).map((e) => ({ slug: e.slug }))
+export async function generateStaticParams() {
+  const payload = await getPayloadClient()
+  const { docs } = await payload.find({ collection: 'espaces', where: { pageDetail: { equals: true } }, limit: 50, select: { slug: true } })
+  return docs.map((e) => ({ slug: e.slug }))
+}
+
+async function getEspace(slug: string) {
+  const payload = await getPayloadClient()
+  const { docs } = await payload.find({ collection: 'espaces', where: { slug: { equals: slug } }, limit: 1 })
+  return docs[0] ?? null
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
-  const espace = espaceBySlug(slug)
-  return espace ? { title: espace.name, description: espace.short } : { title: 'Espace' }
+  const espace = await getEspace(slug)
+  return espace ? { title: espace.nom, description: espace.accroche ?? undefined } : { title: 'Espace' }
 }
 
 export default async function EspaceSlugPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
-  if (slug === 'cours-collectifs') redirect('/services/cours')
-  const espace = espaceBySlug(slug)
-  if (!espace || !espace.detail) notFound()
+  const espace = await getEspace(slug)
+  if (!espace) notFound()
+  if (!espace.pageDetail) redirect(espace.lien || '/espaces')
   return <EspaceDetail espace={espace} />
 }

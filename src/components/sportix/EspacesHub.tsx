@@ -1,13 +1,16 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import { ESPACES } from './espaces'
+import { getPayloadClient } from '@/lib/payload'
 
-// Page « Nos espaces » (/espaces) — 3 espaces réels.
+// Page « Nos espaces » (/espaces) — données Payload.
 
 const SHELL = 'framer-xf0KU framer-gbuwA framer-80BYq framer-1eSXM framer-Suf9V framer-fN9WN framer-72rtr7'
 
-export default function EspacesHub() {
+export default async function EspacesHub() {
+  const payload = await getPayloadClient()
+  const { docs: espaces } = await payload.find({ collection: 'espaces', sort: 'ordre', limit: 50 })
+
   return (
     <div id="main">
       <div className="framer-9MYi8 framer-13v9dm1" style={{ minHeight: '100vh', width: 'auto' }}>
@@ -24,16 +27,16 @@ export default function EspacesHub() {
 
             <section style={{ maxWidth: 1180, margin: '0 auto', padding: '0 30px 110px' }}>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 28 }}>
-                {ESPACES.map((e) => (
+                {espaces.map((e) => (
                   <a
-                    key={e.slug}
-                    href={e.href}
+                    key={e.id}
+                    href={e.lien || `/espaces/${e.slug}`}
                     style={{ display: 'flex', flexDirection: 'column', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 16, overflow: 'hidden', textDecoration: 'none', color: 'inherit' }}
                   >
-                    <img src={e.img} alt={e.name} loading="lazy" style={{ width: '100%', height: 210, objectFit: 'cover', display: 'block' }} />
+                    {e.image ? <img src={e.image} alt={e.nom} loading="lazy" style={{ width: '100%', height: 210, objectFit: 'cover', display: 'block' }} /> : null}
                     <div style={{ display: 'flex', flexDirection: 'column', flex: 1, padding: 30 }}>
-                      <h2 style={{ fontSize: 26, fontWeight: 700, letterSpacing: '-0.01em', margin: '0 0 14px' }}>{e.name}</h2>
-                      <p style={{ color: '#525252', lineHeight: 1.65, margin: '0 0 24px', flex: 1 }}>{e.desc}</p>
+                      <h2 style={{ fontSize: 26, fontWeight: 700, letterSpacing: '-0.01em', margin: '0 0 14px' }}>{e.nom}</h2>
+                      <p style={{ color: '#525252', lineHeight: 1.65, margin: '0 0 24px', flex: 1 }}>{e.description}</p>
                       <span style={{ color: '#376131', fontWeight: 700 }}>Découvrir →</span>
                     </div>
                   </a>

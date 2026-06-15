@@ -1,13 +1,13 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import type { Espace } from './espaces'
+import type { Espace as EspaceDoc } from '@/payload-types'
 
-// Sous-page d'un espace (/espaces/[slug]) — fonctionnel, cross-cardio.
+// Sous-page d'un espace (/espaces/[slug]) — données Payload.
 
 const SHELL = 'framer-xf0KU framer-gbuwA framer-80BYq framer-1eSXM framer-Suf9V framer-fN9WN framer-72rtr7'
 
-export default function EspaceDetail({ espace }: { espace: Espace }) {
+export default function EspaceDetail({ espace }: { espace: EspaceDoc }) {
   return (
     <div id="main">
       <div className="framer-9MYi8 framer-13v9dm1" style={{ minHeight: '100vh', width: 'auto' }}>
@@ -17,12 +17,14 @@ export default function EspaceDetail({ espace }: { espace: Espace }) {
             <section style={{ maxWidth: 820, margin: '0 auto', padding: '170px 30px 40px' }}>
               <a href="/espaces" style={{ color: '#376131', fontWeight: 700, textDecoration: 'none', fontSize: 15 }}>← Tous les espaces</a>
               <p style={{ color: '#376131', fontWeight: 700, letterSpacing: '0.04em', textTransform: 'uppercase', fontSize: 14, margin: '26px 0 12px' }}>Nos espaces</p>
-              <h1 style={{ fontSize: 'clamp(34px,5vw,58px)', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: 1.05, margin: '0 0 28px' }}>{espace.name}</h1>
-              <p style={{ color: '#404040', fontSize: 19, lineHeight: 1.7, margin: 0 }}>{espace.desc}</p>
+              <h1 style={{ fontSize: 'clamp(34px,5vw,58px)', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: 1.05, margin: '0 0 28px' }}>{espace.nom}</h1>
+              <p style={{ color: '#404040', fontSize: 19, lineHeight: 1.7, margin: 0, whiteSpace: 'pre-line' }}>{espace.description}</p>
             </section>
-            <section style={{ maxWidth: 980, margin: '0 auto', padding: '20px 30px 0' }}>
-              <img src={espace.img} alt={espace.name} loading="lazy" style={{ width: '100%', height: 'clamp(240px,42vw,480px)', objectFit: 'cover', borderRadius: 16, display: 'block' }} />
-            </section>
+            {espace.image ? (
+              <section style={{ maxWidth: 980, margin: '0 auto', padding: '20px 30px 0' }}>
+                <img src={espace.image} alt={espace.nom} loading="lazy" style={{ width: '100%', height: 'clamp(240px,42vw,480px)', objectFit: 'cover', borderRadius: 16, display: 'block' }} />
+              </section>
+            ) : null}
             <section style={{ maxWidth: 820, margin: '0 auto', padding: '40px 30px 110px' }}>
               <a href="/contact" style={{ display: 'inline-block', background: '#376131', color: '#fff', fontWeight: 700, fontSize: 17, textDecoration: 'none', padding: '16px 34px', borderRadius: 70 }}>
                 Nous rejoindre

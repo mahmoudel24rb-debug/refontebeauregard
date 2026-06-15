@@ -68,6 +68,7 @@ export interface Config {
   blocks: {};
   collections: {
     espaces: Espace;
+    cours: Cour;
     services: Service;
     formules: Formule;
     temoignages: Temoignage;
@@ -84,6 +85,7 @@ export interface Config {
   collectionsJoins: {};
   collectionsSelect: {
     espaces: EspacesSelect<false> | EspacesSelect<true>;
+    cours: CoursSelect<false> | CoursSelect<true>;
     services: ServicesSelect<false> | ServicesSelect<true>;
     formules: FormulesSelect<false> | FormulesSelect<true>;
     temoignages: TemoignagesSelect<false> | TemoignagesSelect<true>;
@@ -156,21 +158,22 @@ export interface Espace {
    * Une phrase courte affichée sur la carte et le hero de la fiche
    */
   accroche?: string | null;
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  description?: string | null;
+  /**
+   * Ex. : /assets/beauregard/cardio.webp (uploads Media à venir)
+   */
+  image?: string | null;
+  /**
+   * Ex. : /espaces/fonctionnel ou /services/cours
+   */
+  lien?: string | null;
+  /**
+   * Si coché, /espaces/[slug] affiche une fiche ; sinon la carte renvoie ailleurs (cf. Lien)
+   */
+  pageDetail?: boolean | null;
+  /**
+   * Optionnel — remplacera le chemin texte quand les vraies photos seront uploadées
+   */
   imagePrincipale?: (number | null) | Media;
   galerie?: (number | Media)[] | null;
   /**
@@ -212,6 +215,34 @@ export interface Media {
   height?: number | null;
   focalX?: number | null;
   focalY?: number | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "cours".
+ */
+export interface Cour {
+  id: number;
+  nom: string;
+  /**
+   * Ex. : yoga → /services/cours/yoga
+   */
+  slug: string;
+  /**
+   * Phrase courte affichée sur la carte
+   */
+  accroche?: string | null;
+  description?: string | null;
+  /**
+   * Ex. : /assets/beauregard/yoga.webp (uploads Media à venir)
+   */
+  image?: string | null;
+  /**
+   * Ex. : Espace Cours Collectifs / Espace Fonctionnel
+   */
+  espace?: string | null;
+  ordre?: number | null;
+  updatedAt: string;
+  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -581,6 +612,10 @@ export interface PayloadLockedDocument {
         value: number | Espace;
       } | null)
     | ({
+        relationTo: 'cours';
+        value: number | Cour;
+      } | null)
+    | ({
         relationTo: 'services';
         value: number | Service;
       } | null)
@@ -663,6 +698,9 @@ export interface EspacesSelect<T extends boolean = true> {
   slug?: T;
   accroche?: T;
   description?: T;
+  image?: T;
+  lien?: T;
+  pageDetail?: T;
   imagePrincipale?: T;
   galerie?: T;
   pointsCles?:
@@ -679,6 +717,21 @@ export interface EspacesSelect<T extends boolean = true> {
         description?: T;
         image?: T;
       };
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "cours_select".
+ */
+export interface CoursSelect<T extends boolean = true> {
+  nom?: T;
+  slug?: T;
+  accroche?: T;
+  description?: T;
+  image?: T;
+  espace?: T;
+  ordre?: T;
   updatedAt?: T;
   createdAt?: T;
 }

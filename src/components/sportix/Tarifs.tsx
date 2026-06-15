@@ -2,9 +2,10 @@
 // Styles exacts : importer "framer.css" une seule fois (layout global).
 import './framer.css';
 import { PriceCard } from './PriceCard'
-import { MENSUEL, COURTES } from './formules'
 
-export default function Tarifs() {
+type CardData = { name: string; price: string; period: string; desc: string; features: string[] }
+
+export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; courtes: CardData[] }) {
   return (
     <>
       <div id={"main"}>
@@ -275,10 +276,10 @@ export default function Tarifs() {
                         </div>
                         <div className={"framer-1pryn50"} data-framer-name={"Tarifs Cards Wrapper"}>
                         <div data-ptab="mensuel">
-                          {MENSUEL.map((f) => (<PriceCard key={f.name} {...f} />))}
+                          {mensuel.map((f) => (<PriceCard key={f.name} {...f} />))}
                         </div>
                         <div data-ptab="courtes">
-                          {COURTES.map((f) => (<PriceCard key={f.name} {...f} />))}
+                          {courtes.map((f) => (<PriceCard key={f.name} {...f} />))}
                         </div>
                         </div>
                       </div>
@@ -327,10 +328,10 @@ export default function Tarifs() {
                         </div>
                         <div className={"framer-1pryn50"} data-framer-name={"Tarifs Cards Wrapper"}>
                         <div data-ptab="mensuel">
-                          {MENSUEL.map((f) => (<PriceCard key={f.name} {...f} />))}
+                          {mensuel.map((f) => (<PriceCard key={f.name} {...f} />))}
                         </div>
                         <div data-ptab="courtes">
-                          {COURTES.map((f) => (<PriceCard key={f.name} {...f} />))}
+                          {courtes.map((f) => (<PriceCard key={f.name} {...f} />))}
                         </div>
                         </div>
                       </div>
@@ -379,10 +380,10 @@ export default function Tarifs() {
                         </div>
                         <div className={"framer-1pryn50"} data-framer-name={"Tarifs Cards Wrapper"}>
                         <div data-ptab="mensuel">
-                          {MENSUEL.map((f) => (<PriceCard key={f.name} {...f} />))}
+                          {mensuel.map((f) => (<PriceCard key={f.name} {...f} />))}
                         </div>
                         <div data-ptab="courtes">
-                          {COURTES.map((f) => (<PriceCard key={f.name} {...f} />))}
+                          {courtes.map((f) => (<PriceCard key={f.name} {...f} />))}
                         </div>
                         </div>
                       </div>

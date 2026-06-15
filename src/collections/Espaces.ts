@@ -41,13 +41,33 @@ export const Espaces: CollectionConfig = {
     {
       name: 'description',
       label: 'Description',
-      type: 'richText',
+      type: 'textarea',
+    },
+    {
+      name: 'image',
+      label: 'Image (chemin)',
+      type: 'text',
+      admin: { description: 'Ex. : /assets/beauregard/cardio.webp (uploads Media à venir)' },
+    },
+    {
+      name: 'lien',
+      label: 'Lien de la carte',
+      type: 'text',
+      admin: { description: 'Ex. : /espaces/fonctionnel ou /services/cours' },
+    },
+    {
+      name: 'pageDetail',
+      label: 'A une fiche détail',
+      type: 'checkbox',
+      defaultValue: true,
+      admin: { description: 'Si coché, /espaces/[slug] affiche une fiche ; sinon la carte renvoie ailleurs (cf. Lien)' },
     },
     {
       name: 'imagePrincipale',
-      label: 'Image principale',
+      label: 'Image principale (Media)',
       type: 'upload',
       relationTo: 'media',
+      admin: { description: 'Optionnel — remplacera le chemin texte quand les vraies photos seront uploadées' },
     },
     {
       name: 'galerie',
