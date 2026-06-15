@@ -26,9 +26,16 @@ import { InfosClub } from './globals/InfosClub'
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
-// SQLite en local (zéro dépendance), Postgres dès que DATABASE_URL pointe
-// vers un serveur (Docker local, Neon pour les previews Vercel, VPS en prod)
-const databaseUrl = process.env.DATABASE_URL || 'file:./parcbeauregard.db'
+// Postgres (Neon) dès qu'une URL est fournie ; sinon SQLite local.
+// On privilégie la connexion NON-poolée (directe) : plus fiable avec Payload/drizzle
+// que pgbouncer (problèmes de prepared statements). Neon expose ces variables via
+// son intégration Vercel.
+const databaseUrl =
+  process.env.DATABASE_URL_UNPOOLED ||
+  process.env.POSTGRES_URL_NON_POOLING ||
+  process.env.DATABASE_URL ||
+  process.env.POSTGRES_URL ||
+  'file:./parcbeauregard.db'
 const db = databaseUrl.startsWith('postgres')
   ? postgresAdapter({ pool: { connectionString: databaseUrl } })
   : sqliteAdapter({ client: { url: databaseUrl } })

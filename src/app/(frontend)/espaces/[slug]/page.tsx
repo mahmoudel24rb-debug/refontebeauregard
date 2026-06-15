@@ -3,6 +3,9 @@ import { redirect, notFound } from 'next/navigation'
 import EspaceDetail from '@/components/sportix/EspaceDetail'
 import { getPayloadClient } from '@/lib/payload'
 
+// ISR : modifs Payload visibles sous ~60s sans rebuild
+export const revalidate = 60
+
 export async function generateStaticParams() {
   const payload = await getPayloadClient()
   const { docs } = await payload.find({ collection: 'espaces', where: { pageDetail: { equals: true } }, limit: 50, select: { slug: true } })

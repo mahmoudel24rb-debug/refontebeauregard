@@ -3,6 +3,9 @@ import React from 'react'
 import Tarifs from '@/components/sportix/Tarifs'
 import { getPayloadClient } from '@/lib/payload'
 
+// ISR : modifs Payload visibles sous ~60s sans rebuild
+export const revalidate = 60
+
 export const metadata = { title: 'Tarifs & abonnements', description: 'Formules mensuelles, courtes durées et tickets du Parc Beauregard. Accès salle, cours collectifs et bilan forme offert.' }
 
 type FormuleDoc = { nom: string; prix: number; suffixePrix?: string | null; accroche?: string | null; avantages?: { texte: string }[] | null; type: string }

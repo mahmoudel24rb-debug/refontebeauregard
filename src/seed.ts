@@ -13,6 +13,14 @@ const prix = (s: string) => parseInt(s.replace(/[^0-9]/g, ''), 10) || 0
 async function seed() {
   const payload = await getPayload({ config })
 
+  // ---------- Purge du contenu dérivé du code (évite les restes d'anciens seeds :
+  // ex. espace « Kid Fitness », formules aux anciens noms). On NE purge PAS les
+  // témoignages (le client pourra en ajouter de vrais) ni les médias/users. ----------
+  for (const collection of ['espaces', 'cours', 'formules', 'services'] as const) {
+    await payload.delete({ collection, where: { id: { exists: true } } })
+  }
+  payload.logger.info('Contenu purgé (espaces, cours, formules, services)')
+
   // ---------- Espaces (3 réels) ----------
   for (const [i, e] of ESPACES.entries()) {
     const existe = await payload.find({ collection: 'espaces', where: { slug: { equals: e.slug } }, limit: 1 })

@@ -3,6 +3,9 @@ import { notFound } from 'next/navigation'
 import CoursDetail from '@/components/sportix/CoursDetail'
 import { getPayloadClient } from '@/lib/payload'
 
+// ISR : modifs Payload visibles sous ~60s sans rebuild
+export const revalidate = 60
+
 export async function generateStaticParams() {
   const payload = await getPayloadClient()
   const { docs } = await payload.find({ collection: 'cours', limit: 100, select: { slug: true } })
