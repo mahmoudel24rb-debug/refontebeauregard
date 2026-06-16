@@ -69,6 +69,7 @@ export interface Config {
   collections: {
     espaces: Espace;
     cours: Cour;
+    coachs: Coach;
     services: Service;
     formules: Formule;
     temoignages: Temoignage;
@@ -86,6 +87,7 @@ export interface Config {
   collectionsSelect: {
     espaces: EspacesSelect<false> | EspacesSelect<true>;
     cours: CoursSelect<false> | CoursSelect<true>;
+    coachs: CoachsSelect<false> | CoachsSelect<true>;
     services: ServicesSelect<false> | ServicesSelect<true>;
     formules: FormulesSelect<false> | FormulesSelect<true>;
     temoignages: TemoignagesSelect<false> | TemoignagesSelect<true>;
@@ -240,6 +242,29 @@ export interface Cour {
    * Ex. : Espace Cours Collectifs / Espace Fonctionnel
    */
   espace?: string | null;
+  ordre?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "coachs".
+ */
+export interface Coach {
+  id: number;
+  /**
+   * Ex. : Juan Silva (à compléter avec Bastien)
+   */
+  nom?: string | null;
+  /**
+   * Ex. : Coach sportif — boxe & cross training
+   */
+  role?: string | null;
+  bio?: string | null;
+  /**
+   * Ex. : /assets/beauregard/coach-1.webp (uploads Media à venir)
+   */
+  photo?: string | null;
   ordre?: number | null;
   updatedAt: string;
   createdAt: string;
@@ -616,6 +641,10 @@ export interface PayloadLockedDocument {
         value: number | Cour;
       } | null)
     | ({
+        relationTo: 'coachs';
+        value: number | Coach;
+      } | null)
+    | ({
         relationTo: 'services';
         value: number | Service;
       } | null)
@@ -731,6 +760,19 @@ export interface CoursSelect<T extends boolean = true> {
   description?: T;
   image?: T;
   espace?: T;
+  ordre?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "coachs_select".
+ */
+export interface CoachsSelect<T extends boolean = true> {
+  nom?: T;
+  role?: T;
+  bio?: T;
+  photo?: T;
   ordre?: T;
   updatedAt?: T;
   createdAt?: T;

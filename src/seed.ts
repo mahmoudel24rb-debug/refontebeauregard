@@ -16,10 +16,10 @@ async function seed() {
   // ---------- Purge du contenu dérivé du code (évite les restes d'anciens seeds :
   // ex. espace « Kid Fitness », formules aux anciens noms). On NE purge PAS les
   // témoignages (le client pourra en ajouter de vrais) ni les médias/users. ----------
-  for (const collection of ['espaces', 'cours', 'formules', 'services'] as const) {
+  for (const collection of ['espaces', 'cours', 'coachs', 'formules', 'services'] as const) {
     await payload.delete({ collection, where: { id: { exists: true } } })
   }
-  payload.logger.info('Contenu purgé (espaces, cours, formules, services)')
+  payload.logger.info('Contenu purgé (espaces, cours, coachs, formules, services)')
 
   // ---------- Espaces (3 réels) ----------
   for (const [i, e] of ESPACES.entries()) {
@@ -55,6 +55,12 @@ async function seed() {
     else await payload.create({ collection: 'cours', data })
   }
   payload.logger.info(`Cours : ${COURS.length}`)
+
+  // ---------- Coachs (photos actuelles prêtes ; nom/rôle/bio à compléter avec Bastien) ----------
+  for (let i = 1; i <= 4; i++) {
+    await payload.create({ collection: 'coachs', data: { photo: `/assets/beauregard/coach-${i}.webp`, ordre: i } })
+  }
+  payload.logger.info('Coachs : 4 (portraits, à nommer)')
 
   // ---------- Formules (mensuelles + courtes durées + tickets) ----------
   const toFormule = (f: { name: string; price: string; period: string; desc: string; features: string[] }, type: string, ordre: number) => ({

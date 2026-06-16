@@ -11,6 +11,7 @@ import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
 import sharp from 'sharp'
 
+import { Coachs } from './collections/Coachs'
 import { Cours } from './collections/Cours'
 import { Espaces } from './collections/Espaces'
 import { Formules } from './collections/Formules'
@@ -51,7 +52,7 @@ export default buildConfig({
     supportedLanguages: { fr },
     fallbackLanguage: 'fr',
   },
-  collections: [Espaces, Cours, Services, Formules, Temoignages, Media, Users],
+  collections: [Espaces, Cours, Coachs, Services, Formules, Temoignages, Media, Users],
   globals: [Header, Footer, InfosClub, BandeauPromo],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',

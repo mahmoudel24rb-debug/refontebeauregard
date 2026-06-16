@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import { getPayloadClient } from '@/lib/payload'
 
 // Page « Beauregard Coaching » (/services/coaching) — contenu réel (site officiel).
 
@@ -21,7 +22,15 @@ const BLOCS = [
   },
 ]
 
-export default function CoachingPage() {
+export default async function CoachingPage() {
+  let coachs: { id: string | number; nom?: string | null; role?: string | null; bio?: string | null; photo?: string | null }[] = []
+  try {
+    const payload = await getPayloadClient()
+    const r = await payload.find({ collection: 'coachs', sort: 'ordre', limit: 50 })
+    coachs = r.docs
+  } catch {
+    // grille coachs vide si la base est indisponible
+  }
   return (
     <div id="main">
       <div className="framer-9MYi8 framer-13v9dm1" style={{ minHeight: '100vh', width: 'auto' }}>
@@ -66,7 +75,22 @@ export default function CoachingPage() {
               <p style={{ color: '#404040', fontSize: 19, lineHeight: 1.7, margin: '0 0 4px', maxWidth: 820 }}>
                 Une équipe de coachs diplômés et passionnés, à votre écoute pour vous accompagner à chaque séance. Chacun a sa spécialité — boxe, cross training, pilates, préparation physique — pour s'adapter à vos objectifs et à votre niveau.
               </p>
-              <img src="/assets/beauregard/coachs-group.webp" alt="L'équipe de coachs du Parc Beauregard" loading="lazy" style={{ width: '100%', height: 'clamp(220px,36vw,400px)', objectFit: 'cover', borderRadius: 16, display: 'block', margin: '24px 0 0' }} />
+              {coachs.length > 0 ? (
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px,1fr))', gap: 24, marginTop: 28 }}>
+                  {coachs.map((c) => (
+                    <div key={c.id} style={{ background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden' }}>
+                      {c.photo ? <img src={c.photo} alt={c.nom || 'Coach du Parc Beauregard'} loading="lazy" style={{ width: '100%', aspectRatio: '3 / 4', objectFit: 'cover', display: 'block' }} /> : null}
+                      {(c.nom || c.role || c.bio) ? (
+                        <div style={{ padding: 20 }}>
+                          {c.nom ? <h3 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 4px', color: '#376131' }}>{c.nom}</h3> : null}
+                          {c.role ? <p style={{ fontSize: 13, color: '#737373', margin: '0 0 8px' }}>{c.role}</p> : null}
+                          {c.bio ? <p style={{ fontSize: 14, color: '#525252', lineHeight: 1.5, margin: 0 }}>{c.bio}</p> : null}
+                        </div>
+                      ) : null}
+                    </div>
+                  ))}
+                </div>
+              ) : null}
             </section>
 
             <section style={{ maxWidth: 1100, margin: '0 auto', padding: '30px 30px 110px' }}>
