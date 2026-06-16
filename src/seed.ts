@@ -90,6 +90,36 @@ async function seed() {
   }
   payload.logger.info('Témoignages : ' + temoignages.length)
 
+  // ---------- Globals : Infos club + Bandeau promo (éditables dans l'admin) ----------
+  await payload.updateGlobal({
+    slug: 'infos-club',
+    data: {
+      nom: 'Parc Beauregard Fitness & Coaching',
+      adresse: '1 quai de la Loire, 37210 Rochecorbon',
+      telephone: '02.47.44.41.43',
+      email: 'rochecorbon@parcbeauregard.com',
+      reseaux: {
+        facebook: 'https://www.facebook.com/parcbeauregard',
+        instagram: 'https://www.instagram.com/parcbeauregard/',
+      },
+      horaires: [
+        { jours: 'Lundi – Vendredi', heures: '9h00 – 20h00' },
+        { jours: 'Samedi', heures: '9h30 – 12h00' },
+        { jours: 'Dimanche', heures: 'Fermé' },
+      ],
+    },
+  })
+  await payload.updateGlobal({
+    slug: 'bandeau-promo',
+    data: {
+      actif: true,
+      titre: 'Offre découverte',
+      texte: 'Votre première séance de coaching est offerte — venez essayer le Parc Beauregard !',
+      cta: { label: 'Nous rejoindre', url: '/contact' },
+    },
+  })
+  payload.logger.info('Globals : infos-club + bandeau-promo')
+
   payload.logger.info('Seed terminé ✔')
   process.exit(0)
 }

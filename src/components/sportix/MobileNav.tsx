@@ -33,15 +33,31 @@ export default function MobileNav() {
       e.preventDefault()
       setOpen((v) => !v)
     }
+    // activation clavier (Entrée / Espace) pour l'accessibilité du burger
+    const onKey = (e: Event) => {
+      const k = (e as KeyboardEvent).key
+      if (k === 'Enter' || k === ' ') {
+        e.preventDefault()
+        setOpen((v) => !v)
+      }
+    }
     burgers.forEach((b) => {
       ;(b as HTMLElement).style.cursor = 'pointer'
       b.addEventListener('click', toggle)
+      b.addEventListener('keydown', onKey)
     })
-    return () => burgers.forEach((b) => b.removeEventListener('click', toggle))
+    return () =>
+      burgers.forEach((b) => {
+        b.removeEventListener('click', toggle)
+        b.removeEventListener('keydown', onKey)
+      })
   }, [])
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : ''
+    document
+      .querySelectorAll('[data-framer-name="Mobile Menu Icon"]')
+      .forEach((b) => b.setAttribute('aria-expanded', String(open)))
     return () => {
       document.body.style.overflow = ''
     }

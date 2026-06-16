@@ -15,7 +15,7 @@ export default function Footer() {
                           <div className={"framer-1dyyacx-container"}>
                             <a className={"framer-hD525 framer-do1alt framer-v-13f11kk framer-4j1ocn"} data-framer-name={"Logo Company Dark"} href={"/"} style={{ height: "100%", width: "100%" }}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} loading={"lazy"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Logo Company"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                                <img decoding={"async"} loading={"lazy"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                               </div>
                             </a>
                           </div>
@@ -199,7 +199,7 @@ export default function Footer() {
                             <a className={"framer-gVN13 framer-1m5vfgs framer-v-1m5vfgs framer-9dk433"} data-framer-name={"Default"} style={{ height: "100%", width: "100%" }} href={"https://www.instagram.com/parcbeauregard/"} target={"_blank"} rel={"noopener"}>
                               <div className={"framer-zjn98h"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Iuxn2IKqLv969r5YSTa6R0gGvk.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                                  <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Iuxn2IKqLv969r5YSTa6R0gGvk.svg"} alt={"Instagram"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                                 </div>
                               </div>
                             </a>
@@ -208,7 +208,7 @@ export default function Footer() {
                             <a className={"framer-gVN13 framer-1m5vfgs framer-v-1m5vfgs framer-9dk433"} data-framer-name={"Default"} style={{ height: "100%", width: "100%" }} href={"https://www.facebook.com/parcbeauregard"} target={"_blank"} rel={"noopener"}>
                               <div className={"framer-zjn98h"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/sHD949ZXROnvjFnhglMci6beA.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                                  <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/sHD949ZXROnvjFnhglMci6beA.svg"} alt={"Facebook"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                                 </div>
                               </div>
                             </a>
@@ -226,7 +226,7 @@ export default function Footer() {
                           <div className={"framer-1dyyacx-container"}>
                             <a className={"framer-hD525 framer-do1alt framer-v-13f11kk framer-4j1ocn"} data-framer-name={"Logo Company Dark"} href={"/"} style={{ height: "100%", width: "100%" }}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Logo Company"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                                <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                               </div>
                             </a>
                           </div>
@@ -410,7 +410,7 @@ export default function Footer() {
                             <a className={"framer-gVN13 framer-1m5vfgs framer-v-1m5vfgs framer-9dk433"} data-framer-name={"Default"} style={{ height: "100%", width: "100%" }} href={"https://www.instagram.com/parcbeauregard/"} target={"_blank"} rel={"noopener"}>
                               <div className={"framer-zjn98h"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Iuxn2IKqLv969r5YSTa6R0gGvk.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Iuxn2IKqLv969r5YSTa6R0gGvk.svg"} alt={"Instagram"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                                 </div>
                               </div>
                             </a>
@@ -419,7 +419,7 @@ export default function Footer() {
                             <a className={"framer-gVN13 framer-1m5vfgs framer-v-1m5vfgs framer-9dk433"} data-framer-name={"Default"} style={{ height: "100%", width: "100%" }} href={"https://www.facebook.com/parcbeauregard"} target={"_blank"} rel={"noopener"}>
                               <div className={"framer-zjn98h"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/sHD949ZXROnvjFnhglMci6beA.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/sHD949ZXROnvjFnhglMci6beA.svg"} alt={"Facebook"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                                 </div>
                               </div>
                             </a>
@@ -437,7 +437,7 @@ export default function Footer() {
                           <div className={"framer-1dyyacx-container"}>
                             <a className={"framer-hD525 framer-do1alt framer-v-13f11kk framer-4j1ocn"} data-framer-name={"Logo Company Dark"} href={"/"} style={{ height: "100%", width: "100%" }}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Logo Company"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                                <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                               </div>
                             </a>
                           </div>
@@ -622,7 +622,7 @@ export default function Footer() {
                             <a className={"framer-gVN13 framer-1m5vfgs framer-v-19k8o50 framer-9dk433"} data-framer-name={"Phone"} style={{ height: "100%", width: "100%" }} href={"https://www.instagram.com/parcbeauregard/"} target={"_blank"} rel={"noopener"}>
                               <div className={"framer-zjn98h"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Iuxn2IKqLv969r5YSTa6R0gGvk.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Iuxn2IKqLv969r5YSTa6R0gGvk.svg"} alt={"Instagram"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                                 </div>
                               </div>
                             </a>
@@ -631,7 +631,7 @@ export default function Footer() {
                             <a className={"framer-gVN13 framer-1m5vfgs framer-v-19k8o50 framer-9dk433"} data-framer-name={"Phone"} style={{ height: "100%", width: "100%" }} href={"https://www.facebook.com/parcbeauregard"} target={"_blank"} rel={"noopener"}>
                               <div className={"framer-zjn98h"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/sHD949ZXROnvjFnhglMci6beA.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/sHD949ZXROnvjFnhglMci6beA.svg"} alt={"Facebook"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                                 </div>
                               </div>
                             </a>

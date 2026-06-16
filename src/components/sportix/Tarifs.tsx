@@ -20,7 +20,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                         <div className={"framer-1jlunes-container"}>
                           <a className={"framer-hD525 framer-do1alt framer-v-13f11kk framer-4j1ocn"} data-framer-name={"Logo Company Dark"} href={"/"} style={{ height: "100%", width: "100%" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Logo Company"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </a>
                         </div>
@@ -76,7 +76,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                         <div className={"framer-1jlunes-container"}>
                           <a className={"framer-hD525 framer-do1alt framer-v-13f11kk framer-4j1ocn"} data-framer-name={"Logo Company Dark"} href={"/"} style={{ height: "100%", width: "100%" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Logo Company"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </a>
                         </div>
@@ -148,13 +148,13 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                         <div className={"framer-1jlunes-container"}>
                           <a className={"framer-hD525 framer-do1alt framer-v-13f11kk framer-4j1ocn"} data-framer-name={"Logo Company Dark"} href={"/"} style={{ height: "100%", width: "100%" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Logo Company"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </a>
                         </div>
-                        <div className={"framer-ziwl7k"} data-framer-name={"Mobile Menu Icon"} data-highlight={"true"} style={{ filter: "invert(1)", WebkitFilter: "invert(1)" }} tabIndex={"0"}>
+                        <div className={"framer-ziwl7k"} data-framer-name={"Mobile Menu Icon"} role="button" aria-label="Ouvrir le menu" data-highlight={"true"} style={{ filter: "invert(1)", WebkitFilter: "invert(1)" }} tabIndex={"0"}>
                           <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                            <img decoding={"async"} width={"28"} height={"17"} src={"/assets/framerusercontent.com/images/Cv0ecyyfNeYOMPPw1LoMTUqtz3g.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                            <img decoding={"async"} width={"28"} height={"17"} src={"/assets/framerusercontent.com/images/Cv0ecyyfNeYOMPPw1LoMTUqtz3g.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                           </div>
                         </div>
                       </div>
@@ -229,7 +229,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                   <div className={"ssr-variant"}>
                     <div className={"framer-1qbfvgw"} data-border={"true"}>
                       <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                        <img decoding={"async"} width={"2000"} height={"1334"} sizes={"(min-width: 1280px) max(min(100vw, 1320px) - 60px, 1px), (min-width: 992px) and (max-width: 1279px) max(min(100vw, 1320px) - 40px, 1px), (max-width: 991px) max(min(100vw, 1320px) - 40px, 1px)"} srcSet={"/assets/beauregard/nature.webp"} src={"/assets/beauregard/nature.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "67.6% 48.4%", objectFit: "cover" }} />
+                        <img decoding={"async"} width={"2000"} height={"1334"} sizes={"(min-width: 1280px) max(min(100vw, 1320px) - 60px, 1px), (min-width: 992px) and (max-width: 1279px) max(min(100vw, 1320px) - 40px, 1px), (max-width: 991px) max(min(100vw, 1320px) - 40px, 1px)"} srcSet={"/assets/beauregard/nature.webp"} src={"/assets/beauregard/nature.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "67.6% 48.4%", objectFit: "cover" }} />
                       </div>
                     </div>
                   </div>
@@ -485,7 +485,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                               <div className={"framer-m46Yg framer-irosbm framer-v-irosbm"} data-framer-name={"Default"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                                 <div className={"framer-xwgz5u"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
                                   <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                    <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                    <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                                   </div>
                                 </div>
                               </div>
@@ -537,7 +537,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                               <div className={"framer-m46Yg framer-irosbm framer-v-irosbm"} data-framer-name={"Default"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                                 <div className={"framer-xwgz5u"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
                                   <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                    <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                    <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                                   </div>
                                 </div>
                               </div>
@@ -589,7 +589,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                               <div className={"framer-m46Yg framer-irosbm framer-v-irosbm"} data-framer-name={"Default"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                                 <div className={"framer-xwgz5u"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
                                   <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                    <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                    <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                                   </div>
                                 </div>
                               </div>
@@ -642,7 +642,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                             <div className={"framer-m46Yg framer-irosbm framer-v-y8kf80"} data-framer-name={"Phone"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                               <div className={"framer-xwgz5u"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                                 </div>
                               </div>
                             </div>
@@ -692,7 +692,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                             <div className={"framer-m46Yg framer-irosbm framer-v-y8kf80"} data-framer-name={"Phone"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                               <div className={"framer-xwgz5u"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                                 </div>
                               </div>
                             </div>
@@ -746,7 +746,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                             <button className={"framer-NEM2f framer-c2t8k9 framer-v-1y76vsd"} data-framer-name={"Disabled"} data-highlight={"true"} data-reset={"button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", height: "100%", width: "100%", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%", opacity: "0.4" }} tabIndex={"0"}>
                               <div className={"framer-5ddiju"} data-framer-name={"Icon"} style={{ opacity: "1" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                  <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                                 </div>
                               </div>
                             </button>
@@ -755,7 +755,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                             <button className={"framer-NEM2f framer-c2t8k9 framer-v-c2t8k9"} data-framer-name={"Default"} data-highlight={"true"} data-reset={"button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", height: "100%", width: "100%", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%", opacity: "1" }} tabIndex={"0"}>
                               <div className={"framer-5ddiju"} data-framer-name={"Icon"} style={{ opacity: "1" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                  <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                                 </div>
                               </div>
                             </button>
@@ -1160,7 +1160,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                             <button className={"framer-NEM2f framer-c2t8k9 framer-v-1y76vsd"} data-framer-name={"Disabled"} data-highlight={"true"} data-reset={"button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", height: "100%", width: "100%", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%", opacity: "0.4" }} tabIndex={"0"}>
                               <div className={"framer-5ddiju"} data-framer-name={"Icon"} style={{ opacity: "1" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                  <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                                 </div>
                               </div>
                             </button>
@@ -1169,7 +1169,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                             <button className={"framer-NEM2f framer-c2t8k9 framer-v-c2t8k9"} data-framer-name={"Default"} data-highlight={"true"} data-reset={"button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", height: "100%", width: "100%", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%", opacity: "1" }} tabIndex={"0"}>
                               <div className={"framer-5ddiju"} data-framer-name={"Icon"} style={{ opacity: "1" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                  <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                                 </div>
                               </div>
                             </button>
@@ -1941,7 +1941,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                           <button className={"framer-NEM2f framer-c2t8k9 framer-v-1y76vsd"} data-framer-name={"Disabled"} data-highlight={"true"} data-reset={"button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", height: "100%", width: "100%", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%", opacity: "0.4" }} tabIndex={"0"}>
                             <div className={"framer-5ddiju"} data-framer-name={"Icon"} style={{ opacity: "1" }}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                               </div>
                             </div>
                           </button>
@@ -1950,7 +1950,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                           <button className={"framer-NEM2f framer-c2t8k9 framer-v-tzf896"} data-framer-name={"Phone"} data-highlight={"true"} data-reset={"button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", height: "100%", width: "100%", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%", opacity: "1" }} tabIndex={"0"}>
                             <div className={"framer-5ddiju"} data-framer-name={"Icon"} style={{ opacity: "1" }}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                               </div>
                             </div>
                           </button>
@@ -1973,7 +1973,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                       <div className={"framer-1dyyacx-container"}>
                         <a className={"framer-hD525 framer-do1alt framer-v-13f11kk framer-4j1ocn"} data-framer-name={"Logo Company Dark"} href={"/"} style={{ height: "100%", width: "100%" }}>
                           <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                            <img decoding={"async"} loading={"lazy"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Logo Company"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                            <img decoding={"async"} loading={"lazy"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                           </div>
                         </a>
                       </div>
@@ -2157,7 +2157,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                         <a className={"framer-gVN13 framer-1m5vfgs framer-v-1m5vfgs framer-9dk433"} data-framer-name={"Default"} style={{ height: "100%", width: "100%" }} href={"https://www.instagram.com/parcbeauregard/"} target={"_blank"} rel={"noopener"}>
                           <div className={"framer-zjn98h"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Iuxn2IKqLv969r5YSTa6R0gGvk.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Iuxn2IKqLv969r5YSTa6R0gGvk.svg"} alt={"Instagram"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </div>
                         </a>
@@ -2166,7 +2166,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                         <a className={"framer-gVN13 framer-1m5vfgs framer-v-1m5vfgs framer-9dk433"} data-framer-name={"Default"} style={{ height: "100%", width: "100%" }} href={"https://www.facebook.com/parcbeauregard"} target={"_blank"} rel={"noopener"}>
                           <div className={"framer-zjn98h"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/sHD949ZXROnvjFnhglMci6beA.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/sHD949ZXROnvjFnhglMci6beA.svg"} alt={"Facebook"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </div>
                         </a>
@@ -2184,7 +2184,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                       <div className={"framer-1dyyacx-container"}>
                         <a className={"framer-hD525 framer-do1alt framer-v-13f11kk framer-4j1ocn"} data-framer-name={"Logo Company Dark"} href={"/"} style={{ height: "100%", width: "100%" }}>
                           <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                            <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Logo Company"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                            <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                           </div>
                         </a>
                       </div>
@@ -2368,7 +2368,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                         <a className={"framer-gVN13 framer-1m5vfgs framer-v-1m5vfgs framer-9dk433"} data-framer-name={"Default"} style={{ height: "100%", width: "100%" }} href={"https://www.instagram.com/parcbeauregard/"} target={"_blank"} rel={"noopener"}>
                           <div className={"framer-zjn98h"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Iuxn2IKqLv969r5YSTa6R0gGvk.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Iuxn2IKqLv969r5YSTa6R0gGvk.svg"} alt={"Instagram"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </div>
                         </a>
@@ -2377,7 +2377,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                         <a className={"framer-gVN13 framer-1m5vfgs framer-v-1m5vfgs framer-9dk433"} data-framer-name={"Default"} style={{ height: "100%", width: "100%" }} href={"https://www.facebook.com/parcbeauregard"} target={"_blank"} rel={"noopener"}>
                           <div className={"framer-zjn98h"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/sHD949ZXROnvjFnhglMci6beA.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/sHD949ZXROnvjFnhglMci6beA.svg"} alt={"Facebook"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </div>
                         </a>
@@ -2395,7 +2395,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                       <div className={"framer-1dyyacx-container"}>
                         <a className={"framer-hD525 framer-do1alt framer-v-13f11kk framer-4j1ocn"} data-framer-name={"Logo Company Dark"} href={"/"} style={{ height: "100%", width: "100%" }}>
                           <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                            <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Logo Company"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                            <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                           </div>
                         </a>
                       </div>
@@ -2580,7 +2580,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                         <a className={"framer-gVN13 framer-1m5vfgs framer-v-19k8o50 framer-9dk433"} data-framer-name={"Phone"} style={{ height: "100%", width: "100%" }} href={"https://www.instagram.com/parcbeauregard/"} target={"_blank"} rel={"noopener"}>
                           <div className={"framer-zjn98h"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Iuxn2IKqLv969r5YSTa6R0gGvk.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Iuxn2IKqLv969r5YSTa6R0gGvk.svg"} alt={"Instagram"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </div>
                         </a>
@@ -2589,7 +2589,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                         <a className={"framer-gVN13 framer-1m5vfgs framer-v-19k8o50 framer-9dk433"} data-framer-name={"Phone"} style={{ height: "100%", width: "100%" }} href={"https://www.facebook.com/parcbeauregard"} target={"_blank"} rel={"noopener"}>
                           <div className={"framer-zjn98h"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/sHD949ZXROnvjFnhglMci6beA.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/sHD949ZXROnvjFnhglMci6beA.svg"} alt={"Facebook"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </div>
                         </a>

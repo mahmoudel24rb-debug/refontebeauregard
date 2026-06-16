@@ -29,5 +29,12 @@ export default async function EspaceSlugPage({ params }: { params: Promise<{ slu
   const espace = await getEspace(slug)
   if (!espace) notFound()
   if (!espace.pageDetail) redirect(espace.lien || '/espaces')
-  return <EspaceDetail espace={espace} />
+  const payload = await getPayloadClient()
+  const { docs: autres } = await payload.find({
+    collection: 'espaces',
+    where: { slug: { not_equals: slug } },
+    sort: 'ordre',
+    limit: 3,
+  })
+  return <EspaceDetail espace={espace} autres={autres} />
 }

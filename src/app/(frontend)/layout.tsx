@@ -7,6 +7,8 @@ import '@/components/sportix/framer.css'
 import './overrides.css'
 import MobileNav from '@/components/sportix/MobileNav'
 import PricingToggle from '@/components/sportix/PricingToggle'
+import PromoBanner from '@/components/sportix/PromoBanner'
+import { getPayloadClient } from '@/lib/payload'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.parcbeauregard.com'
 const DESCRIPTION =
@@ -36,10 +38,19 @@ export const metadata = {
   },
 }
 
-export default function FrontendLayout({ children }: { children: React.ReactNode }) {
+export default async function FrontendLayout({ children }: { children: React.ReactNode }) {
+  let promo: { actif?: boolean | null } | null = null
+  try {
+    const payload = await getPayloadClient()
+    const bp = await payload.findGlobal({ slug: 'bandeau-promo' })
+    if (bp?.actif) promo = bp
+  } catch {
+    // bandeau ignoré si la base est indisponible
+  }
   return (
     <html lang="fr">
       <body>
+        {promo ? <PromoBanner promo={promo} /> : null}
         {children}
         <MobileNav />
         <PricingToggle />

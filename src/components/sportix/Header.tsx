@@ -15,7 +15,7 @@ export default function Header() {
                             <div className={"framer-1jlunes-container"}>
                               <a className={"framer-hD525 framer-do1alt framer-v-do1alt framer-4j1ocn"} data-framer-name={"Logo Company White"} href={"/"} style={{ height: "100%", width: "100%" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/FlqF1c3trclcifp0T0UiAlLAY.svg"} alt={"Logo Company"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                                  <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/FlqF1c3trclcifp0T0UiAlLAY.svg"} alt={"Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                                 </div>
                               </a>
                             </div>
@@ -71,13 +71,13 @@ export default function Header() {
                             <div className={"framer-1jlunes-container"}>
                               <a className={"framer-hD525 framer-do1alt framer-v-do1alt framer-4j1ocn"} data-framer-name={"Logo Company White"} href={"/"} style={{ height: "100%", width: "100%" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/FlqF1c3trclcifp0T0UiAlLAY.svg"} alt={"Logo Company"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                                  <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/FlqF1c3trclcifp0T0UiAlLAY.svg"} alt={"Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                                 </div>
                               </a>
                             </div>
-                            <div className={"framer-ziwl7k"} data-framer-name={"Mobile Menu Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none" }} tabIndex={"0"}>
+                            <div className={"framer-ziwl7k"} data-framer-name={"Mobile Menu Icon"} role="button" aria-label="Ouvrir le menu" data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none" }} tabIndex={"0"}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"28"} height={"17"} src={"/assets/framerusercontent.com/images/Cv0ecyyfNeYOMPPw1LoMTUqtz3g.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                                <img decoding={"async"} width={"28"} height={"17"} src={"/assets/framerusercontent.com/images/Cv0ecyyfNeYOMPPw1LoMTUqtz3g.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                               </div>
                             </div>
                           </div>
@@ -93,7 +93,7 @@ export default function Header() {
                             <div className={"framer-1jlunes-container"}>
                               <a className={"framer-hD525 framer-do1alt framer-v-do1alt framer-4j1ocn"} data-framer-name={"Logo Company White"} href={"/"} style={{ height: "100%", width: "100%" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/FlqF1c3trclcifp0T0UiAlLAY.svg"} alt={"Logo Company"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                                  <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/FlqF1c3trclcifp0T0UiAlLAY.svg"} alt={"Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                                 </div>
                               </a>
                             </div>

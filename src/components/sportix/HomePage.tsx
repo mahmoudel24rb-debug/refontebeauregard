@@ -19,7 +19,7 @@ export default function AccueilPage() {
                         <div className={"framer-1jlunes-container"}>
                           <a className={"framer-hD525 framer-do1alt framer-v-do1alt framer-4j1ocn"} data-framer-name={"Logo Company White"} href={"/"} style={{ height: "100%", width: "100%" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/FlqF1c3trclcifp0T0UiAlLAY.svg"} alt={"Logo Company"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/FlqF1c3trclcifp0T0UiAlLAY.svg"} alt={"Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </a>
                         </div>
@@ -75,13 +75,13 @@ export default function AccueilPage() {
                         <div className={"framer-1jlunes-container"}>
                           <a className={"framer-hD525 framer-do1alt framer-v-do1alt framer-4j1ocn"} data-framer-name={"Logo Company White"} href={"/"} style={{ height: "100%", width: "100%" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/FlqF1c3trclcifp0T0UiAlLAY.svg"} alt={"Logo Company"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/FlqF1c3trclcifp0T0UiAlLAY.svg"} alt={"Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </a>
                         </div>
-                        <div className={"framer-ziwl7k"} data-framer-name={"Mobile Menu Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none" }} tabIndex={"0"}>
+                        <div className={"framer-ziwl7k"} data-framer-name={"Mobile Menu Icon"} role="button" aria-label="Ouvrir le menu" data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none" }} tabIndex={"0"}>
                           <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                            <img decoding={"async"} width={"28"} height={"17"} src={"/assets/framerusercontent.com/images/Cv0ecyyfNeYOMPPw1LoMTUqtz3g.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                            <img decoding={"async"} width={"28"} height={"17"} src={"/assets/framerusercontent.com/images/Cv0ecyyfNeYOMPPw1LoMTUqtz3g.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                           </div>
                         </div>
                       </div>
@@ -97,7 +97,7 @@ export default function AccueilPage() {
                         <div className={"framer-1jlunes-container"}>
                           <a className={"framer-hD525 framer-do1alt framer-v-do1alt framer-4j1ocn"} data-framer-name={"Logo Company White"} href={"/"} style={{ height: "100%", width: "100%" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/FlqF1c3trclcifp0T0UiAlLAY.svg"} alt={"Logo Company"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/FlqF1c3trclcifp0T0UiAlLAY.svg"} alt={"Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </a>
                         </div>
@@ -166,21 +166,21 @@ export default function AccueilPage() {
               <div className={"ssr-variant hidden-ugdvmg hidden-9md6lv"}>
                 <div className={"framer-r65kbw"} data-framer-name={"Hero Banner"}>
                   <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                    <img decoding={"async"} width={"1920"} height={"940"} sizes={"(min-width: 1280px) 100vw, (max-width: 991px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw"} srcSet={"/assets/beauregard/hero.webp"} src={"/assets/beauregard/hero.webp"} alt={"Hero Banner"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "right center", objectFit: "cover" }} />
+                    <img decoding={"async"} width={"1920"} height={"940"} sizes={"(min-width: 1280px) 100vw, (max-width: 991px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw"} srcSet={"/assets/beauregard/hero.webp"} src={"/assets/beauregard/hero.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "right center", objectFit: "cover" }} />
                   </div>
                 </div>
               </div>
               <div className={"ssr-variant hidden-72rtr7 hidden-9md6lv"}>
                 <div className={"framer-r65kbw"} data-framer-name={"Hero Banner"}>
                   <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                    <img decoding={"async"} width={"1920"} height={"940"} sizes={"(min-width: 1280px) 100vw, (max-width: 991px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw"} srcSet={"/assets/beauregard/hero.webp"} src={"/assets/beauregard/hero.webp"} alt={"Hero Banner"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "81.8% 37.9%", objectFit: "cover" }} />
+                    <img decoding={"async"} width={"1920"} height={"940"} sizes={"(min-width: 1280px) 100vw, (max-width: 991px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw"} srcSet={"/assets/beauregard/hero.webp"} src={"/assets/beauregard/hero.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "81.8% 37.9%", objectFit: "cover" }} />
                   </div>
                 </div>
               </div>
               <div className={"ssr-variant hidden-ugdvmg hidden-72rtr7"}>
                 <div className={"framer-r65kbw"} data-framer-name={"Hero Banner"}>
                   <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                    <img decoding={"async"} width={"1920"} height={"940"} sizes={"(min-width: 1280px) 100vw, (max-width: 991px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw"} srcSet={"/assets/beauregard/hero.webp"} src={"/assets/beauregard/hero.webp"} alt={"Hero Banner"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "97.2% 35.3%", objectFit: "cover" }} />
+                    <img decoding={"async"} width={"1920"} height={"940"} sizes={"(min-width: 1280px) 100vw, (max-width: 991px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw"} srcSet={"/assets/beauregard/hero.webp"} src={"/assets/beauregard/hero.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "97.2% 35.3%", objectFit: "cover" }} />
                   </div>
                 </div>
               </div>
@@ -286,28 +286,28 @@ export default function AccueilPage() {
                         <div className={"framer-mpjaqz"} data-border={"true"} data-framer-name={"Image Wrapper"}>
                           <div className={"framer-1nl5rij"}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"640"} height={"640"} sizes={"(min-width: 1280px) 42px, (min-width: 992px) and (max-width: 1279px) 42px, (max-width: 991px) 42px"} srcSet={"/assets/beauregard/avatar-1.webp"} src={"/assets/beauregard/avatar-1.webp"} alt={"Avatar"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                              <img decoding={"async"} width={"640"} height={"640"} sizes={"(min-width: 1280px) 42px, (min-width: 992px) and (max-width: 1279px) 42px, (max-width: 991px) 42px"} srcSet={"/assets/beauregard/avatar-1.webp"} src={"/assets/beauregard/avatar-1.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                             </div>
                           </div>
                         </div>
                         <div className={"framer-1e0v27t"} data-border={"true"} data-framer-name={"Image Wrapper"}>
                           <div className={"framer-gazwll"}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"640"} height={"640"} sizes={"(min-width: 1280px) 42px, (min-width: 992px) and (max-width: 1279px) 42px, (max-width: 991px) 42px"} srcSet={"/assets/beauregard/avatar-2.webp"} src={"/assets/beauregard/avatar-2.webp"} alt={"Avatar"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                              <img decoding={"async"} width={"640"} height={"640"} sizes={"(min-width: 1280px) 42px, (min-width: 992px) and (max-width: 1279px) 42px, (max-width: 991px) 42px"} srcSet={"/assets/beauregard/avatar-2.webp"} src={"/assets/beauregard/avatar-2.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                             </div>
                           </div>
                         </div>
                         <div className={"framer-18igyt6"} data-border={"true"} data-framer-name={"Image Wrapper"}>
                           <div className={"framer-faz4m3"}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"640"} height={"640"} sizes={"(min-width: 1280px) 42px, (min-width: 992px) and (max-width: 1279px) 42px, (max-width: 991px) 42px"} srcSet={"/assets/beauregard/avatar-3.webp"} src={"/assets/beauregard/avatar-3.webp"} alt={"Avatar"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                              <img decoding={"async"} width={"640"} height={"640"} sizes={"(min-width: 1280px) 42px, (min-width: 992px) and (max-width: 1279px) 42px, (max-width: 991px) 42px"} srcSet={"/assets/beauregard/avatar-3.webp"} src={"/assets/beauregard/avatar-3.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                             </div>
                           </div>
                         </div>
                         <div className={"framer-148a4o5"} data-border={"true"} data-framer-name={"Image Wrapper"}>
                           <div className={"framer-jw7xoz"}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"640"} height={"640"} sizes={"(min-width: 1280px) 42px, (min-width: 992px) and (max-width: 1279px) 42px, (max-width: 991px) 42px"} srcSet={"/assets/beauregard/avatar-4.webp"} src={"/assets/beauregard/avatar-4.webp"} alt={"Avatar"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                              <img decoding={"async"} width={"640"} height={"640"} sizes={"(min-width: 1280px) 42px, (min-width: 992px) and (max-width: 1279px) 42px, (max-width: 991px) 42px"} srcSet={"/assets/beauregard/avatar-4.webp"} src={"/assets/beauregard/avatar-4.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                             </div>
                           </div>
                         </div>
@@ -582,7 +582,7 @@ export default function AccueilPage() {
                               <div className={"framer-m46Yg framer-irosbm framer-v-irosbm"} data-framer-name={"Default"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                                 <div className={"framer-xwgz5u"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
                                   <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                    <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                    <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                                   </div>
                                 </div>
                               </div>
@@ -634,7 +634,7 @@ export default function AccueilPage() {
                               <div className={"framer-m46Yg framer-irosbm framer-v-irosbm"} data-framer-name={"Default"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                                 <div className={"framer-xwgz5u"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
                                   <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                    <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                    <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                                   </div>
                                 </div>
                               </div>
@@ -686,7 +686,7 @@ export default function AccueilPage() {
                               <div className={"framer-m46Yg framer-irosbm framer-v-irosbm"} data-framer-name={"Default"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                                 <div className={"framer-xwgz5u"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
                                   <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                    <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                    <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                                   </div>
                                 </div>
                               </div>
@@ -739,7 +739,7 @@ export default function AccueilPage() {
                             <div className={"framer-m46Yg framer-irosbm framer-v-y8kf80"} data-framer-name={"Phone"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                               <div className={"framer-xwgz5u"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                                 </div>
                               </div>
                             </div>
@@ -789,7 +789,7 @@ export default function AccueilPage() {
                             <div className={"framer-m46Yg framer-irosbm framer-v-y8kf80"} data-framer-name={"Phone"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                               <div className={"framer-xwgz5u"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/lTza15jEdDwI9K68idF0h1rBJNo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                                 </div>
                               </div>
                             </div>
@@ -853,7 +853,7 @@ export default function AccueilPage() {
                         <div className={"framer-wvjDD framer-fN9WN framer-OI0K7 framer-1asic4e framer-v-1asic4e"} data-framer-name={"Default"}>
                           <div className={"framer-w3ryt"} data-framer-name={"Image"} style={{ borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"1920"} height={"1275"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/nature.webp"} src={"/assets/beauregard/nature.webp"} alt={null} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "46.7% 52.5%", objectFit: "cover" }} />
+                              <img decoding={"async"} width={"1920"} height={"1275"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/nature.webp"} src={"/assets/beauregard/nature.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "46.7% 52.5%", objectFit: "cover" }} />
                             </div>
                             <div className={"framer-1ii3au0"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-2775fadf-40f0-4080-9144-72cb182f28db, rgba(0, 0, 0, 0.5))" }} />
                           </div>
@@ -865,7 +865,7 @@ export default function AccueilPage() {
                           <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
                             <div className={"framer-ocv7sp"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                               </div>
                             </div>
                           </div>
@@ -875,7 +875,7 @@ export default function AccueilPage() {
                         <div className={"framer-wvjDD framer-fN9WN framer-OI0K7 framer-1asic4e framer-v-1kfa5dh"} data-framer-name={"Phone"}>
                           <div className={"framer-w3ryt"} data-framer-name={"Image"} style={{ borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"1920"} height={"1275"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/nature.webp"} src={"/assets/beauregard/nature.webp"} alt={null} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "46.7% 52.5%", objectFit: "cover" }} />
+                              <img decoding={"async"} width={"1920"} height={"1275"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/nature.webp"} src={"/assets/beauregard/nature.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "46.7% 52.5%", objectFit: "cover" }} />
                             </div>
                             <div className={"framer-1ii3au0"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-2775fadf-40f0-4080-9144-72cb182f28db, rgba(0, 0, 0, 0.5))" }} />
                           </div>
@@ -887,7 +887,7 @@ export default function AccueilPage() {
                           <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
                             <div className={"framer-ocv7sp"} data-framer-name={"Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }} tabIndex={"0"}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                               </div>
                             </div>
                           </div>
@@ -899,7 +899,7 @@ export default function AccueilPage() {
                         <div className={"framer-wvjDD framer-fN9WN framer-OI0K7 framer-1asic4e framer-v-1asic4e"} data-framer-name={"Default"}>
                           <div className={"framer-w3ryt"} data-framer-name={"Image"} style={{ borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"1920"} height={"1876"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/fonctionnel.webp"} src={"/assets/beauregard/fonctionnel.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                              <img decoding={"async"} width={"1920"} height={"1876"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/fonctionnel.webp"} src={"/assets/beauregard/fonctionnel.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                             </div>
                             <div className={"framer-1ii3au0"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-2775fadf-40f0-4080-9144-72cb182f28db, rgba(0, 0, 0, 0.5))" }} />
                           </div>
@@ -911,7 +911,7 @@ export default function AccueilPage() {
                           <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
                             <div className={"framer-ocv7sp"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                               </div>
                             </div>
                           </div>
@@ -921,7 +921,7 @@ export default function AccueilPage() {
                         <div className={"framer-wvjDD framer-fN9WN framer-OI0K7 framer-1asic4e framer-v-1kfa5dh"} data-framer-name={"Phone"}>
                           <div className={"framer-w3ryt"} data-framer-name={"Image"} style={{ borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"1920"} height={"1876"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/fonctionnel.webp"} src={"/assets/beauregard/fonctionnel.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                              <img decoding={"async"} width={"1920"} height={"1876"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/fonctionnel.webp"} src={"/assets/beauregard/fonctionnel.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                             </div>
                             <div className={"framer-1ii3au0"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-2775fadf-40f0-4080-9144-72cb182f28db, rgba(0, 0, 0, 0.5))" }} />
                           </div>
@@ -933,7 +933,7 @@ export default function AccueilPage() {
                           <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
                             <div className={"framer-ocv7sp"} data-framer-name={"Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }} tabIndex={"0"}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                               </div>
                             </div>
                           </div>
@@ -945,7 +945,7 @@ export default function AccueilPage() {
                         <div className={"framer-wvjDD framer-fN9WN framer-OI0K7 framer-1asic4e framer-v-1asic4e"} data-framer-name={"Default"}>
                           <div className={"framer-w3ryt"} data-framer-name={"Image"} style={{ borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"1920"} height={"1282"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/coachs-group.webp"} src={"/assets/beauregard/coachs-group.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                              <img decoding={"async"} width={"1920"} height={"1282"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/coachs-group.webp"} src={"/assets/beauregard/coachs-group.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                             </div>
                             <div className={"framer-1ii3au0"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-2775fadf-40f0-4080-9144-72cb182f28db, rgba(0, 0, 0, 0.5))" }} />
                           </div>
@@ -957,7 +957,7 @@ export default function AccueilPage() {
                           <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
                             <div className={"framer-ocv7sp"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                               </div>
                             </div>
                           </div>
@@ -967,7 +967,7 @@ export default function AccueilPage() {
                         <div className={"framer-wvjDD framer-fN9WN framer-OI0K7 framer-1asic4e framer-v-1kfa5dh"} data-framer-name={"Phone"}>
                           <div className={"framer-w3ryt"} data-framer-name={"Image"} style={{ borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"1920"} height={"1282"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/coachs-group.webp"} src={"/assets/beauregard/coachs-group.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                              <img decoding={"async"} width={"1920"} height={"1282"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/coachs-group.webp"} src={"/assets/beauregard/coachs-group.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                             </div>
                             <div className={"framer-1ii3au0"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-2775fadf-40f0-4080-9144-72cb182f28db, rgba(0, 0, 0, 0.5))" }} />
                           </div>
@@ -979,7 +979,7 @@ export default function AccueilPage() {
                           <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
                             <div className={"framer-ocv7sp"} data-framer-name={"Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }} tabIndex={"0"}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                               </div>
                             </div>
                           </div>
@@ -991,7 +991,7 @@ export default function AccueilPage() {
                         <div className={"framer-wvjDD framer-fN9WN framer-OI0K7 framer-1asic4e framer-v-1asic4e"} data-framer-name={"Default"}>
                           <div className={"framer-w3ryt"} data-framer-name={"Image"} style={{ borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/hero-alt.webp"} src={"/assets/beauregard/hero-alt.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                              <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/hero-alt.webp"} src={"/assets/beauregard/hero-alt.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                             </div>
                             <div className={"framer-1ii3au0"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-2775fadf-40f0-4080-9144-72cb182f28db, rgba(0, 0, 0, 0.5))" }} />
                           </div>
@@ -1003,7 +1003,7 @@ export default function AccueilPage() {
                           <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
                             <div className={"framer-ocv7sp"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                               </div>
                             </div>
                           </div>
@@ -1013,7 +1013,7 @@ export default function AccueilPage() {
                         <div className={"framer-wvjDD framer-fN9WN framer-OI0K7 framer-1asic4e framer-v-1kfa5dh"} data-framer-name={"Phone"}>
                           <div className={"framer-w3ryt"} data-framer-name={"Image"} style={{ borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/hero-alt.webp"} src={"/assets/beauregard/hero-alt.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                              <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/hero-alt.webp"} src={"/assets/beauregard/hero-alt.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                             </div>
                             <div className={"framer-1ii3au0"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-2775fadf-40f0-4080-9144-72cb182f28db, rgba(0, 0, 0, 0.5))" }} />
                           </div>
@@ -1025,7 +1025,7 @@ export default function AccueilPage() {
                           <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
                             <div className={"framer-ocv7sp"} data-framer-name={"Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }} tabIndex={"0"}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                               </div>
                             </div>
                           </div>
@@ -1037,7 +1037,7 @@ export default function AccueilPage() {
                         <div className={"framer-wvjDD framer-fN9WN framer-OI0K7 framer-1asic4e framer-v-1asic4e"} data-framer-name={"Default"}>
                           <div className={"framer-w3ryt"} data-framer-name={"Image"} style={{ borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/cardio-alt.webp"} src={"/assets/beauregard/cardio-alt.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                              <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/cardio-alt.webp"} src={"/assets/beauregard/cardio-alt.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                             </div>
                             <div className={"framer-1ii3au0"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-2775fadf-40f0-4080-9144-72cb182f28db, rgba(0, 0, 0, 0.5))" }} />
                           </div>
@@ -1049,7 +1049,7 @@ export default function AccueilPage() {
                           <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
                             <div className={"framer-ocv7sp"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                               </div>
                             </div>
                           </div>
@@ -1059,7 +1059,7 @@ export default function AccueilPage() {
                         <div className={"framer-wvjDD framer-fN9WN framer-OI0K7 framer-1asic4e framer-v-1kfa5dh"} data-framer-name={"Phone"}>
                           <div className={"framer-w3ryt"} data-framer-name={"Image"} style={{ borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/cardio-alt.webp"} src={"/assets/beauregard/cardio-alt.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                              <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw, (max-width: 991px) 100vw"} srcSet={"/assets/beauregard/cardio-alt.webp"} src={"/assets/beauregard/cardio-alt.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                             </div>
                             <div className={"framer-1ii3au0"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-2775fadf-40f0-4080-9144-72cb182f28db, rgba(0, 0, 0, 0.5))" }} />
                           </div>
@@ -1071,7 +1071,7 @@ export default function AccueilPage() {
                           <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
                             <div className={"framer-ocv7sp"} data-framer-name={"Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }} tabIndex={"0"}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                               </div>
                             </div>
                           </div>
@@ -1083,7 +1083,7 @@ export default function AccueilPage() {
                         <div className={"framer-wvjDD framer-fN9WN framer-OI0K7 framer-1asic4e framer-v-1asic4e"} data-framer-name={"Default"}>
                           <div className={"framer-w3ryt"} data-framer-name={"Image"} style={{ borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) max(max(max(min(100vw, 1320px) - 60px, 1px), 1px), 100vw), (min-width: 992px) and (max-width: 1279px) max(max(max(min(100vw, 1320px) - 40px, 1px), 1px), 100vw), (max-width: 991px) max(max(max(min(100vw, 1320px) - 40px, 280px), 1px), 100vw)"} srcSet={"/assets/beauregard/cours.webp"} src={"/assets/beauregard/cours.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                              <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) max(max(max(min(100vw, 1320px) - 60px, 1px), 1px), 100vw), (min-width: 992px) and (max-width: 1279px) max(max(max(min(100vw, 1320px) - 40px, 1px), 1px), 100vw), (max-width: 991px) max(max(max(min(100vw, 1320px) - 40px, 280px), 1px), 100vw)"} srcSet={"/assets/beauregard/cours.webp"} src={"/assets/beauregard/cours.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                             </div>
                             <div className={"framer-1ii3au0"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-2775fadf-40f0-4080-9144-72cb182f28db, rgba(0, 0, 0, 0.5))" }} />
                           </div>
@@ -1095,7 +1095,7 @@ export default function AccueilPage() {
                           <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
                             <div className={"framer-ocv7sp"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                               </div>
                             </div>
                           </div>
@@ -1105,7 +1105,7 @@ export default function AccueilPage() {
                         <div className={"framer-wvjDD framer-fN9WN framer-OI0K7 framer-1asic4e framer-v-1kfa5dh"} data-framer-name={"Phone"}>
                           <div className={"framer-w3ryt"} data-framer-name={"Image"} style={{ borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) max(max(max(min(100vw, 1320px) - 60px, 1px), 1px), 100vw), (min-width: 992px) and (max-width: 1279px) max(max(max(min(100vw, 1320px) - 40px, 1px), 1px), 100vw), (max-width: 991px) max(max(max(min(100vw, 1320px) - 40px, 280px), 1px), 100vw)"} srcSet={"/assets/beauregard/cours.webp"} src={"/assets/beauregard/cours.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                              <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) max(max(max(min(100vw, 1320px) - 60px, 1px), 1px), 100vw), (min-width: 992px) and (max-width: 1279px) max(max(max(min(100vw, 1320px) - 40px, 1px), 1px), 100vw), (max-width: 991px) max(max(max(min(100vw, 1320px) - 40px, 280px), 1px), 100vw)"} srcSet={"/assets/beauregard/cours.webp"} src={"/assets/beauregard/cours.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                             </div>
                             <div className={"framer-1ii3au0"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-2775fadf-40f0-4080-9144-72cb182f28db, rgba(0, 0, 0, 0.5))" }} />
                           </div>
@@ -1117,7 +1117,7 @@ export default function AccueilPage() {
                           <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
                             <div className={"framer-ocv7sp"} data-framer-name={"Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }} tabIndex={"0"}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                               </div>
                             </div>
                           </div>
@@ -1172,7 +1172,7 @@ export default function AccueilPage() {
                         <div className={"framer-S1s5k framer-zUcIZ framer-kEOSd framer-ibos86 framer-v-ibos86"} data-border={"true"} data-framer-name={"Default"} style={{ "--border-bottom-width": "1px", "--border-color": "var(--token-8f4f0a97-886c-442e-9b68-fba0a777697e, rgb(229, 229, 229))", "--border-left-width": "0px", "--border-right-width": "0px", "--border-style": "solid", "--border-top-width": "0px", backgroundColor: "rgba(0, 0, 0, 0)", width: "100%", borderBottomLeftRadius: "0px", borderBottomRightRadius: "0px", borderTopLeftRadius: "0px", borderTopRightRadius: "0px" }}>
                           <div className={"framer-1xbb7zo"} data-framer-name={"Icon"}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"27"} height={"32"} src={"/assets/framerusercontent.com/images/f1PRfD5Uxe55WYuC6fWEJVDypA.svg"} alt={null} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} width={"27"} height={"32"} src={"/assets/framerusercontent.com/images/f1PRfD5Uxe55WYuC6fWEJVDypA.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </div>
                           <div className={"framer-fhxo2a"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
@@ -1188,7 +1188,7 @@ export default function AccueilPage() {
                         <div className={"framer-S1s5k framer-zUcIZ framer-kEOSd framer-ibos86 framer-v-ibos86"} data-border={"true"} data-framer-name={"Default"} style={{ "--border-bottom-width": "1px", "--border-color": "var(--token-8f4f0a97-886c-442e-9b68-fba0a777697e, rgb(229, 229, 229))", "--border-left-width": "0px", "--border-right-width": "0px", "--border-style": "solid", "--border-top-width": "0px", backgroundColor: "rgba(0, 0, 0, 0)", width: "100%", borderBottomLeftRadius: "0px", borderBottomRightRadius: "0px", borderTopLeftRadius: "0px", borderTopRightRadius: "0px" }}>
                           <div className={"framer-1xbb7zo"} data-framer-name={"Icon"}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"27"} height={"32"} src={"/assets/framerusercontent.com/images/CHCVeiB1ujTRQAPQK3xYLcMiZ8.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} width={"27"} height={"32"} src={"/assets/framerusercontent.com/images/CHCVeiB1ujTRQAPQK3xYLcMiZ8.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </div>
                           <div className={"framer-fhxo2a"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
@@ -1204,7 +1204,7 @@ export default function AccueilPage() {
                         <div className={"framer-S1s5k framer-zUcIZ framer-kEOSd framer-ibos86 framer-v-ibos86"} data-border={"true"} data-framer-name={"Default"} style={{ "--border-bottom-width": "1px", "--border-color": "var(--token-8f4f0a97-886c-442e-9b68-fba0a777697e, rgb(229, 229, 229))", "--border-left-width": "0px", "--border-right-width": "0px", "--border-style": "solid", "--border-top-width": "0px", backgroundColor: "rgba(0, 0, 0, 0)", width: "100%", borderBottomLeftRadius: "0px", borderBottomRightRadius: "0px", borderTopLeftRadius: "0px", borderTopRightRadius: "0px" }}>
                           <div className={"framer-1xbb7zo"} data-framer-name={"Icon"}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"27"} height={"32"} src={"/assets/framerusercontent.com/images/6zSK36f8nPc0YDZURvTVaj3Y.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} width={"27"} height={"32"} src={"/assets/framerusercontent.com/images/6zSK36f8nPc0YDZURvTVaj3Y.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </div>
                           <div className={"framer-fhxo2a"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
@@ -1220,7 +1220,7 @@ export default function AccueilPage() {
                         <div className={"framer-S1s5k framer-zUcIZ framer-kEOSd framer-ibos86 framer-v-ibos86"} data-border={"true"} data-framer-name={"Default"} style={{ "--border-bottom-width": "1px", "--border-color": "var(--token-8f4f0a97-886c-442e-9b68-fba0a777697e, rgb(229, 229, 229))", "--border-left-width": "0px", "--border-right-width": "0px", "--border-style": "solid", "--border-top-width": "0px", backgroundColor: "rgba(0, 0, 0, 0)", width: "100%", borderBottomLeftRadius: "0px", borderBottomRightRadius: "0px", borderTopLeftRadius: "0px", borderTopRightRadius: "0px" }}>
                           <div className={"framer-1xbb7zo"} data-framer-name={"Icon"}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"26"} height={"27"} src={"/assets/framerusercontent.com/images/gKavYaGgysPZA7KY5btL71nGBE.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} width={"26"} height={"27"} src={"/assets/framerusercontent.com/images/gKavYaGgysPZA7KY5btL71nGBE.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </div>
                           <div className={"framer-fhxo2a"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
@@ -1236,7 +1236,7 @@ export default function AccueilPage() {
                 <div className={"ssr-variant"}>
                   <div className={"framer-wk1fme"} style={{ willChange: "transform", opacity: "1", transform: "none" }}>
                     <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                      <img decoding={"async"} width={"1920"} height={"2880"} sizes={"(min-width: 1280px) max((min(100vw, 1320px) - 138px) / 2, 1px), (max-width: 991px) calc(min(100vw, 1320px) - 40px), (min-width: 992px) and (max-width: 1279px) max((min(100vw, 1320px) - 80px) / 2, 1px)"} srcSet={"/assets/beauregard/community.webp"} src={"/assets/beauregard/community.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "57.1% 35.8%", objectFit: "cover" }} />
+                      <img decoding={"async"} width={"1920"} height={"2880"} sizes={"(min-width: 1280px) max((min(100vw, 1320px) - 138px) / 2, 1px), (max-width: 991px) calc(min(100vw, 1320px) - 40px), (min-width: 992px) and (max-width: 1279px) max((min(100vw, 1320px) - 80px) / 2, 1px)"} srcSet={"/assets/beauregard/community.webp"} src={"/assets/beauregard/community.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "57.1% 35.8%", objectFit: "cover" }} />
                     </div>
                   </div>
                 </div>
@@ -1273,7 +1273,7 @@ export default function AccueilPage() {
                             <button className={"framer-NEM2f framer-c2t8k9 framer-v-1y76vsd"} data-framer-name={"Disabled"} data-highlight={"true"} data-reset={"button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", height: "100%", width: "100%", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%", opacity: "0.4" }} tabIndex={"0"}>
                               <div className={"framer-5ddiju"} data-framer-name={"Icon"} style={{ opacity: "1" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                                 </div>
                               </div>
                             </button>
@@ -1282,7 +1282,7 @@ export default function AccueilPage() {
                             <button className={"framer-NEM2f framer-c2t8k9 framer-v-c2t8k9"} data-framer-name={"Default"} data-highlight={"true"} data-reset={"button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", height: "100%", width: "100%", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%", opacity: "1" }} tabIndex={"0"}>
                               <div className={"framer-5ddiju"} data-framer-name={"Icon"} style={{ opacity: "1" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                                 </div>
                               </div>
                             </button>
@@ -2054,7 +2054,7 @@ export default function AccueilPage() {
                           <button className={"framer-NEM2f framer-c2t8k9 framer-v-1y76vsd"} data-framer-name={"Disabled"} data-highlight={"true"} data-reset={"button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", height: "100%", width: "100%", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%", opacity: "0.4" }} tabIndex={"0"}>
                             <div className={"framer-5ddiju"} data-framer-name={"Icon"} style={{ opacity: "1" }}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                               </div>
                             </div>
                           </button>
@@ -2063,7 +2063,7 @@ export default function AccueilPage() {
                           <button className={"framer-NEM2f framer-c2t8k9 framer-v-tzf896"} data-framer-name={"Phone"} data-highlight={"true"} data-reset={"button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", height: "100%", width: "100%", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%", opacity: "1" }} tabIndex={"0"}>
                             <div className={"framer-5ddiju"} data-framer-name={"Icon"} style={{ opacity: "1" }}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                               </div>
                             </div>
                           </button>
@@ -2101,7 +2101,7 @@ export default function AccueilPage() {
                             <button className={"framer-NEM2f framer-c2t8k9 framer-v-1y76vsd"} data-framer-name={"Disabled"} data-highlight={"true"} data-reset={"button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", height: "100%", width: "100%", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%", opacity: "0.4" }} tabIndex={"0"}>
                               <div className={"framer-5ddiju"} data-framer-name={"Icon"} style={{ opacity: "1" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                                 </div>
                               </div>
                             </button>
@@ -2110,7 +2110,7 @@ export default function AccueilPage() {
                             <button className={"framer-NEM2f framer-c2t8k9 framer-v-c2t8k9"} data-framer-name={"Default"} data-highlight={"true"} data-reset={"button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", height: "100%", width: "100%", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%", opacity: "1" }} tabIndex={"0"}>
                               <div className={"framer-5ddiju"} data-framer-name={"Icon"} style={{ opacity: "1" }}>
                                 <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                  <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/husH6l0yBVPfc3Ir95YwAn8hww.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                                 </div>
                               </div>
                             </button>
@@ -2497,7 +2497,7 @@ export default function AccueilPage() {
                 <div className={"framer-p1h63k"} data-framer-name={"Base Container"}>
                   <div className={"framer-t4bbi2"} data-framer-name={"Image Wrapper"} style={{ willChange: "transform", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", opacity: "1", transform: "none" }}>
                     <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                      <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) max(min(100vw - NaNpx, 1320px) - 60px, 1px), (min-width: 992px) and (max-width: 1279.98px) max(min(100vw - NaNpx, 1320px) - 40px, 1px), (max-width: 991.98px) max(min(100vw - NaNpx, 1320px) - 40px, 1px)"} srcSet={"/assets/beauregard/events.webp"} src={"/assets/beauregard/events.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "50% 40%", objectFit: "cover" }} />
+                      <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) max(min(100vw - NaNpx, 1320px) - 60px, 1px), (min-width: 992px) and (max-width: 1279.98px) max(min(100vw - NaNpx, 1320px) - 40px, 1px), (max-width: 991.98px) max(min(100vw - NaNpx, 1320px) - 40px, 1px)"} srcSet={"/assets/beauregard/events.webp"} src={"/assets/beauregard/events.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "50% 40%", objectFit: "cover" }} />
                     </div>
                     <div className={"framer-1ob2n22"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-6f61ded6-e6ed-47f8-ab65-d17743e9ab35, rgba(0, 0, 0, 0.7))" }} />
                     <div className={"framer-1gjros1"} data-framer-name={"Text Content Wrapper"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
@@ -2539,7 +2539,7 @@ export default function AccueilPage() {
                 <div className={"framer-p1h63k"} data-framer-name={"Base Container"}>
                   <div className={"framer-t4bbi2"} data-framer-name={"Image Wrapper"} style={{ willChange: "transform", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", opacity: "1", transform: "none" }}>
                     <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                      <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) max(min(100vw - NaNpx, 1320px) - 60px, 1px), (min-width: 992px) and (max-width: 1279.98px) max(min(100vw - NaNpx, 1320px) - 40px, 1px), (max-width: 991.98px) max(min(100vw - NaNpx, 1320px) - 40px, 1px)"} srcSet={"/assets/beauregard/events.webp"} src={"/assets/beauregard/events.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "50% 40%", objectFit: "cover" }} />
+                      <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) max(min(100vw - NaNpx, 1320px) - 60px, 1px), (min-width: 992px) and (max-width: 1279.98px) max(min(100vw - NaNpx, 1320px) - 40px, 1px), (max-width: 991.98px) max(min(100vw - NaNpx, 1320px) - 40px, 1px)"} srcSet={"/assets/beauregard/events.webp"} src={"/assets/beauregard/events.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "50% 40%", objectFit: "cover" }} />
                     </div>
                     <div className={"framer-1ob2n22"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-6f61ded6-e6ed-47f8-ab65-d17743e9ab35, rgba(0, 0, 0, 0.7))" }} />
                     <div className={"framer-1gjros1"} data-framer-name={"Text Content Wrapper"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
@@ -2581,7 +2581,7 @@ export default function AccueilPage() {
                 <div className={"framer-p1h63k"} data-framer-name={"Base Container"}>
                   <div className={"framer-t4bbi2"} data-framer-name={"Image Wrapper"} style={{ willChange: "transform", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", opacity: "1", transform: "none" }}>
                     <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                      <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) max(min(100vw - NaNpx, 1320px) - 60px, 1px), (min-width: 992px) and (max-width: 1279.98px) max(min(100vw - NaNpx, 1320px) - 40px, 1px), (max-width: 991.98px) max(min(100vw - NaNpx, 1320px) - 40px, 1px)"} srcSet={"/assets/beauregard/events.webp"} src={"/assets/beauregard/events.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "50% 40%", objectFit: "cover" }} />
+                      <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) max(min(100vw - NaNpx, 1320px) - 60px, 1px), (min-width: 992px) and (max-width: 1279.98px) max(min(100vw - NaNpx, 1320px) - 40px, 1px), (max-width: 991.98px) max(min(100vw - NaNpx, 1320px) - 40px, 1px)"} srcSet={"/assets/beauregard/events.webp"} src={"/assets/beauregard/events.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "50% 40%", objectFit: "cover" }} />
                     </div>
                     <div className={"framer-1ob2n22"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-6f61ded6-e6ed-47f8-ab65-d17743e9ab35, rgba(0, 0, 0, 0.7))" }} />
                     <div className={"framer-1gjros1"} data-framer-name={"Text Content Wrapper"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
@@ -2780,7 +2780,7 @@ export default function AccueilPage() {
                       <div className={"framer-1kim826"} data-framer-name={"Title Wrapper"}>
                         <div className={"framer-1m7dt58"} data-framer-name={"Icon"}>
                           <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                            <img decoding={"async"} width={"51"} height={"51"} src={"/assets/framerusercontent.com/images/gLzzi4G1EAaaoQVJVeUlmYMO3g0.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                            <img decoding={"async"} width={"51"} height={"51"} src={"/assets/framerusercontent.com/images/gLzzi4G1EAaaoQVJVeUlmYMO3g0.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                           </div>
                         </div>
                         <div className={"framer-1blde6r"} data-framer-name={"Heading"} style={{ "--extracted-tcooor": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
@@ -2807,7 +2807,7 @@ export default function AccueilPage() {
                   </div>
                   <div className={"framer-194m59v"} style={{ willChange: "transform", borderBottomLeftRadius: "0px", borderBottomRightRadius: "10px", borderTopRightRadius: "10px", opacity: "1", transform: "none" }}>
                     <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                      <img decoding={"async"} width={"2250"} height={"1500"} sizes={"(min-width: 1280px) max(max((min(100vw, 1320px) - 60px) / 2, 1px), 573px), (min-width: 992px) and (max-width: 1279.98px) min(max((min(100vw, 1320px) - 40px) / 2, 1px), 400px), (max-width: 991.98px) calc(min(100vw, 1320px) - 40px)"} srcSet={"/assets/beauregard/community.webp"} src={"/assets/beauregard/community.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "32% 30.5%", objectFit: "cover" }} />
+                      <img decoding={"async"} width={"2250"} height={"1500"} sizes={"(min-width: 1280px) max(max((min(100vw, 1320px) - 60px) / 2, 1px), 573px), (min-width: 992px) and (max-width: 1279.98px) min(max((min(100vw, 1320px) - 40px) / 2, 1px), 400px), (max-width: 991.98px) calc(min(100vw, 1320px) - 40px)"} srcSet={"/assets/beauregard/community.webp"} src={"/assets/beauregard/community.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "32% 30.5%", objectFit: "cover" }} />
                     </div>
                   </div>
                 </div>
@@ -2821,7 +2821,7 @@ export default function AccueilPage() {
                       <div className={"framer-1kim826"} data-framer-name={"Title Wrapper"}>
                         <div className={"framer-1m7dt58"} data-framer-name={"Icon"}>
                           <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                            <img decoding={"async"} width={"51"} height={"51"} src={"/assets/framerusercontent.com/images/gLzzi4G1EAaaoQVJVeUlmYMO3g0.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                            <img decoding={"async"} width={"51"} height={"51"} src={"/assets/framerusercontent.com/images/gLzzi4G1EAaaoQVJVeUlmYMO3g0.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                           </div>
                         </div>
                         <div className={"framer-1blde6r"} data-framer-name={"Heading"} style={{ "--extracted-tcooor": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
@@ -2848,7 +2848,7 @@ export default function AccueilPage() {
                   </div>
                   <div className={"framer-194m59v"} style={{ willChange: "transform", borderBottomLeftRadius: "0px", borderBottomRightRadius: "10px", borderTopRightRadius: "10px", opacity: "1", transform: "none" }}>
                     <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                      <img decoding={"async"} width={"2250"} height={"1500"} sizes={"(min-width: 1280px) max(max((min(100vw, 1320px) - 60px) / 2, 1px), 573px), (min-width: 992px) and (max-width: 1279.98px) min(max((min(100vw, 1320px) - 40px) / 2, 1px), 400px), (max-width: 991.98px) calc(min(100vw, 1320px) - 40px)"} srcSet={"/assets/beauregard/community.webp"} src={"/assets/beauregard/community.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "32% 30.5%", objectFit: "cover" }} />
+                      <img decoding={"async"} width={"2250"} height={"1500"} sizes={"(min-width: 1280px) max(max((min(100vw, 1320px) - 60px) / 2, 1px), 573px), (min-width: 992px) and (max-width: 1279.98px) min(max((min(100vw, 1320px) - 40px) / 2, 1px), 400px), (max-width: 991.98px) calc(min(100vw, 1320px) - 40px)"} srcSet={"/assets/beauregard/community.webp"} src={"/assets/beauregard/community.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "32% 30.5%", objectFit: "cover" }} />
                     </div>
                   </div>
                 </div>
@@ -2862,7 +2862,7 @@ export default function AccueilPage() {
                       <div className={"framer-1kim826"} data-framer-name={"Title Wrapper"}>
                         <div className={"framer-1m7dt58"} data-framer-name={"Icon"}>
                           <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                            <img decoding={"async"} width={"51"} height={"51"} src={"/assets/framerusercontent.com/images/gLzzi4G1EAaaoQVJVeUlmYMO3g0.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                            <img decoding={"async"} width={"51"} height={"51"} src={"/assets/framerusercontent.com/images/gLzzi4G1EAaaoQVJVeUlmYMO3g0.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                           </div>
                         </div>
                         <div className={"framer-1blde6r"} data-framer-name={"Heading"} style={{ "--extracted-tcooor": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
@@ -2889,7 +2889,7 @@ export default function AccueilPage() {
                   </div>
                   <div className={"framer-194m59v"} style={{ willChange: "transform", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopRightRadius: "0px", opacity: "1", transform: "none" }}>
                     <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                      <img decoding={"async"} width={"2250"} height={"1500"} sizes={"(min-width: 1280px) max(max((min(100vw, 1320px) - 60px) / 2, 1px), 573px), (min-width: 992px) and (max-width: 1279.98px) min(max((min(100vw, 1320px) - 40px) / 2, 1px), 400px), (max-width: 991.98px) calc(min(100vw, 1320px) - 40px)"} srcSet={"/assets/beauregard/community.webp"} src={"/assets/beauregard/community.webp"} alt={"Athlete"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "32% 30.5%", objectFit: "cover" }} />
+                      <img decoding={"async"} width={"2250"} height={"1500"} sizes={"(min-width: 1280px) max(max((min(100vw, 1320px) - 60px) / 2, 1px), 573px), (min-width: 992px) and (max-width: 1279.98px) min(max((min(100vw, 1320px) - 40px) / 2, 1px), 400px), (max-width: 991.98px) calc(min(100vw, 1320px) - 40px)"} srcSet={"/assets/beauregard/community.webp"} src={"/assets/beauregard/community.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "32% 30.5%", objectFit: "cover" }} />
                     </div>
                   </div>
                 </div>
@@ -2905,7 +2905,7 @@ export default function AccueilPage() {
                       <div className={"framer-1dyyacx-container"}>
                         <a className={"framer-hD525 framer-do1alt framer-v-13f11kk framer-4j1ocn"} data-framer-name={"Logo Company Dark"} href={"/"} style={{ height: "100%", width: "100%" }}>
                           <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                            <img decoding={"async"} loading={"lazy"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Logo Company"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                            <img decoding={"async"} loading={"lazy"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                           </div>
                         </a>
                       </div>
@@ -3089,7 +3089,7 @@ export default function AccueilPage() {
                         <a className={"framer-gVN13 framer-1m5vfgs framer-v-1m5vfgs framer-9dk433"} data-framer-name={"Default"} style={{ height: "100%", width: "100%" }} href={"https://www.instagram.com/parcbeauregard/"} target={"_blank"} rel={"noopener"}>
                           <div className={"framer-zjn98h"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Iuxn2IKqLv969r5YSTa6R0gGvk.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Iuxn2IKqLv969r5YSTa6R0gGvk.svg"} alt={"Instagram"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </div>
                         </a>
@@ -3098,7 +3098,7 @@ export default function AccueilPage() {
                         <a className={"framer-gVN13 framer-1m5vfgs framer-v-1m5vfgs framer-9dk433"} data-framer-name={"Default"} style={{ height: "100%", width: "100%" }} href={"https://www.facebook.com/parcbeauregard"} target={"_blank"} rel={"noopener"}>
                           <div className={"framer-zjn98h"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/sHD949ZXROnvjFnhglMci6beA.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} loading={"lazy"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/sHD949ZXROnvjFnhglMci6beA.svg"} alt={"Facebook"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </div>
                         </a>
@@ -3116,7 +3116,7 @@ export default function AccueilPage() {
                       <div className={"framer-1dyyacx-container"}>
                         <a className={"framer-hD525 framer-do1alt framer-v-13f11kk framer-4j1ocn"} data-framer-name={"Logo Company Dark"} href={"/"} style={{ height: "100%", width: "100%" }}>
                           <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                            <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Logo Company"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                            <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                           </div>
                         </a>
                       </div>
@@ -3300,7 +3300,7 @@ export default function AccueilPage() {
                         <a className={"framer-gVN13 framer-1m5vfgs framer-v-1m5vfgs framer-9dk433"} data-framer-name={"Default"} style={{ height: "100%", width: "100%" }} href={"https://www.instagram.com/parcbeauregard/"} target={"_blank"} rel={"noopener"}>
                           <div className={"framer-zjn98h"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Iuxn2IKqLv969r5YSTa6R0gGvk.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Iuxn2IKqLv969r5YSTa6R0gGvk.svg"} alt={"Instagram"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </div>
                         </a>
@@ -3309,7 +3309,7 @@ export default function AccueilPage() {
                         <a className={"framer-gVN13 framer-1m5vfgs framer-v-1m5vfgs framer-9dk433"} data-framer-name={"Default"} style={{ height: "100%", width: "100%" }} href={"https://www.facebook.com/parcbeauregard"} target={"_blank"} rel={"noopener"}>
                           <div className={"framer-zjn98h"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/sHD949ZXROnvjFnhglMci6beA.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/sHD949ZXROnvjFnhglMci6beA.svg"} alt={"Facebook"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </div>
                         </a>
@@ -3327,7 +3327,7 @@ export default function AccueilPage() {
                       <div className={"framer-1dyyacx-container"}>
                         <a className={"framer-hD525 framer-do1alt framer-v-13f11kk framer-4j1ocn"} data-framer-name={"Logo Company Dark"} href={"/"} style={{ height: "100%", width: "100%" }}>
                           <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                            <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Logo Company"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                            <img decoding={"async"} width={"111"} height={"23"} src={"/assets/framerusercontent.com/images/eMs4EJNenduD63PdYh3FSUcrWk.svg"} alt={"Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                           </div>
                         </a>
                       </div>
@@ -3512,7 +3512,7 @@ export default function AccueilPage() {
                         <a className={"framer-gVN13 framer-1m5vfgs framer-v-19k8o50 framer-9dk433"} data-framer-name={"Phone"} style={{ height: "100%", width: "100%" }} href={"https://www.instagram.com/parcbeauregard/"} target={"_blank"} rel={"noopener"}>
                           <div className={"framer-zjn98h"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Iuxn2IKqLv969r5YSTa6R0gGvk.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Iuxn2IKqLv969r5YSTa6R0gGvk.svg"} alt={"Instagram"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </div>
                         </a>
@@ -3521,7 +3521,7 @@ export default function AccueilPage() {
                         <a className={"framer-gVN13 framer-1m5vfgs framer-v-19k8o50 framer-9dk433"} data-framer-name={"Phone"} style={{ height: "100%", width: "100%" }} href={"https://www.facebook.com/parcbeauregard"} target={"_blank"} rel={"noopener"}>
                           <div className={"framer-zjn98h"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/sHD949ZXROnvjFnhglMci6beA.svg"} alt={"Icon"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
+                              <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/sHD949ZXROnvjFnhglMci6beA.svg"} alt={"Facebook"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "contain" }} />
                             </div>
                           </div>
                         </a>
