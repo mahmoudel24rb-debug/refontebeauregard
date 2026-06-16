@@ -84,17 +84,23 @@ async function seed() {
   }
   payload.logger.info(`Formules : ${formules.length}`)
 
-  // ---------- Témoignages (placeholders — à remplacer par de vrais avis) ----------
+  // ---------- Témoignages (vrais avis Google Maps 5★, repris à l'identique) ----------
+  // On purge les anciens placeholders puis on insère les avis réels.
+  const placeholders = ['Marie L.', 'Thomas R.', 'Sophie D.']
+  for (const auteur of placeholders) {
+    await payload.delete({ collection: 'temoignages', where: { auteur: { equals: auteur } } })
+  }
   const temoignages = [
-    { auteur: 'Marie L.', note: 5, texte: "Un cadre exceptionnel au bord de la Loire. Les coachs sont à l'écoute et le suivi est vraiment personnalisé.", visible: true },
-    { auteur: 'Thomas R.', note: 5, texte: "La meilleure décision de l'année : les cours collectifs sont variés et l'ambiance est familiale.", visible: true },
-    { auteur: 'Sophie D.', note: 5, texte: "Des espaces modernes et un accueil au top. Je recommande les yeux fermés.", visible: true },
+    { auteur: 'Christele P.', note: 5, texte: 'Super bien ! Les coachs sont très pro et sympa, très bonne ambiance !', visible: true },
+    { auteur: 'Jemsa F.', note: 5, texte: "Super club de sport, le personnel est à votre écoute pour vous aider à atteindre vos objectifs : perte de poids, reprise du sport, amélioration des performances…", visible: true },
+    { auteur: 'Janelle L.', note: 5, texte: "J'ai découvert ce club lors de l'événement avec Romain Prevedello. J'adore ! Le lieu est magnifique, avec un espace extérieur très agréable et calme. Je recommande !", visible: true },
   ]
   for (const t of temoignages) {
     const existe = await payload.find({ collection: 'temoignages', where: { auteur: { equals: t.auteur } }, limit: 1 })
-    if (!existe.docs[0]) await payload.create({ collection: 'temoignages', data: t })
+    if (existe.docs[0]) await payload.update({ collection: 'temoignages', id: existe.docs[0].id, data: t })
+    else await payload.create({ collection: 'temoignages', data: t })
   }
-  payload.logger.info('Témoignages : ' + temoignages.length)
+  payload.logger.info('Témoignages : ' + temoignages.length + ' (vrais avis Google)')
 
   // ---------- Globals : Infos club + Bandeau promo (éditables dans l'admin) ----------
   await payload.updateGlobal({
