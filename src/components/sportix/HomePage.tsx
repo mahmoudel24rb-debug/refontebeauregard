@@ -3,6 +3,7 @@
 import './framer.css';
 import { PriceCard } from './PriceCard'
 import { MENSUEL, COURTES } from './formules'
+import ClubVideo from './ClubVideo'
 
 export default function AccueilPage() {
   return (
@@ -453,32 +454,7 @@ export default function AccueilPage() {
                     </div>
                   </div>
                   <div className={"framer-y9zl1l"} data-framer-name={"Video Content Wrapper"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
-                    <div className={"framer-ein3b5-container"} id={"ein3b5"}>
-                      <div className={"ssr-variant hidden-ugdvmg"}>
-                        <button className={"framer-JCmEB framer-amqr89 framer-v-amqr89"} data-framer-name={"Default"} data-highlight={"true"} data-reset={"button"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }} tabIndex={"0"}>
-                          <div className={"framer-gcbn1"} data-border={"true"} data-framer-name={"Border Effect"} style={{ "--border-bottom-width": "4px", "--border-color": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--border-left-width": "4px", "--border-right-width": "4px", "--border-style": "solid", "--border-top-width": "4px", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%", transform: "scale(0.85)" }} />
-                          <div data-framer-name={"Play Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", color: "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }} className={"framer-1lx14sl"} aria-hidden={"true"}>
-                            <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                              <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                <use href={"#svg855747573_273"} />
-                              </svg>
-                            </div>
-                          </div>
-                        </button>
-                      </div>
-                      <div className={"ssr-variant hidden-72rtr7 hidden-9md6lv"}>
-                        <button className={"framer-JCmEB framer-amqr89 framer-v-hp7z0u"} data-framer-name={"Phone"} data-highlight={"true"} data-reset={"button"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }} tabIndex={"0"}>
-                          <div className={"framer-gcbn1"} data-border={"true"} data-framer-name={"Border Effect"} style={{ "--border-bottom-width": "4px", "--border-color": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--border-left-width": "4px", "--border-right-width": "4px", "--border-style": "solid", "--border-top-width": "4px", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%", borderTopLeftRadius: "50%", borderTopRightRadius: "50%", transform: "scale(0.85)" }} />
-                          <div data-framer-name={"Play Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", color: "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }} className={"framer-1lx14sl"} aria-hidden={"true"}>
-                            <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                              <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                <use href={"#svg855747573_273"} />
-                              </svg>
-                            </div>
-                          </div>
-                        </button>
-                      </div>
-                    </div>
+                    <ClubVideo />
                     <div className={"framer-1q7n2ul"} data-framer-name={"Body"} style={{ transform: "none" }}>
                       <h5 className={"framer-text framer-styles-preset-1a2qg92"} data-styles-preset={"Hrg3DnSgc"} style={{ "--framer-text-color": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))" }}>
                         Découvrez le club en vidéo.
