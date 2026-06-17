@@ -20,6 +20,7 @@
 - [ ] **Coachs** — vrais noms + bios + portraits (avec **Bastien**). La page Coaching est générique en attendant.
 - [x] **Témoignages** — 3 vrais avis Google 5★ intégrés (Christele P., Jemsa F., Janelle L.), repris à l'identique et éditables dans l'admin. (D'autres avis pourront être ajoutés.)
 - [ ] **CRM + webhook Make** — le client choisit son CRM, puis : créer le scénario Make → coller l'URL dans `MAKE_WEBHOOK_URL` (Vercel). Tant que vide, le formulaire marche mais n'envoie rien.
+- [ ] **Vidéo de présentation** — le client fournira un **fichier .mp4** ; le déposer dans `public/assets/beauregard/club.mp4` puis régler `CLUB_VIDEO_URL` dans `ClubVideo.tsx`. Le bouton play (lightbox) est déjà en place, inerte tant que l'URL est vide.
 - [ ] **Tarifs Location de terrain** — montants exacts (non trouvés au crawl).
 - [ ] **Nom de domaine** — brancher `parcbeauregard.com` (ou sous-domaine) sur Vercel quand on bascule du WordPress actuel.
 
