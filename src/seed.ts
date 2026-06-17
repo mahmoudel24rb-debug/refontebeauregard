@@ -125,9 +125,9 @@ async function seed() {
     slug: 'bandeau-promo',
     data: {
       actif: true,
-      titre: 'Offre découverte',
+      titre: '1ʳᵉ séance offerte',
       texte: 'Votre première séance de coaching est offerte — venez essayer le Parc Beauregard !',
-      cta: { label: 'Nous rejoindre', url: '/contact' },
+      cta: { label: 'En profiter', url: '/contact' },
     },
   })
   payload.logger.info('Globals : infos-club + bandeau-promo')

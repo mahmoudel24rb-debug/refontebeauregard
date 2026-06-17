@@ -1168,7 +1168,7 @@ export interface BandeauPromo {
   id: number;
   actif?: boolean | null;
   /**
-   * Ex. : « Offre limitée — 1 séance de coaching offerte »
+   * Court — il s’affiche dans une pastille du hero. Ex. : « 1ʳᵉ séance offerte »
    */
   titre?: string | null;
   texte?: string | null;

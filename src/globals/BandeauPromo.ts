@@ -2,9 +2,11 @@ import type { GlobalConfig } from 'payload'
 
 import { authenticated, publicRead } from '../access'
 
+// Badge promo affiché dans le hero de la page d'accueil (petite pastille élégante,
+// pas une barre d'annonce). Éditable / désactivable par le client.
 export const BandeauPromo: GlobalConfig = {
   slug: 'bandeau-promo',
-  label: 'Bandeau promo',
+  label: 'Badge promo (accueil)',
   admin: { group: 'Mise en page' },
   access: {
     read: publicRead,
@@ -13,28 +15,28 @@ export const BandeauPromo: GlobalConfig = {
   fields: [
     {
       name: 'actif',
-      label: 'Afficher le bandeau',
+      label: 'Afficher le badge promo',
       type: 'checkbox',
       defaultValue: false,
     },
     {
       name: 'titre',
-      label: 'Titre',
+      label: 'Texte du badge',
       type: 'text',
-      admin: { description: 'Ex. : « Offre limitée — 1 séance de coaching offerte »' },
+      admin: { description: 'Court — il s’affiche dans une pastille du hero. Ex. : « 1ʳᵉ séance offerte »' },
     },
     {
       name: 'texte',
-      label: 'Texte',
+      label: 'Texte long (optionnel, non affiché pour l’instant)',
       type: 'textarea',
     },
     {
       name: 'cta',
-      label: "Bouton d'action",
+      label: 'Lien du badge',
       type: 'group',
       fields: [
-        { name: 'label', label: 'Libellé', type: 'text', defaultValue: 'En profiter' },
-        { name: 'url', label: 'URL', type: 'text', defaultValue: '/contact' },
+        { name: 'label', label: 'Libellé (non utilisé par le badge)', type: 'text', defaultValue: 'En profiter' },
+        { name: 'url', label: 'URL de destination', type: 'text', defaultValue: '/contact' },
       ],
     },
   ],

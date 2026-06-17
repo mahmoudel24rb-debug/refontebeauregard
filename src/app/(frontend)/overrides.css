@@ -145,3 +145,11 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
 
 /* Formulaire de contact : grille 2 colonnes -> 1 sur mobile */
 @media (max-width: 600px) { .bg-cf-grid { grid-template-columns: 1fr !important; } }
+
+/* Témoignages : le slider Framer (flèches préc./suiv.) n'est pas branché et, avec
+   seulement 3 avis qui tiennent à l'écran, il ne sert à rien (il défilerait vers une
+   copie identique). On masque les flèches pour éviter des boutons morts. Scopé à la
+   section pour ne pas toucher les boutons du hero (même data-framer-name). */
+[data-framer-name='Testimonials Section'] [data-framer-name='Button Wrapper'] {
+  display: none !important;
+}

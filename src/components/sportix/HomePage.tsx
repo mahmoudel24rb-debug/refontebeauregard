@@ -5,7 +5,9 @@ import { PriceCard } from './PriceCard'
 import { MENSUEL, COURTES } from './formules'
 import ClubVideo from './ClubVideo'
 
-export default function AccueilPage() {
+export type HeroPromo = { titre?: string | null; texte?: string | null; url?: string | null }
+
+export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
   return (
     <>
       <div id={"main"}>
@@ -224,6 +226,33 @@ export default function AccueilPage() {
                       </p>
                     </div>
                   </div>
+                  {promo && (promo.titre || promo.texte) ? (
+                    <a
+                      href={promo.url || "/contact"}
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: 9,
+                        width: "fit-content",
+                        margin: "2px 0 4px",
+                        padding: "8px 16px 8px 13px",
+                        background: "rgba(255,255,255,0.14)",
+                        WebkitBackdropFilter: "blur(12px)",
+                        backdropFilter: "blur(12px)",
+                        border: "1px solid rgba(255,255,255,0.38)",
+                        borderRadius: 70,
+                        color: "#fff",
+                        fontFamily: '"Inter", sans-serif',
+                        fontSize: 15,
+                        fontWeight: 600,
+                        lineHeight: 1,
+                        textDecoration: "none",
+                      }}
+                    >
+                      <span aria-hidden="true" style={{ fontSize: 16 }}>🎁</span>
+                      <span>{promo.titre || promo.texte}</span>
+                    </a>
+                  ) : null}
                   <div className={"framer-13iq7p0"} data-framer-name={"Button Wrapper"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
                     <div className={"ssr-variant hidden-ugdvmg"}>
                       <div className={"framer-1c3uda1-container"}>
@@ -1227,7 +1256,7 @@ export default function AccueilPage() {
                         <div className={"framer-1kne1lv"} data-framer-name={"Title Wrapper"}>
                           <div className={"framer-qk0nfc"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-alignment": "left", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49)))" }}>
-                              Testimonials
+                              Témoignages
                             </p>
                           </div>
                           <div className={"framer-1o9wodc"} data-framer-name={"Heading"} style={{ "--extracted-1of0zx5": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
@@ -1641,7 +1670,7 @@ export default function AccueilPage() {
                         <div className={"framer-1kne1lv"} data-framer-name={"Title Wrapper"}>
                           <div className={"framer-qk0nfc"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49)))" }}>
-                              Testimonials
+                              Témoignages
                             </p>
                           </div>
                           <div className={"framer-1o9wodc"} data-framer-name={"Heading"} style={{ "--extracted-1of0zx5": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
@@ -2055,7 +2084,7 @@ export default function AccueilPage() {
                         <div className={"framer-1kne1lv"} data-framer-name={"Title Wrapper"}>
                           <div className={"framer-qk0nfc"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-alignment": "left", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49)))" }}>
-                              Testimonials
+                              Témoignages
                             </p>
                           </div>
                           <div className={"framer-1o9wodc"} data-framer-name={"Heading"} style={{ "--extracted-1of0zx5": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
