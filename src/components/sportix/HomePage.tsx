@@ -226,33 +226,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                       </p>
                     </div>
                   </div>
-                  {promo && (promo.titre || promo.texte) ? (
-                    <a
-                      href={promo.url || "/contact"}
-                      style={{
-                        display: "inline-flex",
-                        alignItems: "center",
-                        gap: 9,
-                        width: "fit-content",
-                        margin: "2px 0 4px",
-                        padding: "8px 16px 8px 13px",
-                        background: "rgba(255,255,255,0.14)",
-                        WebkitBackdropFilter: "blur(12px)",
-                        backdropFilter: "blur(12px)",
-                        border: "1px solid rgba(255,255,255,0.38)",
-                        borderRadius: 70,
-                        color: "#fff",
-                        fontFamily: '"Inter", sans-serif',
-                        fontSize: 15,
-                        fontWeight: 600,
-                        lineHeight: 1,
-                        textDecoration: "none",
-                      }}
-                    >
-                      <span aria-hidden="true" style={{ fontSize: 16 }}>🎁</span>
-                      <span>{promo.titre || promo.texte}</span>
-                    </a>
-                  ) : null}
                   <div className={"framer-13iq7p0"} data-framer-name={"Button Wrapper"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
                     <div className={"ssr-variant hidden-ugdvmg"}>
                       <div className={"framer-1c3uda1-container"}>

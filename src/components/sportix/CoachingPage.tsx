@@ -52,7 +52,7 @@ export default async function CoachingPage() {
             {/* 1re séance offerte */}
             <section style={{ maxWidth: 1100, margin: '0 auto', padding: '50px 30px 0' }}>
               <div style={{ background: '#cfe7cb', borderRadius: 16, padding: '28px 34px', display: 'flex', flexWrap: 'wrap', gap: 20, alignItems: 'center', justifyContent: 'space-between' }}>
-                <p style={{ margin: 0, fontSize: 20, fontWeight: 700, color: '#1f3d18' }}>La première séance est offerte 🎁</p>
+                <p style={{ margin: 0, fontSize: 20, fontWeight: 700, color: '#1f3d18' }}>La première séance est offerte</p>
                 <a href="/contact" style={{ background: '#376131', color: '#fff', fontWeight: 700, textDecoration: 'none', padding: '14px 30px', borderRadius: 70 }}>Réserver ma séance</a>
               </div>
             </section>
