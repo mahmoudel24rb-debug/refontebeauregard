@@ -56,7 +56,7 @@ export default async function Contact() {
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services"}>
                               Services
                             </a>
-                          </p>
+                          </p><div data-bg-submenu="true"><a href="/services/coaching">Coaching</a><a href="/services/cours">Cours</a><a href="/location-de-terrain">Location de terrain</a></div>
                         </div>
                         <div className={"framer-rsp9da"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
@@ -134,7 +134,7 @@ export default async function Contact() {
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services"}>
                               Services
                             </a>
-                          </p>
+                          </p><div data-bg-submenu="true"><a href="/services/coaching">Coaching</a><a href="/services/cours">Cours</a><a href="/location-de-terrain">Location de terrain</a></div>
                         </div>
                         <div className={"framer-rsp9da"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>

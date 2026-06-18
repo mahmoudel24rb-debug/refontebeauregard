@@ -1,8 +1,13 @@
-import { redirect } from 'next/navigation'
+import React from 'react'
 
-// /services -> redirige vers la page Cours (le « service » principal).
-// L'ancienne page « classes » Sportix (8 cours fictifs) est ainsi retirée.
-// TODO : pages dédiées Coaching et Location de terrain à créer ensuite.
+import ServicesHub from '@/components/sportix/ServicesHub'
+
+export const metadata = {
+  title: 'Services',
+  description:
+    'Les services du Parc Beauregard Fitness & Coaching à Rochecorbon : coaching personnalisé, cours collectifs et location de terrain multisport.',
+}
+
 export default function ServicesPage() {
-  redirect('/services/cours')
+  return <ServicesHub />
 }

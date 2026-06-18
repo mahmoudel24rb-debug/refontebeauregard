@@ -18,7 +18,15 @@ const LINKS: { label: string; href: string; sub?: { label: string; href: string 
       { label: 'Cross / Cardio', href: '/espaces/cross-cardio' },
     ],
   },
-  { label: 'Services', href: '/services' },
+  {
+    label: 'Services',
+    href: '/services',
+    sub: [
+      { label: 'Coaching', href: '/services/coaching' },
+      { label: 'Cours', href: '/services/cours' },
+      { label: 'Location de terrain', href: '/location-de-terrain' },
+    ],
+  },
   { label: 'Tarifs', href: '/tarifs' },
 ]
 
