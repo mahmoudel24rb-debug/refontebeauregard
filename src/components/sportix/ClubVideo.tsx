@@ -81,8 +81,11 @@ export default function ClubVideo({ src = CLUB_VIDEO_URL }: { src?: string }) {
   const btnStyle: React.CSSProperties = {
     backgroundColor: 'rgb(255, 255, 255)',
     borderRadius: '50%',
-    cursor: embed ? 'pointer' : 'default',
+    cursor: 'pointer',
   }
+
+  // Pas d'URL de vidéo -> pas de bouton play (évite un bouton mort).
+  if (!embed) return null
 
   return (
     <>

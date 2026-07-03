@@ -68,7 +68,11 @@ export default function ContactForm() {
   if (sent) {
     return (
       <div role="status" style={{ background: '#fff', borderRadius: 16, padding: 40, boxShadow: '0 20px 50px rgba(0,0,0,0.08)', textAlign: 'center', fontFamily: '"Inter", sans-serif' }}>
-        <div style={{ fontSize: 40, color: '#376131', marginBottom: 12 }} aria-hidden="true">✓</div>
+        <div style={{ color: '#376131', marginBottom: 12 }} aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ display: 'inline-block' }}>
+            <path d="m4.5 12.5 5 5 10-11" />
+          </svg>
+        </div>
         <h3 style={{ fontSize: 24, fontWeight: 700, margin: '0 0 10px' }}>Message envoyé !</h3>
         <p style={{ color: '#525252', lineHeight: 1.6, margin: 0 }}>Merci, notre équipe vous répondra dans les plus brefs délais.</p>
       </div>

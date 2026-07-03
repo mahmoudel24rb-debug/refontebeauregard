@@ -28,6 +28,7 @@ const LINKS: { label: string; href: string; sub?: { label: string; href: string 
     ],
   },
   { label: 'Tarifs', href: '/tarifs' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 export default function MobileNav() {

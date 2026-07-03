@@ -7,6 +7,7 @@ import '@/components/sportix/framer.css'
 import './overrides.css'
 import MobileNav from '@/components/sportix/MobileNav'
 import PricingToggle from '@/components/sportix/PricingToggle'
+import SvgSprite from '@/components/sportix/SvgSprite'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.parcbeauregard.com'
 const DESCRIPTION =
@@ -40,6 +41,7 @@ export default function FrontendLayout({ children }: { children: React.ReactNode
   return (
     <html lang="fr">
       <body>
+        <SvgSprite />
         {children}
         <MobileNav />
         <PricingToggle />

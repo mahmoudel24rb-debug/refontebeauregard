@@ -17,6 +17,12 @@ export default async function Contact() {
   const horaires = infos?.horaires?.length
     ? infos.horaires
     : [{ jours: 'Lundi – Vendredi', heures: '9h00 – 20h00' }, { jours: 'Samedi', heures: '9h30 – 12h00' }, { jours: 'Dimanche', heures: 'Fermé' }]
+  // Coordonnées : mêmes sources CMS que le bloc « Nous trouver », valeurs actuelles en repli
+  const adresse = infos?.adresse || '1 quai de la Loire, 37210 Rochecorbon'
+  const telephone = infos?.telephone || '02.47.44.41.43'
+  const email = infos?.email || 'rochecorbon@parcbeauregard.com'
+  const telHref = 'tel:+33' + telephone.replace(/\D/g, '').replace(/^0/, '')
+  const mapsHref = 'https://www.google.com/maps?q=' + encodeURIComponent(adresse)
   return (
     <>
       <div id={"main"}>
@@ -62,6 +68,13 @@ export default async function Contact() {
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/tarifs"}>
                               Tarifs
+                            </a>
+                          </p>
+                        </div>
+                        <div className={"framer-rsp9da"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
+                          <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/contact"}>
+                              Contact
                             </a>
                           </p>
                         </div>
@@ -143,7 +156,7 @@ export default async function Contact() {
                             </a>
                           </p>
                         </div>
-                        <div className={"framer-syx9gz-container"} id={"undefined-syx9gz"}>
+                        <a className={"framer-syx9gz-container"} href={"/contact"} style={{ textDecoration: "none" }}>
                           <div className={"framer-YEzW6 framer-X8adU framer-1mk5516 framer-v-1mk5516"} data-framer-name={"Default"} data-highlight={"true"}>
                             <div className={"framer-2cc3a7"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ht2NPA9Z3-XC_5sBkkp)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-ht2NPA9Z3-XC_5sBkkp": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--variable-reference-yWUYpr9Dg-XC_5sBkkp": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", transform: "none" }}>
                               <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ht2NPA9Z3-XC_5sBkkp))" }}>
@@ -158,7 +171,7 @@ export default async function Contact() {
                               </div>
                             </div>
                           </div>
-                        </div>
+                        </a>
                       </nav>
                       <div className={"framer-155lzj3-container"} style={{ opacity: "1", transform: "none" }}>
                         <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/contact"}>
@@ -224,8 +237,8 @@ export default async function Contact() {
                       <div className={"ssr-variant hidden-t8jtsi"}>
                         <div className={"framer-17991tt"} data-framer-name={"Body"} style={{ transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                            <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={"https://www.google.com/maps?q=1+quai+de+la+Loire,+37210+Rochecorbon"} target={"_blank"} rel={"noopener"}>
-                              1 quai de la Loire, 37210 Rochecorbon
+                            <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={mapsHref} target={"_blank"} rel={"noopener"}>
+                              {adresse}
                             </a>
                           </p>
                         </div>
@@ -233,8 +246,8 @@ export default async function Contact() {
                       <div className={"ssr-variant hidden-1vvw60x hidden-5dz366"}>
                         <div className={"framer-17991tt"} data-framer-name={"Body"} style={{ transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                            <a className={"framer-text framer-styles-preset-1783udm"} data-styles-preset={"JOlgSsugd"} href={"https://www.google.com/maps?q=1+quai+de+la+Loire,+37210+Rochecorbon"} target={"_blank"} rel={"noopener"}>
-                              1 quai de la Loire, 37210 Rochecorbon
+                            <a className={"framer-text framer-styles-preset-1783udm"} data-styles-preset={"JOlgSsugd"} href={mapsHref} target={"_blank"} rel={"noopener"}>
+                              {adresse}
                             </a>
                           </p>
                         </div>
@@ -249,8 +262,8 @@ export default async function Contact() {
                       <div className={"ssr-variant hidden-t8jtsi"}>
                         <div className={"framer-13cv0co"} data-framer-name={"Body"} style={{ transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                            <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={"tel:+33247444143"} target={"_blank"} rel={"noopener"}>
-                              02.47.44.41.43
+                            <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={telHref} target={"_blank"} rel={"noopener"}>
+                              {telephone}
                             </a>
                           </p>
                         </div>
@@ -258,8 +271,8 @@ export default async function Contact() {
                       <div className={"ssr-variant hidden-1vvw60x hidden-5dz366"}>
                         <div className={"framer-13cv0co"} data-framer-name={"Body"} style={{ transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                            <a className={"framer-text framer-styles-preset-1783udm"} data-styles-preset={"JOlgSsugd"} href={"tel:+33247444143"} target={"_blank"} rel={"noopener"}>
-                              02.47.44.41.43
+                            <a className={"framer-text framer-styles-preset-1783udm"} data-styles-preset={"JOlgSsugd"} href={telHref} target={"_blank"} rel={"noopener"}>
+                              {telephone}
                             </a>
                           </p>
                         </div>
@@ -274,8 +287,8 @@ export default async function Contact() {
                       <div className={"ssr-variant hidden-t8jtsi"}>
                         <div className={"framer-yxipg1"} data-framer-name={"Body"} style={{ transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                            <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={"mailto:rochecorbon@parcbeauregard.com"} target={"_blank"} rel={"noopener"}>
-                              rochecorbon@parcbeauregard.com
+                            <a className={"framer-text framer-styles-preset-1jdxb4u"} data-styles-preset={"SOfESV2jq"} href={`mailto:${email}`} target={"_blank"} rel={"noopener"}>
+                              {email}
                             </a>
                           </p>
                         </div>
@@ -283,8 +296,8 @@ export default async function Contact() {
                       <div className={"ssr-variant hidden-1vvw60x hidden-5dz366"}>
                         <div className={"framer-yxipg1"} data-framer-name={"Body"} style={{ transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))" }}>
-                            <a className={"framer-text framer-styles-preset-1783udm"} data-styles-preset={"JOlgSsugd"} href={"mailto:rochecorbon@parcbeauregard.com"} target={"_blank"} rel={"noopener"}>
-                              rochecorbon@parcbeauregard.com
+                            <a className={"framer-text framer-styles-preset-1783udm"} data-styles-preset={"JOlgSsugd"} href={`mailto:${email}`} target={"_blank"} rel={"noopener"}>
+                              {email}
                             </a>
                           </p>
                         </div>
@@ -378,7 +391,7 @@ export default async function Contact() {
                             <div className={"framer-1o8anf"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-617eea88-08bd-4f71-aa3d-29b363f5895a, rgba(0, 0, 0, 0.3))" }} />
                             <div className={"framer-r69y6i"} data-framer-name={"Image"} style={{ transform: "none" }}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) max(max(min(100vw, 1320px) - 60px, 1px), 1px), (min-width: 992px) and (max-width: 1279px) max(max(min(100vw, 1320px) - 40px, 1px), 1px), (max-width: 991px) max(max(min(100vw, 1320px) - 40px, 280px), 1px)"} srcSet={"/assets/beauregard/coaching.webp"} src={"/assets/beauregard/coaching.webp"} alt={"Thumbnail"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) max(max(min(100vw, 1320px) - 60px, 1px), 1px), (min-width: 992px) and (max-width: 1279px) max(max(min(100vw, 1320px) - 40px, 1px), 1px), (max-width: 991px) max(max(min(100vw, 1320px) - 40px, 280px), 1px)"} srcSet={"/assets/beauregard/coaching.webp"} src={"/assets/beauregard/coaching.webp"} alt={"Séance de coaching au Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                               </div>
                             </div>
                           </div>
@@ -430,7 +443,7 @@ export default async function Contact() {
                             <div className={"framer-1o8anf"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-617eea88-08bd-4f71-aa3d-29b363f5895a, rgba(0, 0, 0, 0.3))" }} />
                             <div className={"framer-r69y6i"} data-framer-name={"Image"} style={{ transform: "none" }}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) max(max(min(100vw, 1320px) - 60px, 1px), 1px), (min-width: 992px) and (max-width: 1279px) max(max(min(100vw, 1320px) - 40px, 1px), 1px), (max-width: 991px) max(max(min(100vw, 1320px) - 40px, 280px), 1px)"} srcSet={"/assets/beauregard/cours.webp"} src={"/assets/beauregard/cours.webp"} alt={"Thumbnail"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) max(max(min(100vw, 1320px) - 60px, 1px), 1px), (min-width: 992px) and (max-width: 1279px) max(max(min(100vw, 1320px) - 40px, 1px), 1px), (max-width: 991px) max(max(min(100vw, 1320px) - 40px, 280px), 1px)"} srcSet={"/assets/beauregard/cours.webp"} src={"/assets/beauregard/cours.webp"} alt={"Cours collectif au Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                               </div>
                             </div>
                           </div>
@@ -447,7 +460,7 @@ export default async function Contact() {
                                 <div className={"framer-yEmYD framer-fN9WN framer-OI0K7 framer-1en4hj5 framer-v-1en4hj5"} data-framer-name={"Default"} style={{ backdropFilter: "blur(34px)", backgroundColor: "var(--token-22c4b526-658d-4b78-8039-4a786402e87a, rgba(255, 255, 255, 0.1))", WebkitBackdropFilter: "blur(34px)", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px" }}>
                                   <div className={"framer-1uixvs3"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-AOW62B2JF-Qi9kGBGTT": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-AOW62B2JF-Qi9kGBGTT))" }}>
-                                      ≈ 40 cours
+                                      40 cours / semaine
                                     </p>
                                   </div>
                                 </div>
@@ -482,7 +495,7 @@ export default async function Contact() {
                             <div className={"framer-1o8anf"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-617eea88-08bd-4f71-aa3d-29b363f5895a, rgba(0, 0, 0, 0.3))" }} />
                             <div className={"framer-r69y6i"} data-framer-name={"Image"} style={{ transform: "none" }}>
                               <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"1500"} height={"1000"} sizes={"(min-width: 1280px) max(max(min(100vw, 1320px) - 60px, 1px), 1px), (min-width: 992px) and (max-width: 1279px) max(max(min(100vw, 1320px) - 40px, 1px), 1px)"} srcSet={"/assets/beauregard/location.webp"} src={"/assets/beauregard/location.webp"} alt={"Thumbnail"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "36.3% 0.9%", objectFit: "cover" }} />
+                                <img decoding={"async"} width={"1500"} height={"1000"} sizes={"(min-width: 1280px) max(max(min(100vw, 1320px) - 60px, 1px), 1px), (min-width: 992px) and (max-width: 1279px) max(max(min(100vw, 1320px) - 40px, 1px), 1px)"} srcSet={"/assets/beauregard/location.webp"} src={"/assets/beauregard/location.webp"} alt={"Terrain de football en pelouse synthétique"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "36.3% 0.9%", objectFit: "cover" }} />
                               </div>
                             </div>
                           </div>
@@ -535,7 +548,7 @@ export default async function Contact() {
                           <div className={"framer-1o8anf"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-617eea88-08bd-4f71-aa3d-29b363f5895a, rgba(0, 0, 0, 0.3))" }} />
                           <div className={"framer-r69y6i"} data-framer-name={"Image"} style={{ transform: "none" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) max(max(min(100vw, 1320px) - 60px, 1px), 1px), (min-width: 992px) and (max-width: 1279px) max(max(min(100vw, 1320px) - 40px, 1px), 1px), (max-width: 991px) max(max(min(100vw, 1320px) - 40px, 280px), 1px)"} srcSet={"/assets/beauregard/coaching.webp"} src={"/assets/beauregard/coaching.webp"} alt={"Thumbnail"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                              <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) max(max(min(100vw, 1320px) - 60px, 1px), 1px), (min-width: 992px) and (max-width: 1279px) max(max(min(100vw, 1320px) - 40px, 1px), 1px), (max-width: 991px) max(max(min(100vw, 1320px) - 40px, 280px), 1px)"} srcSet={"/assets/beauregard/coaching.webp"} src={"/assets/beauregard/coaching.webp"} alt={"Séance de coaching au Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                             </div>
                           </div>
                         </div>
@@ -585,7 +598,7 @@ export default async function Contact() {
                           <div className={"framer-1o8anf"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-617eea88-08bd-4f71-aa3d-29b363f5895a, rgba(0, 0, 0, 0.3))" }} />
                           <div className={"framer-r69y6i"} data-framer-name={"Image"} style={{ transform: "none" }}>
                             <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                              <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) max(max(min(100vw, 1320px) - 60px, 1px), 1px), (min-width: 992px) and (max-width: 1279px) max(max(min(100vw, 1320px) - 40px, 1px), 1px), (max-width: 991px) max(max(min(100vw, 1320px) - 40px, 280px), 1px)"} srcSet={"/assets/beauregard/cours.webp"} src={"/assets/beauregard/cours.webp"} alt={"Thumbnail"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
+                              <img decoding={"async"} width={"1920"} height={"1280"} sizes={"(min-width: 1280px) max(max(min(100vw, 1320px) - 60px, 1px), 1px), (min-width: 992px) and (max-width: 1279px) max(max(min(100vw, 1320px) - 40px, 1px), 1px), (max-width: 991px) max(max(min(100vw, 1320px) - 40px, 280px), 1px)"} srcSet={"/assets/beauregard/cours.webp"} src={"/assets/beauregard/cours.webp"} alt={"Cours collectif au Parc Beauregard"} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
                             </div>
                           </div>
                         </div>
@@ -602,7 +615,7 @@ export default async function Contact() {
                               <div className={"framer-yEmYD framer-fN9WN framer-OI0K7 framer-1en4hj5 framer-v-1en4hj5"} data-framer-name={"Default"} style={{ backdropFilter: "blur(34px)", backgroundColor: "var(--token-22c4b526-658d-4b78-8039-4a786402e87a, rgba(255, 255, 255, 0.1))", WebkitBackdropFilter: "blur(34px)", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px" }}>
                                 <div className={"framer-1uixvs3"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--variable-reference-AOW62B2JF-Qi9kGBGTT)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-AOW62B2JF-Qi9kGBGTT": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                                   <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-AOW62B2JF-Qi9kGBGTT))" }}>
-                                    ≈ 40 cours
+                                    40 cours / semaine
                                   </p>
                                 </div>
                               </div>
@@ -994,14 +1007,14 @@ export default async function Contact() {
                         </div>
                         <div className={"framer-jmg0g1"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/"}>
                               Notre mission
                             </a>
                           </p>
                         </div>
                         <div className={"framer-bph9ui"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services/coaching"}>
                               Notre équipe
                             </a>
                           </p>
@@ -1082,13 +1095,6 @@ export default async function Contact() {
                             </a>
                           </p>
                         </div>
-                        <div className={"framer-1c88qaj"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
-                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/contact"}>
-                              FAQ
-                            </a>
-                          </p>
-                        </div>
                         <div className={"framer-19ndjsh"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/contact"}>
@@ -1109,6 +1115,11 @@ export default async function Contact() {
                       <div className={"framer-19zhfuo"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", willChange: "auto", opacity: "1", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49)))" }}>
                           <a className={"framer-text framer-styles-preset-bfv2hb"} data-styles-preset={"Upx7ZfNvr"} href={"https://dgl-agency.fr/"} target={"_blank"} rel={"noopener"}>DGL Agency</a>
+                        </p>
+                      </div>
+                      <div className={"framer-19zhfuo"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", willChange: "auto", opacity: "1", transform: "none" }}>
+                        <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
+                          <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/mentions-legales"}>Mentions légales</a>
                         </p>
                       </div>
                     </div>
@@ -1205,14 +1216,14 @@ export default async function Contact() {
                         </div>
                         <div className={"framer-jmg0g1"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/"}>
                               Notre mission
                             </a>
                           </p>
                         </div>
                         <div className={"framer-bph9ui"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services/coaching"}>
                               Notre équipe
                             </a>
                           </p>
@@ -1293,13 +1304,6 @@ export default async function Contact() {
                             </a>
                           </p>
                         </div>
-                        <div className={"framer-1c88qaj"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
-                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/contact"}>
-                              FAQ
-                            </a>
-                          </p>
-                        </div>
                         <div className={"framer-19ndjsh"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/contact"}>
@@ -1320,6 +1324,11 @@ export default async function Contact() {
                       <div className={"framer-19zhfuo"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", willChange: "auto", opacity: "1", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49)))" }}>
                           <a className={"framer-text framer-styles-preset-bfv2hb"} data-styles-preset={"Upx7ZfNvr"} href={"https://dgl-agency.fr/"} target={"_blank"} rel={"noopener"}>DGL Agency</a>
+                        </p>
+                      </div>
+                      <div className={"framer-19zhfuo"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", willChange: "auto", opacity: "1", transform: "none" }}>
+                        <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
+                          <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/mentions-legales"}>Mentions légales</a>
                         </p>
                       </div>
                     </div>
@@ -1416,14 +1425,14 @@ export default async function Contact() {
                         </div>
                         <div className={"framer-jmg0g1"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/espaces"}>
+                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/"}>
                               Notre mission
                             </a>
                           </p>
                         </div>
                         <div className={"framer-bph9ui"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/espaces"}>
+                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/services/coaching"}>
                               Notre équipe
                             </a>
                           </p>
@@ -1504,13 +1513,6 @@ export default async function Contact() {
                             </a>
                           </p>
                         </div>
-                        <div className={"framer-1c88qaj"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
-                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/contact"}>
-                              FAQ
-                            </a>
-                          </p>
-                        </div>
                         <div className={"framer-19ndjsh"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/contact"}>
@@ -1532,6 +1534,11 @@ export default async function Contact() {
                             </span>
                           </a>
                           .
+                        </p>
+                      </div>
+                      <div className={"framer-hvf79x"} data-framer-name={"Copyright"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", willChange: "auto", opacity: "1", transform: "none" }}>
+                        <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-alignment": "left", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
+                          <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/mentions-legales"}>Mentions légales</a>
                         </p>
                       </div>
                     </div>

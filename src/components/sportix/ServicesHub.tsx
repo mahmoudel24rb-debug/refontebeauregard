@@ -18,13 +18,13 @@ const SERVICES = [
     nom: 'Beauregard Cours',
     href: '/services/cours',
     image: '/assets/beauregard/cours.webp',
-    desc: "Près de 40 cours collectifs par semaine — yoga, pilates, école du dos, boxe, cross training, HYROX et plus — pour tous les niveaux, encadrés par nos coachs.",
+    desc: "40 cours collectifs par semaine — yoga, pilates, école du dos, boxe, cross training, HYROX et plus — pour tous les niveaux, encadrés par nos coachs.",
   },
   {
     nom: 'Location de terrain',
     href: '/location-de-terrain',
     image: '/assets/beauregard/location.webp',
-    desc: "Réservez notre terrain multisport pour vos entraînements, matchs ou événements, en plein air dans le cadre naturel du Parc Beauregard, au bord de la Loire.",
+    desc: "Réservez l'un de nos 2 terrains de football en pelouse synthétique pour vos entraînements, matchs ou événements, en plein air dans le cadre naturel du Parc Beauregard, au bord de la Loire.",
   },
 ]
 
@@ -39,7 +39,7 @@ export default function ServicesHub() {
               <p style={{ color: '#376131', fontWeight: 700, letterSpacing: '0.04em', textTransform: 'uppercase', fontSize: 14, margin: '0 0 16px' }}>Nos services</p>
               <h1 style={{ fontSize: 'clamp(34px,5vw,60px)', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: 1.05, margin: '0 0 20px' }}>Tout ce que le Parc Beauregard vous propose</h1>
               <p style={{ color: '#404040', fontSize: 18, lineHeight: 1.6, maxWidth: 760, margin: '0 auto' }}>
-                Du coaching personnalisé aux cours collectifs, jusqu'à la location de notre terrain multisport : trouvez la formule qui correspond à vos objectifs, en pleine nature au bord de la Loire.
+                Du coaching personnalisé aux cours collectifs, jusqu'à la location de nos 2 terrains de football en pelouse synthétique : trouvez la formule qui correspond à vos objectifs, en pleine nature au bord de la Loire.
               </p>
             </section>
 

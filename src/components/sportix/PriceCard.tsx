@@ -11,7 +11,7 @@ function Feature({ text }: { text: string }) {
       <div className={'framer-Pyzrn framer-gbuwA framer-1web91m framer-v-1web91m'} data-framer-name={'Default'} style={{ width: '100%', opacity: '1' }}>
         <div className={'framer-123ipd2'} data-framer-name={'Icon'} style={{ opacity: '1' }}>
           <div style={{ position: 'absolute', borderRadius: 'inherit', top: '0', right: '0', bottom: '0', left: '0' }}>
-            <img decoding={'auto'} width={'24'} height={'25'} src={CHECK} alt={'Icon'} style={{ display: 'block', width: '100%', height: '100%', borderRadius: 'inherit', objectPosition: 'center', objectFit: 'cover' }} />
+            <img decoding={'auto'} width={'24'} height={'25'} src={CHECK} alt={''} style={{ display: 'block', width: '100%', height: '100%', borderRadius: 'inherit', objectPosition: 'center', objectFit: 'cover' }} />
           </div>
         </div>
         <div className={'framer-r6i663'} data-framer-name={'Body'} style={{ '--extracted-r6o4lv': 'var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))', transform: 'none', opacity: '1' } as React.CSSProperties}>

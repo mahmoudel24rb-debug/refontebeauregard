@@ -61,7 +61,8 @@ export async function POST(req: Request) {
       console.error('[contact] webhook Make erreur:', e)
     }
   } else {
-    console.warn('[contact] MAKE_WEBHOOK_URL non défini — message non transmis:', payload)
+    // Ne JAMAIS logger le payload (données personnelles) — seulement un signal horodaté.
+    console.warn('[contact] MAKE_WEBHOOK_URL absente — lead non transmis (reçu à ' + new Date().toISOString() + ')')
   }
 
   return NextResponse.json({ success: true })
