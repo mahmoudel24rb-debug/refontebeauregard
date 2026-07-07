@@ -66,24 +66,25 @@ async function seed() {
   if (await estVide('coachs')) {
     const coachs = [
       {
-        nom: 'Juan Silva',
-        role: "Spécialiste de l'équilibre corporel",
-        bio: "Spécialiste de l'équilibre corporel : il cible les déséquilibres musculaires responsables de douleurs chroniques et vous accompagne vers l'harmonie.",
+        nom: 'Matéo Nozal',
+        role: 'Hyrox / Cours collectifs fitness',
+        bio: "Coach spécialisé Hyrox et cours collectifs fitness, Matéo accompagne les adhérents avec une approche exigeante et bienveillante. Passionné par l'entraînement fonctionnel, il aime pousser chacun à dépasser ses limites tout en respectant son niveau.",
       },
       {
         nom: 'Alexandre Bourdet',
-        role: 'Coach sportif — boxe, cross training, pilates',
-        bio: "Un coaching bienveillant qui redonne confiance. Il aime les small groups (5 à 8 personnes) et enseigne la boxe, le cross training et le pilates, avec ou sans matériel.",
+        role: 'Boxe / Cours collectifs fitness',
+        bio: "Coach de boxe et cours collectifs fitness, Alexandre transmet sa passion du combat à travers des séances dynamiques et structurées. Toujours à l'écoute, il adapte ses cours pour que débutants comme confirmés progressent à leur rythme.",
       },
       {
-        nom: 'Thomas Dubois',
-        role: 'Coach sportif',
-        bio: "Coach sportif, ancien militaire et pompier : rigueur et dépassement de soi. Spécialiste de la remise en forme, à l'écoute mais exigeant.",
+        nom: 'Marie Lise',
+        role: 'Yoga / Cours collectifs fitness',
+        bio: "Coach de yoga et cours collectifs fitness, Marie Lise propose des séances axées sur l'équilibre entre le corps et l'esprit. Son approche douce et attentive en fait une référence pour ceux qui cherchent à se recentrer tout en travaillant leur forme physique.",
       },
     ]
     for (const [i, c] of coachs.entries()) {
       await payload.create({
         collection: 'coachs',
+        // photo placeholder — vraies photos à venir (client)
         data: { ...c, photo: `/assets/beauregard/coach-${i + 1}.webp`, ordre: i + 1 },
       })
     }

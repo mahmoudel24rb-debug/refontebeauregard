@@ -253,11 +253,11 @@ export interface Cour {
 export interface Coach {
   id: number;
   /**
-   * Ex. : Juan Silva (à compléter avec Bastien)
+   * Ex. : Matéo Nozal
    */
   nom?: string | null;
   /**
-   * Ex. : Coach sportif — boxe & cross training
+   * Ex. : Hyrox / Cours collectifs fitness
    */
   role?: string | null;
   bio?: string | null;

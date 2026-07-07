@@ -19,8 +19,8 @@ export const Coachs: CollectionConfig = {
     delete: authenticated,
   },
   fields: [
-    { name: 'nom', label: 'Nom', type: 'text', admin: { description: 'Ex. : Juan Silva (à compléter avec Bastien)' } },
-    { name: 'role', label: 'Rôle / spécialité', type: 'text', admin: { description: 'Ex. : Coach sportif — boxe & cross training' } },
+    { name: 'nom', label: 'Nom', type: 'text', admin: { description: 'Ex. : Matéo Nozal' } },
+    { name: 'role', label: 'Rôle / spécialité', type: 'text', admin: { description: 'Ex. : Hyrox / Cours collectifs fitness' } },
     { name: 'bio', label: 'Bio', type: 'textarea' },
     {
       name: 'photo',

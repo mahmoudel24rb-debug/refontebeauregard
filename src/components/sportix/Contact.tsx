@@ -832,7 +832,7 @@ export default async function Contact() {
                       </div>
                       <div className={"framer-5q6jwk"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                          Inscrivez-vous aujourd'hui et profitez d'un bilan coaching offert !
+                          Inscrivez-vous aujourd'hui et profitez de votre première séance de coaching offerte !
                         </p>
                       </div>
                     </div>
@@ -873,7 +873,7 @@ export default async function Contact() {
                       </div>
                       <div className={"framer-5q6jwk"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                          Inscrivez-vous aujourd'hui et profitez d'un bilan coaching offert !
+                          Inscrivez-vous aujourd'hui et profitez de votre première séance de coaching offerte !
                         </p>
                       </div>
                     </div>
@@ -914,7 +914,7 @@ export default async function Contact() {
                       </div>
                       <div className={"framer-5q6jwk"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                          Inscrivez-vous aujourd'hui et profitez d'un bilan coaching offert !
+                          Inscrivez-vous aujourd'hui et profitez de votre première séance de coaching offerte !
                         </p>
                       </div>
                     </div>
@@ -1076,6 +1076,14 @@ export default async function Contact() {
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/location-de-terrain"}>
                               Location de terrain
+                            </a>
+                          </p>
+                        </div>
+                        <div className={"framer-6yqmv5"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
+                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
+                            {/* TODO go-live : remplacer par https://kidsportclub.fr quand le domaine sera pointé */}
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"https://refontekidfitness.vercel.app"} target={"_blank"} rel={"noopener"}>
+                              Kid Sport Club
                             </a>
                           </p>
                         </div>
@@ -1288,6 +1296,14 @@ export default async function Contact() {
                             </a>
                           </p>
                         </div>
+                        <div className={"framer-6yqmv5"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
+                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
+                            {/* TODO go-live : remplacer par https://kidsportclub.fr quand le domaine sera pointé */}
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"https://refontekidfitness.vercel.app"} target={"_blank"} rel={"noopener"}>
+                              Kid Sport Club
+                            </a>
+                          </p>
+                        </div>
                       </nav>
                     </div>
                     <div className={"framer-1vydyy4"} data-framer-name={"Nav Links Column"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
@@ -1497,6 +1513,14 @@ export default async function Contact() {
                             </a>
                           </p>
                         </div>
+                            <div className={"framer-6yqmv5"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
+                              <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
+                                {/* TODO go-live : remplacer par https://kidsportclub.fr quand le domaine sera pointé */}
+                                <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"https://refontekidfitness.vercel.app"} target={"_blank"} rel={"noopener"}>
+                                  Kid Sport Club
+                                </a>
+                              </p>
+                            </div>
                       </nav>
                     </div>
                     <div className={"framer-1vydyy4"} data-framer-name={"Nav Links Column"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>

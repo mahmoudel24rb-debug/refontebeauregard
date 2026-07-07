@@ -9,7 +9,7 @@ const SHELL = 'framer-xf0KU framer-gbuwA framer-80BYq framer-1eSXM framer-Suf9V 
 const POINTS = [
   { t: 'Pour qui ?', d: "En famille, entre amis, entre collègues ou avec une équipe compétitive : nos terrains n'attendent que vous !" },
   { t: 'Le matériel', d: '2 terrains en pelouse synthétique à votre disposition. Dossards et ballons fournis. Parking gratuit et vestiaires sur place.' },
-  { t: 'Réservation', d: 'Jusqu’à 10 personnes par terrain. Réservez par téléphone ou directement à l’accueil du Parc Beauregard.' },
+  { t: 'Réservation', d: '50 €/h, ballon fourni. Jusqu’à 10 personnes par terrain. Réservez par téléphone ou directement à l’accueil du Parc Beauregard.' },
 ]
 
 export default function LocationPage() {

@@ -1,4 +1,4 @@
-// Les 11 cours réels du Parc Beauregard (source : CONTENU-REEL-BEAUREGARD.md,
+// Les 9 cours réels du Parc Beauregard (source : CONTENU-REEL-BEAUREGARD.md,
 // crawl du site officiel). Source unique pour la page /services/cours et les
 // sous-pages /services/cours/[slug]. À brancher sur Payload ultérieurement.
 
@@ -40,9 +40,9 @@ export const COURS: Cours[] = [
     espace: 'Espace Cours Collectifs',
   },
   {
-    slug: 'caf',
-    name: 'CAF',
-    short: 'Cuisses, Abdos, Fessiers : force et endurance.',
+    slug: 'renfo-fit',
+    name: 'Renfo Fit',
+    short: 'Renforcement musculaire : force et endurance.',
     desc: "Cuisses Abdos Fessiers. Cours visant à travailler l'ensemble des membres inférieurs ainsi que la ceinture abdominale, avec pour objectif d'améliorer la force et l'endurance.",
     img: I('renfo'),
     espace: 'Espace Fonctionnel',
@@ -72,28 +72,12 @@ export const COURS: Cours[] = [
     espace: 'Espace Fonctionnel',
   },
   {
-    slug: 'gyrokinesis',
-    name: 'Gyrokinesis',
-    short: 'Assouplissement et renforcement neuro-musculaire.',
-    desc: "C'est une méthode d'assouplissement musculaire et de renforcement neuro-musculaire, comprenant des exercices exécutés sur tabouret, au sol et debout. À la fois douce, intense et complexe, cette méthode permet de faire travailler le corps dans sa globalité en l'aidant à dépasser ses limites, tout en le respectant.",
-    img: I('stretch'),
-    espace: 'Espace Cours Collectifs',
-  },
-  {
     slug: 'mob-stretch',
     name: 'Mob & Stretch',
     short: 'Mobilité, coordination, équilibre.',
     desc: "Dans une ambiance conviviale et en musique, travaillez votre mobilité, votre coordination et votre équilibre. Ce cours permet de renforcer et d'assouplir les muscles en profondeur. Idéal après avoir fait un effort physique.",
     img: I('nature'),
     espace: 'Espace Cours Collectifs',
-  },
-  {
-    slug: 'mob-caf',
-    name: 'Mob & CAF',
-    short: 'Mobilité articulaire + renforcement ciblé.',
-    desc: "Le cours Mob & CAF associe des exercices de mobilité articulaire à un renforcement ciblé des cuisses, abdos et fessiers, pour améliorer la souplesse, la posture et tonifier efficacement le bas du corps.",
-    img: I('renfo'),
-    espace: 'Espace Fonctionnel',
   },
 ]
 
