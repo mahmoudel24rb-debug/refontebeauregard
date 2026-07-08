@@ -31,6 +31,18 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: path.resolve(dirname),
   },
+  async redirects() {
+    // NB: modification 2026-07-07 — invalide le cache de build Vercel qui avait
+    // resservi un routes-manifest périmé (redirection caf absente en prod).
+    return [
+      // Cours « CAF » renommé « Renfo Fit » — on conserve le référencement de l'ancienne URL.
+      {
+        source: '/services/cours/caf',
+        destination: '/services/cours/renfo-fit',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 export default withPayload(nextConfig, { devBundleServerPackages: false })
