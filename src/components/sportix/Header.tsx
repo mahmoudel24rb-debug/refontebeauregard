@@ -51,6 +51,13 @@ export default function Header() {
                             </div>
                             <div className={"framer-rsp9da"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                               <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
+                                <a className={"framer-text framer-styles-preset-169hqkb"} data-styles-preset={"DomZrqh6U"} href={"/planning"}>
+                                  Planning
+                                </a>
+                              </p>
+                            </div>
+                            <div className={"framer-rsp9da"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
+                              <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                                 <a className={"framer-text framer-styles-preset-169hqkb"} data-styles-preset={"DomZrqh6U"} href={"/contact"}>
                                   Contact
                                 </a>
@@ -131,6 +138,13 @@ export default function Header() {
                               <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                                 <a className={"framer-text framer-styles-preset-169hqkb"} data-styles-preset={"DomZrqh6U"} href={"/tarifs"}>
                                   Tarifs
+                                </a>
+                              </p>
+                            </div>
+                            <div className={"framer-rsp9da"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
+                              <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
+                                <a className={"framer-text framer-styles-preset-169hqkb"} data-styles-preset={"DomZrqh6U"} href={"/planning"}>
+                                  Planning
                                 </a>
                               </p>
                             </div>

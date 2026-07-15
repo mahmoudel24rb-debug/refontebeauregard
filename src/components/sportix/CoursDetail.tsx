@@ -31,12 +31,17 @@ export default function CoursDetail({ cours, autres }: { cours: CoursDoc; autres
               </div>
               <aside style={{ background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 16, padding: 30 }}>
                 <h3 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 18px' }}>Infos pratiques</h3>
-                {[
+                {([
                   ['Espace', cours.espace || 'Parc Beauregard'],
                   ['Encadrement', 'Coachs diplômés Beauregard'],
                   ['Accès', 'Inclus dans les formules'],
-                  ['Réservation', 'Sur réservation / planning'],
-                ].map(([k, v]) => (
+                  [
+                    'Réservation',
+                    <a key="planning" href="/planning" style={{ color: '#376131', fontWeight: 600, textDecoration: 'underline' }}>
+                      Voir le planning
+                    </a>,
+                  ],
+                ] as [string, React.ReactNode][]).map(([k, v]) => (
                   <div key={k} style={{ display: 'flex', justifyContent: 'space-between', gap: 16, padding: '11px 0', borderBottom: '1px solid rgba(0,0,0,0.08)' }}>
                     <span style={{ color: '#737373', fontSize: 14 }}>{k}</span>
                     <span style={{ fontWeight: 600, fontSize: 14, textAlign: 'right' }}>{v}</span>

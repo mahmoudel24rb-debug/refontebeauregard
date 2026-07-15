@@ -1,0 +1,73 @@
+import React from 'react'
+import Header from './Header'
+import Footer from './Footer'
+import { PLANNING } from './planning'
+
+// Page « Planning des cours » (/planning) — planning de la rentrée septembre 2026.
+// Données : src/components/sportix/planning.ts (récap client, seule vérité).
+
+const SHELL = 'framer-xf0KU framer-gbuwA framer-80BYq framer-1eSXM framer-Suf9V framer-fN9WN framer-72rtr7'
+
+export default function PlanningPage() {
+  return (
+    <div id="main">
+      <div className="framer-9MYi8 framer-13v9dm1" style={{ minHeight: '100vh', width: 'auto' }}>
+        <div className={SHELL} style={{ minHeight: '100vh', width: 'auto', display: 'contents' }}>
+          <Header />
+          <main style={{ background: '#fff', fontFamily: '"Inter", sans-serif' }}>
+            <section style={{ maxWidth: 1180, margin: '0 auto', padding: '170px 30px 50px', textAlign: 'center' }}>
+              <p style={{ color: '#376131', fontWeight: 700, letterSpacing: '0.04em', textTransform: 'uppercase', fontSize: 14, margin: '0 0 16px' }}>Rentrée septembre 2026</p>
+              <h1 style={{ fontSize: 'clamp(34px,5vw,60px)', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: 1.05, margin: '0 0 20px' }}>Planning des cours</h1>
+              <p style={{ color: '#404040', fontSize: 18, lineHeight: 1.6, maxWidth: 720, margin: '0 auto' }}>
+                Le planning hebdomadaire des cours collectifs, en salle et dans la Bulle.
+              </p>
+            </section>
+
+            <section style={{ maxWidth: 1180, margin: '0 auto', padding: '0 30px 30px' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 24 }}>
+                {PLANNING.map((jour, i) => (
+                  <div key={jour.jour} style={{ background: i % 2 === 0 ? '#f5f5f5' : '#fff', border: '1px solid #e5e5e5', borderRadius: 14, padding: 28 }}>
+                    <h2 style={{ fontSize: 24, fontWeight: 700, letterSpacing: '-0.01em', margin: '0 0 18px', color: '#171717' }}>{jour.jour}</h2>
+                    {jour.salles.map((salle) => (
+                      <div key={salle.salle} style={{ marginBottom: 18 }}>
+                        <h3 style={{ color: '#376131', fontWeight: 700, letterSpacing: '0.04em', textTransform: 'uppercase', fontSize: 13, margin: '0 0 10px' }}>{salle.salle}</h3>
+                        <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
+                          {salle.creneaux.map((c, j) => (
+                            <li key={`${c.heure ?? 'sans-horaire'}-${c.cours}-${j}`} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '7px 0', borderBottom: '1px solid rgba(0,0,0,0.07)' }}>
+                              {c.heure ? (
+                                <span style={{ flexShrink: 0, minWidth: 56, textAlign: 'center', background: '#376131', color: '#fff', fontWeight: 700, fontSize: 13, borderRadius: 999, padding: '3px 10px' }}>{c.heure}</span>
+                              ) : null}
+                              {c.cours === 'Kid Sport Club' ? (
+                                <span style={{ fontWeight: 600, fontSize: 15, color: '#171717' }}>
+                                  {/* TODO go-live : remplacer par https://kidsportclub.fr quand le domaine sera pointé */}
+                                  <a href="https://refontekidfitness.vercel.app" target="_blank" rel="noopener" style={{ color: '#376131', fontWeight: 700, textDecoration: 'underline' }}>
+                                    Kid Sport Club
+                                  </a>
+                                  <span style={{ color: '#737373', fontWeight: 400, fontSize: 13, marginLeft: 8 }}>journée enfants</span>
+                                </span>
+                              ) : (
+                                <span style={{ fontWeight: 600, fontSize: 15, color: '#171717' }}>{c.cours}</span>
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section style={{ maxWidth: 1180, margin: '0 auto', padding: '10px 30px 110px' }}>
+              <p style={{ color: '#737373', fontSize: 15, lineHeight: 1.6, margin: '0 0 26px' }}>
+                Planning de la rentrée de septembre 2026 — susceptible d&rsquo;évoluer.
+              </p>
+              <a href="/tarifs" style={{ display: 'inline-block', background: '#376131', color: '#fff', fontWeight: 700, fontSize: 17, textDecoration: 'none', padding: '16px 34px', borderRadius: 70 }}>Voir les tarifs</a>
+            </section>
+          </main>
+          <Footer />
+        </div>
+      </div>
+    </div>
+  )
+}

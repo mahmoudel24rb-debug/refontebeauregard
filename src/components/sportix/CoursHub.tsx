@@ -23,6 +23,9 @@ export default async function CoursHub() {
               <p style={{ color: '#404040', fontSize: 18, lineHeight: 1.6, maxWidth: 720, margin: '0 auto' }}>
                 40 cours collectifs par semaine, du bien-être santé aux entraînements les plus intensifs. Trouvez le cours qui vous correspond, encadré par nos coachs, en pleine nature au bord de la Loire.
               </p>
+              <a href="/planning" style={{ display: 'inline-block', marginTop: 22, color: '#376131', fontWeight: 700, fontSize: 16, textDecoration: 'none' }}>
+                Voir le planning de la rentrée →
+              </a>
             </section>
 
             <section style={{ maxWidth: 1180, margin: '0 auto', padding: '0 30px 110px' }}>
