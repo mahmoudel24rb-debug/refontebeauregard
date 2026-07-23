@@ -75,6 +75,8 @@ export interface Config {
     temoignages: Temoignage;
     evenements: Evenement;
     planning: Planning;
+    faq: Faq;
+    articles: Article;
     media: Media;
     users: User;
     forms: Form;
@@ -95,6 +97,8 @@ export interface Config {
     temoignages: TemoignagesSelect<false> | TemoignagesSelect<true>;
     evenements: EvenementsSelect<false> | EvenementsSelect<true>;
     planning: PlanningSelect<false> | PlanningSelect<true>;
+    faq: FaqSelect<false> | FaqSelect<true>;
+    articles: ArticlesSelect<false> | ArticlesSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
     forms: FormsSelect<false> | FormsSelect<true>;
@@ -419,6 +423,54 @@ export interface Planning {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "faq".
+ */
+export interface Faq {
+  id: number;
+  question: string;
+  reponse: string;
+  ordre?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "articles".
+ */
+export interface Article {
+  id: number;
+  titre: string;
+  /**
+   * Ex. : bien-choisir-son-cours → /blog/bien-choisir-son-cours
+   */
+  slug: string;
+  /**
+   * Résumé court affiché sur la carte du blog et en meta description
+   */
+  extrait?: string | null;
+  corps?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  image?: (number | null) | Media;
+  datePublication?: string | null;
+  publie?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "users".
  */
 export interface User {
@@ -715,6 +767,14 @@ export interface PayloadLockedDocument {
         value: number | Planning;
       } | null)
     | ({
+        relationTo: 'faq';
+        value: number | Faq;
+      } | null)
+    | ({
+        relationTo: 'articles';
+        value: number | Article;
+      } | null)
+    | ({
         relationTo: 'media';
         value: number | Media;
       } | null)
@@ -923,6 +983,32 @@ export interface PlanningSelect<T extends boolean = true> {
   cours?: T;
   ordre?: T;
   actif?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "faq_select".
+ */
+export interface FaqSelect<T extends boolean = true> {
+  question?: T;
+  reponse?: T;
+  ordre?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "articles_select".
+ */
+export interface ArticlesSelect<T extends boolean = true> {
+  titre?: T;
+  slug?: T;
+  extrait?: T;
+  corps?: T;
+  image?: T;
+  datePublication?: T;
+  publie?: T;
   updatedAt?: T;
   createdAt?: T;
 }

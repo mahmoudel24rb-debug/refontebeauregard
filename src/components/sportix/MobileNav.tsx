@@ -29,6 +29,9 @@ const LINKS: { label: string; href: string; sub?: { label: string; href: string 
   },
   { label: 'Tarifs', href: '/tarifs' },
   { label: 'Planning', href: '/planning' },
+  { label: 'Événements', href: '/evenements' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'FAQ', href: '/faq' },
   { label: 'Contact', href: '/contact' },
 ]
 
