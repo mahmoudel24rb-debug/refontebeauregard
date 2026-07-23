@@ -1,6 +1,6 @@
 // Les 9 cours réels du Parc Beauregard (source : CONTENU-REEL-BEAUREGARD.md,
-// crawl du site officiel). Source unique pour la page /services/cours et les
-// sous-pages /services/cours/[slug]. À brancher sur Payload ultérieurement.
+// crawl du site officiel). Source unique pour la page /cours et les
+// sous-pages /cours/[slug]. À brancher sur Payload ultérieurement.
 
 export type Cours = { slug: string; name: string; short: string; desc: string; img: string; espace: string }
 

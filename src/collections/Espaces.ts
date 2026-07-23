@@ -53,7 +53,7 @@ export const Espaces: CollectionConfig = {
       name: 'lien',
       label: 'Lien de la carte',
       type: 'text',
-      admin: { description: 'Ex. : /espaces/fonctionnel ou /services/cours' },
+      admin: { description: 'Ex. : /espaces/fonctionnel ou /cours' },
     },
     {
       name: 'pageDetail',

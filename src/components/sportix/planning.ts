@@ -6,9 +6,9 @@
 // - « Cross » → Cross Training
 // - « Hyrox » → HYROX
 // - « Renfo Fit (Bastien) » → Renfo Fit (le prénom est interne)
-// - « Kid Fitness » → Kid Sport Club
+// - « Kid Fitness » → Journée enfants (mention interne au club, sans lien externe)
 // Les créneaux internes « Dispo Kid / IPMS » et « Dispo location » ont été volontairement omis.
-// Certains créneaux sont sans horaire dans le doc client (Pole Dance, Renfo Fit, Kid Sport Club) :
+// Certains créneaux sont sans horaire dans le doc client (Pole Dance, Renfo Fit, Journée enfants) :
 // ils sont affichés sans horaire.
 
 export type Creneau = {
@@ -89,7 +89,7 @@ export const PLANNING: JourPlanning[] = [
       {
         salle: 'Bulle',
         creneaux: [
-          { cours: 'Kid Sport Club' }, // journée enfants, sans horaire
+          { cours: 'Journée enfants' }, // sans horaire
           { heure: '18h', cours: 'Cross Training' },
           { heure: '19h', cours: 'HYROX' },
         ],

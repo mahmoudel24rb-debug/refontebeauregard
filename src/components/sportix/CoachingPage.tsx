@@ -3,7 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import { getPayloadClient } from '@/lib/payload'
 
-// Page « Beauregard Coaching » (/services/coaching) — contenu réel (site officiel).
+// Page « Coaching » (/coaching) : contenu réel (site officiel).
 
 const SHELL = 'framer-xf0KU framer-gbuwA framer-80BYq framer-1eSXM framer-Suf9V framer-fN9WN framer-72rtr7'
 
@@ -39,7 +39,7 @@ export default async function CoachingPage() {
           <main style={{ background: '#fff', fontFamily: '"Inter", sans-serif' }}>
             {/* Hero / approche */}
             <section style={{ maxWidth: 1100, margin: '0 auto', padding: '170px 30px 30px' }}>
-              <p style={{ color: '#376131', fontWeight: 700, letterSpacing: '0.04em', textTransform: 'uppercase', fontSize: 14, margin: '0 0 14px' }}>Beauregard Coaching</p>
+              <p style={{ color: '#376131', fontWeight: 700, letterSpacing: '0.04em', textTransform: 'uppercase', fontSize: 14, margin: '0 0 14px' }}>Coaching</p>
               <h1 style={{ fontSize: 'clamp(34px,5vw,58px)', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: 1.05, margin: '0 0 24px', maxWidth: 820 }}>Le mouvement, votre meilleur allié</h1>
               <p style={{ color: '#404040', fontSize: 19, lineHeight: 1.7, margin: 0, maxWidth: 820 }}>
                 Le meilleur remède anti-âge et anti-douleurs reste le mouvement. Au Parc Beauregard, nos coachs passionnés d'anatomie et de physiologie vous accompagnent avec soin. Grâce à un suivi personnalisé, ils vous aident à retrouver votre équilibre corporel et une totale liberté de mouvement, dans un cadre privilégié au bord de la Loire.

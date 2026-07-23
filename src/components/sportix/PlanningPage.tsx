@@ -37,17 +37,7 @@ export default function PlanningPage() {
                               {c.heure ? (
                                 <span style={{ flexShrink: 0, minWidth: 56, textAlign: 'center', background: '#376131', color: '#fff', fontWeight: 700, fontSize: 13, borderRadius: 999, padding: '3px 10px' }}>{c.heure}</span>
                               ) : null}
-                              {c.cours === 'Kid Sport Club' ? (
-                                <span style={{ fontWeight: 600, fontSize: 15, color: '#171717' }}>
-                                  {/* TODO go-live : remplacer par https://kidsportclub.fr quand le domaine sera pointé */}
-                                  <a href="https://refontekidfitness.vercel.app" target="_blank" rel="noopener" style={{ color: '#376131', fontWeight: 700, textDecoration: 'underline' }}>
-                                    Kid Sport Club
-                                  </a>
-                                  <span style={{ color: '#737373', fontWeight: 400, fontSize: 13, marginLeft: 8 }}>journée enfants</span>
-                                </span>
-                              ) : (
-                                <span style={{ fontWeight: 600, fontSize: 15, color: '#171717' }}>{c.cours}</span>
-                              )}
+                              <span style={{ fontWeight: 600, fontSize: 15, color: '#171717' }}>{c.cours}</span>
                             </li>
                           ))}
                         </ul>

@@ -1,6 +1,6 @@
 // Les 3 espaces réels du Parc Beauregard (source : CONTENU-REEL-BEAUREGARD.md).
 // Kid Fitness exclu (décision client). L'espace Cours Collectifs est fusionné avec
-// la page Cours -> son lien pointe vers /services/cours (pas de fiche dédiée).
+// la page Cours -> son lien pointe vers /cours (pas de fiche dédiée).
 
 export type Espace = { slug: string; name: string; short: string; desc: string; href: string; detail: boolean; img: string }
 
@@ -10,7 +10,7 @@ export const ESPACES: Espace[] = [
     name: 'Espace Cours Collectifs',
     short: 'Yoga, Pilates, École du dos : l’atmosphère Zen du Parc.',
     desc: "Dès le premier pas dans cet espace, vous ressentirez l'atmosphère Zen du Parc Beauregard. Alliant la nature et la modernité, cet espace est destiné aux séances de Yoga, Pilates et École du dos. Nous mettons à disposition tout le matériel nécessaire, pour le plus grand plaisir de nos adhérents.",
-    href: '/services/cours',
+    href: '/cours',
     detail: false,
     img: '/assets/beauregard/nature.webp',
   },

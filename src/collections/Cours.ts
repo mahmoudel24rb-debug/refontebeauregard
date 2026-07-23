@@ -25,7 +25,7 @@ export const Cours: CollectionConfig = {
       type: 'text',
       required: true,
       unique: true,
-      admin: { description: 'Ex. : yoga → /services/cours/yoga' },
+      admin: { description: 'Ex. : yoga → /cours/yoga' },
     },
     {
       name: 'accroche',
