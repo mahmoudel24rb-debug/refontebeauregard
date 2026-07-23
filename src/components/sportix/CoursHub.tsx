@@ -36,7 +36,12 @@ export default async function CoursHub() {
                     href={`/cours/${c.slug}`}
                     style={{ display: 'flex', flexDirection: 'column', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden', textDecoration: 'none', color: 'inherit' }}
                   >
-                    {c.image ? <img src={c.image} alt={c.nom} loading="lazy" style={{ width: '100%', height: 170, objectFit: 'cover', display: 'block' }} /> : null}
+                    <div style={{ position: 'relative' }}>
+                      {c.image ? <img src={c.image} alt={c.nom} loading="lazy" style={{ width: '100%', height: 170, objectFit: 'cover', display: 'block' }} /> : null}
+                      {c.espace ? (
+                        <span style={{ position: 'absolute', top: 12, left: 12, background: 'rgba(255,255,255,0.92)', color: '#376131', fontWeight: 700, fontSize: 12, letterSpacing: '0.02em', padding: '5px 12px', borderRadius: 999 }}>{c.espace}</span>
+                      ) : null}
+                    </div>
                     <div style={{ display: 'flex', flexDirection: 'column', flex: 1, padding: 26 }}>
                       <h3 style={{ fontSize: 22, fontWeight: 700, letterSpacing: '-0.01em', margin: '0 0 10px' }}>{c.nom}</h3>
                       <p style={{ color: '#525252', lineHeight: 1.55, margin: '0 0 20px', flex: 1 }}>{c.accroche}</p>

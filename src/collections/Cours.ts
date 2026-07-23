@@ -35,6 +35,18 @@ export const Cours: CollectionConfig = {
     },
     { name: 'description', label: 'Description', type: 'textarea' },
     {
+      name: 'benefices',
+      label: 'Les bénéfices',
+      type: 'textarea',
+      admin: { description: 'Un bénéfice par ligne. Affiché en liste sous « Les bénéfices ». Laisser vide pour utiliser le texte par défaut.' },
+    },
+    {
+      name: 'pourQui',
+      label: 'Pour qui ?',
+      type: 'textarea',
+      admin: { description: 'Publics et niveaux concernés. Laisser vide pour utiliser le texte par défaut.' },
+    },
+    {
       name: 'image',
       label: 'Image (chemin)',
       type: 'text',
