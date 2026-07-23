@@ -73,6 +73,8 @@ export interface Config {
     services: Service;
     formules: Formule;
     temoignages: Temoignage;
+    evenements: Evenement;
+    planning: Planning;
     media: Media;
     users: User;
     forms: Form;
@@ -91,6 +93,8 @@ export interface Config {
     services: ServicesSelect<false> | ServicesSelect<true>;
     formules: FormulesSelect<false> | FormulesSelect<true>;
     temoignages: TemoignagesSelect<false> | TemoignagesSelect<true>;
+    evenements: EvenementsSelect<false> | EvenementsSelect<true>;
+    planning: PlanningSelect<false> | PlanningSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
     forms: FormsSelect<false> | FormsSelect<true>;
@@ -166,7 +170,7 @@ export interface Espace {
    */
   image?: string | null;
   /**
-   * Ex. : /espaces/fonctionnel ou /services/cours
+   * Ex. : /espaces/fonctionnel ou /cours
    */
   lien?: string | null;
   /**
@@ -226,7 +230,7 @@ export interface Cour {
   id: number;
   nom: string;
   /**
-   * Ex. : yoga → /services/cours/yoga
+   * Ex. : yoga → /cours/yoga
    */
   slug: string;
   /**
@@ -234,6 +238,14 @@ export interface Cour {
    */
   accroche?: string | null;
   description?: string | null;
+  /**
+   * Un bénéfice par ligne. Affiché en liste sous « Les bénéfices ». Laisser vide pour utiliser le texte par défaut.
+   */
+  benefices?: string | null;
+  /**
+   * Publics et niveaux concernés. Laisser vide pour utiliser le texte par défaut.
+   */
+  pourQui?: string | null;
   /**
    * Ex. : /assets/beauregard/yoga.webp (uploads Media à venir)
    */
@@ -277,7 +289,7 @@ export interface Service {
   id: number;
   nom: string;
   /**
-   * Ex. : coaching → /services/coaching
+   * Ex. : coaching → /coaching
    */
   slug: string;
   accroche?: string | null;
@@ -364,6 +376,44 @@ export interface Temoignage {
   texte: string;
   note?: number | null;
   visible?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "evenements".
+ */
+export interface Evenement {
+  id: number;
+  titre: string;
+  date: string;
+  /**
+   * Court paragraphe de présentation de l'événement
+   */
+  description?: string | null;
+  image?: (number | null) | Media;
+  publie?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "planning".
+ */
+export interface Planning {
+  id: number;
+  jour: 'Lundi' | 'Mardi' | 'Mercredi' | 'Jeudi' | 'Vendredi' | 'Samedi';
+  salle: 'Salle Fitness' | 'Salle Cross' | 'Bulle';
+  /**
+   * Ex. : 10h, 9h15, 17h30. Laisser vide si le créneau est sans horaire.
+   */
+  heure?: string | null;
+  cours: string;
+  /**
+   * Ordre du créneau dans sa salle
+   */
+  ordre?: number | null;
+  actif?: boolean | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -657,6 +707,14 @@ export interface PayloadLockedDocument {
         value: number | Temoignage;
       } | null)
     | ({
+        relationTo: 'evenements';
+        value: number | Evenement;
+      } | null)
+    | ({
+        relationTo: 'planning';
+        value: number | Planning;
+      } | null)
+    | ({
         relationTo: 'media';
         value: number | Media;
       } | null)
@@ -758,6 +816,8 @@ export interface CoursSelect<T extends boolean = true> {
   slug?: T;
   accroche?: T;
   description?: T;
+  benefices?: T;
+  pourQui?: T;
   image?: T;
   espace?: T;
   ordre?: T;
@@ -836,6 +896,33 @@ export interface TemoignagesSelect<T extends boolean = true> {
   texte?: T;
   note?: T;
   visible?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "evenements_select".
+ */
+export interface EvenementsSelect<T extends boolean = true> {
+  titre?: T;
+  date?: T;
+  description?: T;
+  image?: T;
+  publie?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "planning_select".
+ */
+export interface PlanningSelect<T extends boolean = true> {
+  jour?: T;
+  salle?: T;
+  heure?: T;
+  cours?: T;
+  ordre?: T;
+  actif?: T;
   updatedAt?: T;
   createdAt?: T;
 }

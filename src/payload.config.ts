@@ -15,6 +15,7 @@ import { Coachs } from './collections/Coachs'
 import { Cours } from './collections/Cours'
 import { Espaces } from './collections/Espaces'
 import { Evenements } from './collections/Evenements'
+import { Planning } from './collections/Planning'
 import { Formules } from './collections/Formules'
 import { Media } from './collections/Media'
 import { Services } from './collections/Services'
@@ -53,7 +54,7 @@ export default buildConfig({
     supportedLanguages: { fr },
     fallbackLanguage: 'fr',
   },
-  collections: [Espaces, Cours, Coachs, Services, Formules, Temoignages, Evenements, Media, Users],
+  collections: [Espaces, Cours, Coachs, Services, Formules, Temoignages, Evenements, Planning, Media, Users],
   globals: [Header, Footer, InfosClub, BandeauPromo],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
