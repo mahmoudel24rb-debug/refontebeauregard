@@ -21,7 +21,7 @@ const SECTIONS: { t: string; c: React.ReactNode }[] = [
   },
   {
     t: 'Hébergement',
-    c: <>Le site est hébergé par Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis — vercel.com.</>,
+    c: <>Le site est hébergé par Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis (vercel.com).</>,
   },
   {
     t: 'Propriété intellectuelle',

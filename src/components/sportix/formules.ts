@@ -16,5 +16,5 @@ export const COURTES = [
   { name: '6 MOIS', price: '600 €', period: '/6 mois', desc: 'Illimité fitness classique.', features: ['Accès salle de musculation', 'Cours collectifs inclus', 'Hors Hyrox / Boxe / Cross Training'] },
   { name: 'TICKET', price: '20 €', period: '/séance', desc: 'La séance à l’unité, sans engagement.', features: ['1 séance', 'Accès salle ou cours collectif', 'Sans abonnement'] },
   { name: 'CARNET 10', price: '180 €', period: '/10 séances', desc: 'Soit 18 € la séance.', features: ['10 séances', 'Accès salle ou cours collectif', 'Valable 6 mois'] },
-  { name: 'CARNET 30', price: '480 €', period: '/30 séances', desc: 'Soit 16 € la séance — le meilleur tarif.', features: ['30 séances', 'Accès salle ou cours collectif', 'Valable 12 mois'] },
+  { name: 'CARNET 30', price: '480 €', period: '/30 séances', desc: 'Soit 16 € la séance, le meilleur tarif.', features: ['30 séances', 'Accès salle ou cours collectif', 'Valable 12 mois'] },
 ]

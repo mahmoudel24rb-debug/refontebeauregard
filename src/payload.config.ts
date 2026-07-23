@@ -11,9 +11,13 @@ import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
 import sharp from 'sharp'
 
+import { Articles } from './collections/Articles'
 import { Coachs } from './collections/Coachs'
 import { Cours } from './collections/Cours'
 import { Espaces } from './collections/Espaces'
+import { Evenements } from './collections/Evenements'
+import { Faq } from './collections/Faq'
+import { Planning } from './collections/Planning'
 import { Formules } from './collections/Formules'
 import { Media } from './collections/Media'
 import { Services } from './collections/Services'
@@ -52,7 +56,7 @@ export default buildConfig({
     supportedLanguages: { fr },
     fallbackLanguage: 'fr',
   },
-  collections: [Espaces, Cours, Coachs, Services, Formules, Temoignages, Media, Users],
+  collections: [Espaces, Cours, Coachs, Services, Formules, Temoignages, Evenements, Planning, Faq, Articles, Media, Users],
   globals: [Header, Footer, InfosClub, BandeauPromo],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
@@ -70,7 +74,7 @@ export default buildConfig({
     seoPlugin({
       collections: ['espaces', 'services'],
       uploadsCollection: 'media',
-      generateTitle: ({ doc }) => `${doc?.nom ?? ''} — Parc Beauregard Fitness & Coaching`,
+      generateTitle: ({ doc }) => `${doc?.nom ?? ''} | Parc Beauregard Fitness & Coaching`,
     }),
     // Redirections 301 depuis les URLs de l'ancien site WordPress
     redirectsPlugin({

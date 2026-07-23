@@ -48,7 +48,7 @@ export const Formules: CollectionConfig = {
       label: 'Suffixe du prix',
       type: 'text',
       defaultValue: '/mois',
-      admin: { description: 'Ex. : « /mois », « les 3 mois », « les 10 tickets » — laisser vide si aucun' },
+      admin: { description: 'Ex. : « /mois », « les 3 mois », « les 10 tickets ». Laisser vide si aucun' },
     },
     {
       name: 'accroche',

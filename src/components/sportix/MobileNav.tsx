@@ -13,22 +13,25 @@ const LINKS: { label: string; href: string; sub?: { label: string; href: string 
     label: 'Nos espaces',
     href: '/espaces',
     sub: [
-      { label: 'Cours collectifs', href: '/services/cours' },
+      { label: 'Cours collectifs', href: '/cours' },
       { label: 'Entraînement fonctionnel', href: '/espaces/fonctionnel' },
       { label: 'Cross / Cardio', href: '/espaces/cross-cardio' },
     ],
   },
   {
-    label: 'Services',
-    href: '/services',
+    label: 'Cours',
+    href: '/cours',
     sub: [
-      { label: 'Coaching', href: '/services/coaching' },
-      { label: 'Cours', href: '/services/cours' },
+      { label: 'Cours collectifs', href: '/cours' },
+      { label: 'Coaching', href: '/coaching' },
       { label: 'Location de terrain', href: '/location-de-terrain' },
     ],
   },
   { label: 'Tarifs', href: '/tarifs' },
   { label: 'Planning', href: '/planning' },
+  { label: 'Événements', href: '/evenements' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'FAQ', href: '/faq' },
   { label: 'Contact', href: '/contact' },
 ]
 

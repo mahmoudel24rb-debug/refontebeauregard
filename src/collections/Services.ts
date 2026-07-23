@@ -2,7 +2,7 @@ import type { CollectionConfig } from 'payload'
 
 import { authenticated, publicRead } from '../access'
 
-// Les offres du club : Beauregard Coaching, Beauregard Cours, location de terrain…
+// Les offres du club : Coaching, Cours, location de terrain…
 export const Services: CollectionConfig = {
   slug: 'services',
   labels: { singular: 'Service', plural: 'Services' },
@@ -30,7 +30,7 @@ export const Services: CollectionConfig = {
       type: 'text',
       required: true,
       unique: true,
-      admin: { description: 'Ex. : coaching → /services/coaching' },
+      admin: { description: 'Ex. : coaching → /coaching' },
     },
     {
       name: 'accroche',

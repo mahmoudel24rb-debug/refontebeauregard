@@ -32,15 +32,20 @@ const nextConfig: NextConfig = {
     root: path.resolve(dirname),
   },
   async redirects() {
-    // NB: modification 2026-07-07 — invalide le cache de build Vercel qui avait
+    // NB: modification 2026-07-07 : invalide le cache de build Vercel qui avait
     // resservi un routes-manifest périmé (redirection caf absente en prod).
+    // Ordre : les redirections statiques AVANT les patterns :slug, pour éviter
+    // les doubles sauts (ex. caf -> renfo-fit en un seul hop).
     return [
-      // Cours « CAF » renommé « Renfo Fit » — on conserve le référencement de l'ancienne URL.
-      {
-        source: '/services/cours/caf',
-        destination: '/services/cours/renfo-fit',
-        permanent: true,
-      },
+      // Cours « CAF » renommé « Renfo Fit » : un seul saut vers la nouvelle URL.
+      { source: '/services/cours/caf', destination: '/cours/renfo-fit', permanent: true },
+      { source: '/cours/caf', destination: '/cours/renfo-fit', permanent: true },
+      // Nomenclature : /services/* -> /cours, /coaching (retour client)
+      { source: '/services/coaching', destination: '/coaching', permanent: true },
+      { source: '/services/cours', destination: '/cours', permanent: true },
+      { source: '/services', destination: '/cours', permanent: true },
+      { source: '/services/cours/:slug', destination: '/cours/:slug', permanent: true },
+      { source: '/services/:slug', destination: '/cours', permanent: true },
     ]
   },
 }

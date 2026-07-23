@@ -25,7 +25,7 @@ export const Cours: CollectionConfig = {
       type: 'text',
       required: true,
       unique: true,
-      admin: { description: 'Ex. : yoga → /services/cours/yoga' },
+      admin: { description: 'Ex. : yoga → /cours/yoga' },
     },
     {
       name: 'accroche',
@@ -34,6 +34,18 @@ export const Cours: CollectionConfig = {
       admin: { description: 'Phrase courte affichée sur la carte' },
     },
     { name: 'description', label: 'Description', type: 'textarea' },
+    {
+      name: 'benefices',
+      label: 'Les bénéfices',
+      type: 'textarea',
+      admin: { description: 'Un bénéfice par ligne. Affiché en liste sous « Les bénéfices ». Laisser vide pour utiliser le texte par défaut.' },
+    },
+    {
+      name: 'pourQui',
+      label: 'Pour qui ?',
+      type: 'textarea',
+      admin: { description: 'Publics et niveaux concernés. Laisser vide pour utiliser le texte par défaut.' },
+    },
     {
       name: 'image',
       label: 'Image (chemin)',

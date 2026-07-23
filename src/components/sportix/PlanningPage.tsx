@@ -1,14 +1,16 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import { PLANNING } from './planning'
+import { PLANNING, type JourPlanning } from './planning'
 
-// Page « Planning des cours » (/planning) — planning de la rentrée septembre 2026.
-// Données : src/components/sportix/planning.ts (récap client, seule vérité).
+// Page « Planning des cours » (/planning) : planning de la rentrée septembre 2026.
+// Données : collection Payload `planning` (éditable par le client), avec fallback
+// sur src/components/sportix/planning.ts si la collection est vide.
 
 const SHELL = 'framer-xf0KU framer-gbuwA framer-80BYq framer-1eSXM framer-Suf9V framer-fN9WN framer-72rtr7'
 
-export default function PlanningPage() {
+export default function PlanningPage({ data }: { data?: JourPlanning[] }) {
+  const PLANNING_DATA = data && data.length > 0 ? data : PLANNING
   return (
     <div id="main">
       <div className="framer-9MYi8 framer-13v9dm1" style={{ minHeight: '100vh', width: 'auto' }}>
@@ -25,7 +27,7 @@ export default function PlanningPage() {
 
             <section style={{ maxWidth: 1180, margin: '0 auto', padding: '0 30px 30px' }}>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 24 }}>
-                {PLANNING.map((jour, i) => (
+                {PLANNING_DATA.map((jour, i) => (
                   <div key={jour.jour} style={{ background: i % 2 === 0 ? '#f5f5f5' : '#fff', border: '1px solid #e5e5e5', borderRadius: 14, padding: 28 }}>
                     <h2 style={{ fontSize: 24, fontWeight: 700, letterSpacing: '-0.01em', margin: '0 0 18px', color: '#171717' }}>{jour.jour}</h2>
                     {jour.salles.map((salle) => (
@@ -37,17 +39,7 @@ export default function PlanningPage() {
                               {c.heure ? (
                                 <span style={{ flexShrink: 0, minWidth: 56, textAlign: 'center', background: '#376131', color: '#fff', fontWeight: 700, fontSize: 13, borderRadius: 999, padding: '3px 10px' }}>{c.heure}</span>
                               ) : null}
-                              {c.cours === 'Kid Sport Club' ? (
-                                <span style={{ fontWeight: 600, fontSize: 15, color: '#171717' }}>
-                                  {/* TODO go-live : remplacer par https://kidsportclub.fr quand le domaine sera pointé */}
-                                  <a href="https://refontekidfitness.vercel.app" target="_blank" rel="noopener" style={{ color: '#376131', fontWeight: 700, textDecoration: 'underline' }}>
-                                    Kid Sport Club
-                                  </a>
-                                  <span style={{ color: '#737373', fontWeight: 400, fontSize: 13, marginLeft: 8 }}>journée enfants</span>
-                                </span>
-                              ) : (
-                                <span style={{ fontWeight: 600, fontSize: 15, color: '#171717' }}>{c.cours}</span>
-                              )}
+                              <span style={{ fontWeight: 600, fontSize: 15, color: '#171717' }}>{c.cours}</span>
                             </li>
                           ))}
                         </ul>
@@ -60,7 +52,7 @@ export default function PlanningPage() {
 
             <section style={{ maxWidth: 1180, margin: '0 auto', padding: '10px 30px 110px' }}>
               <p style={{ color: '#737373', fontSize: 15, lineHeight: 1.6, margin: '0 0 26px' }}>
-                Planning de la rentrée de septembre 2026 — susceptible d&rsquo;évoluer.
+                Planning de la rentrée de septembre 2026, susceptible d&rsquo;évoluer.
               </p>
               <a href="/tarifs" style={{ display: 'inline-block', background: '#376131', color: '#fff', fontWeight: 700, fontSize: 17, textDecoration: 'none', padding: '16px 34px', borderRadius: 70 }}>Voir les tarifs</a>
             </section>

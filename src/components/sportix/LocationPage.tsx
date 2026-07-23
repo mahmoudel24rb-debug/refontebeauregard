@@ -23,7 +23,7 @@ export default function LocationPage() {
               <p style={{ color: '#376131', fontWeight: 700, letterSpacing: '0.04em', textTransform: 'uppercase', fontSize: 14, margin: '0 0 14px' }}>Location de terrain</p>
               <h1 style={{ fontSize: 'clamp(34px,5vw,58px)', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: 1.05, margin: '0 0 24px', maxWidth: 820 }}>Réservez votre terrain de foot</h1>
               <p style={{ color: '#404040', fontSize: 19, lineHeight: 1.7, margin: 0, maxWidth: 820 }}>
-                Envie d'une partie de football inoubliable ? Nos terrains sont l'endroit idéal pour vivre des moments passionnants entre amis, en famille ou entre collègues — en plein air, au bord de la Loire.
+                Envie d'une partie de football inoubliable ? Nos terrains sont l'endroit idéal pour vivre des moments passionnants entre amis, en famille ou entre collègues, en plein air, au bord de la Loire.
               </p>
             </section>
             <section style={{ maxWidth: 1100, margin: '0 auto', padding: '20px 30px 0' }}>

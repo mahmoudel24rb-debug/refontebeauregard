@@ -21,7 +21,7 @@ async function getCours(slug: string) {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const cours = await getCours(slug)
-  return cours ? { title: `${cours.nom} — Cours`, description: cours.accroche ?? undefined } : { title: 'Cours' }
+  return cours ? { title: `${cours.nom} | Cours`, description: cours.accroche ?? undefined } : { title: 'Cours' }
 }
 
 export default async function CoursSlugPage({ params }: { params: Promise<{ slug: string }> }) {

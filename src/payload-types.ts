@@ -73,6 +73,10 @@ export interface Config {
     services: Service;
     formules: Formule;
     temoignages: Temoignage;
+    evenements: Evenement;
+    planning: Planning;
+    faq: Faq;
+    articles: Article;
     media: Media;
     users: User;
     forms: Form;
@@ -91,6 +95,10 @@ export interface Config {
     services: ServicesSelect<false> | ServicesSelect<true>;
     formules: FormulesSelect<false> | FormulesSelect<true>;
     temoignages: TemoignagesSelect<false> | TemoignagesSelect<true>;
+    evenements: EvenementsSelect<false> | EvenementsSelect<true>;
+    planning: PlanningSelect<false> | PlanningSelect<true>;
+    faq: FaqSelect<false> | FaqSelect<true>;
+    articles: ArticlesSelect<false> | ArticlesSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
     forms: FormsSelect<false> | FormsSelect<true>;
@@ -166,7 +174,7 @@ export interface Espace {
    */
   image?: string | null;
   /**
-   * Ex. : /espaces/fonctionnel ou /services/cours
+   * Ex. : /espaces/fonctionnel ou /cours
    */
   lien?: string | null;
   /**
@@ -174,12 +182,12 @@ export interface Espace {
    */
   pageDetail?: boolean | null;
   /**
-   * Optionnel — remplacera le chemin texte quand les vraies photos seront uploadées
+   * Optionnel : remplacera le chemin texte quand les vraies photos seront uploadées
    */
   imagePrincipale?: (number | null) | Media;
   galerie?: (number | Media)[] | null;
   /**
-   * Ex. : Yoga, Pilates, École du dos — ou équipements de la zone
+   * Ex. : Yoga, Pilates, École du dos, ou équipements de la zone
    */
   pointsCles?:
     | {
@@ -226,7 +234,7 @@ export interface Cour {
   id: number;
   nom: string;
   /**
-   * Ex. : yoga → /services/cours/yoga
+   * Ex. : yoga → /cours/yoga
    */
   slug: string;
   /**
@@ -234,6 +242,14 @@ export interface Cour {
    */
   accroche?: string | null;
   description?: string | null;
+  /**
+   * Un bénéfice par ligne. Affiché en liste sous « Les bénéfices ». Laisser vide pour utiliser le texte par défaut.
+   */
+  benefices?: string | null;
+  /**
+   * Publics et niveaux concernés. Laisser vide pour utiliser le texte par défaut.
+   */
+  pourQui?: string | null;
   /**
    * Ex. : /assets/beauregard/yoga.webp (uploads Media à venir)
    */
@@ -277,7 +293,7 @@ export interface Service {
   id: number;
   nom: string;
   /**
-   * Ex. : coaching → /services/coaching
+   * Ex. : coaching → /coaching
    */
   slug: string;
   accroche?: string | null;
@@ -333,7 +349,7 @@ export interface Formule {
   type: 'mensuelle' | 'courte-duree' | 'ticket';
   prix: number;
   /**
-   * Ex. : « /mois », « les 3 mois », « les 10 tickets » — laisser vide si aucun
+   * Ex. : « /mois », « les 3 mois », « les 10 tickets ». Laisser vide si aucun
    */
   suffixePrix?: string | null;
   /**
@@ -364,6 +380,92 @@ export interface Temoignage {
   texte: string;
   note?: number | null;
   visible?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "evenements".
+ */
+export interface Evenement {
+  id: number;
+  titre: string;
+  date: string;
+  /**
+   * Court paragraphe de présentation de l'événement
+   */
+  description?: string | null;
+  image?: (number | null) | Media;
+  publie?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "planning".
+ */
+export interface Planning {
+  id: number;
+  jour: 'Lundi' | 'Mardi' | 'Mercredi' | 'Jeudi' | 'Vendredi' | 'Samedi';
+  salle: 'Salle Fitness' | 'Salle Cross' | 'Bulle';
+  /**
+   * Ex. : 10h, 9h15, 17h30. Laisser vide si le créneau est sans horaire.
+   */
+  heure?: string | null;
+  cours: string;
+  /**
+   * Ordre du créneau dans sa salle
+   */
+  ordre?: number | null;
+  actif?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "faq".
+ */
+export interface Faq {
+  id: number;
+  question: string;
+  reponse: string;
+  ordre?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "articles".
+ */
+export interface Article {
+  id: number;
+  titre: string;
+  /**
+   * Ex. : bien-choisir-son-cours → /blog/bien-choisir-son-cours
+   */
+  slug: string;
+  /**
+   * Résumé court affiché sur la carte du blog et en meta description
+   */
+  extrait?: string | null;
+  corps?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  image?: (number | null) | Media;
+  datePublication?: string | null;
+  publie?: boolean | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -657,6 +759,22 @@ export interface PayloadLockedDocument {
         value: number | Temoignage;
       } | null)
     | ({
+        relationTo: 'evenements';
+        value: number | Evenement;
+      } | null)
+    | ({
+        relationTo: 'planning';
+        value: number | Planning;
+      } | null)
+    | ({
+        relationTo: 'faq';
+        value: number | Faq;
+      } | null)
+    | ({
+        relationTo: 'articles';
+        value: number | Article;
+      } | null)
+    | ({
         relationTo: 'media';
         value: number | Media;
       } | null)
@@ -758,6 +876,8 @@ export interface CoursSelect<T extends boolean = true> {
   slug?: T;
   accroche?: T;
   description?: T;
+  benefices?: T;
+  pourQui?: T;
   image?: T;
   espace?: T;
   ordre?: T;
@@ -836,6 +956,59 @@ export interface TemoignagesSelect<T extends boolean = true> {
   texte?: T;
   note?: T;
   visible?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "evenements_select".
+ */
+export interface EvenementsSelect<T extends boolean = true> {
+  titre?: T;
+  date?: T;
+  description?: T;
+  image?: T;
+  publie?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "planning_select".
+ */
+export interface PlanningSelect<T extends boolean = true> {
+  jour?: T;
+  salle?: T;
+  heure?: T;
+  cours?: T;
+  ordre?: T;
+  actif?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "faq_select".
+ */
+export interface FaqSelect<T extends boolean = true> {
+  question?: T;
+  reponse?: T;
+  ordre?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "articles_select".
+ */
+export interface ArticlesSelect<T extends boolean = true> {
+  titre?: T;
+  slug?: T;
+  extrait?: T;
+  corps?: T;
+  image?: T;
+  datePublication?: T;
+  publie?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -1168,7 +1341,7 @@ export interface BandeauPromo {
   id: number;
   actif?: boolean | null;
   /**
-   * Court — il s’affiche dans une pastille du hero. Ex. : « 1ʳᵉ séance offerte »
+   * Court : il s’affiche dans une pastille du hero. Ex. : « 1ʳᵉ séance offerte »
    */
   titre?: string | null;
   texte?: string | null;

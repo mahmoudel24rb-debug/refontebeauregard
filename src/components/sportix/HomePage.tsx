@@ -6,8 +6,12 @@ import { MENSUEL, COURTES } from './formules'
 import ClubVideo from './ClubVideo'
 
 export type HeroPromo = { titre?: string | null; texte?: string | null; url?: string | null }
+type CardData = { name: string; price: string; period: string; desc: string; features: string[] }
 
-export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
+export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroPromo | null; mensuel?: CardData[]; courtes?: CardData[] }) {
+  // Formules éditables via Payload (fallback sur formules.ts si la base est vide)
+  const MENSUEL_DATA = mensuel && mensuel.length ? mensuel : MENSUEL
+  const COURTES_DATA = courtes && courtes.length ? courtes : COURTES
   return (
     <>
       <div id={"main"}>
@@ -40,14 +44,14 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                             <a className={"framer-text framer-styles-preset-169hqkb"} data-styles-preset={"DomZrqh6U"} href={"/espaces"}>
                               Nos espaces
                             </a>
-                          </p><div data-bg-submenu="true"><a href="/services/cours">Cours collectifs</a><a href="/espaces/fonctionnel">Entraînement fonctionnel</a><a href="/espaces/cross-cardio">Cross / Cardio</a></div>
+                          </p><div data-bg-submenu="true"><a href="/cours">Cours collectifs</a><a href="/espaces/fonctionnel">Entraînement fonctionnel</a><a href="/espaces/cross-cardio">Cross / Cardio</a></div>
                         </div>
                         <div className={"framer-9ynktl"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            <a className={"framer-text framer-styles-preset-169hqkb"} data-styles-preset={"DomZrqh6U"} href={"/services"}>
-                              Services
+                            <a className={"framer-text framer-styles-preset-169hqkb"} data-styles-preset={"DomZrqh6U"} href={"/cours"}>
+                              Cours
                             </a>
-                          </p><div data-bg-submenu="true"><a href="/services/coaching">Coaching</a><a href="/services/cours">Cours</a><a href="/location-de-terrain">Location de terrain</a></div>
+                          </p><div data-bg-submenu="true"><a href="/cours">Cours collectifs</a><a href="/coaching">Coaching</a><a href="/location-de-terrain">Location de terrain</a></div>
                         </div>
                         <div className={"framer-rsp9da"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
@@ -132,14 +136,14 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                             <a className={"framer-text framer-styles-preset-169hqkb"} data-styles-preset={"DomZrqh6U"} href={"/espaces"}>
                               Nos espaces
                             </a>
-                          </p><div data-bg-submenu="true"><a href="/services/cours">Cours collectifs</a><a href="/espaces/fonctionnel">Entraînement fonctionnel</a><a href="/espaces/cross-cardio">Cross / Cardio</a></div>
+                          </p><div data-bg-submenu="true"><a href="/cours">Cours collectifs</a><a href="/espaces/fonctionnel">Entraînement fonctionnel</a><a href="/espaces/cross-cardio">Cross / Cardio</a></div>
                         </div>
                         <div className={"framer-9ynktl"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            <a className={"framer-text framer-styles-preset-169hqkb"} data-styles-preset={"DomZrqh6U"} href={"/services"}>
-                              Services
+                            <a className={"framer-text framer-styles-preset-169hqkb"} data-styles-preset={"DomZrqh6U"} href={"/cours"}>
+                              Cours
                             </a>
-                          </p><div data-bg-submenu="true"><a href="/services/coaching">Coaching</a><a href="/services/cours">Cours</a><a href="/location-de-terrain">Location de terrain</a></div>
+                          </p><div data-bg-submenu="true"><a href="/cours">Cours collectifs</a><a href="/coaching">Coaching</a><a href="/location-de-terrain">Location de terrain</a></div>
                         </div>
                         <div className={"framer-rsp9da"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
@@ -191,6 +195,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                 <div className={"framer-r65kbw"} data-framer-name={"Hero Banner"}>
                   <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
                     <img decoding={"async"} width={"1920"} height={"940"} sizes={"(min-width: 1280px) 100vw, (max-width: 991px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw"} srcSet={"/assets/beauregard/hero.webp"} src={"/assets/beauregard/hero.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "right center", objectFit: "cover" }} />
+                    <div aria-hidden="true" style={{ position: "absolute", inset: 0, borderRadius: "inherit", pointerEvents: "none", background: "linear-gradient(180deg, rgba(10,20,15,0.25) 0%, rgba(10,20,15,0.55) 100%)" }} />
                   </div>
                 </div>
               </div>
@@ -198,6 +203,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                 <div className={"framer-r65kbw"} data-framer-name={"Hero Banner"}>
                   <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
                     <img decoding={"async"} width={"1920"} height={"940"} sizes={"(min-width: 1280px) 100vw, (max-width: 991px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw"} srcSet={"/assets/beauregard/hero.webp"} src={"/assets/beauregard/hero.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "81.8% 37.9%", objectFit: "cover" }} />
+                    <div aria-hidden="true" style={{ position: "absolute", inset: 0, borderRadius: "inherit", pointerEvents: "none", background: "linear-gradient(180deg, rgba(10,20,15,0.25) 0%, rgba(10,20,15,0.55) 100%)" }} />
                   </div>
                 </div>
               </div>
@@ -205,6 +211,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                 <div className={"framer-r65kbw"} data-framer-name={"Hero Banner"}>
                   <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
                     <img decoding={"async"} width={"1920"} height={"940"} sizes={"(min-width: 1280px) 100vw, (max-width: 991px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw"} srcSet={"/assets/beauregard/hero.webp"} src={"/assets/beauregard/hero.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "97.2% 35.3%", objectFit: "cover" }} />
+                    <div aria-hidden="true" style={{ position: "absolute", inset: 0, borderRadius: "inherit", pointerEvents: "none", background: "linear-gradient(180deg, rgba(10,20,15,0.25) 0%, rgba(10,20,15,0.55) 100%)" }} />
                   </div>
                 </div>
               </div>
@@ -250,7 +257,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                   <div className={"framer-13iq7p0"} data-framer-name={"Button Wrapper"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
                     <div className={"ssr-variant hidden-ugdvmg"}>
                       <div className={"framer-1c3uda1-container"}>
-                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/services"}>
+                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/cours"}>
                           <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
                               Nos cours
@@ -261,7 +268,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                     </div>
                     <div className={"ssr-variant hidden-72rtr7 hidden-9md6lv"}>
                       <div className={"framer-1c3uda1-container"}>
-                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-tp32ut framer-5eqsdb"} data-framer-name={"Phone"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", maxWidth: "100%", width: "100%", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/services"}>
+                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-tp32ut framer-5eqsdb"} data-framer-name={"Phone"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", maxWidth: "100%", width: "100%", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/cours"}>
                           <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
                               Nos cours
@@ -454,7 +461,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                     <ClubVideo />
                     <div className={"framer-1q7n2ul"} data-framer-name={"Body"} style={{ transform: "none" }}>
                       <h5 className={"framer-text framer-styles-preset-1a2qg92"} data-styles-preset={"Hrg3DnSgc"} style={{ "--framer-text-color": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))" }}>
-                        Découvrez le club en vidéo.
+                        Le club comme si vous y étiez : la visite en vidéo.
                       </h5>
                     </div>
                     <div className={"ssr-variant"}>
@@ -501,7 +508,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                     </div>
                   </div>
                   <div className={"framer-1dv6csd-container hidden-ugdvmg"}>
-                    <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/services"}>
+                    <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/cours"}>
                       <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
                           Tous nos services
@@ -514,7 +521,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                   <div className={"ssr-variant hidden-ugdvmg"}>
                     <div className={"ssr-variant"}>
                       <div className={"framer-1di4wcj-container"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
-                        <a className={"framer-nURDP framer-ovLcB framer-zUcIZ framer-16nx98q framer-v-16nx98q framer-maxoa4"} data-framer-name={"Default"} style={{ width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }} href={"/services/coaching"}>
+                        <a className={"framer-nURDP framer-ovLcB framer-zUcIZ framer-16nx98q framer-v-16nx98q framer-maxoa4"} data-framer-name={"Default"} style={{ width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }} href={"/coaching"}>
                           <div className={"framer-1m8bp3k"} data-framer-name={"Thumbnail"} style={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", transform: "translateX(-50%)" }}>
                             <div className={"framer-1o8anf"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-617eea88-08bd-4f71-aa3d-29b363f5895a, rgba(0, 0, 0, 0.3))" }} />
                             <div className={"framer-r69y6i"} data-framer-name={"Image"} style={{ transform: "none" }}>
@@ -526,7 +533,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                           <div className={"framer-25lc8r"} data-framer-name={"Text Content Wrapper"} style={{ backgroundColor: "rgba(0, 0, 0, 0)", borderBottomLeftRadius: "0px", borderBottomRightRadius: "0px" }}>
                             <div className={"framer-4ec7ix"} data-framer-name={"Title"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                               <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-color": "var(--extracted-a0htzi, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                                Beauregard Coaching
+                                Coaching
                               </h3>
                             </div>
                           </div>
@@ -566,7 +573,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                     </div>
                     <div className={"ssr-variant"}>
                       <div className={"framer-1di4wcj-container"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
-                        <a className={"framer-nURDP framer-ovLcB framer-zUcIZ framer-16nx98q framer-v-16nx98q framer-maxoa4"} data-framer-name={"Default"} style={{ width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }} href={"/services"}>
+                        <a className={"framer-nURDP framer-ovLcB framer-zUcIZ framer-16nx98q framer-v-16nx98q framer-maxoa4"} data-framer-name={"Default"} style={{ width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }} href={"/cours"}>
                           <div className={"framer-1m8bp3k"} data-framer-name={"Thumbnail"} style={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", transform: "translateX(-50%)" }}>
                             <div className={"framer-1o8anf"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-617eea88-08bd-4f71-aa3d-29b363f5895a, rgba(0, 0, 0, 0.3))" }} />
                             <div className={"framer-r69y6i"} data-framer-name={"Image"} style={{ transform: "none" }}>
@@ -578,7 +585,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                           <div className={"framer-25lc8r"} data-framer-name={"Text Content Wrapper"} style={{ backgroundColor: "rgba(0, 0, 0, 0)", borderBottomLeftRadius: "0px", borderBottomRightRadius: "0px" }}>
                             <div className={"framer-4ec7ix"} data-framer-name={"Title"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                               <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-color": "var(--extracted-a0htzi, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                                Beauregard Cours
+                                Cours
                               </h3>
                             </div>
                           </div>
@@ -671,7 +678,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                   </div>
                   <div className={"ssr-variant hidden-72rtr7 hidden-9md6lv"}>
                     <div className={"framer-1di4wcj-container"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
-                      <a className={"framer-nURDP framer-ovLcB framer-zUcIZ framer-16nx98q framer-v-14kd23d framer-maxoa4"} data-framer-name={"Phone"} style={{ width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }} href={"/services/coaching"}>
+                      <a className={"framer-nURDP framer-ovLcB framer-zUcIZ framer-16nx98q framer-v-14kd23d framer-maxoa4"} data-framer-name={"Phone"} style={{ width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }} href={"/coaching"}>
                         <div className={"framer-1m8bp3k"} data-framer-name={"Thumbnail"} style={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", transform: "translateX(-50%)" }}>
                           <div className={"framer-1o8anf"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-617eea88-08bd-4f71-aa3d-29b363f5895a, rgba(0, 0, 0, 0.3))" }} />
                           <div className={"framer-r69y6i"} data-framer-name={"Image"} style={{ transform: "none" }}>
@@ -683,7 +690,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                         <div className={"framer-25lc8r"} data-framer-name={"Text Content Wrapper"} style={{ backgroundColor: "rgba(0, 0, 0, 0)", borderBottomLeftRadius: "0px", borderBottomRightRadius: "0px" }}>
                           <div className={"framer-4ec7ix"} data-framer-name={"Title"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                             <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-color": "var(--extracted-a0htzi, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                              Beauregard Coaching
+                              Coaching
                             </h3>
                           </div>
                         </div>
@@ -721,7 +728,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                       </a>
                     </div>
                     <div className={"framer-1di4wcj-container"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
-                      <a className={"framer-nURDP framer-ovLcB framer-zUcIZ framer-16nx98q framer-v-14kd23d framer-maxoa4"} data-framer-name={"Phone"} style={{ width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }} href={"/services"}>
+                      <a className={"framer-nURDP framer-ovLcB framer-zUcIZ framer-16nx98q framer-v-14kd23d framer-maxoa4"} data-framer-name={"Phone"} style={{ width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }} href={"/cours"}>
                         <div className={"framer-1m8bp3k"} data-framer-name={"Thumbnail"} style={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", transform: "translateX(-50%)" }}>
                           <div className={"framer-1o8anf"} data-framer-name={"BG Color"} style={{ backgroundColor: "var(--token-617eea88-08bd-4f71-aa3d-29b363f5895a, rgba(0, 0, 0, 0.3))" }} />
                           <div className={"framer-r69y6i"} data-framer-name={"Image"} style={{ transform: "none" }}>
@@ -733,7 +740,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                         <div className={"framer-25lc8r"} data-framer-name={"Text Content Wrapper"} style={{ backgroundColor: "rgba(0, 0, 0, 0)", borderBottomLeftRadius: "0px", borderBottomRightRadius: "0px" }}>
                           <div className={"framer-4ec7ix"} data-framer-name={"Title"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                             <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-color": "var(--extracted-a0htzi, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                              Beauregard Cours
+                              Cours
                             </h3>
                           </div>
                         </div>
@@ -774,7 +781,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                 </div>
                 <div className={"ssr-variant"}>
                   <div className={"framer-e5m509-container hidden-72rtr7 hidden-9md6lv"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
-                    <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-tp32ut framer-5eqsdb"} data-framer-name={"Phone"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/services"}>
+                    <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-tp32ut framer-5eqsdb"} data-framer-name={"Phone"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/cours"}>
                       <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
                           Tous nos services
@@ -835,13 +842,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                               Excellence sportive
                             </p>
                           </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       <div className={"ssr-variant hidden-72rtr7 hidden-9md6lv"}>
@@ -856,13 +856,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                             <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                               Excellence sportive
                             </p>
-                          </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }} tabIndex={"0"}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
@@ -881,13 +874,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                               Communauté & Support
                             </p>
                           </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       <div className={"ssr-variant hidden-72rtr7 hidden-9md6lv"}>
@@ -902,13 +888,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                             <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                               Communauté & Support
                             </p>
-                          </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }} tabIndex={"0"}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
@@ -927,13 +906,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                               Accessible à tous
                             </p>
                           </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       <div className={"ssr-variant hidden-72rtr7 hidden-9md6lv"}>
@@ -948,13 +920,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                             <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                               Accessible à tous
                             </p>
-                          </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }} tabIndex={"0"}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
@@ -973,13 +938,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                               Progrès & innovation
                             </p>
                           </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       <div className={"ssr-variant hidden-72rtr7 hidden-9md6lv"}>
@@ -994,13 +952,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                             <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                               Progrès & innovation
                             </p>
-                          </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }} tabIndex={"0"}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
@@ -1019,13 +970,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                               Bien-être & équilibre
                             </p>
                           </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       <div className={"ssr-variant hidden-72rtr7 hidden-9md6lv"}>
@@ -1040,13 +984,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                             <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                               Bien-être & équilibre
                             </p>
-                          </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }} tabIndex={"0"}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
@@ -1065,13 +1002,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                               Passion du mouvement
                             </p>
                           </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       <div className={"ssr-variant hidden-72rtr7 hidden-9md6lv"}>
@@ -1086,13 +1016,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                             <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                               Passion du mouvement
                             </p>
-                          </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }} tabIndex={"0"}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
@@ -1320,6 +1243,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Christele P.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>CP</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1380,6 +1310,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Jemsa F.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JF</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1439,6 +1376,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
                                       Janelle L.
                                     </p>
+                                  </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JL</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
                                   </div>
                                 </div>
                               </div>
@@ -1502,6 +1446,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Jemsa F.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JF</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1562,6 +1513,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Christele P.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>CP</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1621,6 +1579,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
                                       Janelle L.
                                     </p>
+                                  </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JL</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
                                   </div>
                                 </div>
                               </div>
@@ -1714,6 +1679,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Christele P.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>CP</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1774,6 +1746,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Jemsa F.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JF</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1833,6 +1812,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
                                       Janelle L.
                                     </p>
+                                  </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JL</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
                                   </div>
                                 </div>
                               </div>
@@ -1896,6 +1882,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Jemsa F.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JF</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1956,6 +1949,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Christele P.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>CP</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -2015,6 +2015,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
                                       Janelle L.
                                     </p>
+                                  </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JL</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
                                   </div>
                                 </div>
                               </div>
@@ -2148,6 +2155,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Christele P.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>CP</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -2208,6 +2222,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Jemsa F.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JF</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -2267,6 +2288,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
                                       Janelle L.
                                     </p>
+                                  </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JL</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
                                   </div>
                                 </div>
                               </div>
@@ -2330,6 +2358,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Jemsa F.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JF</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -2389,6 +2424,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
                                       Christele P.
                                     </p>
+                                  </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>CP</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
                                   </div>
                                 </div>
                               </div>
@@ -2450,6 +2492,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Janelle L.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JL</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -2494,7 +2543,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                         </div>
                       </div>
                       <div className={"framer-1rwmebu-container"}>
-                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"https://www.facebook.com/parcbeauregard"}>
+                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/evenements"}>
                           <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
                               Tous les événements
@@ -2536,7 +2585,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                         </div>
                       </div>
                       <div className={"framer-1rwmebu-container"}>
-                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"https://www.facebook.com/parcbeauregard"}>
+                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/evenements"}>
                           <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
                               Tous les événements
@@ -2578,7 +2627,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                         </div>
                       </div>
                       <div className={"framer-1rwmebu-container"}>
-                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-tp32ut framer-5eqsdb"} data-framer-name={"Phone"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"https://www.facebook.com/parcbeauregard"}>
+                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-tp32ut framer-5eqsdb"} data-framer-name={"Phone"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/evenements"}>
                           <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
                               Tous les événements
@@ -2632,10 +2681,10 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                       </div>
                       <div className={"framer-1pryn50"} data-framer-name={"Tarifs Cards Wrapper"}>
                         <div data-ptab="mensuel">
-                          {MENSUEL.map((f) => (<PriceCard key={f.name} {...f} />))}
+                          {MENSUEL_DATA.map((f) => (<PriceCard key={f.name} {...f} />))}
                         </div>
                         <div data-ptab="courtes">
-                          {COURTES.map((f) => (<PriceCard key={f.name} {...f} />))}
+                          {COURTES_DATA.map((f) => (<PriceCard key={f.name} {...f} />))}
                         </div>
                         <p style={{ textAlign: "center", fontSize: 14, color: "#737373", margin: "24px 0 0", fontFamily: '"Inter", sans-serif' }}>Bilan forme sur demande.</p>
                       </div>
@@ -2683,10 +2732,10 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                       </div>
                       <div className={"framer-1pryn50"} data-framer-name={"Tarifs Cards Wrapper"}>
                         <div data-ptab="mensuel">
-                          {MENSUEL.map((f) => (<PriceCard key={f.name} {...f} />))}
+                          {MENSUEL_DATA.map((f) => (<PriceCard key={f.name} {...f} />))}
                         </div>
                         <div data-ptab="courtes">
-                          {COURTES.map((f) => (<PriceCard key={f.name} {...f} />))}
+                          {COURTES_DATA.map((f) => (<PriceCard key={f.name} {...f} />))}
                         </div>
                         <p style={{ textAlign: "center", fontSize: 14, color: "#737373", margin: "24px 0 0", fontFamily: '"Inter", sans-serif' }}>Bilan forme sur demande.</p>
                       </div>
@@ -2734,10 +2783,10 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                       </div>
                       <div className={"framer-1pryn50"} data-framer-name={"Tarifs Cards Wrapper"}>
                         <div data-ptab="mensuel">
-                          {MENSUEL.map((f) => (<PriceCard key={f.name} {...f} />))}
+                          {MENSUEL_DATA.map((f) => (<PriceCard key={f.name} {...f} />))}
                         </div>
                         <div data-ptab="courtes">
-                          {COURTES.map((f) => (<PriceCard key={f.name} {...f} />))}
+                          {COURTES_DATA.map((f) => (<PriceCard key={f.name} {...f} />))}
                         </div>
                         <p style={{ textAlign: "center", fontSize: 14, color: "#737373", margin: "24px 0 0", fontFamily: '"Inter", sans-serif' }}>Bilan forme sur demande.</p>
                       </div>
@@ -2949,8 +2998,22 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                         </div>
                         <div className={"framer-bph9ui"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services/coaching"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/coaching"}>
                               Notre équipe
+                            </a>
+                          </p>
+                        </div>
+                        <div className={"framer-bph9ui"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
+                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/faq"}>
+                              FAQ
+                            </a>
+                          </p>
+                        </div>
+                        <div className={"framer-bph9ui"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
+                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/blog"}>
+                              Blog
                             </a>
                           </p>
                         </div>
@@ -2965,7 +3028,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                       <nav className={"framer-1uskuzo"} data-framer-name={"Nav Links Column"}>
                         <div className={"framer-144bbg"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services/cours"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/cours"}>
                               Cours collectifs
                             </a>
                           </p>
@@ -2989,21 +3052,21 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                     <div className={"framer-bxt6qb"} data-framer-name={"Nav Links Column"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
                       <div className={"framer-p2b2a8"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Services
+                          Cours
                         </p>
                       </div>
                       <nav className={"framer-lmls2j"} data-framer-name={"Nav Links Column"}>
                         <div className={"framer-t860hw"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services/coaching"}>
-                              Beauregard Coaching
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/coaching"}>
+                              Coaching
                             </a>
                           </p>
                         </div>
                         <div className={"framer-8t66ro"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services/cours"}>
-                              Beauregard Cours
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/cours"}>
+                              Cours
                             </a>
                           </p>
                         </div>
@@ -3011,14 +3074,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/location-de-terrain"}>
                               Location de terrain
-                            </a>
-                          </p>
-                        </div>
-                        <div className={"framer-6yqmv5"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
-                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            {/* TODO go-live : remplacer par https://kidsportclub.fr quand le domaine sera pointé */}
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"https://refontekidfitness.vercel.app"} target={"_blank"} rel={"noopener"}>
-                              Kid Sport Club
                             </a>
                           </p>
                         </div>
@@ -3173,8 +3228,22 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                         </div>
                         <div className={"framer-bph9ui"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services/coaching"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/coaching"}>
                               Notre équipe
+                            </a>
+                          </p>
+                        </div>
+                        <div className={"framer-bph9ui"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
+                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/faq"}>
+                              FAQ
+                            </a>
+                          </p>
+                        </div>
+                        <div className={"framer-bph9ui"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
+                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/blog"}>
+                              Blog
                             </a>
                           </p>
                         </div>
@@ -3189,7 +3258,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                       <nav className={"framer-1uskuzo"} data-framer-name={"Nav Links Column"}>
                         <div className={"framer-144bbg"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services/cours"}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/cours"}>
                               Cours collectifs
                             </a>
                           </p>
@@ -3213,21 +3282,21 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                     <div className={"framer-bxt6qb"} data-framer-name={"Nav Links Column"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
                       <div className={"framer-p2b2a8"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Services
+                          Cours
                         </p>
                       </div>
                       <nav className={"framer-lmls2j"} data-framer-name={"Nav Links Column"}>
                         <div className={"framer-t860hw"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services/coaching"}>
-                              Beauregard Coaching
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/coaching"}>
+                              Coaching
                             </a>
                           </p>
                         </div>
                         <div className={"framer-8t66ro"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/services/cours"}>
-                              Beauregard Cours
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/cours"}>
+                              Cours
                             </a>
                           </p>
                         </div>
@@ -3235,14 +3304,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/location-de-terrain"}>
                               Location de terrain
-                            </a>
-                          </p>
-                        </div>
-                        <div className={"framer-6yqmv5"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
-                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            {/* TODO go-live : remplacer par https://kidsportclub.fr quand le domaine sera pointé */}
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"https://refontekidfitness.vercel.app"} target={"_blank"} rel={"noopener"}>
-                              Kid Sport Club
                             </a>
                           </p>
                         </div>
@@ -3397,8 +3458,22 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                         </div>
                         <div className={"framer-bph9ui"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/services/coaching"}>
+                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/coaching"}>
                               Notre équipe
+                            </a>
+                          </p>
+                        </div>
+                        <div className={"framer-bph9ui"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
+                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
+                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/faq"}>
+                              FAQ
+                            </a>
+                          </p>
+                        </div>
+                        <div className={"framer-bph9ui"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
+                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
+                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/blog"}>
+                              Blog
                             </a>
                           </p>
                         </div>
@@ -3413,7 +3488,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                       <nav className={"framer-1uskuzo"} data-framer-name={"Nav Links Column"}>
                         <div className={"framer-144bbg"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/services/cours"}>
+                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/cours"}>
                               Cours collectifs
                             </a>
                           </p>
@@ -3437,21 +3512,21 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                     <div className={"framer-bxt6qb"} data-framer-name={"Nav Links Column"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
                       <div className={"framer-p2b2a8"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Services
+                          Cours
                         </p>
                       </div>
                       <nav className={"framer-lmls2j"} data-framer-name={"Nav Links Column"}>
                         <div className={"framer-t860hw"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/services/coaching"}>
-                              Beauregard Coaching
+                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/coaching"}>
+                              Coaching
                             </a>
                           </p>
                         </div>
                         <div className={"framer-8t66ro"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/services/cours"}>
-                              Beauregard Cours
+                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/cours"}>
+                              Cours
                             </a>
                           </p>
                         </div>
@@ -3462,14 +3537,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                             </a>
                           </p>
                         </div>
-                            <div className={"framer-6yqmv5"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
-                              <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                {/* TODO go-live : remplacer par https://kidsportclub.fr quand le domaine sera pointé */}
-                                <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"https://refontekidfitness.vercel.app"} target={"_blank"} rel={"noopener"}>
-                                  Kid Sport Club
-                                </a>
-                              </p>
-                            </div>
                       </nav>
                     </div>
                     <div className={"framer-1vydyy4"} data-framer-name={"Nav Links Column"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>

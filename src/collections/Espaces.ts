@@ -53,7 +53,7 @@ export const Espaces: CollectionConfig = {
       name: 'lien',
       label: 'Lien de la carte',
       type: 'text',
-      admin: { description: 'Ex. : /espaces/fonctionnel ou /services/cours' },
+      admin: { description: 'Ex. : /espaces/fonctionnel ou /cours' },
     },
     {
       name: 'pageDetail',
@@ -67,7 +67,7 @@ export const Espaces: CollectionConfig = {
       label: 'Image principale (Media)',
       type: 'upload',
       relationTo: 'media',
-      admin: { description: 'Optionnel — remplacera le chemin texte quand les vraies photos seront uploadées' },
+      admin: { description: 'Optionnel : remplacera le chemin texte quand les vraies photos seront uploadées' },
     },
     {
       name: 'galerie',
@@ -81,7 +81,7 @@ export const Espaces: CollectionConfig = {
       label: 'Points clés',
       type: 'array',
       labels: { singular: 'Point clé', plural: 'Points clés' },
-      admin: { description: 'Ex. : Yoga, Pilates, École du dos — ou équipements de la zone' },
+      admin: { description: 'Ex. : Yoga, Pilates, École du dos, ou équipements de la zone' },
       fields: [{ name: 'texte', label: 'Texte', type: 'text', required: true }],
     },
     {
