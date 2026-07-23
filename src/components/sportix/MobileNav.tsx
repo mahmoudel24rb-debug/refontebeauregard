@@ -157,7 +157,7 @@ export default function MobileNav() {
       </nav>
 
       <a
-        href="/contact"
+        href="/tarifs"
         onClick={() => setOpen(false)}
         style={{
           marginTop: 'auto',
