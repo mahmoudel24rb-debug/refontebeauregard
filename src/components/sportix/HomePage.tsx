@@ -6,8 +6,12 @@ import { MENSUEL, COURTES } from './formules'
 import ClubVideo from './ClubVideo'
 
 export type HeroPromo = { titre?: string | null; texte?: string | null; url?: string | null }
+type CardData = { name: string; price: string; period: string; desc: string; features: string[] }
 
-export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
+export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroPromo | null; mensuel?: CardData[]; courtes?: CardData[] }) {
+  // Formules éditables via Payload (fallback sur formules.ts si la base est vide)
+  const MENSUEL_DATA = mensuel && mensuel.length ? mensuel : MENSUEL
+  const COURTES_DATA = courtes && courtes.length ? courtes : COURTES
   return (
     <>
       <div id={"main"}>
@@ -2677,10 +2681,10 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                       </div>
                       <div className={"framer-1pryn50"} data-framer-name={"Tarifs Cards Wrapper"}>
                         <div data-ptab="mensuel">
-                          {MENSUEL.map((f) => (<PriceCard key={f.name} {...f} />))}
+                          {MENSUEL_DATA.map((f) => (<PriceCard key={f.name} {...f} />))}
                         </div>
                         <div data-ptab="courtes">
-                          {COURTES.map((f) => (<PriceCard key={f.name} {...f} />))}
+                          {COURTES_DATA.map((f) => (<PriceCard key={f.name} {...f} />))}
                         </div>
                         <p style={{ textAlign: "center", fontSize: 14, color: "#737373", margin: "24px 0 0", fontFamily: '"Inter", sans-serif' }}>Bilan forme sur demande.</p>
                       </div>
@@ -2728,10 +2732,10 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                       </div>
                       <div className={"framer-1pryn50"} data-framer-name={"Tarifs Cards Wrapper"}>
                         <div data-ptab="mensuel">
-                          {MENSUEL.map((f) => (<PriceCard key={f.name} {...f} />))}
+                          {MENSUEL_DATA.map((f) => (<PriceCard key={f.name} {...f} />))}
                         </div>
                         <div data-ptab="courtes">
-                          {COURTES.map((f) => (<PriceCard key={f.name} {...f} />))}
+                          {COURTES_DATA.map((f) => (<PriceCard key={f.name} {...f} />))}
                         </div>
                         <p style={{ textAlign: "center", fontSize: 14, color: "#737373", margin: "24px 0 0", fontFamily: '"Inter", sans-serif' }}>Bilan forme sur demande.</p>
                       </div>
@@ -2779,10 +2783,10 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                       </div>
                       <div className={"framer-1pryn50"} data-framer-name={"Tarifs Cards Wrapper"}>
                         <div data-ptab="mensuel">
-                          {MENSUEL.map((f) => (<PriceCard key={f.name} {...f} />))}
+                          {MENSUEL_DATA.map((f) => (<PriceCard key={f.name} {...f} />))}
                         </div>
                         <div data-ptab="courtes">
-                          {COURTES.map((f) => (<PriceCard key={f.name} {...f} />))}
+                          {COURTES_DATA.map((f) => (<PriceCard key={f.name} {...f} />))}
                         </div>
                         <p style={{ textAlign: "center", fontSize: 14, color: "#737373", margin: "24px 0 0", fontFamily: '"Inter", sans-serif' }}>Bilan forme sur demande.</p>
                       </div>
