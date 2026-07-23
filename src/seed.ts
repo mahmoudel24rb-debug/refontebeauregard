@@ -165,7 +165,7 @@ async function seed() {
       data: {
         actif: true,
         titre: '1ʳᵉ séance offerte',
-        texte: 'Votre première séance de coaching est offerte — venez essayer le Parc Beauregard !',
+        texte: 'Votre première séance de coaching est offerte : venez essayer le Parc Beauregard !',
         cta: { label: 'En profiter', url: '/contact' },
       },
     })

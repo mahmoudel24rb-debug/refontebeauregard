@@ -16,22 +16,22 @@ const DESCRIPTION =
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Parc Beauregard Fitness & Coaching — Rochecorbon',
-    template: '%s — Parc Beauregard',
+    default: 'Parc Beauregard Fitness & Coaching | Rochecorbon',
+    template: '%s | Parc Beauregard',
   },
   description: DESCRIPTION,
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
     siteName: 'Parc Beauregard Fitness & Coaching',
-    title: 'Parc Beauregard Fitness & Coaching — Rochecorbon',
+    title: 'Parc Beauregard Fitness & Coaching | Rochecorbon',
     description: DESCRIPTION,
     url: SITE_URL,
     images: [{ url: '/og.jpg', width: 1200, height: 630, alt: 'Parc Beauregard Fitness & Coaching' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Parc Beauregard Fitness & Coaching — Rochecorbon',
+    title: 'Parc Beauregard Fitness & Coaching | Rochecorbon',
     description: DESCRIPTION,
     images: ['/og.jpg'],
   },

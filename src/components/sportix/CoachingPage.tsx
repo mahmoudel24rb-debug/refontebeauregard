@@ -73,7 +73,7 @@ export default async function CoachingPage() {
             <section style={{ maxWidth: 1100, margin: '0 auto', padding: '50px 30px 30px' }}>
               <h2 style={{ fontSize: 'clamp(26px,3vw,38px)', fontWeight: 700, letterSpacing: '-0.02em', margin: '0 0 14px' }}>Nos coachs</h2>
               <p style={{ color: '#404040', fontSize: 19, lineHeight: 1.7, margin: '0 0 4px', maxWidth: 820 }}>
-                Une équipe de coachs diplômés et passionnés, à votre écoute pour vous accompagner à chaque séance. Chacun a sa spécialité — Hyrox, boxe, yoga — pour s'adapter à vos objectifs et à votre niveau.
+                Une équipe de coachs diplômés et passionnés, à votre écoute pour vous accompagner à chaque séance. Chacun a sa spécialité, Hyrox, boxe ou yoga, pour s'adapter à vos objectifs et à votre niveau.
               </p>
               {coachs.length > 0 ? (
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px,1fr))', gap: 24, marginTop: 28 }}>

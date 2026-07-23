@@ -174,12 +174,12 @@ export interface Espace {
    */
   pageDetail?: boolean | null;
   /**
-   * Optionnel — remplacera le chemin texte quand les vraies photos seront uploadées
+   * Optionnel : remplacera le chemin texte quand les vraies photos seront uploadées
    */
   imagePrincipale?: (number | null) | Media;
   galerie?: (number | Media)[] | null;
   /**
-   * Ex. : Yoga, Pilates, École du dos — ou équipements de la zone
+   * Ex. : Yoga, Pilates, École du dos, ou équipements de la zone
    */
   pointsCles?:
     | {
@@ -333,7 +333,7 @@ export interface Formule {
   type: 'mensuelle' | 'courte-duree' | 'ticket';
   prix: number;
   /**
-   * Ex. : « /mois », « les 3 mois », « les 10 tickets » — laisser vide si aucun
+   * Ex. : « /mois », « les 3 mois », « les 10 tickets ». Laisser vide si aucun
    */
   suffixePrix?: string | null;
   /**
@@ -1168,7 +1168,7 @@ export interface BandeauPromo {
   id: number;
   actif?: boolean | null;
   /**
-   * Court — il s’affiche dans une pastille du hero. Ex. : « 1ʳᵉ séance offerte »
+   * Court : il s’affiche dans une pastille du hero. Ex. : « 1ʳᵉ séance offerte »
    */
   titre?: string | null;
   texte?: string | null;

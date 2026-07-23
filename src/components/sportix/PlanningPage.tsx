@@ -60,7 +60,7 @@ export default function PlanningPage() {
 
             <section style={{ maxWidth: 1180, margin: '0 auto', padding: '10px 30px 110px' }}>
               <p style={{ color: '#737373', fontSize: 15, lineHeight: 1.6, margin: '0 0 26px' }}>
-                Planning de la rentrée de septembre 2026 — susceptible d&rsquo;évoluer.
+                Planning de la rentrée de septembre 2026, susceptible d&rsquo;évoluer.
               </p>
               <a href="/tarifs" style={{ display: 'inline-block', background: '#376131', color: '#fff', fontWeight: 700, fontSize: 17, textDecoration: 'none', padding: '16px 34px', borderRadius: 70 }}>Voir les tarifs</a>
             </section>

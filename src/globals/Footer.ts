@@ -40,7 +40,7 @@ export const Footer: GlobalConfig = {
       name: 'mentionsBas',
       label: 'Mention en bas de page',
       type: 'text',
-      defaultValue: '© Parc Beauregard Fitness & Coaching — Tous droits réservés',
+      defaultValue: '© Parc Beauregard Fitness & Coaching | Tous droits réservés',
     },
   ],
 }

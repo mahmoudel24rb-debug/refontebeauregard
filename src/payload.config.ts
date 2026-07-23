@@ -70,7 +70,7 @@ export default buildConfig({
     seoPlugin({
       collections: ['espaces', 'services'],
       uploadsCollection: 'media',
-      generateTitle: ({ doc }) => `${doc?.nom ?? ''} — Parc Beauregard Fitness & Coaching`,
+      generateTitle: ({ doc }) => `${doc?.nom ?? ''} | Parc Beauregard Fitness & Coaching`,
     }),
     // Redirections 301 depuis les URLs de l'ancien site WordPress
     redirectsPlugin({

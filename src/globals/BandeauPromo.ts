@@ -23,7 +23,7 @@ export const BandeauPromo: GlobalConfig = {
       name: 'titre',
       label: 'Texte du badge',
       type: 'text',
-      admin: { description: 'Court — il s’affiche dans une pastille du hero. Ex. : « 1ʳᵉ séance offerte »' },
+      admin: { description: 'Court : il s’affiche dans une pastille du hero. Ex. : « 1ʳᵉ séance offerte »' },
     },
     {
       name: 'texte',

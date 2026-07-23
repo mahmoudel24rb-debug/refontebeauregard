@@ -8,7 +8,7 @@ export const ESPACES: Espace[] = [
   {
     slug: 'cours-collectifs',
     name: 'Espace Cours Collectifs',
-    short: 'Yoga, Pilates, École du dos — l’atmosphère Zen du Parc.',
+    short: 'Yoga, Pilates, École du dos : l’atmosphère Zen du Parc.',
     desc: "Dès le premier pas dans cet espace, vous ressentirez l'atmosphère Zen du Parc Beauregard. Alliant la nature et la modernité, cet espace est destiné aux séances de Yoga, Pilates et École du dos. Nous mettons à disposition tout le matériel nécessaire, pour le plus grand plaisir de nos adhérents.",
     href: '/services/cours',
     detail: false,
