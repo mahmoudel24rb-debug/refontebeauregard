@@ -191,6 +191,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                 <div className={"framer-r65kbw"} data-framer-name={"Hero Banner"}>
                   <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
                     <img decoding={"async"} width={"1920"} height={"940"} sizes={"(min-width: 1280px) 100vw, (max-width: 991px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw"} srcSet={"/assets/beauregard/hero.webp"} src={"/assets/beauregard/hero.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "right center", objectFit: "cover" }} />
+                    <div aria-hidden="true" style={{ position: "absolute", inset: 0, borderRadius: "inherit", pointerEvents: "none", background: "linear-gradient(180deg, rgba(10,20,15,0.25) 0%, rgba(10,20,15,0.55) 100%)" }} />
                   </div>
                 </div>
               </div>
@@ -198,6 +199,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                 <div className={"framer-r65kbw"} data-framer-name={"Hero Banner"}>
                   <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
                     <img decoding={"async"} width={"1920"} height={"940"} sizes={"(min-width: 1280px) 100vw, (max-width: 991px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw"} srcSet={"/assets/beauregard/hero.webp"} src={"/assets/beauregard/hero.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "81.8% 37.9%", objectFit: "cover" }} />
+                    <div aria-hidden="true" style={{ position: "absolute", inset: 0, borderRadius: "inherit", pointerEvents: "none", background: "linear-gradient(180deg, rgba(10,20,15,0.25) 0%, rgba(10,20,15,0.55) 100%)" }} />
                   </div>
                 </div>
               </div>
@@ -205,6 +207,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                 <div className={"framer-r65kbw"} data-framer-name={"Hero Banner"}>
                   <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
                     <img decoding={"async"} width={"1920"} height={"940"} sizes={"(min-width: 1280px) 100vw, (max-width: 991px) 100vw, (min-width: 992px) and (max-width: 1279px) 100vw"} srcSet={"/assets/beauregard/hero.webp"} src={"/assets/beauregard/hero.webp"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "97.2% 35.3%", objectFit: "cover" }} />
+                    <div aria-hidden="true" style={{ position: "absolute", inset: 0, borderRadius: "inherit", pointerEvents: "none", background: "linear-gradient(180deg, rgba(10,20,15,0.25) 0%, rgba(10,20,15,0.55) 100%)" }} />
                   </div>
                 </div>
               </div>
@@ -454,7 +457,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                     <ClubVideo />
                     <div className={"framer-1q7n2ul"} data-framer-name={"Body"} style={{ transform: "none" }}>
                       <h5 className={"framer-text framer-styles-preset-1a2qg92"} data-styles-preset={"Hrg3DnSgc"} style={{ "--framer-text-color": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))" }}>
-                        Découvrez le club en vidéo.
+                        Le club comme si vous y étiez : la visite en vidéo.
                       </h5>
                     </div>
                     <div className={"ssr-variant"}>
@@ -835,13 +838,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                               Excellence sportive
                             </p>
                           </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       <div className={"ssr-variant hidden-72rtr7 hidden-9md6lv"}>
@@ -856,13 +852,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                             <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                               Excellence sportive
                             </p>
-                          </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }} tabIndex={"0"}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
@@ -881,13 +870,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                               Communauté & Support
                             </p>
                           </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       <div className={"ssr-variant hidden-72rtr7 hidden-9md6lv"}>
@@ -902,13 +884,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                             <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                               Communauté & Support
                             </p>
-                          </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }} tabIndex={"0"}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
@@ -927,13 +902,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                               Accessible à tous
                             </p>
                           </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       <div className={"ssr-variant hidden-72rtr7 hidden-9md6lv"}>
@@ -948,13 +916,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                             <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                               Accessible à tous
                             </p>
-                          </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }} tabIndex={"0"}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
@@ -973,13 +934,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                               Progrès & innovation
                             </p>
                           </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       <div className={"ssr-variant hidden-72rtr7 hidden-9md6lv"}>
@@ -994,13 +948,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                             <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                               Progrès & innovation
                             </p>
-                          </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }} tabIndex={"0"}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
@@ -1019,13 +966,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                               Bien-être & équilibre
                             </p>
                           </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       <div className={"ssr-variant hidden-72rtr7 hidden-9md6lv"}>
@@ -1040,13 +980,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                             <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                               Bien-être & équilibre
                             </p>
-                          </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }} tabIndex={"0"}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
@@ -1065,13 +998,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                               Passion du mouvement
                             </p>
                           </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       <div className={"ssr-variant hidden-72rtr7 hidden-9md6lv"}>
@@ -1086,13 +1012,6 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                             <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                               Passion du mouvement
                             </p>
-                          </div>
-                          <div className={"framer-e38s1j"} data-framer-name={"Plus Button"} style={{ backgroundColor: "var(--token-ce7cac9b-68d2-43aa-b17a-9ff7b974f476, rgb(207, 231, 203))", borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px", borderTopLeftRadius: "50px", borderTopRightRadius: "50px", transform: "translateX(-50%)" }}>
-                            <div className={"framer-ocv7sp"} data-framer-name={"Icon"} data-highlight={"true"} style={{ filter: "none", WebkitFilter: "none", transform: "none" }} tabIndex={"0"}>
-                              <div style={{ position: "absolute", borderRadius: "inherit", cornerShape: "inherit", top: "0", right: "0", bottom: "0", left: "0" }}>
-                                <img decoding={"async"} width={"24"} height={"24"} src={"/assets/framerusercontent.com/images/Tdbub9UhGL8m3w5kGtPkg3OCvBo.svg"} alt={""} style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", cornerShape: "inherit", objectPosition: "center", objectFit: "cover" }} />
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
@@ -1320,6 +1239,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Christele P.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>CP</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1380,6 +1306,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Jemsa F.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JF</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1439,6 +1372,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
                                       Janelle L.
                                     </p>
+                                  </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JL</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
                                   </div>
                                 </div>
                               </div>
@@ -1502,6 +1442,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Jemsa F.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JF</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1562,6 +1509,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Christele P.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>CP</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1621,6 +1575,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
                                       Janelle L.
                                     </p>
+                                  </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JL</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
                                   </div>
                                 </div>
                               </div>
@@ -1714,6 +1675,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Christele P.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>CP</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1774,6 +1742,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Jemsa F.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JF</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1833,6 +1808,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
                                       Janelle L.
                                     </p>
+                                  </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JL</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
                                   </div>
                                 </div>
                               </div>
@@ -1896,6 +1878,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Jemsa F.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JF</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1956,6 +1945,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Christele P.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>CP</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -2015,6 +2011,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
                                       Janelle L.
                                     </p>
+                                  </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JL</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
                                   </div>
                                 </div>
                               </div>
@@ -2148,6 +2151,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Christele P.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>CP</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -2208,6 +2218,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Jemsa F.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JF</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -2267,6 +2284,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
                                       Janelle L.
                                     </p>
+                                  </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JL</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
                                   </div>
                                 </div>
                               </div>
@@ -2330,6 +2354,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Jemsa F.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JF</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -2389,6 +2420,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
                                       Christele P.
                                     </p>
+                                  </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>CP</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
                                   </div>
                                 </div>
                               </div>
@@ -2450,6 +2488,13 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                                       Janelle L.
                                     </p>
                                   </div>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
+                                    <span aria-hidden="true" style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgb(55, 97, 49)", color: "rgb(255, 255, 255)", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "13px", fontFamily: '"Inter", sans-serif', flexShrink: 0 }}>JL</span>
+                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
+                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+                                      Avis Google
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -2494,7 +2539,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                         </div>
                       </div>
                       <div className={"framer-1rwmebu-container"}>
-                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"https://www.facebook.com/parcbeauregard"}>
+                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/evenements"}>
                           <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
                               Tous les événements
@@ -2536,7 +2581,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                         </div>
                       </div>
                       <div className={"framer-1rwmebu-container"}>
-                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"https://www.facebook.com/parcbeauregard"}>
+                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/evenements"}>
                           <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
                               Tous les événements
@@ -2578,7 +2623,7 @@ export default function AccueilPage({ promo }: { promo?: HeroPromo | null }) {
                         </div>
                       </div>
                       <div className={"framer-1rwmebu-container"}>
-                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-tp32ut framer-5eqsdb"} data-framer-name={"Phone"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"https://www.facebook.com/parcbeauregard"}>
+                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-tp32ut framer-5eqsdb"} data-framer-name={"Phone"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/evenements"}>
                           <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
                               Tous les événements
