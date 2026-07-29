@@ -43,7 +43,7 @@ const nextConfig: NextConfig = {
       // Nomenclature : /services/* -> /cours, /coaching (retour client)
       { source: '/services/coaching', destination: '/coaching', permanent: true },
       { source: '/services/cours', destination: '/cours', permanent: true },
-      { source: '/services', destination: '/cours', permanent: true },
+      // NB: /services (exact) est une page finale en 200 (hub restauré le 29/07).
       { source: '/services/cours/:slug', destination: '/cours/:slug', permanent: true },
       { source: '/services/:slug', destination: '/cours', permanent: true },
     ]

@@ -20,7 +20,7 @@ const LINKS: { label: string; href: string; sub?: { label: string; href: string 
   },
   {
     label: 'Cours',
-    href: '/cours',
+    href: '/services',
     sub: [
       { label: 'Cours collectifs', href: '/cours' },
       { label: 'Coaching', href: '/coaching' },

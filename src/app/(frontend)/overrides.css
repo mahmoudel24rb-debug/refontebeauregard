@@ -156,3 +156,78 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
 [data-framer-name='Testimonials Section'] [data-framer-name='Button Wrapper'] {
   display: none !important;
 }
+
+/* Corps d'article blog (/blog/[slug]) : typographie du richtext lexical.
+   Le port Framer ne stylant pas ces balises, on définit ici la hiérarchie
+   complète (H2/H3, listes, citation, image + légende, liens, CTA). */
+.bg-article-body h2 {
+  font-size: clamp(24px, 3vw, 30px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  margin: 42px 0 14px;
+  color: #171717;
+}
+.bg-article-body h3 {
+  font-size: clamp(19px, 2.4vw, 23px);
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 32px 0 10px;
+  color: #171717;
+}
+.bg-article-body p {
+  margin: 0 0 18px;
+}
+.bg-article-body ul,
+.bg-article-body ol {
+  margin: 0 0 18px;
+  padding-left: 26px;
+}
+.bg-article-body li {
+  margin: 0 0 8px;
+}
+.bg-article-body blockquote {
+  margin: 26px 0;
+  padding: 14px 22px;
+  border-left: 4px solid #376131;
+  background: #f4f7f3;
+  border-radius: 0 10px 10px 0;
+  font-style: italic;
+  color: #374037;
+}
+.bg-article-body blockquote p {
+  margin: 0;
+}
+.bg-article-body a {
+  color: #376131;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.bg-article-body img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  margin: 26px 0 10px;
+}
+/* Légende : paragraphe en italique juste sous une image */
+.bg-article-body .bg-legende,
+.bg-article-body img + p em:only-child {
+  display: block;
+  font-size: 14px;
+  color: #737373;
+  text-align: center;
+  margin-top: -2px;
+}
+/* CTA : lien seul dans son paragraphe, rendu en bouton */
+.bg-article-body p.bg-cta a,
+.bg-article-body p:has(> a:only-child):last-child a {
+  display: inline-block;
+  background: #376131;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 14px 30px;
+  border-radius: 70px;
+}
