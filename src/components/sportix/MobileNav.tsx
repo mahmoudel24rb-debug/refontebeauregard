@@ -10,23 +10,24 @@ import { useEffect, useState } from 'react'
 const LINKS: { label: string; href: string; sub?: { label: string; href: string }[] }[] = [
   { label: 'Accueil', href: '/' },
   {
-    label: 'Nos espaces',
+    label: 'Le parc',
     href: '/espaces',
     sub: [
-      { label: 'Cours collectifs', href: '/cours' },
+      { label: 'Nos espaces', href: '/espaces' },
       { label: 'Entraînement fonctionnel', href: '/espaces/fonctionnel' },
       { label: 'Cross / Cardio', href: '/espaces/cross-cardio' },
+      { label: 'Location de terrain', href: '/location-de-terrain' },
     ],
   },
   {
     label: 'Cours',
-    href: '/services',
+    href: '/cours',
     sub: [
-      { label: 'Cours collectifs', href: '/cours' },
-      { label: 'Coaching', href: '/coaching' },
-      { label: 'Location de terrain', href: '/location-de-terrain' },
+      { label: 'Tous les cours', href: '/cours' },
+      { label: 'Planning de la rentrée', href: '/planning' },
     ],
   },
+  { label: 'Coaching', href: '/coaching' },
   { label: 'Tarifs', href: '/tarifs' },
   { label: 'Planning', href: '/planning' },
   { label: 'Événements', href: '/evenements' },
