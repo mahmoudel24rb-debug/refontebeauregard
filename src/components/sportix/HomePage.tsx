@@ -33,33 +33,19 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                         </div>
                       </div>
                       <nav className={"framer-k1prli"} data-framer-name={"Nav Links Wrapper"}>
-                        <div className={"framer-czv41b"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
-                          <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            <a className={"framer-text framer-styles-preset-169hqkb"} data-styles-preset={"DomZrqh6U"} href={"/"}>
-                              Accueil
-                            </a>
-                          </p>
-                        </div>
                         <div className={"framer-ncrdxr"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                             <a className={"framer-text framer-styles-preset-169hqkb"} data-styles-preset={"DomZrqh6U"} href={"/espaces"}>
-                              Le parc
+                              Nos espaces
                             </a>
                           </p><div data-bg-submenu="true"><a href="/espaces">Nos espaces</a><a href="/espaces/fonctionnel">Entraînement fonctionnel</a><a href="/espaces/cross-cardio">Cross / Cardio</a><a href="/location-de-terrain">Location de terrain</a></div>
                         </div>
                         <div className={"framer-9ynktl"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                             <a className={"framer-text framer-styles-preset-169hqkb"} data-styles-preset={"DomZrqh6U"} href={"/cours"}>
-                              Cours
+                              Nos cours
                             </a>
-                          </p><div data-bg-submenu="true"><a href="/cours">Tous les cours</a><a href="/planning">Planning de la rentrée</a></div>
-                        </div>
-                        <div className={"framer-rsp9da"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
-                          <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            <a className={"framer-text framer-styles-preset-169hqkb"} data-styles-preset={"DomZrqh6U"} href={"/coaching"}>
-                              Coaching
-                            </a>
-                          </p>
+                          </p><div data-bg-submenu="true"><a href="/cours">Tous les cours</a><a href="/coaching">Coaching</a></div>
                         </div>
                         <div className={"framer-rsp9da"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
@@ -84,10 +70,10 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                         </div>
                       </nav>
                       <div className={"framer-155lzj3-container"} style={{ opacity: "1", transform: "none" }}>
-                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/tarifs"}>
+                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/seance-essai"}>
                           <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
-                              Nous rejoindre
+                              Séance d&rsquo;essai
                             </p>
                           </div>
                         </a>
@@ -132,33 +118,19 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                         </div>
                       </div>
                       <nav className={"framer-k1prli"} data-framer-name={"Nav Links Wrapper"}>
-                        <div className={"framer-czv41b"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
-                          <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            <a className={"framer-text framer-styles-preset-169hqkb"} data-styles-preset={"DomZrqh6U"} href={"/"}>
-                              Accueil
-                            </a>
-                          </p>
-                        </div>
                         <div className={"framer-ncrdxr"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                             <a className={"framer-text framer-styles-preset-169hqkb"} data-styles-preset={"DomZrqh6U"} href={"/espaces"}>
-                              Le parc
+                              Nos espaces
                             </a>
                           </p><div data-bg-submenu="true"><a href="/espaces">Nos espaces</a><a href="/espaces/fonctionnel">Entraînement fonctionnel</a><a href="/espaces/cross-cardio">Cross / Cardio</a><a href="/location-de-terrain">Location de terrain</a></div>
                         </div>
                         <div className={"framer-9ynktl"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                             <a className={"framer-text framer-styles-preset-169hqkb"} data-styles-preset={"DomZrqh6U"} href={"/cours"}>
-                              Cours
+                              Nos cours
                             </a>
-                          </p><div data-bg-submenu="true"><a href="/cours">Tous les cours</a><a href="/planning">Planning de la rentrée</a></div>
-                        </div>
-                        <div className={"framer-rsp9da"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
-                          <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            <a className={"framer-text framer-styles-preset-169hqkb"} data-styles-preset={"DomZrqh6U"} href={"/coaching"}>
-                              Coaching
-                            </a>
-                          </p>
+                          </p><div data-bg-submenu="true"><a href="/cours">Tous les cours</a><a href="/coaching">Coaching</a></div>
                         </div>
                         <div className={"framer-rsp9da"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
@@ -192,10 +164,10 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                         </a>
                       </nav>
                       <div className={"framer-155lzj3-container"} style={{ opacity: "1", transform: "none" }}>
-                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/tarifs"}>
+                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/seance-essai"}>
                           <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
-                              Nous rejoindre
+                              Séance d&rsquo;essai
                             </p>
                           </div>
                         </a>
@@ -1259,10 +1231,10 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                                     </p>
                                   </div>
                                   <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
-                                    <AvisAvatar initiales={"CP"} photo={"/assets/beauregard/avis/christele-p.webp"} auteur={"Christele P."} />
+                                    <AvisAvatar initiales={"CP"} photo={"/assets/beauregard/avis/christele-p.webp"} illu={"/assets/beauregard/avis/illu-1.svg"} auteur={"Christele P."} />
                                     <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
                                       <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
-                                      Avis Google
+                                      Avis Google certifié
                                     </span>
                                   </div>
                                 </div>
@@ -1326,10 +1298,10 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                                     </p>
                                   </div>
                                   <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
-                                    <AvisAvatar initiales={"JF"} photo={"/assets/beauregard/avis/jemsa-f.webp"} auteur={"Jemsa F."} />
+                                    <AvisAvatar initiales={"JF"} photo={"/assets/beauregard/avis/jemsa-f.webp"} illu={"/assets/beauregard/avis/illu-2.svg"} auteur={"Jemsa F."} />
                                     <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
                                       <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
-                                      Avis Google
+                                      Avis Google certifié
                                     </span>
                                   </div>
                                 </div>
@@ -1393,213 +1365,10 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                                     </p>
                                   </div>
                                   <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
-                                    <AvisAvatar initiales={"JL"} photo={"/assets/beauregard/avis/janelle-l.webp"} auteur={"Janelle L."} />
+                                    <AvisAvatar initiales={"JL"} photo={"/assets/beauregard/avis/janelle-l.webp"} illu={"/assets/beauregard/avis/illu-3.svg"} auteur={"Janelle L."} />
                                     <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
                                       <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
-                                      Avis Google
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className={"framer-1jxh0vi"} data-framer-name={"Testimonials Wrapp"}>
-                          <div className={"framer-hvmsss-container"}>
-                            <div className={"framer-wnAi6 framer-zUcIZ framer-gbuwA framer-fN9WN framer-1ymzwmf framer-v-1ymzwmf"} data-framer-name={"Default"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }}>
-                              <div className={"framer-1piw4sh"} data-framer-name={"Stars Wrapper"}>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-1h0by1z"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-asdo3a"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-wpa2ee"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-bkmer6"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-41hb1"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className={"framer-1jzm1sk"} data-framer-name={"Text Content Wrapper"}>
-                                <div className={"framer-z5u0fp"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                  <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                    « Une équipe à votre écoute »
-                                  </h4>
-                                </div>
-                                <div className={"framer-lpsxj0"} data-framer-name={"Testimonials Wrapper"}>
-                                  <div className={"framer-1akfa26"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                    <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                      « Super club de sport, le personnel est à votre écoute pour vous aider à atteindre vos objectifs : perte de poids, reprise du sport, amélioration des performances… »
-                                    </p>
-                                  </div>
-                                  <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                    <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Jemsa F.
-                                    </p>
-                                  </div>
-                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
-                                    <AvisAvatar initiales={"JF"} photo={"/assets/beauregard/avis/jemsa-f.webp"} auteur={"Jemsa F."} />
-                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
-                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
-                                      Avis Google
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className={"framer-10lsvy7-container"}>
-                            <div className={"framer-wnAi6 framer-zUcIZ framer-gbuwA framer-fN9WN framer-1ymzwmf framer-v-1ymzwmf"} data-framer-name={"Default"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }}>
-                              <div className={"framer-1piw4sh"} data-framer-name={"Stars Wrapper"}>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-1h0by1z"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-asdo3a"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-wpa2ee"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-bkmer6"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-41hb1"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className={"framer-1jzm1sk"} data-framer-name={"Text Content Wrapper"}>
-                                <div className={"framer-z5u0fp"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                  <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                    « Très bonne ambiance ! »
-                                  </h4>
-                                </div>
-                                <div className={"framer-lpsxj0"} data-framer-name={"Testimonials Wrapper"}>
-                                  <div className={"framer-1akfa26"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                    <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                      « Super bien ! Les coachs sont très pro et sympa, très bonne ambiance ! »
-                                    </p>
-                                  </div>
-                                  <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                    <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Christele P.
-                                    </p>
-                                  </div>
-                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
-                                    <AvisAvatar initiales={"CP"} photo={"/assets/beauregard/avis/christele-p.webp"} auteur={"Christele P."} />
-                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
-                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
-                                      Avis Google
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className={"framer-zsr5h9-container"}>
-                            <div className={"framer-wnAi6 framer-zUcIZ framer-gbuwA framer-fN9WN framer-1ymzwmf framer-v-1ymzwmf"} data-framer-name={"Default"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }}>
-                              <div className={"framer-1piw4sh"} data-framer-name={"Stars Wrapper"}>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-1h0by1z"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-asdo3a"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-wpa2ee"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-bkmer6"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-41hb1"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className={"framer-1jzm1sk"} data-framer-name={"Text Content Wrapper"}>
-                                <div className={"framer-z5u0fp"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                  <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                    « Un lieu magnifique »
-                                  </h4>
-                                </div>
-                                <div className={"framer-lpsxj0"} data-framer-name={"Testimonials Wrapper"}>
-                                  <div className={"framer-1akfa26"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                    <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                      « J'ai découvert ce club lors de l'événement avec Romain Prevedello. J'adore ! Le lieu est magnifique, avec un espace extérieur très agréable et calme. Je recommande ! »
-                                    </p>
-                                  </div>
-                                  <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                    <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Janelle L.
-                                    </p>
-                                  </div>
-                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
-                                    <AvisAvatar initiales={"JL"} photo={"/assets/beauregard/avis/janelle-l.webp"} auteur={"Janelle L."} />
-                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
-                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
-                                      Avis Google
+                                      Avis Google certifié
                                     </span>
                                   </div>
                                 </div>
@@ -1695,10 +1464,10 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                                     </p>
                                   </div>
                                   <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
-                                    <AvisAvatar initiales={"CP"} photo={"/assets/beauregard/avis/christele-p.webp"} auteur={"Christele P."} />
+                                    <AvisAvatar initiales={"CP"} photo={"/assets/beauregard/avis/christele-p.webp"} illu={"/assets/beauregard/avis/illu-1.svg"} auteur={"Christele P."} />
                                     <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
                                       <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
-                                      Avis Google
+                                      Avis Google certifié
                                     </span>
                                   </div>
                                 </div>
@@ -1762,10 +1531,10 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                                     </p>
                                   </div>
                                   <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
-                                    <AvisAvatar initiales={"JF"} photo={"/assets/beauregard/avis/jemsa-f.webp"} auteur={"Jemsa F."} />
+                                    <AvisAvatar initiales={"JF"} photo={"/assets/beauregard/avis/jemsa-f.webp"} illu={"/assets/beauregard/avis/illu-2.svg"} auteur={"Jemsa F."} />
                                     <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
                                       <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
-                                      Avis Google
+                                      Avis Google certifié
                                     </span>
                                   </div>
                                 </div>
@@ -1829,213 +1598,10 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                                     </p>
                                   </div>
                                   <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
-                                    <AvisAvatar initiales={"JL"} photo={"/assets/beauregard/avis/janelle-l.webp"} auteur={"Janelle L."} />
+                                    <AvisAvatar initiales={"JL"} photo={"/assets/beauregard/avis/janelle-l.webp"} illu={"/assets/beauregard/avis/illu-3.svg"} auteur={"Janelle L."} />
                                     <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
                                       <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
-                                      Avis Google
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className={"framer-1jxh0vi"} data-framer-name={"Testimonials Wrapp"}>
-                          <div className={"framer-hvmsss-container"}>
-                            <div className={"framer-wnAi6 framer-zUcIZ framer-gbuwA framer-fN9WN framer-1ymzwmf framer-v-ss1i62"} data-framer-name={"Phone"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }}>
-                              <div className={"framer-1piw4sh"} data-framer-name={"Stars Wrapper"}>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-1h0by1z"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-asdo3a"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-wpa2ee"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-bkmer6"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-41hb1"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className={"framer-1jzm1sk"} data-framer-name={"Text Content Wrapper"}>
-                                <div className={"framer-z5u0fp"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                  <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                    « Une équipe à votre écoute »
-                                  </h4>
-                                </div>
-                                <div className={"framer-lpsxj0"} data-framer-name={"Testimonials Wrapper"}>
-                                  <div className={"framer-1akfa26"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                    <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                      « Super club de sport, le personnel est à votre écoute pour vous aider à atteindre vos objectifs : perte de poids, reprise du sport, amélioration des performances… »
-                                    </p>
-                                  </div>
-                                  <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                    <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Jemsa F.
-                                    </p>
-                                  </div>
-                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
-                                    <AvisAvatar initiales={"JF"} photo={"/assets/beauregard/avis/jemsa-f.webp"} auteur={"Jemsa F."} />
-                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
-                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
-                                      Avis Google
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className={"framer-10lsvy7-container"}>
-                            <div className={"framer-wnAi6 framer-zUcIZ framer-gbuwA framer-fN9WN framer-1ymzwmf framer-v-ss1i62"} data-framer-name={"Phone"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }}>
-                              <div className={"framer-1piw4sh"} data-framer-name={"Stars Wrapper"}>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-1h0by1z"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-asdo3a"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-wpa2ee"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-bkmer6"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-41hb1"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className={"framer-1jzm1sk"} data-framer-name={"Text Content Wrapper"}>
-                                <div className={"framer-z5u0fp"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                  <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                    « Très bonne ambiance ! »
-                                  </h4>
-                                </div>
-                                <div className={"framer-lpsxj0"} data-framer-name={"Testimonials Wrapper"}>
-                                  <div className={"framer-1akfa26"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                    <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                      « Super bien ! Les coachs sont très pro et sympa, très bonne ambiance ! »
-                                    </p>
-                                  </div>
-                                  <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                    <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Christele P.
-                                    </p>
-                                  </div>
-                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
-                                    <AvisAvatar initiales={"CP"} photo={"/assets/beauregard/avis/christele-p.webp"} auteur={"Christele P."} />
-                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
-                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
-                                      Avis Google
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className={"framer-zsr5h9-container"}>
-                            <div className={"framer-wnAi6 framer-zUcIZ framer-gbuwA framer-fN9WN framer-1ymzwmf framer-v-ss1i62"} data-framer-name={"Phone"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }}>
-                              <div className={"framer-1piw4sh"} data-framer-name={"Stars Wrapper"}>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-1h0by1z"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-asdo3a"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-wpa2ee"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-bkmer6"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-41hb1"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className={"framer-1jzm1sk"} data-framer-name={"Text Content Wrapper"}>
-                                <div className={"framer-z5u0fp"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                  <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                    « Un lieu magnifique »
-                                  </h4>
-                                </div>
-                                <div className={"framer-lpsxj0"} data-framer-name={"Testimonials Wrapper"}>
-                                  <div className={"framer-1akfa26"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                    <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                      « J'ai découvert ce club lors de l'événement avec Romain Prevedello. J'adore ! Le lieu est magnifique, avec un espace extérieur très agréable et calme. Je recommande ! »
-                                    </p>
-                                  </div>
-                                  <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                    <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Janelle L.
-                                    </p>
-                                  </div>
-                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
-                                    <AvisAvatar initiales={"JL"} photo={"/assets/beauregard/avis/janelle-l.webp"} auteur={"Janelle L."} />
-                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
-                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
-                                      Avis Google
+                                      Avis Google certifié
                                     </span>
                                   </div>
                                 </div>
@@ -2171,10 +1737,10 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                                     </p>
                                   </div>
                                   <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
-                                    <AvisAvatar initiales={"CP"} photo={"/assets/beauregard/avis/christele-p.webp"} auteur={"Christele P."} />
+                                    <AvisAvatar initiales={"CP"} photo={"/assets/beauregard/avis/christele-p.webp"} illu={"/assets/beauregard/avis/illu-1.svg"} auteur={"Christele P."} />
                                     <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
                                       <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
-                                      Avis Google
+                                      Avis Google certifié
                                     </span>
                                   </div>
                                 </div>
@@ -2238,10 +1804,10 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                                     </p>
                                   </div>
                                   <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
-                                    <AvisAvatar initiales={"JF"} photo={"/assets/beauregard/avis/jemsa-f.webp"} auteur={"Jemsa F."} />
+                                    <AvisAvatar initiales={"JF"} photo={"/assets/beauregard/avis/jemsa-f.webp"} illu={"/assets/beauregard/avis/illu-2.svg"} auteur={"Jemsa F."} />
                                     <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
                                       <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
-                                      Avis Google
+                                      Avis Google certifié
                                     </span>
                                   </div>
                                 </div>
@@ -2305,213 +1871,10 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                                     </p>
                                   </div>
                                   <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
-                                    <AvisAvatar initiales={"JL"} photo={"/assets/beauregard/avis/janelle-l.webp"} auteur={"Janelle L."} />
+                                    <AvisAvatar initiales={"JL"} photo={"/assets/beauregard/avis/janelle-l.webp"} illu={"/assets/beauregard/avis/illu-3.svg"} auteur={"Janelle L."} />
                                     <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
                                       <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
-                                      Avis Google
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className={"framer-1jxh0vi"} data-framer-name={"Testimonials Wrapp"}>
-                          <div className={"framer-hvmsss-container"}>
-                            <div className={"framer-wnAi6 framer-zUcIZ framer-gbuwA framer-fN9WN framer-1ymzwmf framer-v-1wqgbq2"} data-framer-name={"Tablet"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }}>
-                              <div className={"framer-1piw4sh"} data-framer-name={"Stars Wrapper"}>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-1h0by1z"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-asdo3a"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-wpa2ee"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-bkmer6"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-41hb1"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className={"framer-1jzm1sk"} data-framer-name={"Text Content Wrapper"}>
-                                <div className={"framer-z5u0fp"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                  <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                    « Une équipe à votre écoute »
-                                  </h4>
-                                </div>
-                                <div className={"framer-lpsxj0"} data-framer-name={"Testimonials Wrapper"}>
-                                  <div className={"framer-1akfa26"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                    <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                      « Super club de sport, le personnel est à votre écoute pour vous aider à atteindre vos objectifs : perte de poids, reprise du sport, amélioration des performances… »
-                                    </p>
-                                  </div>
-                                  <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                    <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Jemsa F.
-                                    </p>
-                                  </div>
-                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
-                                    <AvisAvatar initiales={"JF"} photo={"/assets/beauregard/avis/jemsa-f.webp"} auteur={"Jemsa F."} />
-                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
-                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
-                                      Avis Google
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className={"framer-10lsvy7-container"}>
-                            <div className={"framer-wnAi6 framer-zUcIZ framer-gbuwA framer-fN9WN framer-1ymzwmf framer-v-1wqgbq2"} data-framer-name={"Tablet"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }}>
-                              <div className={"framer-1piw4sh"} data-framer-name={"Stars Wrapper"}>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-1h0by1z"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-asdo3a"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-wpa2ee"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-bkmer6"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-41hb1"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className={"framer-1jzm1sk"} data-framer-name={"Text Content Wrapper"}>
-                                <div className={"framer-z5u0fp"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                  <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                    « Très bonne ambiance ! »
-                                  </h4>
-                                </div>
-                                <div className={"framer-lpsxj0"} data-framer-name={"Testimonials Wrapper"}>
-                                  <div className={"framer-1akfa26"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                    <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                      « Super bien ! Les coachs sont très pro et sympa, très bonne ambiance ! »
-                                    </p>
-                                  </div>
-                                  <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                    <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Christele P.
-                                    </p>
-                                  </div>
-                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
-                                    <AvisAvatar initiales={"CP"} photo={"/assets/beauregard/avis/christele-p.webp"} auteur={"Christele P."} />
-                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
-                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
-                                      Avis Google
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className={"framer-zsr5h9-container"}>
-                            <div className={"framer-wnAi6 framer-zUcIZ framer-gbuwA framer-fN9WN framer-1ymzwmf framer-v-1wqgbq2"} data-framer-name={"Tablet"} style={{ backgroundColor: "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", width: "100%", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }}>
-                              <div className={"framer-1piw4sh"} data-framer-name={"Stars Wrapper"}>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-1h0by1z"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-asdo3a"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-wpa2ee"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-bkmer6"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div data-framer-name={"Icon"} style={{ imageRendering: "pixelated", flexShrink: "0", fill: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))", color: "var(--token-84a6585a-d5ec-4d8a-bff9-2620e834b6f0, rgb(250, 208, 0))" }} className={"framer-41hb1"} aria-hidden={"true"}>
-                                  <div className={"svgContainer"} style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}>
-                                    <svg style={{ width: "100%", height: "100%" }} viewBox={"0 0 24 24"}>
-                                      <use href={"#svg-1111057538_458"} />
-                                    </svg>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className={"framer-1jzm1sk"} data-framer-name={"Text Content Wrapper"}>
-                                <div className={"framer-z5u0fp"} data-framer-name={"Heading"} style={{ "--extracted-1eung3n": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                  <h4 className={"framer-text framer-styles-preset-1f6c2a0"} data-styles-preset={"VAATHvepD"} style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                    « Un lieu magnifique »
-                                  </h4>
-                                </div>
-                                <div className={"framer-lpsxj0"} data-framer-name={"Testimonials Wrapper"}>
-                                  <div className={"framer-1akfa26"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                    <p className={"framer-text framer-styles-preset-1116k3j"} data-styles-preset={"CclRS3ecL"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
-                                      « J'ai découvert ce club lors de l'événement avec Romain Prevedello. J'adore ! Le lieu est magnifique, avec un espace extérieur très agréable et calme. Je recommande ! »
-                                    </p>
-                                  </div>
-                                  <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                                    <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Janelle L.
-                                    </p>
-                                  </div>
-                                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "12px" }}>
-                                    <AvisAvatar initiales={"JL"} photo={"/assets/beauregard/avis/janelle-l.webp"} auteur={"Janelle L."} />
-                                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "rgb(115, 115, 115)", fontFamily: '"Inter", sans-serif' }}>
-                                      <svg width="14" height="14" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
-                                      Avis Google
+                                      Avis Google certifié
                                     </span>
                                   </div>
                                 </div>
@@ -3030,7 +2393,7 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                     <div className={"framer-uhploo"} data-framer-name={"Nav Links Column"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
                       <div className={"framer-1oq2gud"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Le parc
+                          Nos espaces
                         </p>
                       </div>
                       <nav className={"framer-1uskuzo"} data-framer-name={"Nav Links Column"}>
@@ -3098,6 +2461,13 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/tarifs"}>
                               Tarifs
+                            </a>
+                          </p>
+                        </div>
+                        <div className={"framer-2cdfj0"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
+                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/seance-essai"}>
+                              Séance d&rsquo;essai
                             </a>
                           </p>
                         </div>
@@ -3253,7 +2623,7 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                     <div className={"framer-uhploo"} data-framer-name={"Nav Links Column"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
                       <div className={"framer-1oq2gud"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Le parc
+                          Nos espaces
                         </p>
                       </div>
                       <nav className={"framer-1uskuzo"} data-framer-name={"Nav Links Column"}>
@@ -3321,6 +2691,13 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/tarifs"}>
                               Tarifs
+                            </a>
+                          </p>
+                        </div>
+                        <div className={"framer-2cdfj0"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
+                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/seance-essai"}>
+                              Séance d&rsquo;essai
                             </a>
                           </p>
                         </div>
@@ -3476,7 +2853,7 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                     <div className={"framer-uhploo"} data-framer-name={"Nav Links Column"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
                       <div className={"framer-1oq2gud"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Le parc
+                          Nos espaces
                         </p>
                       </div>
                       <nav className={"framer-1uskuzo"} data-framer-name={"Nav Links Column"}>
@@ -3544,6 +2921,13 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/tarifs"}>
                               Tarifs
+                            </a>
+                          </p>
+                        </div>
+                        <div className={"framer-2cdfj0"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
+                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
+                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/seance-essai"}>
+                              Séance d&rsquo;essai
                             </a>
                           </p>
                         </div>

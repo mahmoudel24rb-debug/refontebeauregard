@@ -1,15 +1,42 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import { ESPACES } from './espaces'
 import { getPayloadClient } from '@/lib/payload'
 
-// Page « Nos cours » (/cours) : liste les cours depuis Payload.
+// Page « Nos cours » (/cours) : liste les cours depuis Payload, regroupés par
+// espace (valeur du champ `espace` du cours : « Espace Cours Collectifs » /
+// « Espace Fonctionnel »). L'intro d'un groupe vient d'espaces.ts (une ligne).
 
 const SHELL = 'framer-xf0KU framer-gbuwA framer-80BYq framer-1eSXM framer-Suf9V framer-fN9WN framer-72rtr7'
 
+// ordre d'affichage des groupes ; les autres valeurs éventuelles suivent
+const ORDRE_ESPACES = ['Espace Cours Collectifs', 'Espace Fonctionnel']
+
+const introEspace = (nom: string) => ESPACES.find((e) => e.name === nom)?.short || ''
+
+type CoursDoc = { id: string | number; slug?: string | null; nom: string; accroche?: string | null; image?: string | null; espace?: string | null }
+
 export default async function CoursHub() {
   const payload = await getPayloadClient()
-  const { docs: cours } = await payload.find({ collection: 'cours', sort: 'ordre', limit: 100 })
+  const { docs } = await payload.find({ collection: 'cours', sort: 'ordre', limit: 100 })
+  const cours = docs as unknown as CoursDoc[]
+
+  const groupes: { espace: string; cours: CoursDoc[] }[] = []
+  for (const c of cours) {
+    const espace = c.espace || ''
+    let g = groupes.find((x) => x.espace === espace)
+    if (!g) {
+      g = { espace, cours: [] }
+      groupes.push(g)
+    }
+    g.cours.push(c)
+  }
+  groupes.sort((a, b) => {
+    const ia = ORDRE_ESPACES.indexOf(a.espace)
+    const ib = ORDRE_ESPACES.indexOf(b.espace)
+    return (ia === -1 ? ORDRE_ESPACES.length : ia) - (ib === -1 ? ORDRE_ESPACES.length : ib)
+  })
 
   return (
     <div id="main">
@@ -28,27 +55,49 @@ export default async function CoursHub() {
               </a>
             </section>
 
-            <section style={{ maxWidth: 1180, margin: '0 auto', padding: '0 30px 110px' }}>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(290px, 1fr))', gap: 24 }}>
-                {cours.map((c) => (
-                  <a
-                    key={c.id}
-                    href={`/cours/${c.slug}`}
-                    style={{ display: 'flex', flexDirection: 'column', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden', textDecoration: 'none', color: 'inherit' }}
-                  >
-                    <div style={{ position: 'relative' }}>
-                      {c.image ? <img src={c.image} alt={c.nom} loading="lazy" style={{ width: '100%', height: 170, objectFit: 'cover', display: 'block' }} /> : null}
-                      {c.espace ? (
-                        <span style={{ position: 'absolute', top: 12, left: 12, background: 'rgba(255,255,255,0.92)', color: '#376131', fontWeight: 700, fontSize: 12, letterSpacing: '0.02em', padding: '5px 12px', borderRadius: 999 }}>{c.espace}</span>
+            {groupes.map((g) => (
+              <section key={g.espace || 'sans-espace'} style={{ maxWidth: 1180, margin: '0 auto', padding: '0 30px 60px' }}>
+                {g.espace ? (
+                  <div style={{ margin: '0 0 26px', maxWidth: 720 }}>
+                    <h2 style={{ fontSize: 'clamp(26px,3vw,34px)', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: 1.15, margin: 0 }}>{g.espace}</h2>
+                    {introEspace(g.espace) ? (
+                      <p style={{ color: '#525252', fontSize: 17, lineHeight: 1.6, margin: '10px 0 0' }}>{introEspace(g.espace)}</p>
+                    ) : null}
+                  </div>
+                ) : null}
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 26 }}>
+                  {g.cours.map((c) => (
+                    <a
+                      key={c.id}
+                      href={`/cours/${c.slug}`}
+                      style={{ display: 'flex', flexDirection: 'column', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden', textDecoration: 'none', color: 'inherit' }}
+                    >
+                      {c.image ? (
+                        <img src={c.image} alt={c.nom} loading="lazy" style={{ width: '100%', height: 210, objectFit: 'cover', display: 'block' }} />
                       ) : null}
-                    </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', flex: 1, padding: 26 }}>
-                      <h3 style={{ fontSize: 22, fontWeight: 700, letterSpacing: '-0.01em', margin: '0 0 10px' }}>{c.nom}</h3>
-                      <p style={{ color: '#525252', lineHeight: 1.55, margin: '0 0 20px', flex: 1 }}>{c.accroche}</p>
-                      <span style={{ color: '#376131', fontWeight: 700 }}>Découvrir →</span>
-                    </div>
-                  </a>
-                ))}
+                      <div style={{ display: 'flex', flexDirection: 'column', flex: 1, padding: 28 }}>
+                        <h3 style={{ fontSize: 24, fontWeight: 700, letterSpacing: '-0.01em', margin: '0 0 10px' }}>{c.nom}</h3>
+                        <p style={{ color: '#525252', fontSize: 16, lineHeight: 1.55, margin: '0 0 22px', flex: 1 }}>{c.accroche}</p>
+                        <span style={{ color: '#376131', fontWeight: 700 }}>Découvrir →</span>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </section>
+            ))}
+
+            <section style={{ maxWidth: 1180, margin: '0 auto', padding: '10px 30px 110px' }}>
+              <div style={{ background: '#376131', borderRadius: 18, padding: 'clamp(30px,4vw,50px)', color: '#fff', display: 'flex', flexWrap: 'wrap', gap: 24, alignItems: 'center', justifyContent: 'space-between' }}>
+                <div style={{ maxWidth: 620 }}>
+                  <h2 style={{ fontSize: 'clamp(24px,3vw,32px)', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: 1.15, margin: '0 0 10px' }}>Trouvez votre créneau</h2>
+                  <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: 17, lineHeight: 1.6, margin: 0 }}>
+                    Consultez le planning de la semaine et les formules d&rsquo;adhésion.
+                  </p>
+                </div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14 }}>
+                  <a href="/planning" style={{ display: 'inline-block', background: '#fff', color: '#376131', fontWeight: 700, fontSize: 16, textDecoration: 'none', padding: '15px 30px', borderRadius: 70 }}>Voir le planning</a>
+                  <a href="/tarifs" style={{ display: 'inline-block', border: '1.5px solid rgba(255,255,255,0.6)', color: '#fff', fontWeight: 700, fontSize: 16, textDecoration: 'none', padding: '15px 30px', borderRadius: 70 }}>Voir les tarifs</a>
+                </div>
               </div>
             </section>
           </main>

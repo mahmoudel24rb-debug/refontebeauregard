@@ -1,5 +1,6 @@
 import React from 'react'
 
+import CarrouselAvis from '@/components/sportix/CarrouselAvis'
 import HomePage from '@/components/sportix/HomePage'
 import { getPayloadClient } from '@/lib/payload'
 
@@ -30,5 +31,10 @@ export default async function Home() {
   } catch {
     // fallback statique géré dans HomePage
   }
-  return <HomePage mensuel={mensuel} courtes={courtes} />
+  return (
+    <>
+      <HomePage mensuel={mensuel} courtes={courtes} />
+      <CarrouselAvis />
+    </>
+  )
 }

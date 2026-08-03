@@ -1,13 +1,17 @@
-'use client'
-
-import React, { useState } from 'react'
+import fs from 'node:fs'
+import path from 'node:path'
+import React from 'react'
 
 // Avatar d'un auteur d'avis Google (cartes témoignages de la home).
-// Affiche la photo si le fichier existe dans /public/assets/beauregard/avis/
-// (nommé d'après l'auteur, ex. christele-p.webp), sinon retombe sur le
-// monogramme (initiales sur pastille verte) : jamais d'image vide ou cassée.
+// Server component : le fichier est choisi AU RENDU (pas de requête 404 côté
+// navigateur). Ordre de repli, du plus au moins souhaitable :
+//   1. la photo réelle si le fichier existe dans /public/assets/beauregard/avis/
+//      (nommé d'après l'auteur, ex. christele-p.webp) ;
+//   2. l'avatar ILLUSTRÉ (buste flat aux couleurs de la DA, illu-1/2/3.svg) ;
+//   3. le monogramme (initiales sur pastille verte), ultime secours.
 // Les photos de profil Google ne sont pas récupérables sans l'API Places :
-// déposer les fichiers manuellement suffit, aucun code à changer.
+// déposer le fichier dans le dossier suffit (visible au revalidate ISR),
+// aucun code à changer.
 
 const PASTILLE: React.CSSProperties = {
   width: '34px',
@@ -16,10 +20,29 @@ const PASTILLE: React.CSSProperties = {
   flexShrink: 0,
 }
 
-export default function AvisAvatar({ initiales, photo, auteur }: { initiales: string; photo: string; auteur: string }) {
-  const [enErreur, setEnErreur] = useState(false)
+const existe = (url?: string) => {
+  if (!url) return false
+  try {
+    return fs.existsSync(path.join(process.cwd(), 'public', url.replace(/^\//, '')))
+  } catch {
+    return false
+  }
+}
 
-  if (enErreur) {
+export default function AvisAvatar({
+  initiales,
+  photo,
+  illu,
+  auteur,
+}: {
+  initiales: string
+  photo: string
+  illu?: string
+  auteur: string
+}) {
+  const src = existe(photo) ? photo : existe(illu) ? illu : null
+
+  if (!src) {
     return (
       <span
         aria-hidden="true"
@@ -42,13 +65,12 @@ export default function AvisAvatar({ initiales, photo, auteur }: { initiales: st
 
   return (
     <img
-      src={photo}
+      src={src}
       alt={`Photo de ${auteur}`}
       width={34}
       height={34}
       loading="lazy"
       style={{ ...PASTILLE, objectFit: 'cover', display: 'block' }}
-      onError={() => setEnErreur(true)}
     />
   )
 }
