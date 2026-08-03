@@ -1,21 +1,32 @@
-'use client'
-
-import React, { useState } from 'react'
+import fs from 'node:fs'
+import path from 'node:path'
+import React from 'react'
 
 // Avatar d'un auteur d'avis Google (cartes témoignages de la home).
-// Ordre de repli, du plus au moins souhaitable :
+// Server component : le fichier est choisi AU RENDU (pas de requête 404 côté
+// navigateur). Ordre de repli, du plus au moins souhaitable :
 //   1. la photo réelle si le fichier existe dans /public/assets/beauregard/avis/
 //      (nommé d'après l'auteur, ex. christele-p.webp) ;
 //   2. l'avatar ILLUSTRÉ (buste flat aux couleurs de la DA, illu-1/2/3.svg) ;
 //   3. le monogramme (initiales sur pastille verte), ultime secours.
 // Les photos de profil Google ne sont pas récupérables sans l'API Places :
-// déposer les fichiers manuellement suffit, aucun code à changer.
+// déposer le fichier dans le dossier suffit (visible au revalidate ISR),
+// aucun code à changer.
 
 const PASTILLE: React.CSSProperties = {
   width: '34px',
   height: '34px',
   borderRadius: '50%',
   flexShrink: 0,
+}
+
+const existe = (url?: string) => {
+  if (!url) return false
+  try {
+    return fs.existsSync(path.join(process.cwd(), 'public', url.replace(/^\//, '')))
+  } catch {
+    return false
+  }
 }
 
 export default function AvisAvatar({
@@ -29,11 +40,9 @@ export default function AvisAvatar({
   illu?: string
   auteur: string
 }) {
-  // 0 = photo, 1 = illustration, 2 = initiales
-  const [etape, setEtape] = useState(0)
-  const src = etape === 0 ? photo : illu
+  const src = existe(photo) ? photo : existe(illu) ? illu : null
 
-  if (etape > 1 || !src) {
+  if (!src) {
     return (
       <span
         aria-hidden="true"
@@ -62,7 +71,6 @@ export default function AvisAvatar({
       height={34}
       loading="lazy"
       style={{ ...PASTILLE, objectFit: 'cover', display: 'block' }}
-      onError={() => setEtape((e) => e + 1)}
     />
   )
 }
