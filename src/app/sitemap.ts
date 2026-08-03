@@ -4,7 +4,7 @@ import { getPayloadClient } from '@/lib/payload'
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.parcbeauregard.com'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const statiques = ['', '/espaces', '/cours', '/coaching', '/location-de-terrain', '/planning', '/evenements', '/faq', '/blog', '/tarifs', '/contact', '/mentions-legales']
+  const statiques = ['', '/espaces', '/cours', '/coaching', '/location-de-terrain', '/planning', '/evenements', '/faq', '/blog', '/tarifs', '/seance-essai', '/contact', '/mentions-legales']
   const now = new Date()
   const base: MetadataRoute.Sitemap = statiques.map((r) => ({ url: `${SITE_URL}${r}`, lastModified: now }))
   try {

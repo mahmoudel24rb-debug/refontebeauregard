@@ -2466,6 +2466,13 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                         </div>
                         <div className={"framer-2cdfj0"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/seance-essai"}>
+                              Séance d&rsquo;essai
+                            </a>
+                          </p>
+                        </div>
+                        <div className={"framer-2cdfj0"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
+                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/planning"}>
                               Planning
                             </a>
@@ -2689,6 +2696,13 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                         </div>
                         <div className={"framer-2cdfj0"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
+                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/seance-essai"}>
+                              Séance d&rsquo;essai
+                            </a>
+                          </p>
+                        </div>
+                        <div className={"framer-2cdfj0"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
+                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/planning"}>
                               Planning
                             </a>
@@ -2907,6 +2921,13 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                           <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
                             <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/tarifs"}>
                               Tarifs
+                            </a>
+                          </p>
+                        </div>
+                        <div className={"framer-2cdfj0"} data-framer-name={"Nav Link"} style={{ "--extracted-r6o4lv": "var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64))", transform: "none" }}>
+                          <p className={"framer-text framer-styles-preset-kk5vcb"} data-styles-preset={"OSGlMNwCr"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-c3674009-0fe5-49c4-b319-05dd4e6ff53e, rgb(64, 64, 64)))" }}>
+                            <a className={"framer-text framer-styles-preset-dhuzcc"} data-styles-preset={"JJzO8aUgV"} href={"/seance-essai"}>
+                              Séance d&rsquo;essai
                             </a>
                           </p>
                         </div>
