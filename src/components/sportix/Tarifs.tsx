@@ -26,33 +26,19 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                         </div>
                       </div>
                       <nav className={"framer-k1prli"} data-framer-name={"Nav Links Wrapper"}>
-                        <div className={"framer-czv41b"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
-                          <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/"}>
-                              Accueil
-                            </a>
-                          </p>
-                        </div>
                         <div className={"framer-ncrdxr"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              Le parc
+                              Nos espaces
                             </a>
                           </p><div data-bg-submenu="true"><a href="/espaces">Nos espaces</a><a href="/espaces/fonctionnel">Entraînement fonctionnel</a><a href="/espaces/cross-cardio">Cross / Cardio</a><a href="/location-de-terrain">Location de terrain</a></div>
                         </div>
                         <div className={"framer-9ynktl"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/cours"}>
-                              Cours
+                              Nos cours
                             </a>
-                          </p><div data-bg-submenu="true"><a href="/cours">Tous les cours</a><a href="/planning">Planning de la rentrée</a></div>
-                        </div>
-                        <div className={"framer-9ynktl"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
-                          <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/coaching"}>
-                              Coaching
-                            </a>
-                          </p>
+                          </p><div data-bg-submenu="true"><a href="/cours">Tous les cours</a><a href="/coaching">Coaching</a></div>
                         </div>
                         <div className={"framer-rsp9da"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
@@ -77,10 +63,10 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                         </div>
                       </nav>
                       <div className={"framer-155lzj3-container"} style={{ opacity: "1", transform: "none" }}>
-                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/tarifs"}>
+                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/seance-essai"}>
                           <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
-                              Nous rejoindre
+                              Séance d&rsquo;essai
                             </p>
                           </div>
                         </a>
@@ -103,33 +89,19 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                         </div>
                       </div>
                       <nav className={"framer-k1prli"} data-framer-name={"Nav Links Wrapper"}>
-                        <div className={"framer-czv41b"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
-                          <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/"}>
-                              Accueil
-                            </a>
-                          </p>
-                        </div>
                         <div className={"framer-ncrdxr"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/espaces"}>
-                              Le parc
+                              Nos espaces
                             </a>
                           </p><div data-bg-submenu="true"><a href="/espaces">Nos espaces</a><a href="/espaces/fonctionnel">Entraînement fonctionnel</a><a href="/espaces/cross-cardio">Cross / Cardio</a><a href="/location-de-terrain">Location de terrain</a></div>
                         </div>
                         <div className={"framer-9ynktl"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                             <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/cours"}>
-                              Cours
+                              Nos cours
                             </a>
-                          </p><div data-bg-submenu="true"><a href="/cours">Tous les cours</a><a href="/planning">Planning de la rentrée</a></div>
-                        </div>
-                        <div className={"framer-9ynktl"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
-                          <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
-                            <a className={"framer-text framer-styles-preset-1ml9phj"} data-styles-preset={"L9EMt_vMH"} href={"/coaching"}>
-                              Coaching
-                            </a>
-                          </p>
+                          </p><div data-bg-submenu="true"><a href="/cours">Tous les cours</a><a href="/coaching">Coaching</a></div>
                         </div>
                         <div className={"framer-rsp9da"} data-framer-name={"Navigation Link"} style={{ "--extracted-r6o4lv": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                           <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
@@ -163,10 +135,10 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                         </a>
                       </nav>
                       <div className={"framer-155lzj3-container"} style={{ opacity: "1", transform: "none" }}>
-                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/tarifs"}>
+                        <a className={"framer-mAcoc framer-X8adU framer-5jm32v framer-v-5jm32v framer-5eqsdb"} data-framer-name={"Default"} style={{ backdropFilter: "blur(0px)", backgroundColor: "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", borderBottomLeftRadius: "70px", borderBottomRightRadius: "70px", borderTopLeftRadius: "70px", borderTopRightRadius: "70px" }} href={"/seance-essai"}>
                           <div className={"framer-145drjp"} style={{ "--extracted-r6o4lv": "var(--variable-reference-ypfpfVkT4-gRwIgGm9Y)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", "--variable-reference-fpKzsO89l-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--variable-reference-ypfpfVkT4-gRwIgGm9Y": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-13c7ysj"} data-styles-preset={"QchegEuzx"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--variable-reference-ypfpfVkT4-gRwIgGm9Y))" }}>
-                              Nous rejoindre
+                              Séance d&rsquo;essai
                             </p>
                           </div>
                         </a>
@@ -1550,7 +1522,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                     <div className={"framer-uhploo"} data-framer-name={"Nav Links Column"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
                       <div className={"framer-1oq2gud"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Le parc
+                          Nos espaces
                         </p>
                       </div>
                       <nav className={"framer-1uskuzo"} data-framer-name={"Nav Links Column"}>
@@ -1773,7 +1745,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                     <div className={"framer-uhploo"} data-framer-name={"Nav Links Column"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
                       <div className={"framer-1oq2gud"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Le parc
+                          Nos espaces
                         </p>
                       </div>
                       <nav className={"framer-1uskuzo"} data-framer-name={"Nav Links Column"}>
@@ -1996,7 +1968,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                     <div className={"framer-uhploo"} data-framer-name={"Nav Links Column"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
                       <div className={"framer-1oq2gud"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none" }}>
                         <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                          Le parc
+                          Nos espaces
                         </p>
                       </div>
                       <nav className={"framer-1uskuzo"} data-framer-name={"Nav Links Column"}>

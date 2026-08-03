@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react'
 const LINKS: { label: string; href: string; sub?: { label: string; href: string }[] }[] = [
   { label: 'Accueil', href: '/' },
   {
-    label: 'Le parc',
+    label: 'Nos espaces',
     href: '/espaces',
     sub: [
       { label: 'Nos espaces', href: '/espaces' },
@@ -20,14 +20,13 @@ const LINKS: { label: string; href: string; sub?: { label: string; href: string 
     ],
   },
   {
-    label: 'Cours',
+    label: 'Nos cours',
     href: '/cours',
     sub: [
       { label: 'Tous les cours', href: '/cours' },
-      { label: 'Planning de la rentrée', href: '/planning' },
+      { label: 'Coaching', href: '/coaching' },
     ],
   },
-  { label: 'Coaching', href: '/coaching' },
   { label: 'Tarifs', href: '/tarifs' },
   { label: 'Planning', href: '/planning' },
   { label: 'Événements', href: '/evenements' },
@@ -158,7 +157,7 @@ export default function MobileNav() {
       </nav>
 
       <a
-        href="/tarifs"
+        href="/seance-essai"
         onClick={() => setOpen(false)}
         style={{
           marginTop: 'auto',
@@ -174,7 +173,7 @@ export default function MobileNav() {
           borderRadius: 70,
         }}
       >
-        Nous rejoindre
+        Séance d&rsquo;essai
       </a>
     </div>
   )

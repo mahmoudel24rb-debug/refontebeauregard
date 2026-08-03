@@ -100,7 +100,7 @@ export default function Footer() {
                         <div className={"framer-uhploo"} data-framer-name={"Nav Links Column"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
                           <div className={"framer-1oq2gud"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                              Le parc
+                              Nos espaces
                             </p>
                           </div>
                           <nav className={"framer-1uskuzo"} data-framer-name={"Nav Links Column"}>
@@ -323,7 +323,7 @@ export default function Footer() {
                         <div className={"framer-uhploo"} data-framer-name={"Nav Links Column"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
                           <div className={"framer-1oq2gud"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                              Le parc
+                              Nos espaces
                             </p>
                           </div>
                           <nav className={"framer-1uskuzo"} data-framer-name={"Nav Links Column"}>
@@ -546,7 +546,7 @@ export default function Footer() {
                         <div className={"framer-uhploo"} data-framer-name={"Nav Links Column"} style={{ willChange: "auto", opacity: "1", transform: "none" }}>
                           <div className={"framer-1oq2gud"} data-framer-name={"Heading"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", transform: "none" }}>
                             <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                              Le parc
+                              Nos espaces
                             </p>
                           </div>
                           <nav className={"framer-1uskuzo"} data-framer-name={"Nav Links Column"}>

@@ -36,13 +36,13 @@ footer [data-framer-name='Link Wrapper'] .framer-text {
   }
 }
 
-/* ---------- Sous-menus header (Nos espaces / Services) ---------- */
+/* ---------- Sous-menus header (Nos espaces / Nos cours) ---------- */
 /* Le lien nav qui contient un sous-menu devient ancre de positionnement + chevron. */
 [data-framer-name='Navigation Link']:has([data-bg-submenu]) {
   position: relative;
 }
 [data-framer-name='Navigation Link']:has([data-bg-submenu]) a[href='/espaces']::after,
-[data-framer-name='Navigation Link']:has([data-bg-submenu]) a[href='/services']::after {
+[data-framer-name='Navigation Link']:has([data-bg-submenu]) a[href='/cours']::after {
   content: '';
   display: inline-block;
   width: 6px;
@@ -54,7 +54,7 @@ footer [data-framer-name='Link Wrapper'] .framer-text {
   transition: transform 0.15s ease;
 }
 [data-framer-name='Navigation Link']:has([data-bg-submenu]):hover a[href='/espaces']::after,
-[data-framer-name='Navigation Link']:has([data-bg-submenu]):hover a[href='/services']::after {
+[data-framer-name='Navigation Link']:has([data-bg-submenu]):hover a[href='/cours']::after {
   transform: rotate(225deg) translate(-1px, -1px);
 }
 /* Panneau déroulant — valeurs EXACTES extraites de la dropdown Sportix :
