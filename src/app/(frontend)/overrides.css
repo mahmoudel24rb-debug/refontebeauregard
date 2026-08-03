@@ -149,12 +149,45 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
 /* Page contact : grille formulaire + réassurance -> 1 colonne sur mobile/tablette */
 @media (max-width: 860px) { .bg-contact-grid { grid-template-columns: 1fr !important; } }
 
-/* Témoignages : le slider Framer (flèches préc./suiv.) n'est pas branché et, avec
-   seulement 3 avis qui tiennent à l'écran, il ne sert à rien (il défilerait vers une
-   copie identique). On masque les flèches pour éviter des boutons morts. Scopé à la
-   section pour ne pas toucher les boutons du hero (même data-framer-name). */
-[data-framer-name='Testimonials Section'] [data-framer-name='Button Wrapper'] {
-  display: none !important;
+/* ---------- Témoignages : carrousel d'avis ---------- */
+/* Les 3 avis uniques sont posés dans UNE rangée qui défile horizontalement.
+   Le port Framer coupait les cartes (overflow:hidden + max-width sur le wrapper)
+   et laissait les flèches mortes : on neutralise ces deux contraintes ici, les
+   flèches sont câblées par CarrouselAvis.tsx. Scopé à la section pour ne pas
+   toucher le hero (mêmes data-framer-name). */
+[data-framer-name='Testimonials Section']
+  [data-framer-name='Testimonials Wrapper']:has(> [data-framer-name='Testimonials Wrapp']) {
+  overflow: visible !important;
+  max-width: none !important;
+}
+[data-framer-name='Testimonials Section']
+  [data-framer-name='Testimonials Wrapper']
+  > [data-framer-name='Testimonials Wrapp'] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 30px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overscroll-behavior-x: contain;
+}
+[data-framer-name='Testimonials Section']
+  [data-framer-name='Testimonials Wrapper']
+  > [data-framer-name='Testimonials Wrapp']::-webkit-scrollbar {
+  display: none;
+}
+[data-framer-name='Testimonials Section']
+  [data-framer-name='Testimonials Wrapper']
+  > [data-framer-name='Testimonials Wrapp']
+  > * {
+  flex: 0 0 min(420px, 85vw) !important;
+  width: auto !important;
+  scroll-snap-align: start;
+}
+[data-framer-name='Testimonials Section'] [data-framer-name='Button Wrapper'] button {
+  cursor: pointer;
 }
 
 /* Corps d'article blog (/blog/[slug]) : typographie du richtext lexical.
