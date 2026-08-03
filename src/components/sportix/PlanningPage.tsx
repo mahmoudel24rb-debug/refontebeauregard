@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import PlanningCalendar from './PlanningCalendar'
 import { PLANNING, type JourPlanning } from './planning'
 
 // Page « Planning des cours » (/planning) : planning de la rentrée septembre 2026.
@@ -26,28 +27,7 @@ export default function PlanningPage({ data }: { data?: JourPlanning[] }) {
             </section>
 
             <section style={{ maxWidth: 1180, margin: '0 auto', padding: '0 30px 30px' }}>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 24 }}>
-                {PLANNING_DATA.map((jour, i) => (
-                  <div key={jour.jour} style={{ background: i % 2 === 0 ? '#f5f5f5' : '#fff', border: '1px solid #e5e5e5', borderRadius: 14, padding: 28 }}>
-                    <h2 style={{ fontSize: 24, fontWeight: 700, letterSpacing: '-0.01em', margin: '0 0 18px', color: '#171717' }}>{jour.jour}</h2>
-                    {jour.salles.map((salle) => (
-                      <div key={salle.salle} style={{ marginBottom: 18 }}>
-                        <h3 style={{ color: '#376131', fontWeight: 700, letterSpacing: '0.04em', textTransform: 'uppercase', fontSize: 13, margin: '0 0 10px' }}>{salle.salle}</h3>
-                        <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-                          {salle.creneaux.map((c, j) => (
-                            <li key={`${c.heure ?? 'sans-horaire'}-${c.cours}-${j}`} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '7px 0', borderBottom: '1px solid rgba(0,0,0,0.07)' }}>
-                              {c.heure ? (
-                                <span style={{ flexShrink: 0, minWidth: 56, textAlign: 'center', background: '#376131', color: '#fff', fontWeight: 700, fontSize: 13, borderRadius: 999, padding: '3px 10px' }}>{c.heure}</span>
-                              ) : null}
-                              <span style={{ fontWeight: 600, fontSize: 15, color: '#171717' }}>{c.cours}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                  </div>
-                ))}
-              </div>
+              <PlanningCalendar data={PLANNING_DATA} />
             </section>
 
             <section style={{ maxWidth: 1180, margin: '0 auto', padding: '10px 30px 110px' }}>

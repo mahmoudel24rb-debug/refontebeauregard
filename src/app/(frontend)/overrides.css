@@ -190,6 +190,50 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
   cursor: pointer;
 }
 
+/* ---------- Planning : calendrier hebdomadaire (PlanningCalendar.tsx) ---------- */
+/* Desktop : 6 colonnes de jours. Mobile/tablette : le conteneur défile
+   horizontalement, une colonne occupe 76vw et s'aimante au scroll. */
+.bg-planning-grille {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+.bg-planning-jour {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  margin: 0 0 12px;
+  padding: 10px 0;
+  background: #fff;
+  color: #171717;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  border-bottom: 2px solid #376131;
+}
+@media (max-width: 1024px) {
+  .bg-planning-grille {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 6px;
+  }
+  .bg-planning-grille::-webkit-scrollbar {
+    display: none;
+  }
+  .bg-planning-colonne {
+    flex: 0 0 76vw;
+    min-width: 76vw;
+    scroll-snap-align: start;
+  }
+}
+
 /* Corps d'article blog (/blog/[slug]) : typographie du richtext lexical.
    Le port Framer ne stylant pas ces balises, on définit ici la hiérarchie
    complète (H2/H3, listes, citation, image + légende, liens, CTA). */
