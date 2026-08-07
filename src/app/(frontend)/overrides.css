@@ -190,6 +190,86 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
   cursor: pointer;
 }
 
+/* ---------- Hero : mini-slider d'avis ---------- */
+/* Le port Framer posait les avis 2 et 3 en absolu hors cadre (right/left -600px,
+   top 50%) : un seul avis était donc atteignable et les 3 points ne servaient à
+   rien. On remet les 3 citations dans le flux, une par « page » de la rangée qui
+   défile horizontalement avec aimantation (swipe tactile natif). Les points et
+   la rotation automatique sont câblés par SliderAvisHero.tsx. Scopé au hero pour
+   ne pas toucher la section Témoignages (mêmes data-framer-name). */
+[data-framer-name='Testimonials Slider Wrapper'] [data-framer-name='Testimonials'] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 30px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overscroll-behavior-x: contain;
+  align-items: stretch;
+}
+[data-framer-name='Testimonials Slider Wrapper']
+  [data-framer-name='Testimonials']::-webkit-scrollbar {
+  display: none;
+}
+[data-framer-name='Testimonials Slider Wrapper'] [data-framer-name='Testimonials'] > * {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  left: auto !important;
+  bottom: auto !important;
+  transform: none !important;
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  justify-content: center;
+}
+/* Les 3 citations n'ont pas la même longueur : la rangée est dimensionnée sur la
+   plus haute et ne bouge donc plus d'une diapositive à l'autre. */
+[data-framer-name='Testimonials Slider Wrapper'] [data-framer-name='Dots Wrapper'] > * {
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+/* ---------- Hero : bloc vert « séance d'essai » ---------- */
+/* Le bloc « Video Content Wrapper » n'héberge plus de lecteur vidéo : le texte
+   et le bouton de réservation s'empilent à la place. */
+[data-framer-name='Video Content Wrapper'] > [data-framer-name='Body'] {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+.bg-cta-essai {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 22px;
+  border-radius: 70px;
+  background-color: #fff;
+  color: #376131;
+  font-family: 'Inter', 'Inter Placeholder', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  /* la colonne de texte du bloc vert est etroite : le libelle se replie plutot
+     que de deborder sous l'image */
+  max-width: 100%;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+.bg-cta-essai:hover {
+  opacity: 0.88;
+}
+.bg-cta-essai:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
 /* ---------- Planning : calendrier hebdomadaire (PlanningCalendar.tsx) ---------- */
 /* Desktop : 6 colonnes de jours. Mobile/tablette : le conteneur défile
    horizontalement, une colonne occupe 76vw et s'aimante au scroll. */

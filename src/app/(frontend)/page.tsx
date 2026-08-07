@@ -2,6 +2,7 @@ import React from 'react'
 
 import CarrouselAvis from '@/components/sportix/CarrouselAvis'
 import HomePage from '@/components/sportix/HomePage'
+import SliderAvisHero from '@/components/sportix/SliderAvisHero'
 import { getPayloadClient } from '@/lib/payload'
 
 // ISR : infos club / contenus éditables visibles sous ~60s
@@ -35,6 +36,7 @@ export default async function Home() {
     <>
       <HomePage mensuel={mensuel} courtes={courtes} />
       <CarrouselAvis />
+      <SliderAvisHero />
     </>
   )
 }
