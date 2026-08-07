@@ -190,6 +190,48 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
   cursor: pointer;
 }
 
+/* ---------- Hero : mini-slider d'avis ---------- */
+/* Le port Framer posait les avis 2 et 3 en absolu hors cadre (right/left -600px,
+   top 50%) : un seul avis était donc atteignable et les 3 points ne servaient à
+   rien. On remet les 3 citations dans le flux, une par « page » de la rangée qui
+   défile horizontalement avec aimantation (swipe tactile natif). Les points et
+   la rotation automatique sont câblés par SliderAvisHero.tsx. Scopé au hero pour
+   ne pas toucher la section Témoignages (mêmes data-framer-name). */
+[data-framer-name='Testimonials Slider Wrapper'] [data-framer-name='Testimonials'] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 30px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overscroll-behavior-x: contain;
+  align-items: stretch;
+}
+[data-framer-name='Testimonials Slider Wrapper']
+  [data-framer-name='Testimonials']::-webkit-scrollbar {
+  display: none;
+}
+[data-framer-name='Testimonials Slider Wrapper'] [data-framer-name='Testimonials'] > * {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  left: auto !important;
+  bottom: auto !important;
+  transform: none !important;
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  justify-content: center;
+}
+/* Les 3 citations n'ont pas la même longueur : la rangée est dimensionnée sur la
+   plus haute et ne bouge donc plus d'une diapositive à l'autre. */
+[data-framer-name='Testimonials Slider Wrapper'] [data-framer-name='Dots Wrapper'] > * {
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
 /* ---------- Planning : calendrier hebdomadaire (PlanningCalendar.tsx) ---------- */
 /* Desktop : 6 colonnes de jours. Mobile/tablette : le conteneur défile
    horizontalement, une colonne occupe 76vw et s'aimante au scroll. */

@@ -361,7 +361,7 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                                 </p>
                               </div>
                             </div>
-                            <div className={"framer-1poeglk"} data-framer-name={"Testimonials 2"} style={{ transform: "translateY(-50%)" }}>
+                            <div className={"framer-1poeglk"} data-framer-name={"Testimonials 2"} style={{ transform: "none" }}>
                               <div className={"framer-vqz9pp"} data-framer-name={"Heading"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                                 <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-a0htzi, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                                   « Très bonne ambiance ! »
@@ -373,7 +373,7 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                                 </p>
                               </div>
                             </div>
-                            <div className={"framer-uhrh4m"} data-framer-name={"Testimonials 3"} style={{ transform: "translateY(-50%)" }}>
+                            <div className={"framer-uhrh4m"} data-framer-name={"Testimonials 3"} style={{ transform: "none" }}>
                               <div className={"framer-ru10e4"} data-framer-name={"Heading"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                                 <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-a0htzi, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                                   « Une équipe à votre écoute »
@@ -410,7 +410,7 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                                 </p>
                               </div>
                             </div>
-                            <div className={"framer-1poeglk"} data-framer-name={"Testimonials 2"} style={{ transform: "translateY(-50%)" }}>
+                            <div className={"framer-1poeglk"} data-framer-name={"Testimonials 2"} style={{ transform: "none" }}>
                               <div className={"framer-vqz9pp"} data-framer-name={"Heading"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                                 <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-a0htzi, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                                   « Très bonne ambiance ! »
@@ -422,7 +422,7 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                                 </p>
                               </div>
                             </div>
-                            <div className={"framer-uhrh4m"} data-framer-name={"Testimonials 3"} style={{ transform: "translateY(-50%)" }}>
+                            <div className={"framer-uhrh4m"} data-framer-name={"Testimonials 3"} style={{ transform: "none" }}>
                               <div className={"framer-ru10e4"} data-framer-name={"Heading"} style={{ "--extracted-a0htzi": "var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                                 <h3 className={"framer-text framer-styles-preset-h6qwrh"} data-styles-preset={"CPtY7F2OK"} style={{ "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-a0htzi, var(--token-5b150902-af7d-44cd-9806-3cf99a174e98, rgb(255, 255, 255)))" }}>
                                   « Une équipe à votre écoute »
