@@ -62,3 +62,6 @@ public/sportix/
 
 # artefacts de diff visuel
 diff-report/
+
+.vercel
+.env*
