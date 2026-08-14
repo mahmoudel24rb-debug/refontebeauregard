@@ -120,9 +120,10 @@ async function seed() {
   // ---------- Témoignages (vrais avis Google Maps 5★, repris à l'identique) ----------
   if (await estVide('temoignages')) {
     const temoignages = [
-      { auteur: 'Christele P.', note: 5, texte: 'Super bien ! Les coachs sont très pro et sympa, très bonne ambiance !', visible: true },
-      { auteur: 'Jemsa F.', note: 5, texte: "Super club de sport, le personnel est à votre écoute pour vous aider à atteindre vos objectifs : perte de poids, reprise du sport, amélioration des performances…", visible: true },
-      { auteur: 'Janelle L.', note: 5, texte: "J'ai découvert ce club lors de l'événement avec Romain Prevedello. J'adore ! Le lieu est magnifique, avec un espace extérieur très agréable et calme. Je recommande !", visible: true },
+      { auteur: 'Christele Pourrat', note: 5, texte: 'Super bien ! Les coachs sont très pro et sympa, très bonne ambiance !', visible: true },
+      { auteur: 'Jemsa Fruchmy', note: 5, texte: "Super club de sport, le personnel est à votre écoute pour vous aider à atteindre vos objectifs : perte de poids, reprise du sport, amélioration des performances…", visible: true },
+      { auteur: 'Janelle Lauvray', note: 5, texte: "J'ai découvert ce club lors de l'événement avec Romain Prevedello. J'adore ! Le lieu est magnifique, avec un espace extérieur très agréable et calme. Je recommande !", visible: true },
+      { auteur: 'Hervé Maquet', note: 5, texte: "Coachs super sympa et motivant. Je m'abonne.", visible: true },
     ]
     for (const t of temoignages) {
       await payload.create({ collection: 'temoignages', data: t })

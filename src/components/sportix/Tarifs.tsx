@@ -827,7 +827,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                                   </div>
                                   <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Christele P.
+                                      Christele Pourrat
                                     </p>
                                   </div>
                                 </div>
@@ -887,7 +887,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                                   </div>
                                   <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Jemsa F.
+                                      Jemsa Fruchmy
                                     </p>
                                   </div>
                                 </div>
@@ -947,7 +947,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                                   </div>
                                   <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Janelle L.
+                                      Janelle Lauvray
                                     </p>
                                   </div>
                                 </div>
@@ -1059,7 +1059,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                                   </div>
                                   <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Christele P.
+                                      Christele Pourrat
                                     </p>
                                   </div>
                                 </div>
@@ -1119,7 +1119,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                                   </div>
                                   <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Jemsa F.
+                                      Jemsa Fruchmy
                                     </p>
                                   </div>
                                 </div>
@@ -1179,7 +1179,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                                   </div>
                                   <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Janelle L.
+                                      Janelle Lauvray
                                     </p>
                                   </div>
                                 </div>
@@ -1271,7 +1271,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                                   </div>
                                   <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Christele P.
+                                      Christele Pourrat
                                     </p>
                                   </div>
                                 </div>
@@ -1331,7 +1331,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                                   </div>
                                   <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Jemsa F.
+                                      Jemsa Fruchmy
                                     </p>
                                   </div>
                                 </div>
@@ -1391,7 +1391,7 @@ export default function Tarifs({ mensuel, courtes }: { mensuel: CardData[]; cour
                                   </div>
                                   <div className={"framer-1egm2r7"} data-framer-name={"Body"} style={{ "--extracted-r6o4lv": "var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                                     <p className={"framer-text framer-styles-preset-1hcnkal"} data-styles-preset={"G4jBfKTMe"} style={{ "--framer-text-color": "var(--extracted-r6o4lv, var(--token-97fc87a4-7472-48e0-baff-d882386fd651, rgb(0, 0, 0)))" }}>
-                                      Janelle L.
+                                      Janelle Lauvray
                                     </p>
                                   </div>
                                 </div>
