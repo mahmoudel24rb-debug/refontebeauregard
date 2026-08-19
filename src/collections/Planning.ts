@@ -51,7 +51,7 @@ export const Planning: CollectionConfig = {
       type: 'number',
       defaultValue: 60,
       min: 15,
-      max: 240,
+      max: 600,
       admin: {
         position: 'sidebar',
         description: 'Durée du cours en minutes. 60 par défaut, ajustable créneau par créneau.',

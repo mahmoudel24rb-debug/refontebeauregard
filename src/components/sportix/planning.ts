@@ -46,7 +46,7 @@ export const PLANNING: JourPlanning[] = [
         salle: 'Salle Cross',
         creneaux: [
           { heure: '9h15', cours: 'Pilates' },
-          { cours: 'Pole Dance' },
+          { heure: '18h', cours: 'Pole Dance' }, // horaire provisoire, à ajuster dans l'admin
         ],
       },
     ],
@@ -79,19 +79,19 @@ export const PLANNING: JourPlanning[] = [
       {
         salle: 'Salle Fitness',
         creneaux: [
-          { cours: 'Renfo Fit' },
+          { heure: '17h30', cours: 'Renfo Fit' }, // horaire provisoire, à ajuster dans l'admin
           { heure: '18h30', cours: 'Dance' },
           { heure: '19h15', cours: 'Pilates' },
         ],
       },
       {
         salle: 'Salle Cross',
-        creneaux: [{ cours: 'Pole Dance' }],
+        creneaux: [{ heure: '18h', cours: 'Pole Dance' }], // horaire provisoire
       },
       {
         salle: 'Bulle',
         creneaux: [
-          { cours: 'Journée enfants' }, // sans horaire
+          { heure: '9h', cours: 'Journée enfants' }, // horaire provisoire (journée)
           { heure: '18h', cours: 'Cross Training' },
           { heure: '19h', cours: 'HYROX' },
         ],

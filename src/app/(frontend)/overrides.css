@@ -745,7 +745,9 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
   --hpx: 66px;
   display: grid;
   grid-template-columns: var(--gout) minmax(0, 1fr);
-  /* l'étiquette de la dernière heure est centrée sur la ligne du bas */
+  /* les étiquettes d'heures sont centrées sur leur ligne (translateY -50%) :
+     on réserve l'espace pour la première en haut comme pour la dernière en bas */
+  margin-top: 14px;
   padding-bottom: 12px;
 }
 .bg-cal-heures {
