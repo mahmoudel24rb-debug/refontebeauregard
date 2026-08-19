@@ -129,7 +129,7 @@ export default function MobileNav() {
           marginBottom: 12,
           display: 'block',
           textAlign: 'center',
-          background: '#1f5e3a',
+          background: '#376131',
           color: '#fff',
           fontWeight: 700,
           fontSize: 18,
