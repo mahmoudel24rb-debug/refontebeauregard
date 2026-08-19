@@ -38,12 +38,24 @@ export default async function SeanceEssaiPage() {
     email?: string | null
     horaires?: { jours?: string | null; heures?: string | null }[] | null
   } | null = null
+  // Liste du menu « activité qui vous intéresse » : les cours réels du club,
+  // plus le coaching personnalisé. Uniquement sur cette page.
+  let activites: string[] = []
   try {
     const payload = await getPayloadClient()
     infos = await payload.findGlobal({ slug: 'infos-club' })
+    const { docs } = await payload.find({
+      collection: 'cours',
+      sort: 'ordre',
+      limit: 50,
+      depth: 0,
+      select: { nom: true },
+    })
+    activites = (docs as { nom?: string | null }[]).map((c) => c.nom).filter((n): n is string => !!n)
   } catch {
     // valeurs de repli ci-dessous si la base est indisponible
   }
+  activites = [...activites, 'Coaching personnalisé']
   const horaires = infos?.horaires?.length
     ? infos.horaires
     : [
@@ -89,7 +101,7 @@ export default async function SeanceEssaiPage() {
               className="bg-contact-grid"
               style={{ maxWidth: 1180, margin: '0 auto', padding: '30px 30px 20px', display: 'grid', gridTemplateColumns: 'minmax(0,1.4fr) minmax(0,1fr)', gap: 40, alignItems: 'start' }}
             >
-              <ContactForm />
+              <ContactForm activites={activites} />
 
               <aside>
                 <div style={{ background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 16, padding: 30 }}>

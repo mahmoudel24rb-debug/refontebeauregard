@@ -21,6 +21,9 @@ export async function POST(req: Request) {
   const telephone = str(body.telephone)
   const email = str(body.email)
   const message = str(body.message)
+  // Optionnel, présent uniquement depuis /seance-essai. Borné pour ne pas
+  // relayer n'importe quelle chaîne au webhook.
+  const activite = str(body.activite).slice(0, 120)
   const honeypot = str(body.website) // champ piège anti-spam (doit rester vide)
 
   // Bot détecté (honeypot rempli) : on renvoie un succès silencieux sans rien envoyer.
@@ -42,6 +45,7 @@ export async function POST(req: Request) {
     telephone,
     email,
     message,
+    activite: activite || null,
     source: 'site_web_parcbeauregard',
     timestamp: new Date().toISOString(),
     utm: body.utm ?? null,
