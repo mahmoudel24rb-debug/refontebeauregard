@@ -3157,7 +3157,7 @@ export default function AccueilPage({ promo, mensuel, courtes }: { promo?: HeroP
                           © Parc Beauregard. Tous droits réservés. Réalisé par{" "}
                           <a className={"framer-text framer-styles-preset-1862sd8"} data-styles-preset={"cWZXsG4am"} href={"https://dgl-agency.fr/"} target={"_blank"} rel={"noopener"}>
                             <span style={{ "--framer-text-color": "var(--extracted-hl0iuy, var(--token-fcc50f27-48bf-4381-8929-2fd53a7bb0e3, rgb(55, 97, 49)))" }} className={"framer-text"}>
-                              
+                              DGL Agency
                             </span>
                           </a>
                           .

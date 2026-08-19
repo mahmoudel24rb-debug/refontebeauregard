@@ -36,6 +36,33 @@ footer [data-framer-name='Link Wrapper'] .framer-text {
   }
 }
 
+/* Footer mobile : les 5 colonnes de liens sont posées en flex avec des
+   min-width hétérogènes (80/120/280/240/100px), d'où un empilement irrégulier
+   2/1/1/1. On les remet en grille régulière, la 5e passant proprement dessous.
+   Ciblage par data-framer-name (stable), jamais par classe hashée. */
+@media (max-width: 991.98px) {
+  footer [data-framer-name='Nav Links Columns'] {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 24px;
+    align-items: start;
+    width: 100%;
+  }
+  footer [data-framer-name='Nav Links Columns'] > div {
+    min-width: 0 !important;
+    max-width: none !important;
+    flex: initial !important;
+    width: auto !important;
+  }
+}
+/* Sous 480px, deux colonnes de liens deviennent trop serrées. */
+@media (max-width: 479.98px) {
+  footer [data-framer-name='Nav Links Columns'] {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+}
+
 /* Tarifs : onglets Mensuel / Courtes durées, 5 cartes en 3+2 chacun.
    Le toggle bascule l'attribut body[data-pricing] (cf. PricingToggle.tsx). */
 [data-framer-name='Tarifs Cards Wrapper'] {
