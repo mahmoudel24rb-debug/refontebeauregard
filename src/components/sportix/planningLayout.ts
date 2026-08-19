@@ -39,6 +39,24 @@ export type BlocPose = {
 
 export const JOURS = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi']
 
+/**
+ * Couleurs par SALLE (et non par cours) : pleine couleur pour les pastilles et
+ * le liseré, fond teinté + texte foncé pour le corps des blocs. Le blanc sur
+ * #6f9b3c ne passerait pas le contraste AA, d'où ce parti pris.
+ */
+export type CouleurSalle = { pleine: string; fond: string; texte: string }
+
+const COULEURS: Record<string, CouleurSalle> = {
+  'Salle Fitness': { pleine: '#376131', fond: '#e8f0e6', texte: '#24401f' },
+  'Salle Cross': { pleine: '#6f9b3c', fond: '#eff5e5', texte: '#3f5a20' },
+  Bulle: { pleine: '#2e4f3a', fond: '#e4efe8', texte: '#1e3527' },
+}
+const COULEUR_DEFAUT: CouleurSalle = { pleine: '#737373', fond: '#f0f0f0', texte: '#3d3d3d' }
+
+export function couleurSalle(salle?: string): CouleurSalle {
+  return (salle && COULEURS[salle]) || COULEUR_DEFAUT
+}
+
 /** Ordre stable des salles : la colonne de gauche est toujours la même salle. */
 const RANGS_SALLE: Record<string, number> = {
   'Salle Fitness': 0,

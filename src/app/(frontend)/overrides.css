@@ -270,47 +270,314 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
   outline-offset: 3px;
 }
 
-/* ---------- Planning : calendrier hebdomadaire (PlanningCalendar.tsx) ---------- */
-/* Desktop : 6 colonnes de jours. Mobile/tablette : le conteneur défile
-   horizontalement, une colonne occupe 76vw et s'aimante au scroll. */
-.bg-planning-grille {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 16px;
-  align-items: start;
+/* ---------- Planning : calendrier « Semaine type » (PlanningCalendrier.tsx) ---------- */
+/* Socle. framer.css remet `body, input, textarea, select, button` en
+   sans-serif 12px : toutes les commandes du calendrier redéclarent donc leur
+   police et leur taille, sinon les boutons de vue et le select repassent en
+   12px Arial au milieu d'une page en Inter.
+   Z-index plafonnés SOUS 10 (le header fixe du port Framer est à 10) :
+   gouttière d'heures 3, voile 8, panneau de filtre et popover 9. */
+.bg-cal,
+.bg-cal button,
+.bg-cal select,
+.bg-cal input,
+.bg-cal label {
+  font-family: 'Inter', 'Inter Placeholder', sans-serif;
+  font-size: 15px;
 }
-.bg-planning-jour {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  margin: 0 0 12px;
-  padding: 10px 0;
-  background: #fff;
+.bg-cal {
   color: #171717;
-  font-size: 17px;
+  display: block;
+}
+.bg-cal *:focus-visible {
+  outline: 2px solid #376131;
+  outline-offset: 2px;
+}
+
+/* Légende des salles (informative, non cliquable) */
+.bg-cal-legende {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin: 0 0 18px;
+  padding: 0;
+}
+.bg-cal-legende li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14.5px;
+  color: #404040;
+}
+.bg-cal-pastille {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* Piste : en-têtes, rangée sans horaire et grille partagent la même trame de
+   colonnes (gouttière + N jours), pour rester alignées au pixel. */
+.bg-cal-scroller {
+  position: relative;
+}
+.bg-cal-piste {
+  --gout: 60px;
+  --colw: minmax(0, 1fr);
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+}
+.bg-cal-entetes,
+.bg-cal-attente-grille {
+  display: grid;
+  grid-template-columns: var(--gout) repeat(var(--jours), var(--colw));
+}
+.bg-cal-entetes {
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+}
+.bg-cal-gouttiere {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  background: #fff;
+}
+.bg-cal-entete {
+  padding: 12px 6px;
+  text-align: center;
+}
+.bg-cal-jour {
+  display: inline-block;
+  padding: 5px 13px;
+  border-radius: 70px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: -0.01em;
-  border-bottom: 2px solid #376131;
+  color: #171717;
 }
+.bg-cal-jour-actuel {
+  background: #cfe7cb;
+}
+
+/* Créneaux sans horaire : hors axe, entre les en-têtes et la grille */
+.bg-cal-attente {
+  border-bottom: 1px solid #e5e5e5;
+  background: #fafafa;
+  padding: 0 0 11px;
+}
+.bg-cal-attente-titre {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  width: max-content;
+  margin: 0;
+  padding: 9px 12px 7px;
+  color: #8a8a8a;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.bg-cal-attente-gouttiere {
+  background: #fafafa;
+}
+.bg-cal-attente-grille {
+  align-items: start;
+}
+.bg-cal-attente-jour {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0 5px;
+}
+.bg-cal-mini {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  background: #fff;
+  border: 1px dashed #c9c9c9;
+  border-radius: 10px;
+  padding: 7px 9px;
+  cursor: pointer;
+  font-size: 12.5px;
+}
+.bg-cal-mini-nom {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.25;
+}
+.bg-cal-mini-salle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  color: #525252;
+}
+
+/* Grille horaire : positionnement absolu à la minute, converti en pixels par
+   CSS (--hpx = hauteur d'une heure). Les lignes d'heures sont un dégradé
+   répété, pas des cellules : les cours commencent à 9h15 ou 18h30. */
+.bg-cal-corps {
+  --hpx: 66px;
+  display: grid;
+  grid-template-columns: var(--gout) minmax(0, 1fr);
+  /* l'étiquette de la dernière heure est centrée sur la ligne du bas */
+  padding-bottom: 12px;
+}
+.bg-cal-heures {
+  position: sticky;
+}
+.bg-cal-heure {
+  position: absolute;
+  right: 9px;
+  top: calc((var(--h) - var(--debut)) / 60 * var(--hpx));
+  transform: translateY(-50%);
+  font-size: 12.5px;
+  color: #8a8a8a;
+  white-space: nowrap;
+}
+.bg-cal-cols {
+  display: grid;
+  grid-template-columns: repeat(var(--jours), var(--colw));
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #ededed 0,
+    #ededed 1px,
+    transparent 1px,
+    transparent var(--hpx)
+  );
+}
+.bg-cal-col {
+  position: relative;
+  height: calc((var(--fin) - var(--debut)) / 60 * var(--hpx));
+  border-left: 1px solid #ededed;
+}
+.bg-cal-event {
+  position: absolute;
+  box-sizing: border-box;
+  top: calc((var(--min) - var(--debut)) / 60 * var(--hpx));
+  height: calc(var(--dur) / 60 * var(--hpx) - 2px);
+  left: calc(var(--col) / var(--cols) * 100%);
+  width: calc(100% / var(--cols) - 3px);
+  margin-left: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  overflow: hidden;
+  text-align: left;
+  border: none;
+  border-left: 3px solid;
+  border-radius: 8px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 13.5px;
+  animation: bg-cal-fade 160ms ease both;
+}
+.bg-cal-event:hover {
+  filter: brightness(0.97);
+}
+.bg-cal-event > span {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.bg-cal-event-heure {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.bg-cal-event-nom {
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.bg-cal-event-salle,
+.bg-cal-event-duree {
+  font-size: 11.5px;
+  line-height: 1.25;
+  opacity: 0.75;
+}
+/* Plus le cluster est large, plus le bloc est étroit : le contenu se réduit
+   (l'aperçu au survol et le popover donnent le détail complet). */
+.bg-cal-event[data-cols='2'] .bg-cal-event-nom {
+  font-size: 12.5px;
+}
+.bg-cal-event[data-cols='2'] .bg-cal-event-salle {
+  font-size: 10.5px;
+}
+.bg-cal-event[data-cols='3'] .bg-cal-event-heure,
+.bg-cal-event[data-cols='3'] .bg-cal-event-nom,
+.bg-cal-event[data-cols='4'] .bg-cal-event-heure,
+.bg-cal-event[data-cols='4'] .bg-cal-event-nom {
+  font-size: 11.5px;
+}
+
+/* Mobile / tablette : la semaine défile horizontalement, la gouttière d'heures
+   reste collée à gauche sur fond opaque. */
 @media (max-width: 1024px) {
-  .bg-planning-grille {
-    display: flex;
-    gap: 14px;
+  .bg-cal-scroller {
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
     overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    padding-bottom: 6px;
   }
-  .bg-planning-grille::-webkit-scrollbar {
+  .bg-cal-scroller::-webkit-scrollbar {
     display: none;
   }
-  .bg-planning-colonne {
-    flex: 0 0 76vw;
-    min-width: 76vw;
+  .bg-cal-piste {
+    --colw: 172px;
+    width: max-content;
+    min-width: 100%;
+  }
+  .bg-cal-corps {
+    --hpx: 60px;
+  }
+  .bg-cal-col {
     scroll-snap-align: start;
+  }
+  /* vue Jour : une seule colonne, rien à faire défiler */
+  .bg-cal-piste-solo {
+    --colw: minmax(0, 1fr);
+    width: auto;
+    min-width: 0;
+  }
+}
+
+@keyframes bg-cal-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes bg-cal-pop {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bg-cal *,
+  .bg-cal-popover,
+  .bg-cal-popover *,
+  .bg-cal-voile {
+    animation: none !important;
+    transition: none !important;
   }
 }
 

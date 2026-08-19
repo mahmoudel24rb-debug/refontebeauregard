@@ -1,8 +1,8 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import PlanningCalendar from './PlanningCalendar'
-import { PLANNING, type JourPlanning } from './planning'
+import PlanningCalendrier from './PlanningCalendrier'
+import { PLANNING, planningVersCreneaux, type JourPlanning } from './planning'
 import type { CreneauCal } from './planningLayout'
 
 // Page « Planning des cours » (/planning) : planning de la rentrée septembre 2026.
@@ -12,8 +12,12 @@ import type { CreneauCal } from './planningLayout'
 const SHELL = 'framer-xf0KU framer-gbuwA framer-80BYq framer-1eSXM framer-Suf9V framer-fN9WN framer-72rtr7'
 
 export default function PlanningPage(props: { data?: JourPlanning[]; creneaux?: CreneauCal[] }) {
-  const { data } = props
-  const PLANNING_DATA = data && data.length > 0 ? data : PLANNING
+  const { data, creneaux } = props
+  // Repli en cascade : créneaux Payload -> planning Payload converti -> planning statique
+  const CRENEAUX =
+    creneaux && creneaux.length > 0
+      ? creneaux
+      : planningVersCreneaux(data && data.length > 0 ? data : PLANNING)
   return (
     <div id="main">
       <div className="framer-9MYi8 framer-13v9dm1" style={{ minHeight: '100vh', width: 'auto' }}>
@@ -29,7 +33,7 @@ export default function PlanningPage(props: { data?: JourPlanning[]; creneaux?: 
             </section>
 
             <section style={{ maxWidth: 1180, margin: '0 auto', padding: '0 30px 30px' }}>
-              <PlanningCalendar data={PLANNING_DATA} />
+              <PlanningCalendrier creneaux={CRENEAUX} />
             </section>
 
             <section style={{ maxWidth: 1180, margin: '0 auto', padding: '10px 30px 110px' }}>
