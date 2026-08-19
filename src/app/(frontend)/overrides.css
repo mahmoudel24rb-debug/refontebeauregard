@@ -1025,6 +1025,23 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
   }
 }
 
+/* Hub /blog : survol discret des cartes (bordure + ombre, sans deplacement,
+   pour ne pas faire sauter la grille sous le curseur). */
+.bg-blog-carte {
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+.bg-blog-carte:hover {
+  border-color: #cfe7cb !important;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.09);
+}
+@media (prefers-reduced-motion: reduce) {
+  .bg-blog-carte {
+    transition: none;
+  }
+}
+
 /* Corps d'article blog (/blog/[slug]) : typographie du richtext lexical.
    Le port Framer ne stylant pas ces balises, on définit ici la hiérarchie
    complète (H2/H3, listes, citation, image + légende, liens, CTA). */
@@ -1043,8 +1060,49 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
   margin: 32px 0 10px;
   color: #171717;
 }
+.bg-article-body h4 {
+  font-size: clamp(17px, 2vw, 19px);
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 26px 0 8px;
+  color: #171717;
+}
 .bg-article-body p {
   margin: 0 0 18px;
+}
+.bg-article-body strong,
+.bg-article-body b {
+  font-weight: 700;
+  color: #171717;
+}
+.bg-article-body hr {
+  margin: 38px 0;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+.bg-article-body table {
+  width: 100%;
+  margin: 0 0 24px;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+.bg-article-body th,
+.bg-article-body td {
+  padding: 10px 12px;
+  border: 1px solid #e5e5e5;
+  text-align: left;
+  vertical-align: top;
+}
+.bg-article-body th {
+  background: #f4f7f3;
+  font-weight: 700;
+}
+.bg-article-body code {
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: #f2f2f2;
+  color: #374037;
+  font-size: 0.92em;
 }
 .bg-article-body ul,
 .bg-article-body ol {

@@ -59,11 +59,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         <div className={SHELL} style={{ minHeight: '100vh', width: 'auto', display: 'contents' }}>
           <Header />
           <main style={{ background: '#fff', fontFamily: '"Inter", sans-serif' }}>
-            <article style={{ maxWidth: 680, margin: '0 auto', padding: '160px 24px 100px' }}>
+            <article style={{ maxWidth: 760, margin: '0 auto', padding: '140px 24px 100px' }}>
               <a href="/blog" style={{ color: '#376131', fontWeight: 700, textDecoration: 'none', fontSize: 15 }}>← Tous les articles</a>
               {article.datePublication ? <p style={{ color: '#737373', fontSize: 14, margin: '22px 0 10px' }}>{fmtDate(article.datePublication as string)}</p> : null}
               <h1 style={{ fontSize: 'clamp(30px,4.5vw,46px)', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: 1.1, margin: '0 0 26px' }}>{article.titre as string}</h1>
-              {imgUrl ? <img src={imgUrl} alt={article.titre as string} style={{ width: '100%', borderRadius: 16, display: 'block', margin: '0 0 30px' }} /> : null}
+              {/* aspect fixe : la hauteur de l'image de tête ne dépend plus de son
+                  format d'origine, la mise en page reste stable d'un article à l'autre */}
+              {imgUrl ? <img src={imgUrl} alt={article.titre as string} style={{ width: '100%', aspectRatio: '16 / 9', objectFit: 'cover', borderRadius: 16, display: 'block', margin: '0 0 30px' }} /> : null}
               <div className="bg-article-body" style={{ fontSize: 18, lineHeight: 1.8, color: '#2a2a2a' }}>
                 {article.corps ? <RichText data={article.corps as never} /> : null}
               </div>
