@@ -66,7 +66,10 @@ export default function PlanningGrilleTemps({
 
   return (
     <div className="bg-cal-scroller">
-      <div className="bg-cal-piste" style={{ '--jours': jours.length } as React.CSSProperties}>
+      <div
+        className={jours.length === 1 ? 'bg-cal-piste bg-cal-piste-solo' : 'bg-cal-piste'}
+        style={{ '--jours': jours.length } as React.CSSProperties}
+      >
         {/* En-têtes de jours (pas de sticky vertical : la page défile normalement) */}
         <div className="bg-cal-entetes">
           <div className="bg-cal-gouttiere bg-cal-gouttiere-entete" aria-hidden="true" />

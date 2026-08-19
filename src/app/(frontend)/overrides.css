@@ -294,6 +294,193 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
   outline-offset: 2px;
 }
 
+.bg-cal-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Barre d'outils : bascule de vue (+ filtre d'activités) */
+.bg-cal-barre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 16px;
+}
+.bg-cal-vues {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  background: #f2f2f2;
+  border-radius: 70px;
+}
+.bg-cal-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid transparent;
+  border-radius: 70px;
+  background: transparent;
+  color: #404040;
+  font-size: 14.5px;
+  font-weight: 600;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.bg-cal-btn:hover:not(:disabled) {
+  background: #e6e6e6;
+}
+.bg-cal-btn-actif,
+.bg-cal-btn-actif:hover {
+  background: #376131;
+  color: #fff;
+}
+.bg-cal-btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.bg-cal-jours .bg-cal-btn {
+  border-color: #e0e0e0;
+  background: #fff;
+}
+.bg-cal-select-enveloppe {
+  display: none;
+}
+.bg-cal-select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: #fff;
+  color: #171717;
+  font-weight: 600;
+  padding: 11px 14px;
+  cursor: pointer;
+}
+
+/* Vue Jour : pastilles de jours bornées par deux chevrons */
+.bg-cal-jours {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+.bg-cal-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.bg-cal-pill {
+  border: 1px solid #e0e0e0;
+  border-radius: 70px;
+  background: #fff;
+  color: #404040;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+.bg-cal-pill:hover {
+  border-color: #b8ccb4;
+}
+.bg-cal-pill-actif,
+.bg-cal-pill-actif:hover {
+  background: #376131;
+  border-color: #376131;
+  color: #fff;
+}
+.bg-cal-chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  background: #fff;
+  color: #376131;
+  cursor: pointer;
+}
+.bg-cal-chevron:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+/* Vue Liste : une ligne par créneau, seul le lien est interactif */
+.bg-cal-liste-groupe {
+  margin: 0 0 26px;
+}
+.bg-cal-liste-jour {
+  margin: 0 0 8px;
+  padding: 0 0 8px;
+  border-bottom: 2px solid #376131;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.bg-cal-liste-lignes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.bg-cal-liste-ligne {
+  display: grid;
+  grid-template-columns: 104px 10px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 2px;
+  border-bottom: 1px solid #ededed;
+}
+.bg-cal-liste-heure {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #171717;
+  white-space: nowrap;
+}
+.bg-cal-liste-attente .bg-cal-liste-heure {
+  font-size: 13px;
+  font-weight: 600;
+  color: #8a8a8a;
+}
+.bg-cal-liste-nom {
+  font-size: 15.5px;
+  font-weight: 600;
+}
+.bg-cal-liste-meta {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #737373;
+}
+.bg-cal-liste-lien {
+  color: #376131;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.bg-cal-liste-lien:hover {
+  text-decoration: underline;
+}
+.bg-cal-vide {
+  margin: 0;
+  padding: 34px 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  background: #fafafa;
+  color: #525252;
+  text-align: center;
+}
+
 /* Légende des salles (informative, non cliquable) */
 .bg-cal-legende {
   list-style: none;
@@ -550,6 +737,42 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
     --colw: minmax(0, 1fr);
     width: auto;
     min-width: 0;
+  }
+}
+
+/* Sous 760px, la bascule de vue passe en select natif (comme le composant
+   d'origine) : trois boutons ne tiennent pas à côté du filtre. */
+@media (max-width: 760px) {
+  .bg-cal-vues {
+    display: none;
+  }
+  .bg-cal-select-enveloppe {
+    display: block;
+    flex: 1 1 150px;
+  }
+  .bg-cal-liste-ligne {
+    grid-template-columns: 92px 10px 1fr;
+    row-gap: 4px;
+  }
+  .bg-cal-liste-lien {
+    grid-column: 3;
+  }
+  /* les 6 jours défilent entre les deux chevrons, « Aujourd'hui » passe dessous */
+  .bg-cal-pills {
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .bg-cal-pills::-webkit-scrollbar {
+    display: none;
+  }
+  .bg-cal-pill {
+    flex: 0 0 auto;
+  }
+  .bg-cal-jours .bg-cal-btn {
+    margin-left: auto;
   }
 }
 
