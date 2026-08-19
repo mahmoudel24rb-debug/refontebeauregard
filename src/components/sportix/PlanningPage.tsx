@@ -23,7 +23,11 @@ export default function PlanningPage(props: { data?: JourPlanning[]; creneaux?: 
       <div className="framer-9MYi8 framer-13v9dm1" style={{ minHeight: '100vh', width: 'auto' }}>
         <div className={SHELL} style={{ minHeight: '100vh', width: 'auto', display: 'contents' }}>
           <Header />
-          <main style={{ background: '#fff', fontFamily: '"Inter", sans-serif' }}>
+          {/* width/minWidth : le shell Framer place <main> dans un conteneur flex
+              en colonne centré, donc dimensionné sur son contenu. Sans largeur
+              définie, le défilement horizontal du calendrier étirerait toute la
+              page au lieu de rester dans son propre scroller. */}
+          <main style={{ background: '#fff', fontFamily: '"Inter", sans-serif', width: '100%', minWidth: 0 }}>
             <section style={{ maxWidth: 1180, margin: '0 auto', padding: '170px 30px 50px', textAlign: 'center' }}>
               <p style={{ color: '#376131', fontWeight: 700, letterSpacing: '0.04em', textTransform: 'uppercase', fontSize: 14, margin: '0 0 16px' }}>Rentrée septembre 2026</p>
               <h1 style={{ fontSize: 'clamp(34px,5vw,60px)', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: 1.05, margin: '0 0 20px' }}>Planning des cours</h1>

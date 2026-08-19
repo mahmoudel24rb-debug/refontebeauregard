@@ -666,8 +666,9 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
   --colw: minmax(0, 1fr);
   border: 1px solid #e5e5e5;
   border-radius: 14px;
-  overflow: hidden;
   background: #fff;
+  /* PAS d'overflow ici : la piste deviendrait le conteneur de défilement de
+     référence et la gouttière d'heures collée à gauche ne collerait plus. */
 }
 .bg-cal-entetes,
 .bg-cal-attente-grille {
@@ -712,6 +713,7 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
   left: 0;
   z-index: 3;
   width: max-content;
+  background: #fafafa;
   margin: 0;
   padding: 9px 12px 7px;
   color: #8a8a8a;
