@@ -822,18 +822,19 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
   line-height: 1.25;
   opacity: 0.75;
 }
-/* Plus le cluster est large, plus le bloc est étroit : le contenu se réduit
-   (l'aperçu au survol et le popover donnent le détail complet). */
-.bg-cal-event[data-cols='2'] .bg-cal-event-nom {
+/* En vue Semaine, plus le cluster est large, plus le bloc est étroit : le
+   contenu se réduit (l'aperçu au survol et la fiche donnent le détail complet).
+   La vue Jour (.bg-cal-piste-solo) garde la typographie pleine. */
+.bg-cal-piste:not(.bg-cal-piste-solo) .bg-cal-event[data-cols='2'] .bg-cal-event-nom {
   font-size: 12.5px;
 }
-.bg-cal-event[data-cols='2'] .bg-cal-event-salle {
+.bg-cal-piste:not(.bg-cal-piste-solo) .bg-cal-event[data-cols='2'] .bg-cal-event-salle {
   font-size: 10.5px;
 }
-.bg-cal-event[data-cols='3'] .bg-cal-event-heure,
-.bg-cal-event[data-cols='3'] .bg-cal-event-nom,
-.bg-cal-event[data-cols='4'] .bg-cal-event-heure,
-.bg-cal-event[data-cols='4'] .bg-cal-event-nom {
+.bg-cal-piste:not(.bg-cal-piste-solo) .bg-cal-event[data-cols='3'] .bg-cal-event-heure,
+.bg-cal-piste:not(.bg-cal-piste-solo) .bg-cal-event[data-cols='3'] .bg-cal-event-nom,
+.bg-cal-piste:not(.bg-cal-piste-solo) .bg-cal-event[data-cols='4'] .bg-cal-event-heure,
+.bg-cal-piste:not(.bg-cal-piste-solo) .bg-cal-event[data-cols='4'] .bg-cal-event-nom {
   font-size: 11.5px;
 }
 

@@ -154,8 +154,13 @@ export default function PlanningGrilleTemps({
                 {poses.map((p) => {
                   const c = p.creneau
                   const coul = couleurSalle(c.salle)
-                  // 3 colonnes ou plus : la place manque, on garde heure + nom
-                  const compresse = p.cols >= 3
+                  // En vue Semaine, 3 colonnes dans un cluster laissent trop peu
+                  // de largeur : on garde heure + nom. La vue Jour, elle, dispose
+                  // de toute la page, elle affiche toujours le detail.
+                  const compresse = variante === 'compact' && p.cols >= 3
+                  // La plage complete « 18h – 19h » ne tient que si le bloc est
+                  // large : seul, ou a deux dans la colonne pleine page.
+                  const heurePleine = p.cols === 1 || (variante === 'detailed' && p.cols === 2)
                   return (
                     <button
                       key={c.id}
@@ -176,19 +181,17 @@ export default function PlanningGrilleTemps({
                       }
                     >
                       <span className="bg-cal-event-heure">
-                        {p.cols === 1
+                        {heurePleine
                           ? `${formatHeure(p.debut)} – ${formatFin(p.debut, c.duree)}`
                           : formatHeure(p.debut)}
+                        {variante === 'detailed' && heurePleine ? ` · ${formatDuree(c.duree)}` : ''}
                       </span>
                       <span className="bg-cal-event-nom">{c.cours}</span>
                       {compresse ? null : (
                         <span className="bg-cal-event-salle">
-                          {p.cols === 1 ? c.salle : c.salle.replace(/^Salle /, '')}
+                          {heurePleine ? c.salle : c.salle.replace(/^Salle /, '')}
                         </span>
                       )}
-                      {variante === 'detailed' && p.cols === 1 ? (
-                        <span className="bg-cal-event-duree">{formatDuree(c.duree)}</span>
-                      ) : null}
                     </button>
                   )
                 })}
