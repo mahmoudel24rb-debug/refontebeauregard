@@ -1,9 +1,17 @@
 'use client'
 
 import React, { useEffect, useMemo, useRef, useState } from 'react'
+import PlanningFiltreActivites from './PlanningFiltreActivites'
 import PlanningGrilleTemps from './PlanningGrilleTemps'
 import PlanningListe from './PlanningListe'
-import { JOURS, bornesAxe, couleurSalle, rangSalle, type CreneauCal } from './planningLayout'
+import {
+  JOURS,
+  activitesDisponibles,
+  bornesAxe,
+  couleurSalle,
+  rangSalle,
+  type CreneauCal,
+} from './planningLayout'
 
 // Calendrier « Semaine type » de /planning.
 //
@@ -32,6 +40,12 @@ function sallesDe(creneaux: CreneauCal[]): string[] {
   return vues.sort((a, b) => rangSalle(a) - rangSalle(b) || a.localeCompare(b, 'fr'))
 }
 
+const Croix = () => (
+  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" aria-hidden="true">
+    <path d="M6 6l12 12M18 6 6 18" />
+  </svg>
+)
+
 const Chevron = ({ sens }: { sens: 'gauche' | 'droite' }) => (
   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <path d={sens === 'gauche' ? 'M15 5 8 12l7 7' : 'm9 5 7 7-7 7'} />
@@ -57,6 +71,15 @@ export default function PlanningCalendrier({ creneaux }: PlanningCalendrierProps
     if (window.matchMedia('(max-width: 1024px)').matches) setVue('jour')
   }, [])
 
+  // Filtre : sélection vide = tout visible. Les bornes de l'axe et la légende
+  // restent calculées sur l'ENSEMBLE des créneaux, pour que la grille ne se
+  // réorganise pas sous les yeux du visiteur quand il coche une activité.
+  const [activites, setActivites] = useState<string[]>([])
+  const filtres = useMemo(
+    () => (activites.length ? creneaux.filter((c) => activites.includes(c.cours)) : creneaux),
+    [creneaux, activites],
+  )
+  const toutesActivites = useMemo(() => activitesDisponibles(creneaux), [creneaux])
   const bornes = useMemo(() => bornesAxe(creneaux), [creneaux])
   const salles = useMemo(() => sallesDe(creneaux), [creneaux])
 
@@ -112,7 +135,34 @@ export default function PlanningCalendrier({ creneaux }: PlanningCalendrierProps
             ))}
           </select>
         </label>
+
+        <PlanningFiltreActivites
+          activites={toutesActivites}
+          selection={activites}
+          onChange={setActivites}
+        />
       </div>
+
+      {activites.length > 0 && (
+        <div className="bg-cal-actifs">
+          <span className="bg-cal-actifs-titre">Filtres actifs :</span>
+          {activites.map((a) => (
+            <span key={a} className="bg-cal-badge">
+              {a}
+              <button
+                type="button"
+                aria-label={`Retirer le filtre ${a}`}
+                onClick={() => setActivites((s) => s.filter((x) => x !== a))}
+              >
+                <Croix />
+              </button>
+            </span>
+          ))}
+          <button type="button" className="bg-cal-reset" onClick={() => setActivites([])}>
+            Tout afficher
+          </button>
+        </div>
+      )}
 
       {vue === 'jour' && (
         <div className="bg-cal-jours">
@@ -172,11 +222,11 @@ export default function PlanningCalendrier({ creneaux }: PlanningCalendrierProps
       </ul>
 
       {vue === 'liste' ? (
-        <PlanningListe jours={JOURS} creneaux={creneaux} />
+        <PlanningListe jours={JOURS} creneaux={filtres} />
       ) : (
         <PlanningGrilleTemps
           jours={vue === 'jour' ? [jourActif] : JOURS}
-          creneaux={creneaux}
+          creneaux={filtres}
           bornes={bornes}
           aujourdhui={aujourdhui}
           variante={vue === 'jour' ? 'detailed' : 'compact'}
