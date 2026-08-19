@@ -34,6 +34,12 @@ export type PlanningGrilleTempsProps = {
   aujourdhui?: string | null
   /** « compact » = blocs de la semaine, « detailed » = vue Jour. */
   variante?: 'compact' | 'detailed'
+  /** Ouvre la fiche épinglée (clic ou Entrée). */
+  onOuvrir?: (creneau: CreneauCal, ancre: HTMLElement) => void
+  /** Aperçu au survol : élément survolé, ou null quand le pointeur sort. */
+  onApercu?: (creneau: CreneauCal | null, ancre: HTMLElement | null) => void
+  /** Identifiant du créneau dont la fiche est ouverte. */
+  ouvertId?: string | null
 }
 
 const heuresDeAxe = (debut: number, fin: number) => {
@@ -55,7 +61,19 @@ export default function PlanningGrilleTemps({
   bornes,
   aujourdhui = null,
   variante = 'compact',
+  onOuvrir,
+  onApercu,
+  ouvertId = null,
 }: PlanningGrilleTempsProps) {
+  // Attributs communs aux blocs et aux mini-cartes : chacun ouvre la même fiche.
+  const interactions = (c: CreneauCal) => ({
+    'aria-haspopup': 'dialog' as const,
+    'aria-expanded': ouvertId === c.id,
+    'aria-label': libelleBloc(c),
+    onClick: (e: React.MouseEvent<HTMLButtonElement>) => onOuvrir?.(c, e.currentTarget),
+    onMouseEnter: (e: React.MouseEvent<HTMLButtonElement>) => onApercu?.(c, e.currentTarget),
+    onMouseLeave: () => onApercu?.(null, null),
+  })
   const axe = bornes ?? bornesAxe(creneaux)
   const heures = heuresDeAxe(axe.debut, axe.fin)
   const parJour = jours.map((jour) => {
@@ -97,7 +115,7 @@ export default function PlanningGrilleTemps({
                         key={c.id}
                         type="button"
                         className="bg-cal-mini"
-                        aria-label={libelleBloc(c)}
+                        {...interactions(c)}
                         style={{ borderColor: coul.pleine, color: coul.texte } as React.CSSProperties}
                       >
                         <span className="bg-cal-mini-nom">{c.cours}</span>
@@ -144,7 +162,7 @@ export default function PlanningGrilleTemps({
                       type="button"
                       className="bg-cal-event"
                       data-cols={p.cols}
-                      aria-label={libelleBloc(c)}
+                      {...interactions(c)}
                       style={
                         {
                           '--min': p.debut,

@@ -927,6 +927,97 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
   }
 }
 
+/* Fiche d'un créneau : aperçu au survol ou fiche épinglée. Positionnée en
+   `fixed` (la grille défile horizontalement, un absolu y serait rogné). */
+.bg-cal-popover {
+  position: fixed;
+  z-index: 9;
+  width: 268px;
+  max-width: calc(100vw - 20px);
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.14);
+  padding: 16px 18px;
+  font-family: 'Inter', 'Inter Placeholder', sans-serif;
+  animation: bg-cal-pop 160ms ease both;
+}
+.bg-cal-popover-apercu {
+  pointer-events: none;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.11);
+}
+.bg-cal-pop-titre {
+  margin: 0 0 4px;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #171717;
+}
+.bg-cal-pop-heure {
+  margin: 0 0 10px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #376131;
+}
+.bg-cal-pop-salle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 3px;
+  font-size: 14px;
+  color: #404040;
+}
+.bg-cal-pop-recurrence {
+  margin: 0;
+  font-size: 13.5px;
+  color: #8a8a8a;
+}
+.bg-cal-pop-cta {
+  display: inline-block;
+  margin: 14px 0 0;
+  padding: 10px 18px;
+  border-radius: 70px;
+  background: #376131;
+  color: #fff;
+  font-size: 14.5px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.bg-cal-pop-fermer {
+  display: block;
+  margin: 10px 0 0;
+  border: none;
+  background: none;
+  color: #737373;
+  font-family: 'Inter', 'Inter Placeholder', sans-serif;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 4px 0;
+  cursor: pointer;
+}
+.bg-cal-pop-fermer:hover {
+  color: #171717;
+}
+.bg-cal-voile {
+  position: fixed;
+  inset: 0;
+  z-index: 8;
+  background: rgba(15, 23, 18, 0.42);
+  animation: bg-cal-fade 160ms ease both;
+}
+/* Petit écran : la fiche épinglée devient une feuille basse */
+.bg-cal-popover-feuille {
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  max-width: none;
+  border-radius: 18px 18px 0 0;
+  padding: 20px 22px 26px;
+}
+
 @keyframes bg-cal-fade {
   from {
     opacity: 0;

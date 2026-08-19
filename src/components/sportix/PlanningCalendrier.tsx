@@ -4,6 +4,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react'
 import PlanningFiltreActivites from './PlanningFiltreActivites'
 import PlanningGrilleTemps from './PlanningGrilleTemps'
 import PlanningListe from './PlanningListe'
+import PlanningPopover, { type ModePopover } from './PlanningPopover'
 import {
   JOURS,
   activitesDisponibles,
@@ -82,6 +83,55 @@ export default function PlanningCalendrier({ creneaux }: PlanningCalendrierProps
   const toutesActivites = useMemo(() => activitesDisponibles(creneaux), [creneaux])
   const bornes = useMemo(() => bornesAxe(creneaux), [creneaux])
   const salles = useMemo(() => sallesDe(creneaux), [creneaux])
+
+  // Fiche de créneau : une seule ouverte à la fois. L'aperçu au survol attend
+  // 250 ms (le pointeur qui traverse la grille ne doit pas la faire clignoter)
+  // et ne s'active qu'avec une vraie souris.
+  const [fiche, setFiche] = useState<{
+    creneau: CreneauCal
+    rect: { top: number; left: number; bottom: number; width: number }
+    mode: ModePopover
+  } | null>(null)
+  const ancre = useRef<HTMLElement | null>(null)
+  const minuterie = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  const annulerMinuterie = () => {
+    if (minuterie.current) clearTimeout(minuterie.current)
+    minuterie.current = null
+  }
+  useEffect(() => annulerMinuterie, [])
+
+  const rectDe = (el: HTMLElement) => {
+    const r = el.getBoundingClientRect()
+    return { top: r.top, left: r.left, bottom: r.bottom, width: r.width }
+  }
+
+  const ouvrirFiche = (creneau: CreneauCal, el: HTMLElement) => {
+    annulerMinuterie()
+    ancre.current = el
+    setFiche({ creneau, rect: rectDe(el), mode: 'epingle' })
+  }
+
+  const survolerFiche = (creneau: CreneauCal | null, el: HTMLElement | null) => {
+    annulerMinuterie()
+    if (fiche?.mode === 'epingle') return
+    if (!creneau || !el) {
+      setFiche(null)
+      return
+    }
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return
+    minuterie.current = setTimeout(
+      () => setFiche({ creneau, rect: rectDe(el), mode: 'apercu' }),
+      250,
+    )
+  }
+
+  const fermerFiche = (rendreLeFocus: boolean) => {
+    annulerMinuterie()
+    setFiche(null)
+    if (rendreLeFocus) ancre.current?.focus()
+    ancre.current = null
+  }
 
   const indexJour = JOURS.indexOf(jourActif)
   const allerAuJour = (delta: number) => {
@@ -230,6 +280,18 @@ export default function PlanningCalendrier({ creneaux }: PlanningCalendrierProps
           bornes={bornes}
           aujourdhui={aujourdhui}
           variante={vue === 'jour' ? 'detailed' : 'compact'}
+          onOuvrir={ouvrirFiche}
+          onApercu={survolerFiche}
+          ouvertId={fiche?.mode === 'epingle' ? fiche.creneau.id : null}
+        />
+      )}
+
+      {fiche && (
+        <PlanningPopover
+          creneau={fiche.creneau}
+          rect={fiche.rect}
+          mode={fiche.mode}
+          onFermer={fermerFiche}
         />
       )}
     </section>
