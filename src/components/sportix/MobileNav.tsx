@@ -7,26 +7,11 @@ import { useEffect, useState } from 'react'
 // Ce composant client, monté une fois dans le layout, câble tous les burgers
 // présents (un par variante de header) et affiche un overlay plein écran.
 
-const LINKS: { label: string; href: string; sub?: { label: string; href: string }[] }[] = [
+// Menu plat : plus aucun sous-menu, ni ici ni dans le header desktop.
+const LINKS: { label: string; href: string }[] = [
   { label: 'Accueil', href: '/' },
-  {
-    label: 'Nos espaces',
-    href: '/espaces',
-    sub: [
-      { label: 'Nos espaces', href: '/espaces' },
-      { label: 'Entraînement fonctionnel', href: '/espaces/fonctionnel' },
-      { label: 'Cross / Cardio', href: '/espaces/cross-cardio' },
-      { label: 'Location de terrain', href: '/location-de-terrain' },
-    ],
-  },
-  {
-    label: 'Nos cours',
-    href: '/cours',
-    sub: [
-      { label: 'Tous les cours', href: '/cours' },
-      { label: 'Coaching', href: '/coaching' },
-    ],
-  },
+  { label: 'Nos espaces', href: '/espaces' },
+  { label: 'Nos cours', href: '/cours' },
   { label: 'Tarifs', href: '/tarifs' },
   { label: 'Planning', href: '/planning' },
   { label: 'Événements', href: '/evenements' },
@@ -117,42 +102,22 @@ export default function MobileNav() {
 
       <nav style={{ marginTop: 24, display: 'flex', flexDirection: 'column', gap: 4 }}>
         {LINKS.map((l) => (
-          <div key={l.href}>
-            <a
-              href={l.href}
-              onClick={() => setOpen(false)}
-              style={{
-                display: 'block',
-                color: '#fff',
-                fontSize: 30,
-                fontWeight: 700,
-                letterSpacing: '-0.02em',
-                textDecoration: 'none',
-                padding: '14px 0',
-              }}
-            >
-              {l.label}
-            </a>
-            {l.sub && (
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 2, paddingLeft: 4, marginBottom: 6 }}>
-                {l.sub.map((s) => (
-                  <a
-                    key={s.href}
-                    href={s.href}
-                    onClick={() => setOpen(false)}
-                    style={{
-                      color: 'rgba(255,255,255,0.65)',
-                      fontSize: 17,
-                      textDecoration: 'none',
-                      padding: '7px 0',
-                    }}
-                  >
-                    {s.label}
-                  </a>
-                ))}
-              </div>
-            )}
-          </div>
+          <a
+            key={l.href}
+            href={l.href}
+            onClick={() => setOpen(false)}
+            style={{
+              display: 'block',
+              color: '#fff',
+              fontSize: 30,
+              fontWeight: 700,
+              letterSpacing: '-0.02em',
+              textDecoration: 'none',
+              padding: '14px 0',
+            }}
+          >
+            {l.label}
+          </a>
         ))}
       </nav>
 
@@ -164,7 +129,7 @@ export default function MobileNav() {
           marginBottom: 12,
           display: 'block',
           textAlign: 'center',
-          background: '#1f5e3a',
+          background: '#376131',
           color: '#fff',
           fontWeight: 700,
           fontSize: 18,

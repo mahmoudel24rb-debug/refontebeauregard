@@ -30,6 +30,18 @@ export default function EspaceDetail({ espace, autres = [] }: { espace: EspaceDo
                 <a href="/espaces" style={{ color: '#376131', fontWeight: 700, textDecoration: 'none', fontSize: 15 }}>← Tous les espaces</a>
                 <h2 style={{ fontSize: 'clamp(24px,3vw,34px)', fontWeight: 700, letterSpacing: '-0.02em', margin: '20px 0 18px' }}>Présentation</h2>
                 <p style={{ color: '#404040', fontSize: 19, lineHeight: 1.75, margin: 0, whiteSpace: 'pre-line' }}>{espace.description}</p>
+                {/* L'espace Cours Collectifs accueille les 9 cours : on renvoie
+                    explicitement vers leur page, la fiche ne les detaille pas. */}
+                {espace.slug === 'cours-collectifs' && (
+                  <p style={{ margin: '26px 0 0' }}>
+                    <a
+                      href="/cours"
+                      style={{ display: 'inline-block', background: '#376131', color: '#fff', fontWeight: 700, fontSize: 16, textDecoration: 'none', padding: '15px 30px', borderRadius: 70 }}
+                    >
+                      Voir les 9 cours collectifs →
+                    </a>
+                  </p>
+                )}
               </div>
               <aside style={{ background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 16, padding: 30 }}>
                 <h3 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 18px' }}>Infos pratiques</h3>

@@ -6,7 +6,7 @@ const PHONE = /^(?:0|\+33 ?|0?0?33 ?|)([1-9] ?(?:[0-9] ?){8})$/
 const EMAIL = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
 
 type Field = 'prenom' | 'nom' | 'telephone' | 'email' | 'message'
-const EMPTY = { prenom: '', nom: '', telephone: '', email: '', message: '', website: '' }
+const EMPTY = { prenom: '', nom: '', telephone: '', email: '', message: '', activite: '', website: '' }
 
 function getUTM(): Record<string, string> | null {
   if (typeof document === 'undefined') return null
@@ -23,14 +23,18 @@ const labelStyle: React.CSSProperties = { fontSize: 14, fontWeight: 600, color: 
 const inputStyle: React.CSSProperties = { width: '100%', padding: '14px 16px', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 10, fontSize: 15, fontFamily: 'inherit', boxSizing: 'border-box' }
 const errStyle: React.CSSProperties = { color: '#c0392b', fontSize: 13, marginTop: 5, display: 'block' }
 
-export default function ContactForm() {
+// `activites` n'est fourni QUE par la page Séance d'essai : sans la prop, le
+// formulaire de contact reste strictement identique.
+export default function ContactForm({ activites }: { activites?: string[] } = {}) {
   const [v, setV] = useState(EMPTY)
   const [errors, setErrors] = useState<Partial<Record<Field, string>>>({})
   const [sending, setSending] = useState(false)
   const [sent, setSent] = useState(false)
 
-  const set = (k: keyof typeof EMPTY) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
-    setV((s) => ({ ...s, [k]: e.target.value }))
+  const set =
+    (k: keyof typeof EMPTY) =>
+    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
+      setV((s) => ({ ...s, [k]: e.target.value }))
 
   const validate = () => {
     const er: Partial<Record<Field, string>> = {}
@@ -117,6 +121,28 @@ export default function ContactForm() {
         {TextField({ f: 'telephone', label: 'Téléphone', type: 'tel', autoComplete: 'tel', placeholder: '06 12 34 56 78' })}
         {TextField({ f: 'email', label: 'Email', type: 'email', autoComplete: 'email', placeholder: 'votre@email.com' })}
       </div>
+
+      {activites && activites.length > 0 && (
+        <div style={{ marginTop: 18 }}>
+          <label htmlFor="cf-activite" style={labelStyle}>
+            Quelle activité vous intéresse ? (optionnel)
+          </label>
+          <select
+            id="cf-activite"
+            name="activite"
+            value={v.activite}
+            onChange={set('activite')}
+            style={{ ...inputStyle, appearance: 'auto', cursor: 'pointer' }}
+          >
+            <option value="">Je ne sais pas encore</option>
+            {activites.map((a) => (
+              <option key={a} value={a}>
+                {a}
+              </option>
+            ))}
+          </select>
+        </div>
+      )}
 
       <div style={{ marginTop: 18 }}>
         {TextField({ f: 'message', label: 'Votre message', placeholder: 'Votre message…' })}

@@ -36,76 +36,53 @@ footer [data-framer-name='Link Wrapper'] .framer-text {
   }
 }
 
-/* ---------- Sous-menus header (Nos espaces / Nos cours) ---------- */
-/* Le lien nav qui contient un sous-menu devient ancre de positionnement + chevron. */
-[data-framer-name='Navigation Link']:has([data-bg-submenu]) {
-  position: relative;
+/* Footer mobile : les 5 colonnes de liens sont posées en flex avec des
+   min-width hétérogènes (80/120/280/240/100px), d'où un empilement irrégulier
+   2/1/1/1. On les remet en grille régulière, la 5e passant proprement dessous.
+   Ciblage par data-framer-name (stable), jamais par classe hashée. */
+@media (max-width: 991.98px) {
+  footer [data-framer-name='Nav Links Columns'] {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 24px;
+    align-items: start;
+    width: 100%;
+  }
+  footer [data-framer-name='Nav Links Columns'] > div {
+    min-width: 0 !important;
+    max-width: none !important;
+    flex: initial !important;
+    width: auto !important;
+  }
 }
-[data-framer-name='Navigation Link']:has([data-bg-submenu]) a[href='/espaces']::after,
-[data-framer-name='Navigation Link']:has([data-bg-submenu]) a[href='/cours']::after {
-  content: '';
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-left: 7px;
-  border-right: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  transform: rotate(45deg) translate(-1px, -2px);
-  transition: transform 0.15s ease;
+/* Sous 480px, deux colonnes de liens deviennent trop serrées. */
+@media (max-width: 479.98px) {
+  footer [data-framer-name='Nav Links Columns'] {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
 }
-[data-framer-name='Navigation Link']:has([data-bg-submenu]):hover a[href='/espaces']::after,
-[data-framer-name='Navigation Link']:has([data-bg-submenu]):hover a[href='/cours']::after {
-  transform: rotate(225deg) translate(-1px, -1px);
-}
-/* Panneau déroulant — valeurs EXACTES extraites de la dropdown Sportix :
-   carte blanche, radius 10px, padding 30px, pas d'ombre, liens gris #404040 16px/400. */
-[data-bg-submenu] {
-  position: absolute;
-  top: calc(100% + 14px);
-  left: 50%;
-  transform: translateX(-50%) translateY(6px);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  min-width: 210px;
-  padding: 30px;
-  z-index: 200;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: none;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 0.16s ease, transform 0.16s ease;
-}
-/* pont de survol transparent entre le lien et la carte (pas de coupure) */
-[data-bg-submenu]::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -16px;
-  height: 16px;
-}
-[data-framer-name='Navigation Link']:hover [data-bg-submenu] {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  transform: translateX(-50%) translateY(0);
-}
-[data-bg-submenu] a {
-  font-family: 'Inter', 'Inter Placeholder', sans-serif;
-  color: rgb(0, 0, 0);
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: -0.48px;
-  line-height: 17.6px;
-  white-space: nowrap;
-  text-decoration: none;
-  transition: opacity 0.12s ease;
-}
-[data-bg-submenu] a:hover {
-  opacity: 0.55;
+
+/* ---------- Hero mobile : les deux boutons ---------- */
+/* framer.css borne les deux conteneurs de boutons du hero à max-width:199px
+   (min-width identique), ce qui donne sur mobile deux boutons étroits alignés
+   à gauche, empilés de travers. Sous 992px on les passe pleine largeur, l'un
+   sous l'autre. Le wrapper est ciblé par data-framer-name, scopé au hero (ce
+   nom sert aussi ailleurs) ; les deux conteneurs n'ont pas de data-framer-name,
+   d'où les classes hachées. Desktop et tablette larges restent inchangés. */
+@media (max-width: 991.98px) {
+  [data-framer-name='Hero Banner Section'] [data-framer-name='Button Wrapper'] {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  [data-framer-name='Hero Banner Section'] .framer-1c3uda1-container,
+  [data-framer-name='Hero Banner Section'] .framer-147oupp-container {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
 }
 
 /* Tarifs : onglets Mensuel / Courtes durées, 5 cartes en 3+2 chacun.
@@ -270,47 +247,799 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
   outline-offset: 3px;
 }
 
-/* ---------- Planning : calendrier hebdomadaire (PlanningCalendar.tsx) ---------- */
-/* Desktop : 6 colonnes de jours. Mobile/tablette : le conteneur défile
-   horizontalement, une colonne occupe 76vw et s'aimante au scroll. */
-.bg-planning-grille {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 16px;
-  align-items: start;
+/* ---------- Planning : calendrier « Semaine type » (PlanningCalendrier.tsx) ---------- */
+/* Socle. framer.css remet `body, input, textarea, select, button` en
+   sans-serif 12px : toutes les commandes du calendrier redéclarent donc leur
+   police et leur taille, sinon les boutons de vue et le select repassent en
+   12px Arial au milieu d'une page en Inter.
+   Z-index plafonnés SOUS 10 (le header fixe du port Framer est à 10) :
+   gouttière d'heures 3, voile 8, panneau de filtre et popover 9. */
+.bg-cal,
+.bg-cal button,
+.bg-cal select,
+.bg-cal input,
+.bg-cal label {
+  font-family: 'Inter', 'Inter Placeholder', sans-serif;
+  font-size: 15px;
 }
-.bg-planning-jour {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  margin: 0 0 12px;
-  padding: 10px 0;
+.bg-cal {
+  color: #171717;
+  display: block;
+}
+.bg-cal *:focus-visible {
+  outline: 2px solid #376131;
+  outline-offset: 2px;
+}
+
+.bg-cal-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Barre d'outils : bascule de vue (+ filtre d'activités) */
+.bg-cal-barre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 16px;
+}
+.bg-cal-vues {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  background: #f2f2f2;
+  border-radius: 70px;
+}
+.bg-cal-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid transparent;
+  border-radius: 70px;
+  background: transparent;
+  color: #404040;
+  font-size: 14.5px;
+  font-weight: 600;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.bg-cal-btn:hover:not(:disabled) {
+  background: #e6e6e6;
+}
+.bg-cal-btn-actif,
+.bg-cal-btn-actif:hover {
+  background: #376131;
+  color: #fff;
+}
+.bg-cal-btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.bg-cal-jours .bg-cal-btn {
+  border-color: #e0e0e0;
+  background: #fff;
+}
+.bg-cal-select-enveloppe {
+  display: none;
+}
+.bg-cal-select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
   background: #fff;
   color: #171717;
+  font-weight: 600;
+  padding: 11px 14px;
+  cursor: pointer;
+}
+
+/* Filtre par activité : déclencheur pilule + panneau à cases natives */
+.bg-cal-btn-bordure {
+  border-color: #e0e0e0;
+  background: #fff;
+}
+.bg-cal-btn-marque {
+  border-color: #376131;
+  color: #376131;
+}
+.bg-cal-compteur {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 70px;
+  background: #376131;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+.bg-cal-filtre {
+  position: relative;
+}
+.bg-cal-panneau {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 9;
+  width: 268px;
+  max-height: 340px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  animation: bg-cal-pop 160ms ease both;
+}
+.bg-cal-panneau-titre {
+  margin: 2px 0 8px;
+  padding: 0 6px;
+  color: #737373;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.bg-cal-panneau-liste {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.bg-cal-case {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.bg-cal-case:hover {
+  background: #f4f7f3;
+}
+.bg-cal-case input {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  accent-color: #376131;
+  cursor: pointer;
+}
+.bg-cal-case-nom {
+  flex: 1;
+  font-size: 14.5px;
+}
+.bg-cal-case-total {
+  color: #8a8a8a;
+  font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
+}
+.bg-cal-panneau-pied {
+  width: 100%;
+  margin-top: 8px;
+  border: none;
+  border-top: 1px solid #ededed;
+  border-radius: 0;
+  background: none;
+  color: #376131;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 11px 6px 4px;
+  text-align: left;
+  cursor: pointer;
+}
+.bg-cal-panneau-pied:disabled {
+  color: #b0b0b0;
+  cursor: default;
+}
+
+/* Bandeau des filtres actifs : un badge retirable par activité */
+.bg-cal-actifs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+.bg-cal-actifs-titre {
+  color: #737373;
+  font-size: 13.5px;
+}
+.bg-cal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 8px 5px 13px;
+  border-radius: 70px;
+  background: #eaf1e8;
+  color: #24401f;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+.bg-cal-badge button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 19px;
+  height: 19px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(55, 97, 49, 0.12);
+  color: #24401f;
+  cursor: pointer;
+  padding: 0;
+}
+.bg-cal-badge button:hover {
+  background: rgba(55, 97, 49, 0.24);
+}
+.bg-cal-reset {
+  border: none;
+  background: none;
+  color: #376131;
+  font-size: 13.5px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 4px 2px;
+  cursor: pointer;
+}
+
+/* Vue Jour : pastilles de jours bornées par deux chevrons */
+.bg-cal-jours {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+.bg-cal-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.bg-cal-pill {
+  border: 1px solid #e0e0e0;
+  border-radius: 70px;
+  background: #fff;
+  color: #404040;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+.bg-cal-pill:hover {
+  border-color: #b8ccb4;
+}
+.bg-cal-pill-actif,
+.bg-cal-pill-actif:hover {
+  background: #376131;
+  border-color: #376131;
+  color: #fff;
+}
+.bg-cal-chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  background: #fff;
+  color: #376131;
+  cursor: pointer;
+}
+.bg-cal-chevron:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+/* Vue Liste : une ligne par créneau, seul le lien est interactif */
+.bg-cal-liste-groupe {
+  margin: 0 0 26px;
+}
+.bg-cal-liste-jour {
+  margin: 0 0 8px;
+  padding: 0 0 8px;
+  border-bottom: 2px solid #376131;
   font-size: 17px;
   font-weight: 700;
   letter-spacing: -0.01em;
-  border-bottom: 2px solid #376131;
 }
+.bg-cal-liste-lignes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.bg-cal-liste-ligne {
+  display: grid;
+  grid-template-columns: 104px 10px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 2px;
+  border-bottom: 1px solid #ededed;
+}
+.bg-cal-liste-heure {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #171717;
+  white-space: nowrap;
+}
+.bg-cal-liste-attente .bg-cal-liste-heure {
+  font-size: 13px;
+  font-weight: 600;
+  color: #8a8a8a;
+}
+.bg-cal-liste-nom {
+  font-size: 15.5px;
+  font-weight: 600;
+}
+.bg-cal-liste-meta {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #737373;
+}
+.bg-cal-liste-lien {
+  color: #376131;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.bg-cal-liste-lien:hover {
+  text-decoration: underline;
+}
+.bg-cal-vide {
+  margin: 0;
+  padding: 34px 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  background: #fafafa;
+  color: #525252;
+  text-align: center;
+}
+
+/* Légende des salles (informative, non cliquable) */
+.bg-cal-legende {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin: 0 0 18px;
+  padding: 0;
+}
+.bg-cal-legende li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14.5px;
+  color: #404040;
+}
+.bg-cal-pastille {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* Piste : en-têtes, rangée sans horaire et grille partagent la même trame de
+   colonnes (gouttière + N jours), pour rester alignées au pixel. */
+.bg-cal-scroller {
+  position: relative;
+}
+.bg-cal-piste {
+  --gout: 60px;
+  --colw: minmax(0, 1fr);
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  background: #fff;
+  /* PAS d'overflow ici : la piste deviendrait le conteneur de défilement de
+     référence et la gouttière d'heures collée à gauche ne collerait plus. */
+}
+.bg-cal-entetes,
+.bg-cal-attente-grille {
+  display: grid;
+  grid-template-columns: var(--gout) repeat(var(--jours), var(--colw));
+}
+.bg-cal-entetes {
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+}
+.bg-cal-gouttiere {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  background: #fff;
+}
+.bg-cal-entete {
+  padding: 12px 6px;
+  text-align: center;
+}
+.bg-cal-jour {
+  display: inline-block;
+  padding: 5px 13px;
+  border-radius: 70px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #171717;
+}
+.bg-cal-jour-actuel {
+  background: #cfe7cb;
+}
+
+/* Créneaux sans horaire : hors axe, entre les en-têtes et la grille */
+.bg-cal-attente {
+  border-bottom: 1px solid #e5e5e5;
+  background: #fafafa;
+  padding: 0 0 11px;
+}
+.bg-cal-attente-titre {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  width: max-content;
+  background: #fafafa;
+  margin: 0;
+  padding: 9px 12px 7px;
+  color: #8a8a8a;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.bg-cal-attente-gouttiere {
+  background: #fafafa;
+}
+.bg-cal-attente-grille {
+  align-items: start;
+}
+.bg-cal-attente-jour {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0 5px;
+}
+.bg-cal-mini {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  background: #fff;
+  border: 1px dashed #c9c9c9;
+  border-radius: 10px;
+  padding: 7px 9px;
+  cursor: pointer;
+  font-size: 12.5px;
+}
+.bg-cal-mini-nom {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.25;
+}
+.bg-cal-mini-salle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  color: #525252;
+}
+
+/* Grille horaire : positionnement absolu à la minute, converti en pixels par
+   CSS (--hpx = hauteur d'une heure). Les lignes d'heures sont un dégradé
+   répété, pas des cellules : les cours commencent à 9h15 ou 18h30. */
+.bg-cal-corps {
+  --hpx: 66px;
+  display: grid;
+  grid-template-columns: var(--gout) minmax(0, 1fr);
+  /* l'étiquette de la dernière heure est centrée sur la ligne du bas */
+  padding-bottom: 12px;
+}
+.bg-cal-heures {
+  position: sticky;
+}
+.bg-cal-heure {
+  position: absolute;
+  right: 9px;
+  top: calc((var(--h) - var(--debut)) / 60 * var(--hpx));
+  transform: translateY(-50%);
+  font-size: 12.5px;
+  color: #8a8a8a;
+  white-space: nowrap;
+}
+.bg-cal-cols {
+  display: grid;
+  grid-template-columns: repeat(var(--jours), var(--colw));
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #ededed 0,
+    #ededed 1px,
+    transparent 1px,
+    transparent var(--hpx)
+  );
+}
+.bg-cal-col {
+  position: relative;
+  height: calc((var(--fin) - var(--debut)) / 60 * var(--hpx));
+  border-left: 1px solid #ededed;
+}
+.bg-cal-event {
+  position: absolute;
+  box-sizing: border-box;
+  top: calc((var(--min) - var(--debut)) / 60 * var(--hpx));
+  height: calc(var(--dur) / 60 * var(--hpx) - 2px);
+  left: calc(var(--col) / var(--cols) * 100%);
+  width: calc(100% / var(--cols) - 3px);
+  margin-left: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  overflow: hidden;
+  text-align: left;
+  border: none;
+  border-left: 3px solid;
+  border-radius: 8px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 13.5px;
+  animation: bg-cal-fade 160ms ease both;
+}
+.bg-cal-event:hover {
+  filter: brightness(0.97);
+}
+.bg-cal-event > span {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.bg-cal-event-heure {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.bg-cal-event-nom {
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.bg-cal-event-salle,
+.bg-cal-event-duree {
+  font-size: 11.5px;
+  line-height: 1.25;
+  opacity: 0.75;
+}
+/* En vue Semaine, plus le cluster est large, plus le bloc est étroit : le
+   contenu se réduit (l'aperçu au survol et la fiche donnent le détail complet).
+   La vue Jour (.bg-cal-piste-solo) garde la typographie pleine. */
+.bg-cal-piste:not(.bg-cal-piste-solo) .bg-cal-event[data-cols='2'] .bg-cal-event-nom {
+  font-size: 12.5px;
+}
+.bg-cal-piste:not(.bg-cal-piste-solo) .bg-cal-event[data-cols='2'] .bg-cal-event-salle {
+  font-size: 10.5px;
+}
+.bg-cal-piste:not(.bg-cal-piste-solo) .bg-cal-event[data-cols='3'] .bg-cal-event-heure,
+.bg-cal-piste:not(.bg-cal-piste-solo) .bg-cal-event[data-cols='3'] .bg-cal-event-nom,
+.bg-cal-piste:not(.bg-cal-piste-solo) .bg-cal-event[data-cols='4'] .bg-cal-event-heure,
+.bg-cal-piste:not(.bg-cal-piste-solo) .bg-cal-event[data-cols='4'] .bg-cal-event-nom {
+  font-size: 11.5px;
+}
+
+/* Mobile / tablette : la semaine défile horizontalement, la gouttière d'heures
+   reste collée à gauche sur fond opaque. */
 @media (max-width: 1024px) {
-  .bg-planning-grille {
-    display: flex;
-    gap: 14px;
+  .bg-cal-scroller {
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
     overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    padding-bottom: 6px;
   }
-  .bg-planning-grille::-webkit-scrollbar {
+  .bg-cal-scroller::-webkit-scrollbar {
     display: none;
   }
-  .bg-planning-colonne {
-    flex: 0 0 76vw;
-    min-width: 76vw;
+  .bg-cal-piste {
+    --colw: 172px;
+    width: max-content;
+    min-width: 100%;
+  }
+  .bg-cal-corps {
+    --hpx: 60px;
+  }
+  .bg-cal-col {
     scroll-snap-align: start;
+  }
+  /* vue Jour : une seule colonne, rien à faire défiler */
+  .bg-cal-piste-solo {
+    --colw: minmax(0, 1fr);
+    width: auto;
+    min-width: 0;
+  }
+}
+
+/* Sous 760px, la bascule de vue passe en select natif (comme le composant
+   d'origine) : trois boutons ne tiennent pas à côté du filtre. */
+@media (max-width: 760px) {
+  .bg-cal-vues {
+    display: none;
+  }
+  .bg-cal-select-enveloppe {
+    display: block;
+    flex: 1 1 150px;
+  }
+  .bg-cal-liste-ligne {
+    grid-template-columns: 92px 10px 1fr;
+    row-gap: 4px;
+  }
+  .bg-cal-liste-lien {
+    grid-column: 3;
+  }
+  /* les 6 jours défilent entre les deux chevrons, « Aujourd'hui » passe dessous */
+  .bg-cal-pills {
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .bg-cal-pills::-webkit-scrollbar {
+    display: none;
+  }
+  .bg-cal-pill {
+    flex: 0 0 auto;
+  }
+  .bg-cal-jours .bg-cal-btn {
+    margin-left: auto;
+  }
+}
+
+/* Fiche d'un créneau : aperçu au survol ou fiche épinglée. Positionnée en
+   `fixed` (la grille défile horizontalement, un absolu y serait rogné). */
+.bg-cal-popover {
+  position: fixed;
+  z-index: 9;
+  width: 268px;
+  max-width: calc(100vw - 20px);
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.14);
+  padding: 16px 18px;
+  font-family: 'Inter', 'Inter Placeholder', sans-serif;
+  animation: bg-cal-pop 160ms ease both;
+}
+.bg-cal-popover-apercu {
+  pointer-events: none;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.11);
+}
+.bg-cal-pop-titre {
+  margin: 0 0 4px;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #171717;
+}
+.bg-cal-pop-heure {
+  margin: 0 0 10px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #376131;
+}
+.bg-cal-pop-salle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 3px;
+  font-size: 14px;
+  color: #404040;
+}
+.bg-cal-pop-recurrence {
+  margin: 0;
+  font-size: 13.5px;
+  color: #8a8a8a;
+}
+.bg-cal-pop-cta {
+  display: inline-block;
+  margin: 14px 0 0;
+  padding: 10px 18px;
+  border-radius: 70px;
+  background: #376131;
+  color: #fff;
+  font-size: 14.5px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.bg-cal-pop-fermer {
+  display: block;
+  margin: 10px 0 0;
+  border: none;
+  background: none;
+  color: #737373;
+  font-family: 'Inter', 'Inter Placeholder', sans-serif;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 4px 0;
+  cursor: pointer;
+}
+.bg-cal-pop-fermer:hover {
+  color: #171717;
+}
+.bg-cal-voile {
+  position: fixed;
+  inset: 0;
+  z-index: 8;
+  background: rgba(15, 23, 18, 0.42);
+  animation: bg-cal-fade 160ms ease both;
+}
+/* Petit écran : la fiche épinglée devient une feuille basse */
+.bg-cal-popover-feuille {
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  max-width: none;
+  border-radius: 18px 18px 0 0;
+  padding: 20px 22px 26px;
+}
+
+@keyframes bg-cal-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes bg-cal-pop {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bg-cal *,
+  .bg-cal-popover,
+  .bg-cal-popover *,
+  .bg-cal-voile {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Hub /blog : survol discret des cartes (bordure + ombre, sans deplacement,
+   pour ne pas faire sauter la grille sous le curseur). */
+.bg-blog-carte {
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+.bg-blog-carte:hover {
+  border-color: #cfe7cb !important;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.09);
+}
+@media (prefers-reduced-motion: reduce) {
+  .bg-blog-carte {
+    transition: none;
   }
 }
 
@@ -332,8 +1061,49 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
   margin: 32px 0 10px;
   color: #171717;
 }
+.bg-article-body h4 {
+  font-size: clamp(17px, 2vw, 19px);
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 26px 0 8px;
+  color: #171717;
+}
 .bg-article-body p {
   margin: 0 0 18px;
+}
+.bg-article-body strong,
+.bg-article-body b {
+  font-weight: 700;
+  color: #171717;
+}
+.bg-article-body hr {
+  margin: 38px 0;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+.bg-article-body table {
+  width: 100%;
+  margin: 0 0 24px;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+.bg-article-body th,
+.bg-article-body td {
+  padding: 10px 12px;
+  border: 1px solid #e5e5e5;
+  text-align: left;
+  vertical-align: top;
+}
+.bg-article-body th {
+  background: #f4f7f3;
+  font-weight: 700;
+}
+.bg-article-body code {
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: #f2f2f2;
+  color: #374037;
+  font-size: 0.92em;
 }
 .bg-article-body ul,
 .bg-article-body ol {

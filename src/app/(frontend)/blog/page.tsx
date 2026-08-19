@@ -53,8 +53,8 @@ export default async function BlogPage() {
               <section style={{ maxWidth: 1100, margin: '0 auto', padding: '30px 30px 110px' }}>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 24 }}>
                   {articles.map((a) => (
-                    <a key={a.id} href={`/blog/${a.slug}`} style={{ display: 'flex', flexDirection: 'column', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden', textDecoration: 'none', color: 'inherit' }}>
-                      {imgUrl(a) ? <img src={imgUrl(a)} alt={a.titre || 'Article'} loading="lazy" style={{ width: '100%', height: 180, objectFit: 'cover', display: 'block' }} /> : null}
+                    <a key={a.id} className="bg-blog-carte" href={`/blog/${a.slug}`} style={{ display: 'flex', flexDirection: 'column', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden', textDecoration: 'none', color: 'inherit' }}>
+                      {imgUrl(a) ? <img src={imgUrl(a)} alt={a.titre || 'Article'} loading="lazy" style={{ width: '100%', height: 200, objectFit: 'cover', display: 'block' }} /> : null}
                       <div style={{ display: 'flex', flexDirection: 'column', flex: 1, padding: 26 }}>
                         {a.datePublication ? <p style={{ color: '#376131', fontWeight: 700, fontSize: 13, letterSpacing: '0.03em', textTransform: 'uppercase', margin: '0 0 8px' }}>{fmtDate(a.datePublication)}</p> : null}
                         <h2 style={{ fontSize: 21, fontWeight: 700, letterSpacing: '-0.01em', margin: '0 0 10px' }}>{a.titre}</h2>

@@ -1,8 +1,9 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import PlanningCalendar from './PlanningCalendar'
-import { PLANNING, type JourPlanning } from './planning'
+import PlanningCalendrier from './PlanningCalendrier'
+import { PLANNING, planningVersCreneaux, type JourPlanning } from './planning'
+import type { CreneauCal } from './planningLayout'
 
 // Page « Planning des cours » (/planning) : planning de la rentrée septembre 2026.
 // Données : collection Payload `planning` (éditable par le client), avec fallback
@@ -10,14 +11,23 @@ import { PLANNING, type JourPlanning } from './planning'
 
 const SHELL = 'framer-xf0KU framer-gbuwA framer-80BYq framer-1eSXM framer-Suf9V framer-fN9WN framer-72rtr7'
 
-export default function PlanningPage({ data }: { data?: JourPlanning[] }) {
-  const PLANNING_DATA = data && data.length > 0 ? data : PLANNING
+export default function PlanningPage(props: { data?: JourPlanning[]; creneaux?: CreneauCal[] }) {
+  const { data, creneaux } = props
+  // Repli en cascade : créneaux Payload -> planning Payload converti -> planning statique
+  const CRENEAUX =
+    creneaux && creneaux.length > 0
+      ? creneaux
+      : planningVersCreneaux(data && data.length > 0 ? data : PLANNING)
   return (
     <div id="main">
       <div className="framer-9MYi8 framer-13v9dm1" style={{ minHeight: '100vh', width: 'auto' }}>
         <div className={SHELL} style={{ minHeight: '100vh', width: 'auto', display: 'contents' }}>
           <Header />
-          <main style={{ background: '#fff', fontFamily: '"Inter", sans-serif' }}>
+          {/* width/minWidth : le shell Framer place <main> dans un conteneur flex
+              en colonne centré, donc dimensionné sur son contenu. Sans largeur
+              définie, le défilement horizontal du calendrier étirerait toute la
+              page au lieu de rester dans son propre scroller. */}
+          <main style={{ background: '#fff', fontFamily: '"Inter", sans-serif', width: '100%', minWidth: 0 }}>
             <section style={{ maxWidth: 1180, margin: '0 auto', padding: '170px 30px 50px', textAlign: 'center' }}>
               <p style={{ color: '#376131', fontWeight: 700, letterSpacing: '0.04em', textTransform: 'uppercase', fontSize: 14, margin: '0 0 16px' }}>Rentrée septembre 2026</p>
               <h1 style={{ fontSize: 'clamp(34px,5vw,60px)', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: 1.05, margin: '0 0 20px' }}>Planning des cours</h1>
@@ -27,7 +37,7 @@ export default function PlanningPage({ data }: { data?: JourPlanning[] }) {
             </section>
 
             <section style={{ maxWidth: 1180, margin: '0 auto', padding: '0 30px 30px' }}>
-              <PlanningCalendar data={PLANNING_DATA} />
+              <PlanningCalendrier creneaux={CRENEAUX} />
             </section>
 
             <section style={{ maxWidth: 1180, margin: '0 auto', padding: '10px 30px 110px' }}>

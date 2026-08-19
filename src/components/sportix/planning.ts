@@ -11,6 +11,8 @@
 // Certains créneaux sont sans horaire dans le doc client (Pole Dance, Renfo Fit, Journée enfants) :
 // ils sont affichés sans horaire.
 
+import { heureEnMinutes, normaliserActivite, type CreneauCal } from './planningLayout'
+
 export type Creneau = {
   /** Horaire au format « 10h » / « 9h15 » — absent si le doc client n'en donne pas. */
   heure?: string
@@ -152,3 +154,52 @@ export const PLANNING: JourPlanning[] = [
     ],
   },
 ]
+
+// Table de secours nom de cours -> fiche /cours/[slug], utilisée quand la
+// collection Payload `cours` est indisponible. Les créneaux absents de cette
+// table (Pole Dance, Dance, Journée enfants, Bungee) n'ont volontairement pas
+// de fiche : le calendrier n'affichera alors aucun lien.
+export const SLUGS_COURS: { nom: string; slug: string }[] = [
+  { nom: 'Yoga', slug: 'yoga' },
+  { nom: 'Pilates', slug: 'pilates' },
+  { nom: 'Boxe', slug: 'boxe' },
+  { nom: 'École du dos', slug: 'ecole-du-dos' },
+  { nom: 'Renfo Fit', slug: 'renfo-fit' },
+  { nom: 'Cross Training', slug: 'cross-training' },
+  { nom: 'Total Silhouette', slug: 'total-silhouette' },
+  { nom: 'HYROX', slug: 'hyrox' },
+  { nom: 'Mob & Stretch', slug: 'mob-stretch' },
+]
+
+/** Slugs de secours indexés par nom normalisé. */
+export const slugsSecoursParNom = (): Map<string, string> =>
+  new Map(SLUGS_COURS.map((c) => [normaliserActivite(c.nom), c.slug]))
+
+/** Durée par défaut d'un créneau, en minutes (le champ Payload vaut 60 par défaut). */
+export const DUREE_DEFAUT = 60
+
+/**
+ * Adaptateur du planning statique vers les créneaux plats du calendrier.
+ * Sert de repli quand la collection Payload est vide ou injoignable.
+ */
+export function planningVersCreneaux(data: JourPlanning[] = PLANNING): CreneauCal[] {
+  const slugs = slugsSecoursParNom()
+  const creneaux: CreneauCal[] = []
+  for (const jour of data) {
+    for (const salle of jour.salles) {
+      salle.creneaux.forEach((c, i) => {
+        creneaux.push({
+          id: `${jour.jour}-${salle.salle}-${i}`.replace(/\s+/g, '-').toLowerCase(),
+          jour: jour.jour,
+          salle: salle.salle,
+          cours: c.cours,
+          heure: c.heure,
+          debutMin: heureEnMinutes(c.heure),
+          duree: DUREE_DEFAUT,
+          slug: slugs.get(normaliserActivite(c.cours)),
+        })
+      })
+    }
+  }
+  return creneaux
+}
