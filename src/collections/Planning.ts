@@ -46,6 +46,18 @@ export const Planning: CollectionConfig = {
     },
     { name: 'cours', label: 'Cours', type: 'text', required: true },
     {
+      name: 'duree',
+      label: 'Durée (minutes)',
+      type: 'number',
+      defaultValue: 60,
+      min: 15,
+      max: 240,
+      admin: {
+        position: 'sidebar',
+        description: 'Durée du cours en minutes. 60 par défaut, ajustable créneau par créneau.',
+      },
+    },
+    {
       name: 'ordre',
       label: "Ordre d'affichage",
       type: 'number',

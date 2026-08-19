@@ -414,6 +414,10 @@ export interface Planning {
   heure?: string | null;
   cours: string;
   /**
+   * Durée du cours en minutes. 60 par défaut, ajustable créneau par créneau.
+   */
+  duree?: number | null;
+  /**
    * Ordre du créneau dans sa salle
    */
   ordre?: number | null;
@@ -981,6 +985,7 @@ export interface PlanningSelect<T extends boolean = true> {
   salle?: T;
   heure?: T;
   cours?: T;
+  duree?: T;
   ordre?: T;
   actif?: T;
   updatedAt?: T;
