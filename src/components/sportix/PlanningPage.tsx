@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import PlanningCalendar from './PlanningCalendar'
 import { PLANNING, type JourPlanning } from './planning'
+import type { CreneauCal } from './planningLayout'
 
 // Page « Planning des cours » (/planning) : planning de la rentrée septembre 2026.
 // Données : collection Payload `planning` (éditable par le client), avec fallback
@@ -10,7 +11,8 @@ import { PLANNING, type JourPlanning } from './planning'
 
 const SHELL = 'framer-xf0KU framer-gbuwA framer-80BYq framer-1eSXM framer-Suf9V framer-fN9WN framer-72rtr7'
 
-export default function PlanningPage({ data }: { data?: JourPlanning[] }) {
+export default function PlanningPage(props: { data?: JourPlanning[]; creneaux?: CreneauCal[] }) {
+  const { data } = props
   const PLANNING_DATA = data && data.length > 0 ? data : PLANNING
   return (
     <div id="main">
