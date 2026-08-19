@@ -63,6 +63,28 @@ footer [data-framer-name='Link Wrapper'] .framer-text {
   }
 }
 
+/* ---------- Hero mobile : les deux boutons ---------- */
+/* framer.css borne les deux conteneurs de boutons du hero à max-width:199px
+   (min-width identique), ce qui donne sur mobile deux boutons étroits alignés
+   à gauche, empilés de travers. Sous 992px on les passe pleine largeur, l'un
+   sous l'autre. Le wrapper est ciblé par data-framer-name, scopé au hero (ce
+   nom sert aussi ailleurs) ; les deux conteneurs n'ont pas de data-framer-name,
+   d'où les classes hachées. Desktop et tablette larges restent inchangés. */
+@media (max-width: 991.98px) {
+  [data-framer-name='Hero Banner Section'] [data-framer-name='Button Wrapper'] {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  [data-framer-name='Hero Banner Section'] .framer-1c3uda1-container,
+  [data-framer-name='Hero Banner Section'] .framer-147oupp-container {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+}
+
 /* Tarifs : onglets Mensuel / Courtes durées, 5 cartes en 3+2 chacun.
    Le toggle bascule l'attribut body[data-pricing] (cf. PricingToggle.tsx). */
 [data-framer-name='Tarifs Cards Wrapper'] {
