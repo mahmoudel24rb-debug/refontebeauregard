@@ -36,15 +36,31 @@ footer [data-framer-name='Link Wrapper'] .framer-text {
   }
 }
 
-/* Footer mobile : les 5 colonnes de liens sont posées en flex avec des
-   min-width hétérogènes (80/120/280/240/100px), d'où un empilement irrégulier
-   2/1/1/1. On les remet en grille régulière, la 5e passant proprement dessous.
-   Ciblage par data-framer-name (stable), jamais par classe hashée. */
+/* Footer mobile compact (~1340px -> ~750px de haut en 390px).
+   IMPORTANT : les surcharges Phone de framer.css pèsent (0,3,0)
+   (.framer-xjjiV.framer-v-1b6dtn4 .framer-xxx { gap: 50px }) et battent nos
+   sélecteurs data-framer-name (0,1,1) : tout gap/flex ci-dessous DOIT porter
+   !important pour s'appliquer.
+   - Les 5 rubriques de liens : grille 2 colonnes serrée à toutes les largeurs
+     mobiles (avant : min-width hétérogènes 80/120/280/240/100px, empilement
+     1 colonne avec 50px d'écart = 868px à lui seul).
+   - Copyright : pleine largeur en colonne (avant : row avec 2 enfants
+     flex:1 0 0 -> copyright cassé sur 4 lignes dans 172px).
+   - Gaps Framer d'origine (40px partout) resserrés. */
 @media (max-width: 991.98px) {
+  footer [data-framer-name='Base Container'] {
+    gap: 28px !important;
+  }
+  footer [data-framer-name='Top Content Wrapper'] {
+    gap: 20px !important;
+  }
+  footer [data-framer-name='Logo Wrapper'] {
+    gap: 12px !important;
+  }
   footer [data-framer-name='Nav Links Columns'] {
     display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px 24px;
+    gap: 24px 16px !important;
     align-items: start;
     width: 100%;
   }
@@ -53,13 +69,32 @@ footer [data-framer-name='Link Wrapper'] .framer-text {
     max-width: none !important;
     flex: initial !important;
     width: auto !important;
+    gap: 10px !important;
   }
-}
-/* Sous 480px, deux colonnes de liens deviennent trop serrées. */
-@media (max-width: 479.98px) {
-  footer [data-framer-name='Nav Links Columns'] {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 22px;
+  footer [data-framer-name='Nav Links Columns'] nav {
+    gap: 8px !important;
+    width: 100% !important;
+  }
+  /* Colonnes ~167px en 390 : les libellés longs (« Entraînement fonctionnel »)
+     doivent pouvoir passer sur 2 lignes au lieu d'être tronqués. Le nav et les
+     wrappers de lien sont en width:min-content chez Framer : sans width:100%,
+     un white-space normal ferait replier CHAQUE lien à son mot le plus long. */
+  footer [data-framer-name='Nav Links Columns'] nav > div {
+    width: 100% !important;
+  }
+  footer [data-framer-name='Nav Links Columns'] .framer-text {
+    white-space: normal !important;
+  }
+  footer [data-framer-name='Bottom Content Wrapper'] {
+    gap: 12px !important;
+  }
+  footer [data-framer-name='Copyright Wrapper'] {
+    flex-direction: column !important;
+    gap: 6px !important;
+  }
+  footer [data-framer-name='Copyright Wrapper'] > * {
+    flex: none !important;
+    width: 100% !important;
   }
 }
 
