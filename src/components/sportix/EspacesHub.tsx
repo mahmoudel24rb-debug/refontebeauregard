@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import { getPayloadClient } from '@/lib/payload'
+import { classeGrille } from '@/lib/grilleCartes'
 
 // Page « Nos espaces » (/espaces) — données Payload.
 
@@ -26,7 +27,7 @@ export default async function EspacesHub() {
             </section>
 
             <section style={{ maxWidth: 1180, margin: '0 auto', padding: '0 30px 110px' }}>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 28 }}>
+              <div className={classeGrille(espaces.length)} style={{ ['--bg-grille-gap' as string]: '28px' }}>
                 {espaces.map((e) => (
                   <a
                     key={e.id}

@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import type { Espace as EspaceDoc } from '@/payload-types'
+import { classeGrille } from '@/lib/grilleCartes'
 
 // Sous-page d'un espace (/espaces/[slug]) — bannière + présentation + infos + autres espaces.
 
@@ -64,13 +65,13 @@ export default function EspaceDetail({ espace, autres = [] }: { espace: EspaceDo
             {autres.length > 0 && (
               <section style={{ maxWidth: 1180, margin: '0 auto', padding: '40px 30px 110px' }}>
                 <h2 style={{ fontSize: 'clamp(22px,2.6vw,30px)', fontWeight: 700, letterSpacing: '-0.02em', margin: '0 0 24px' }}>Découvrez aussi</h2>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px,1fr))', gap: 24 }}>
+                <div className={classeGrille(autres.length)}>
                   {autres.map((e) => (
-                    <a key={e.id} href={e.lien || `/espaces/${e.slug}`} style={{ display: 'block', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden', textDecoration: 'none', color: 'inherit' }}>
+                    <a key={e.id} href={e.lien || `/espaces/${e.slug}`} style={{ display: 'flex', flexDirection: 'column', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden', textDecoration: 'none', color: 'inherit' }}>
                       {e.image ? <img src={e.image} alt={e.nom} loading="lazy" style={{ width: '100%', height: 150, objectFit: 'cover', display: 'block' }} /> : null}
-                      <div style={{ padding: 22 }}>
+                      <div style={{ display: 'flex', flexDirection: 'column', flex: 1, padding: 22 }}>
                         <h3 style={{ fontSize: 19, fontWeight: 700, margin: '0 0 8px' }}>{e.nom}</h3>
-                        <p style={{ color: '#525252', fontSize: 14, lineHeight: 1.5, margin: '0 0 12px' }}>{e.accroche}</p>
+                        <p style={{ color: '#525252', fontSize: 14, lineHeight: 1.5, margin: '0 0 12px', flex: 1 }}>{e.accroche}</p>
                         <span style={{ color: '#376131', fontWeight: 700, fontSize: 14 }}>Découvrir →</span>
                       </div>
                     </a>

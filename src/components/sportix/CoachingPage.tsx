@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import { getPayloadClient } from '@/lib/payload'
+import { classeGrille } from '@/lib/grilleCartes'
 
 // Page « Coaching » (/coaching) : contenu réel (site officiel).
 
@@ -76,9 +77,9 @@ export default async function CoachingPage() {
                 Une équipe de coachs diplômés et passionnés, à votre écoute pour vous accompagner à chaque séance. Chacun a sa spécialité, Hyrox, boxe ou yoga, pour s'adapter à vos objectifs et à votre niveau.
               </p>
               {coachs.length > 0 ? (
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px,1fr))', gap: 24, marginTop: 28 }}>
+                <div className={classeGrille(coachs.length)} style={{ marginTop: 28 }}>
                   {coachs.map((c) => (
-                    <div key={c.id} style={{ background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden' }}>
+                    <div key={c.id} style={{ display: 'flex', flexDirection: 'column', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden' }}>
                       {c.photo ? <img src={c.photo} alt={c.nom || 'Coach du Parc Beauregard'} loading="lazy" style={{ width: '100%', aspectRatio: '3 / 4', objectFit: 'cover', display: 'block' }} /> : null}
                       {(c.nom || c.role || c.bio) ? (
                         <div style={{ padding: 20 }}>

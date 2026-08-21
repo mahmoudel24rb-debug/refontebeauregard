@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import { ESPACES } from './espaces'
 import { getPayloadClient } from '@/lib/payload'
+import { classeGrille } from '@/lib/grilleCartes'
 
 // Page « Nos cours » (/cours) : liste les cours depuis Payload, regroupés par
 // espace (valeur du champ `espace` du cours : « Espace Cours Collectifs » /
@@ -65,7 +66,7 @@ export default async function CoursHub() {
                     ) : null}
                   </div>
                 ) : null}
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 26 }}>
+                <div className={classeGrille(g.cours.length)} style={{ ['--bg-grille-gap' as string]: '26px' }}>
                   {g.cours.map((c) => (
                     <a
                       key={c.id}

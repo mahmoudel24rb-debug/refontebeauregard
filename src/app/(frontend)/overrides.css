@@ -1195,3 +1195,38 @@ body[data-pricing='courtes'] [data-ptab='courtes'] { display: flex; }
   padding: 14px 30px;
   border-radius: 70px;
 }
+
+/* Grilles de cards équilibrées
+   Une grille CSS ne centre pas sa dernière rangée : on passe en flex wrap centré.
+   Règle de choix des colonnes (helper src/lib/grilleCartes.ts) :
+   nombre de cards impair ou non divisible par le maximum de colonnes -> classe -3,
+   justify-content: center centre la dernière rangée (5 cards = 3 + 2 centrées) ;
+   nombre pair dont la moitié tient dans le maximum de colonnes -> classe -2 pour
+   un rendu 2x2 (4 cards).
+   Le gap se règle au cas par cas via la custom property inline --bg-grille-gap. */
+.bg-grille {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--bg-grille-gap, 24px);
+}
+.bg-grille > * {
+  min-width: 0;
+}
+.bg-grille-3 > * {
+  flex: 0 0 calc((100% - 2 * var(--bg-grille-gap, 24px)) / 3);
+}
+.bg-grille-2 > * {
+  flex: 0 0 calc((100% - var(--bg-grille-gap, 24px)) / 2);
+}
+@media (max-width: 991.98px) {
+  .bg-grille-3 > * {
+    flex-basis: calc((100% - var(--bg-grille-gap, 24px)) / 2);
+  }
+}
+@media (max-width: 640px) {
+  .bg-grille-3 > *,
+  .bg-grille-2 > * {
+    flex-basis: 100%;
+  }
+}
