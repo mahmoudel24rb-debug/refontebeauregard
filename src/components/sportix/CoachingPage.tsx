@@ -79,7 +79,7 @@ export default async function CoachingPage() {
               {coachs.length > 0 ? (
                 <div className={classeGrille(coachs.length)} style={{ marginTop: 28 }}>
                   {coachs.map((c) => (
-                    <div key={c.id} style={{ display: 'flex', flexDirection: 'column', height: '100%', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden' }}>
+                    <div key={c.id} style={{ display: 'flex', flexDirection: 'column', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden' }}>
                       {c.photo ? <img src={c.photo} alt={c.nom || 'Coach du Parc Beauregard'} loading="lazy" style={{ width: '100%', aspectRatio: '3 / 4', objectFit: 'cover', display: 'block' }} /> : null}
                       {(c.nom || c.role || c.bio) ? (
                         <div style={{ padding: 20 }}>

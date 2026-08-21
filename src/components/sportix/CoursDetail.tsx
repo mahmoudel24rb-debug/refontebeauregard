@@ -95,7 +95,7 @@ export default function CoursDetail({ cours, autres }: { cours: CoursDoc; autres
                 <h2 style={{ fontSize: 'clamp(22px,2.6vw,30px)', fontWeight: 700, letterSpacing: '-0.02em', margin: '0 0 24px' }}>Découvrez aussi</h2>
                 <div className={classeGrille(autres.length)}>
                   {autres.map((c) => (
-                    <a key={c.id} href={`/cours/${c.slug}`} style={{ display: 'flex', flexDirection: 'column', height: '100%', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden', textDecoration: 'none', color: 'inherit' }}>
+                    <a key={c.id} href={`/cours/${c.slug}`} style={{ display: 'flex', flexDirection: 'column', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden', textDecoration: 'none', color: 'inherit' }}>
                       {c.image ? <img src={c.image} alt={c.nom} loading="lazy" style={{ width: '100%', height: 150, objectFit: 'cover', display: 'block' }} /> : null}
                       <div style={{ display: 'flex', flexDirection: 'column', flex: 1, padding: 22 }}>
                         <h3 style={{ fontSize: 19, fontWeight: 700, margin: '0 0 8px' }}>{c.nom}</h3>
