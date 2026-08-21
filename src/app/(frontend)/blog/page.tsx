@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '@/components/sportix/Header'
 import Footer from '@/components/sportix/Footer'
 import { getPayloadClient } from '@/lib/payload'
+import { classeGrille } from '@/lib/grilleCartes'
 
 // ISR : nouveaux articles visibles sous ~60s sans rebuild
 export const revalidate = 60
@@ -51,7 +52,7 @@ export default async function BlogPage() {
 
             {articles.length > 0 ? (
               <section style={{ maxWidth: 1100, margin: '0 auto', padding: '30px 30px 110px' }}>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 24 }}>
+                <div className={classeGrille(articles.length)}>
                   {articles.map((a) => (
                     <a key={a.id} className="bg-blog-carte" href={`/blog/${a.slug}`} style={{ display: 'flex', flexDirection: 'column', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden', textDecoration: 'none', color: 'inherit' }}>
                       {imgUrl(a) ? <img src={imgUrl(a)} alt={a.titre || 'Article'} loading="lazy" style={{ width: '100%', height: 200, objectFit: 'cover', display: 'block' }} /> : null}

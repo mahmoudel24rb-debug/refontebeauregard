@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import type { Cour as CoursDoc } from '@/payload-types'
 import { coursBySlug } from './cours'
+import { classeGrille } from '@/lib/grilleCartes'
 
 // Sous-page d'un cours (/cours/[slug]) : données Payload, fallback cours.ts pour
 // les champs bénéfices / pour qui tant qu'ils ne sont pas renseignés en base.
@@ -92,13 +93,13 @@ export default function CoursDetail({ cours, autres }: { cours: CoursDoc; autres
             {autres.length > 0 && (
               <section style={{ maxWidth: 1180, margin: '0 auto', padding: '40px 30px 110px' }}>
                 <h2 style={{ fontSize: 'clamp(22px,2.6vw,30px)', fontWeight: 700, letterSpacing: '-0.02em', margin: '0 0 24px' }}>Découvrez aussi</h2>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px,1fr))', gap: 24 }}>
+                <div className={classeGrille(autres.length)}>
                   {autres.map((c) => (
-                    <a key={c.id} href={`/cours/${c.slug}`} style={{ display: 'block', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden', textDecoration: 'none', color: 'inherit' }}>
+                    <a key={c.id} href={`/cours/${c.slug}`} style={{ display: 'flex', flexDirection: 'column', height: '100%', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden', textDecoration: 'none', color: 'inherit' }}>
                       {c.image ? <img src={c.image} alt={c.nom} loading="lazy" style={{ width: '100%', height: 150, objectFit: 'cover', display: 'block' }} /> : null}
-                      <div style={{ padding: 22 }}>
+                      <div style={{ display: 'flex', flexDirection: 'column', flex: 1, padding: 22 }}>
                         <h3 style={{ fontSize: 19, fontWeight: 700, margin: '0 0 8px' }}>{c.nom}</h3>
-                        <p style={{ color: '#525252', fontSize: 14, lineHeight: 1.5, margin: '0 0 12px' }}>{c.accroche}</p>
+                        <p style={{ color: '#525252', fontSize: 14, lineHeight: 1.5, margin: '0 0 12px', flex: 1 }}>{c.accroche}</p>
                         <span style={{ color: '#376131', fontWeight: 700, fontSize: 14 }}>Découvrir →</span>
                       </div>
                     </a>

@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '@/components/sportix/Header'
 import Footer from '@/components/sportix/Footer'
 import { getPayloadClient } from '@/lib/payload'
+import { classeGrille } from '@/lib/grilleCartes'
 
 // ISR : nouveaux événements visibles sous ~60s sans rebuild
 export const revalidate = 60
@@ -60,7 +61,7 @@ export default async function EvenementsPage() {
 
             {evenements.length > 0 ? (
               <section style={{ maxWidth: 1100, margin: '0 auto', padding: '30px 30px 110px' }}>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 24 }}>
+                <div className={classeGrille(evenements.length)}>
                   {evenements.map((e) => (
                     <article key={e.id} style={{ display: 'flex', flexDirection: 'column', background: '#f5f5f5', border: '1px solid #e5e5e5', borderRadius: 14, overflow: 'hidden' }}>
                       {imgUrl(e) ? <img src={imgUrl(e)} alt={e.titre || 'Événement du Parc Beauregard'} loading="lazy" style={{ width: '100%', height: 180, objectFit: 'cover', display: 'block' }} /> : null}
